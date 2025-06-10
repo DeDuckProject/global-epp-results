@@ -48,30 +48,28 @@ export const PlotExplorer: React.FC = () => {
   const activeDependencies = dependencyMatrix[plotState.currentPlotType] || [];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 dark:from-slate-900 dark:to-slate-800">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 dark:from-slate-900 dark:to-slate-800 flex flex-col">
       <Header />
       
-      <div className="container mx-auto px-4 py-8">
-        <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
-          {/* Left sidebar */}
-          <div className="lg:col-span-1 space-y-6">
-            <PlotTypeTabs 
-              plotTypes={plotTypes}
-              currentPlotType={plotState.currentPlotType}
-              onPlotTypeChange={(plotType) => updatePlotState({ currentPlotType: plotType })}
-            />
-            
-            <ParamPanel 
-              plotState={plotState}
-              activeDependencies={activeDependencies}
-              onStateChange={updatePlotState}
-            />
-          </div>
+      <div className="flex-1 flex">
+        {/* Left sidebar - fixed width */}
+        <div className="w-80 min-w-80 bg-background/80 backdrop-blur-sm border-r border-border p-4 space-y-4 overflow-y-auto">
+          <PlotTypeTabs 
+            plotTypes={plotTypes}
+            currentPlotType={plotState.currentPlotType}
+            onPlotTypeChange={(plotType) => updatePlotState({ currentPlotType: plotType })}
+          />
           
-          {/* Main content */}
-          <div className="lg:col-span-3">
-            <PlotCanvas plotState={plotState} />
-          </div>
+          <ParamPanel 
+            plotState={plotState}
+            activeDependencies={activeDependencies}
+            onStateChange={updatePlotState}
+          />
+        </div>
+        
+        {/* Main content - takes remaining space */}
+        <div className="flex-1 p-4">
+          <PlotCanvas plotState={plotState} />
         </div>
       </div>
       
