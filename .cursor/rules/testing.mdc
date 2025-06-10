@@ -1,0 +1,12 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+Each file in src should have a corresponding test file in tests, as such:
+  - "src/**/*.ts"
+  - "tests/**/*.ts"
+
+no file is valid without tests
+- Has a test in `tests/`  
+- Emits logs via `logger`
