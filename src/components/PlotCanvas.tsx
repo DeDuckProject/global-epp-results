@@ -1,4 +1,3 @@
-
 import React, { Suspense } from 'react';
 import { PlotState } from './PlotExplorer';
 import { useLazySVG } from '@/hooks/useLazySVG';
@@ -48,7 +47,7 @@ const PlotImage: React.FC<{ plotState: PlotState }> = ({ plotState }) => {
           {plotState.currentPlotType}
         </h2>
         <p className="text-sm text-muted-foreground">
-          η_c={plotState.eta_c}, ε_G={plotState.epsilon_g}, N={plotState.n}, M={plotState.m}, Rule={plotState.rule}
+          η_c={plotState.eta_c}, ε_G={plotState.epsilon_G}, N={plotState.N}, M={plotState.M}, Rule={plotState.rule}
         </p>
       </div>
       <div className="flex-1 flex items-center justify-center">
@@ -56,7 +55,7 @@ const PlotImage: React.FC<{ plotState: PlotState }> = ({ plotState }) => {
           src={svgUrl} 
           alt={`${plotState.currentPlotType} plot`}
           className="max-w-full max-h-full object-contain"
-          title={`${plotState.currentPlotType} - η_c: ${plotState.eta_c}, ε_G: ${plotState.epsilon_g}, N: ${plotState.n}, M: ${plotState.m}, Rule: ${plotState.rule}`}
+          title={`${plotState.currentPlotType} - η_c: ${plotState.eta_c}, ε_G: ${plotState.epsilon_G}, N: ${plotState.N}, M: ${plotState.M}, Rule: ${plotState.rule}`}
         />
       </div>
     </div>

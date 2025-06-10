@@ -71,3 +71,38 @@ Yes, you can!
 To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
 
 Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+
+## Plot Metadata Generator
+
+The project includes a build-time script that generates TypeScript metadata for all plot files. This metadata is used by the app to:
+- Map file paths to plot types
+- Track parameter dependencies
+- Generate slider ranges
+- Enable/disable controls based on plot type
+
+### Usage
+
+The metadata generator runs automatically during build:
+```bash
+npm run build
+```
+
+To run it manually:
+```bash
+npm run build:meta
+```
+
+The script:
+1. Scans the `comparison_plots/` directory for SVG/PNG files
+2. Parses filenames to extract parameters (η_c, ε_G, N, M, rule)
+3. Generates `src/data/plotMeta.ts` with:
+   - Plot metadata array
+   - Parameter value lists
+   - Dependency matrix
+
+### Testing
+
+Run the test suite:
+```bash
+npm test
+```

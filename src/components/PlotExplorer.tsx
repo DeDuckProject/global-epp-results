@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Header } from './Header';
 import { PlotTypeTabs } from './PlotTypeTabs';
@@ -11,9 +10,9 @@ import { useSearchParams } from 'react-router-dom';
 export interface PlotState {
   currentPlotType: string;
   eta_c: number;
-  epsilon_g: number;
-  n: number;
-  m: number;
+  epsilon_G: number;
+  N: number;
+  M: number;
   rule: string;
 }
 
@@ -23,9 +22,9 @@ export const PlotExplorer: React.FC = () => {
   const [plotState, setPlotState] = useState<PlotState>(() => ({
     currentPlotType: searchParams.get('plot') || plotTypes[0],
     eta_c: Number(searchParams.get('eta_c')) || parameterValues.eta_c[2],
-    epsilon_g: Number(searchParams.get('epsilon_g')) || parameterValues.epsilon_g[0],
-    n: Number(searchParams.get('n')) || parameterValues.n[2],
-    m: Number(searchParams.get('m')) || parameterValues.m[1],
+    epsilon_G: Number(searchParams.get('epsilon_G')) || parameterValues.epsilon_G[0],
+    N: Number(searchParams.get('N')) || parameterValues.N[2],
+    M: Number(searchParams.get('M')) || parameterValues.M[1],
     rule: searchParams.get('rule') || parameterValues.rule[0]
   }));
 
@@ -34,9 +33,9 @@ export const PlotExplorer: React.FC = () => {
     const params = new URLSearchParams();
     params.set('plot', plotState.currentPlotType);
     params.set('eta_c', plotState.eta_c.toString());
-    params.set('epsilon_g', plotState.epsilon_g.toString());
-    params.set('n', plotState.n.toString());
-    params.set('m', plotState.m.toString());
+    params.set('epsilon_G', plotState.epsilon_G.toString());
+    params.set('N', plotState.N.toString());
+    params.set('M', plotState.M.toString());
     params.set('rule', plotState.rule);
     setSearchParams(params);
   }, [plotState, setSearchParams]);
@@ -45,7 +44,13 @@ export const PlotExplorer: React.FC = () => {
     setPlotState(prev => ({ ...prev, ...updates }));
   };
 
-  const activeDependencies = dependencyMatrix[plotState.currentPlotType] || [];
+  const activeDependencies = dependencyMatrix[plotState.currentPlotType] || {
+    eta_c: false,
+    epsilon_G: false,
+    N: false,
+    M: false,
+    rule: false
+  };
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 dark:from-slate-900 dark:to-slate-800 flex flex-col">

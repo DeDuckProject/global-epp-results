@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { SliderField } from './SliderField';
 import { SelectField } from './SelectField';
@@ -7,7 +6,7 @@ import { PlotState } from '@/components/PlotExplorer';
 
 interface ParamPanelProps {
   plotState: PlotState;
-  activeDependencies: string[];
+  activeDependencies: Record<string, boolean>;
   onStateChange: (updates: Partial<PlotState>) => void;
 }
 
@@ -16,7 +15,7 @@ export const ParamPanel: React.FC<ParamPanelProps> = ({
   activeDependencies,
   onStateChange
 }) => {
-  const isActive = (param: string) => activeDependencies.includes(param);
+  const isActive = (param: string) => activeDependencies[param] ?? false;
 
   return (
     <div className="bg-card rounded-lg border p-4 shadow-sm">
@@ -32,28 +31,28 @@ export const ParamPanel: React.FC<ParamPanelProps> = ({
         
         <SliderField
           label="ε_G (Gate Error Rate)"
-          value={plotState.epsilon_g}
-          values={parameterValues.epsilon_g}
-          onChange={(value) => onStateChange({ epsilon_g: value })}
-          disabled={!isActive('epsilon_g')}
+          value={plotState.epsilon_G}
+          values={parameterValues.epsilon_G}
+          onChange={(value) => onStateChange({ epsilon_G: value })}
+          disabled={!isActive('epsilon_G')}
           step={0.001}
         />
         
         <SliderField
           label="N (Network Size)"
-          value={plotState.n}
-          values={parameterValues.n}
-          onChange={(value) => onStateChange({ n: value })}
-          disabled={!isActive('n')}
+          value={plotState.N}
+          values={parameterValues.N}
+          onChange={(value) => onStateChange({ N: value })}
+          disabled={!isActive('N')}
           isInteger
         />
         
         <SliderField
           label="M (Memory Time)"
-          value={plotState.m}
-          values={parameterValues.m}
-          onChange={(value) => onStateChange({ m: value })}
-          disabled={!isActive('m')}
+          value={plotState.M}
+          values={parameterValues.M}
+          onChange={(value) => onStateChange({ M: value })}
+          disabled={!isActive('M')}
           isInteger
         />
         
