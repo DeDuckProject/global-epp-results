@@ -51,23 +51,24 @@ vi.mock('../../src/utils/logger', () => ({
 
 // Use vi.doMock to prevent hoisting issues
 vi.doMock('../../src/data/plotMeta', () => {
-  const plotState1 = { plotType: '3D global-schedule', params: { eta_c: 0.9, epsilon_G: 0.0001, N: 1024, M: 1024, rule: 'SKR' } };
-  const plotState2 = { plotType: '3D global-schedule', params: { eta_c: 0.9, epsilon_G: 0.001, N: 1024, M: 1024, rule: 'F_th 0.97' } };
+  const params = { eta_c: 0.9, epsilon_G: 0.0001, N: 1024, M: 1024 };
+  const plotState1 = { plotType: '3D global-schedule', params: { ...params, rule: 'SKR' } };
+  const plotState2 = { plotType: '3D global-schedule', params: { ...params, rule: 'F_th 0.97' } };
   const plotState3 = { plotType: 'Best strategies 2D', params: { eta_c: 0.9, epsilon_G: 0.0001, N: 1024, M: 1024 } };
   
   return {
     plotTypes: ["3D global-schedule", "Best strategies 2D"],
     plotMeta: [
-      { ...plotState1, relPath: buildPlotPath(plotState1) },
-      { ...plotState2, relPath: buildPlotPath(plotState2) },
-      { ...plotState3, relPath: buildPlotPath(plotState3) },
+      { ...plotState1, relPath: 'comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_SKR_N1024_M1024_etac0.9_epsg0.0001.svg' },
+      { ...plotState2, relPath: 'comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.97_N1024_M1024_etac0.9_epsg0.0001.svg' },
+      { ...plotState3, relPath: 'comparison_plots/etac0.9_epsg0.0001/svg/best_strategies_N1024_M1024.svg' },
     ],
     parameterValues: {
-      eta_c: [0.5, 0.9],
+      eta_c: [0.9, 0.5],
       epsilon_G: [0.0001, 0.001],
-      N: [512, 1024],
-      M: [512, 1024],
-      rule: ["SKR", "F_th 0.95", "F_th 0.97", "Manual"],
+      N: [1024, 512],
+      M: [1024, 512],
+      rule: ["SKR", "F_th 0.85", "F_th 0.90", "F_th 0.95", "F_th 0.97", "F_th 0.99", "Manual"],
     },
     dependencyMatrix: {
       '3D global-schedule': { eta_c: true, epsilon_G: true, N: true, M: true, rule: true },
@@ -100,7 +101,7 @@ describe('PlotExplorer Integration Test', () => {
     await userEvent.selectOptions(ruleSelect, 'F_th 0.97');
     
     const updatedPlotImage = await screen.findByRole('img', { name: /3D global-schedule plot/i }) as HTMLImageElement;
-    expect(updatedPlotImage.src).toContain('3d_visualization_Fth');
+    expect(updatedPlotImage.src).toContain('3d_visualization_F_th_0.97');
     // expect(window.location.search).toContain('rule=F_th%200.97'); // TODO should fix
   });
 

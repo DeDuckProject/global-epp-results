@@ -15,7 +15,7 @@ export const PlotExplorer: React.FC = () => {
     currentPlotType: searchParams.get('plot') || plotTypes[0],
     eta_c: Number(searchParams.get('eta_c')) || parameterValues.eta_c[2],
     epsilon_G: Number(searchParams.get('epsilon_G')) || parameterValues.epsilon_G[0],
-    N: Number(searchParams.get('N')) || parameterValues.N[2],
+    N: Number(searchParams.get('N')) || parameterValues.N[8],
     M: Number(searchParams.get('M')) || parameterValues.M[1],
     rule: searchParams.get('rule') || parameterValues.rule[0]
   }));

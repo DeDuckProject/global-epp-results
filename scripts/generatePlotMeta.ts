@@ -30,14 +30,14 @@ type EtaC = 0.3 | 0.5 | 0.9 | 1.0;
 type EpsilonG = 0.0001 | 0.001;
 type N = 4 | 8 | 16 | 32 | 64 | 128 | 256 | 512 | 1024 | 2048 | 4096;
 type M = 512 | 1024 | 2048;
-type Rule = "SKR" | "F_th 0.95" | "F_th 0.97" | "Manual";
+type Rule = "SKR" | "F_th 0.85" | "F_th 0.9" | "F_th 0.95" | "F_th 0.97" | "F_th 0.99" | "Manual";
 
 export const PARAMETER_VALUES = {
   eta_c: [0.3, 0.5, 0.9, 1.0] as EtaC[],
   epsilon_G: [0.0001, 0.001] as EpsilonG[],
   N: [4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096] as N[],
   M: [512, 1024, 2048] as M[],
-  rule: ["SKR", "F_th 0.95", "F_th 0.97", "Manual"] as Rule[]
+  rule: ["SKR", "F_th 0.85", "F_th 0.9", "F_th 0.95", "F_th 0.97", "F_th 0.99", "Manual"] as Rule[]
 };
 
 // Plot type mapping based on directory and filename patterns

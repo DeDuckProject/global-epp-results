@@ -18,12 +18,18 @@ describe('parseRule', () => {
     expect(parseRule('F_th_0.97')).toBe('F_th 0.97');
   });
 
+  it('parses new F_th values correctly', () => {
+    expect(parseRule('F_th_0.85')).toBe('F_th 0.85');
+    expect(parseRule('F_th_0.9')).toBe('F_th 0.9');
+    expect(parseRule('F_th_0.99')).toBe('F_th 0.99');
+  });
+
   it('returns undefined for unknown formats', () => {
     expect(parseRule('unknown')).toBeUndefined();
     expect(parseRule('F_th')).toBeUndefined();
     expect(parseRule('F_th_')).toBeUndefined();
     expect(parseRule('F_th_1')).toBeUndefined();
-    expect(parseRule('F_th_0.99')).toBeUndefined(); // Not in PARAMETER_VALUES
+    expect(parseRule('F_th_0.96')).toBeUndefined(); // Not in PARAMETER_VALUES
   });
 
   it('only returns values from PARAMETER_VALUES.rule', () => {

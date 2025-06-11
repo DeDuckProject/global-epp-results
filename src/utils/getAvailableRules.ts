@@ -1,6 +1,5 @@
 import { PlotState } from '@/types/PlotState';
 import { plotMeta } from '@/data/plotMeta';
-import { isEqual } from 'lodash-es';
 
 /**
  * Computes the set of available rules for a given plot state.
@@ -16,15 +15,20 @@ export function getAvailableRules(plotState: Omit<PlotState, 'rule'>): Set<strin
     }
 
     // Check if all relevant parameters from the entry match the current plot state
-    const paramsToCheck = { ...entry.params };
-    delete paramsToCheck.rule; // Don't match against the rule itself
-
+    const params = entry.params;
     let allParamsMatch = true;
-    for (const key in paramsToCheck) {
-      if (plotState[key] !== paramsToCheck[key]) {
-        allParamsMatch = false;
-        break;
-      }
+
+    if (params.eta_c !== undefined && params.eta_c !== plotState.eta_c) {
+      allParamsMatch = false;
+    }
+    if (params.epsilon_G !== undefined && params.epsilon_G !== plotState.epsilon_G) {
+      allParamsMatch = false;
+    }
+    if (params.N !== undefined && params.N !== plotState.N) {
+      allParamsMatch = false;
+    }
+    if (params.M !== undefined && params.M !== plotState.M) {
+      allParamsMatch = false;
     }
 
     if (allParamsMatch && entry.params.rule) {
