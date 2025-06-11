@@ -3,7 +3,7 @@ import path from 'path';
 
 // Import the functions we want to test
 // Note: We'll need to export these functions in generatePlotMeta.ts
-import { parseFileMeta, PlotMeta } from '../generatePlotMeta';
+import { parseFileMeta, PlotMeta } from '../generatePlotMeta.ts';
 import {
   parseEtaC,
   parseEpsilonG,
@@ -11,7 +11,7 @@ import {
   parseM,
   parseRule,
   PARAMETER_VALUES
-} from '../generatePlotMeta';
+} from '../generatePlotMeta.ts';
 
 describe('Plot Metadata Generator', () => {
   describe('parseFileMeta', () => {
@@ -95,8 +95,9 @@ describe('Parameter parsing', () => {
   });
 
   describe('parseN', () => {
+    const validNValues = [4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096];
     it('should parse valid N values', () => {
-      PARAMETER_VALUES.N.forEach(n => {
+      validNValues.forEach(n => {
         expect(parseN(`N${n}`)).toBe(n);
       });
     });
@@ -108,8 +109,9 @@ describe('Parameter parsing', () => {
   });
 
   describe('parseM', () => {
+    const validMValues = [512, 1024, 2048];
     it('should parse valid M values', () => {
-      PARAMETER_VALUES.M.forEach(m => {
+      validMValues.forEach(m => {
         expect(parseM(`M${m}`)).toBe(m);
       });
     });

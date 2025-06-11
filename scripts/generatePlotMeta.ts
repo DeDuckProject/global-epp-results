@@ -63,40 +63,45 @@ export const DEPENDENCY_MATRIX: Record<string, Record<keyof PlotParams, boolean>
   'η_c comparisons': { eta_c: false, epsilon_G: true, N: true, M: true, rule: true }
 };
 
-export function parseEtaC(dirname: string): number | undefined {
+export function parseEtaC(dirname: string): EtaC | undefined {
   const match = dirname.match(/^etac(\d+\.?\d*)$/);
   if (!match) return undefined;
   const value = parseFloat(match[1]);
-  return PARAMETER_VALUES.eta_c.includes(value as EtaC) ? value : undefined;
+  // Find the exact value in the allowed values
+  return PARAMETER_VALUES.eta_c.find(v => Math.abs(v - value) < 1e-10);
 }
 
-export function parseEpsilonG(dirname: string): number | undefined {
+export function parseEpsilonG(dirname: string): EpsilonG | undefined {
   const match = dirname.match(/^epsg(\d+\.?\d*)$/);
   if (!match) return undefined;
   const value = parseFloat(match[1]);
-  return PARAMETER_VALUES.epsilon_G.includes(value as EpsilonG) ? value : undefined;
+  // Find the exact value in the allowed values
+  return PARAMETER_VALUES.epsilon_G.find(v => Math.abs(v - value) < 1e-10);
 }
 
-export function parseN(token: string): number | undefined {
+export function parseN(token: string): N | undefined {
   const match = token.match(/^N(\d+)$/);
   if (!match) return undefined;
   const value = parseInt(match[1], 10);
-  return PARAMETER_VALUES.N.includes(value as N) ? value : undefined;
+  // Find the exact value in the allowed values
+  return PARAMETER_VALUES.N.find(v => v === value);
 }
 
-export function parseM(token: string): number | undefined {
+export function parseM(token: string): M | undefined {
   const match = token.match(/^M(\d+)$/);
   if (!match) return undefined;
   const value = parseInt(match[1], 10);
-  return PARAMETER_VALUES.M.includes(value as M) ? value : undefined;
+  // Find the exact value in the allowed values
+  return PARAMETER_VALUES.M.find(v => v === value);
 }
 
-export function parseRule(token: string): string | undefined {
-  if (token === 'SKR' && PARAMETER_VALUES.rule.includes('SKR' as Rule)) return 'SKR';
-  const match = token.match(/^F_th_(\d+\.?\d*)$/);
+export function parseRule(token: string): Rule | undefined {
+  if (token === 'SKR') return 'SKR';
+  const match = token.match(/^F_th_(\d+\.\d+)$/);
   if (!match) return undefined;
-  const value = `F_th ${match[1]}` as Rule;
-  return PARAMETER_VALUES.rule.includes(value) ? value : undefined;
+  const value = `F_th ${match[1]}`;
+  // Find the exact value in the allowed values
+  return PARAMETER_VALUES.rule.find(v => v === value);
 }
 
 export function getPlotType(filename: string): string | undefined {
