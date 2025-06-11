@@ -8,7 +8,8 @@ export default defineConfig({
     setupFiles: './tests/setup.ts',
     include: [
       'scripts/**/*.test.ts',
-      'tests/**/*.test.{ts,tsx}'
+      'tests/**/*.test.{ts,tsx}',
+      'src/**/*.test.{ts,tsx}'
     ],
   },
   resolve: {
