@@ -1,7 +1,7 @@
 import React, { useMemo, useCallback } from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
 import { SliderField } from './SliderField';
-import { SelectField } from './SelectField';
+import { RuleSliderField } from './RuleSliderField';
 import { parameterValues } from '@/data/plotMeta';
 import { PlotState } from '@/types/PlotState';
 import { logger } from '@/utils/logger';
@@ -108,6 +108,16 @@ export const ParamPanel: React.FC<ParamPanelProps> = ({
                   isInteger
                 />
               </div>
+              <div className="flex-[0_0_100%] min-w-0 px-2 pointer-events-auto">
+                <RuleSliderField
+                  label="Rule"
+                  value={plotState.rule}
+                  options={parameterValues.rule}
+                  onChange={(value) => onStateChange({ rule: value })}
+                  disabled={!isActive('rule')}
+                  availableOptions={availableRules}
+                />
+              </div>
             </div>
           </div>
           <NextButton
@@ -115,16 +125,6 @@ export const ParamPanel: React.FC<ParamPanelProps> = ({
             data-testid="carousel-next-button"
             onClick={scrollNext}
           />
-        </div>
-        <div className="mt-4 px-2">
-            <SelectField
-              label="Rule"
-              value={plotState.rule}
-              options={parameterValues.rule}
-              onChange={(value) => onStateChange({ rule: value })}
-              disabled={!isActive('rule')}
-              availableOptions={availableRules}
-            />
         </div>
       </div>
       <div className="hidden md:block space-y-4 md:space-y-6" data-testid="param-panel-desktop">
@@ -164,7 +164,7 @@ export const ParamPanel: React.FC<ParamPanelProps> = ({
           isInteger
         />
         
-        <SelectField
+        <RuleSliderField
           label="Rule"
           value={plotState.rule}
           options={parameterValues.rule}

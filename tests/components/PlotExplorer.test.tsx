@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, screen, waitFor, within } from '@testing-library/react';
+import { render, screen, waitFor, within, fireEvent } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { describe, it, expect, vi, beforeEach } from 'vitest';
 import { PlotExplorer } from '../../src/components/PlotExplorer';
@@ -17,27 +17,21 @@ vi.mock('../../src/hooks/useLazySVG', () => ({
   }
 }));
 
-// Mock the Select components
-vi.mock('../../src/components/ui/select', () => {
-  const SelectContent = ({ children }: any) => children;
-  const SelectItem = ({ value, children }: any) => <option value={value}>{children}</option>;
-
-  const Select = ({ value, onValueChange, disabled, children }: any) => (
-    <select
-      value={value}
-      onChange={(e) => onValueChange?.(e.target.value)}
-      data-testid="select"
+// Mock the Slider component
+vi.mock('../../src/components/ui/slider', () => ({
+  Slider: ({ value, onValueChange, disabled, max, 'aria-labelledby': ariaLabelledby }: any) => (
+    <input
+      type="range"
+      role="slider"
+      min="0"
+      max={max}
+      value={value ? value[0] : 0}
+      onChange={(e) => onValueChange?.([parseInt(e.target.value, 10)])}
       disabled={disabled}
-    >
-      {children}
-    </select>
-  );
-
-  const SelectTrigger = ({ children }: any) => children;
-  const SelectValue = ({ children }: any) => children;
-
-  return { Select, SelectTrigger, SelectValue, SelectContent, SelectItem };
-});
+      aria-labelledby={ariaLabelledby}
+    />
+  ),
+}));
 
 // Mock logger
 vi.mock('../../src/utils/logger', () => ({
@@ -97,8 +91,15 @@ describe('PlotExplorer Integration Test', () => {
     expect(plotImage.src).toContain('3d_visualization_SKR');
 
     const desktopParamPanel = screen.getByTestId('param-panel-desktop');
-    const ruleSelect = within(desktopParamPanel).getByTestId('select');
-    await userEvent.selectOptions(ruleSelect, 'F_th 0.97');
+    const ruleSlider = within(desktopParamPanel).getByRole('slider', { name: /rule/i });
+    
+    // Find the index for 'F_th 0.97'
+    const { parameterValues } = await vi.importActual('../../src/data/plotMeta') as {
+      parameterValues: { rule: string[] }
+    };
+    const ruleIndex = parameterValues.rule.indexOf('F_th 0.97');
+    
+    fireEvent.change(ruleSlider, { target: { value: ruleIndex } });
     
     const updatedPlotImage = await screen.findByRole('img', { name: /3D global-schedule plot/i }) as HTMLImageElement;
     expect(updatedPlotImage.src).toContain('3d_visualization_F_th_0.97');
@@ -115,7 +116,7 @@ describe('PlotExplorer Integration Test', () => {
     expect(plotImage.src).toContain('best_strategies');
     
     const desktopParamPanel = screen.getByTestId('param-panel-desktop');
-    const ruleSelect = within(desktopParamPanel).getByTestId('select');
-    expect(ruleSelect).toBeDisabled();
+    const ruleSlider = within(desktopParamPanel).getByRole('slider', { name: /rule/i });
+    expect(ruleSlider).toBeDisabled();
   });
 }); 

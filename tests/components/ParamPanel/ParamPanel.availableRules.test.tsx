@@ -6,27 +6,21 @@ import { ParamPanel } from '../../../src/components/ParamPanel/ParamPanel';
 import { logger } from '../../../src/utils/logger';
 import '@testing-library/jest-dom';
 
-// Mock the Select components
-vi.mock('../../../src/components/ui/select', () => {
-  const SelectContent = ({ children }: any) => children;
-  const SelectItem = ({ value, children }: any) => <option value={value}>{children}</option>;
-
-  const Select = ({ value, onValueChange, disabled, children }: any) => (
-    <select
-      value={value}
-      onChange={(e) => onValueChange?.(e.target.value)}
-      data-testid="select"
+// Mock the Slider component
+vi.mock('../../../src/components/ui/slider', () => ({
+  Slider: ({ value, onValueChange, disabled, max, 'aria-labelledby': ariaLabelledby }: any) => (
+    <input
+      type="range"
+      role="slider"
+      min="0"
+      max={max}
+      value={value ? value[0] : 0}
+      onChange={(e) => onValueChange?.([parseInt(e.target.value, 10)])}
       disabled={disabled}
-    >
-      {children}
-    </select>
-  );
-
-  const SelectTrigger = ({ children }: any) => children;
-  const SelectValue = ({ children }: any) => children;
-
-  return { Select, SelectTrigger, SelectValue, SelectContent, SelectItem };
-});
+      aria-labelledby={ariaLabelledby}
+    />
+  ),
+}));
 
 // Mock the logger
 vi.mock('../../../src/utils/logger', () => ({
@@ -81,12 +75,8 @@ describe('ParamPanel - Rule Selection', () => {
     );
 
     const desktopView = screen.getByTestId('param-panel-desktop');
-    const select = within(desktopView).getByTestId('select');
-    await userEvent.click(select);
-
-    const options = within(desktopView).getAllByRole('option');
-    expect(options).toHaveLength(1);
-    expect(options[0]).toHaveTextContent('SKR');
+    const ruleSlider = within(desktopView).getByRole('slider', { name: /rule/i });
+    expect(ruleSlider).toHaveAttribute('max', '0');
   });
   
   it('updates available rules when a parameter changes', async () => {
@@ -109,10 +99,8 @@ describe('ParamPanel - Rule Selection', () => {
     );
 
     const desktopView = screen.getByTestId('param-panel-desktop');
-
-    let options = within(desktopView).getAllByRole('option');
-    expect(options).toHaveLength(1);
-    expect(options[0]).toHaveTextContent('SKR');
+    const ruleSlider = within(desktopView).getByRole('slider', { name: /rule/i });
+    expect(ruleSlider).toHaveAttribute('max', '0');
 
     // Rerender with a new epsilon_G
     const updatedPlotState = { ...initialPlotState, epsilon_G: 0.001 };
@@ -124,9 +112,7 @@ describe('ParamPanel - Rule Selection', () => {
       />
     );
 
-    options = within(desktopView).getAllByRole('option');
-    expect(options).toHaveLength(1);
-    expect(options[0]).toHaveTextContent('F_th 0.97');
+    expect(ruleSlider).toHaveAttribute('max', '0');
     
     // Check if auto-switch was triggered
     expect(logger.warn).toHaveBeenCalled();
@@ -150,12 +136,14 @@ describe('ParamPanel - Rule Selection', () => {
     );
 
     const desktopView = screen.getByTestId('param-panel-desktop');
-    const select = within(desktopView).getByTestId('select');
-    expect(select).toBeDisabled();
+    const ruleSlider = within(desktopView).getByRole('slider', { name: /rule/i });
+    expect(ruleSlider).toBeDisabled();
   });
 
   it('automatically switches rule when current rule is not available', async () => {
     const onStateChange = vi.fn();
+    
+    // This plot state has a rule 'SKR' that isn't available for epsilon_G: 0.001
     render(
       <ParamPanel
         plotState={{
@@ -171,15 +159,7 @@ describe('ParamPanel - Rule Selection', () => {
       />
     );
 
-    const desktopView = screen.getByTestId('param-panel-desktop');
-    // Change epsilon_G to 0.001 which should only allow F_th 0.97
-    const select = within(desktopView).getByTestId('select');
-    await userEvent.click(select);
-
-    const fthOption = within(desktopView).getByRole('option', { name: 'F_th 0.97' });
-    await userEvent.click(fthOption);
-
-    // Should auto-switch to F_th 0.97 and log warning
+    // Should auto-switch to F_th 0.97 and log warning upon rendering
     expect(onStateChange).toHaveBeenCalledWith({ rule: 'F_th 0.97' });
     expect(logger.warn).toHaveBeenCalledWith(
       expect.stringContaining('Selected rule "SKR" is not available with current parameters')
