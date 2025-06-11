@@ -2,6 +2,7 @@ import React from 'react';
 import { Slider } from '@/components/ui/slider';
 import { Label } from '@/components/ui/label';
 import { cn } from '@/lib/utils';
+import { useId } from 'react';
 
 interface SliderFieldProps {
   label: string;
@@ -23,6 +24,7 @@ export const SliderField: React.FC<SliderFieldProps> = ({
   isInteger = false,
   decimalPlaces
 }) => {
+  const id = useId();
   const min = Math.min(...values);
   const max = Math.max(...values);
   const currentIndex = values.indexOf(value);
@@ -50,7 +52,7 @@ export const SliderField: React.FC<SliderFieldProps> = ({
   return (
     <div className={cn("space-y-3", disabled && "opacity-50")}>
       <div className="flex items-center justify-between">
-        <Label className={cn("text-sm font-medium", disabled && "text-muted-foreground")}>
+        <Label id={id} className={cn("text-sm font-medium", disabled && "text-muted-foreground")}>
           {label}
           {disabled && " 🔒"}
         </Label>
@@ -60,6 +62,7 @@ export const SliderField: React.FC<SliderFieldProps> = ({
       </div>
       
       <Slider
+        aria-labelledby={id}
         value={[currentIndex]}
         onValueChange={handleSliderChange}
         max={values.length - 1}

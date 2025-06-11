@@ -48,9 +48,9 @@ export const PlotExplorer: React.FC = () => {
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 dark:from-slate-900 dark:to-slate-800 flex flex-col">
       <Header />
       
-      <div className="flex-1 flex">
-        {/* Left sidebar - fixed width */}
-        <div className="w-80 min-w-80 bg-background/80 backdrop-blur-sm border-r border-border p-4 space-y-4 overflow-y-auto">
+      <div className="flex-1 flex flex-col md:flex-row">
+        {/* Left sidebar - fixed width on desktop, full-width on mobile */}
+        <div className="w-full md:w-80 md:min-w-80 bg-background/80 backdrop-blur-sm border-b md:border-b-0 md:border-r border-border p-2 md:p-4 space-y-2 md:space-y-4 overflow-y-auto">
           <PlotTypeTabs 
             plotTypes={plotTypes}
             currentPlotType={plotState.currentPlotType}

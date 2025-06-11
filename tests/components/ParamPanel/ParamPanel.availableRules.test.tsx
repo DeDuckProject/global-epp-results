@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, screen } from '@testing-library/react';
+import { render, screen, within } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { describe, it, expect, vi, beforeEach } from 'vitest';
 import { ParamPanel } from '../../../src/components/ParamPanel/ParamPanel';
@@ -80,10 +80,11 @@ describe('ParamPanel - Rule Selection', () => {
       />
     );
 
-    const select = screen.getByTestId('select');
+    const desktopView = screen.getByTestId('param-panel-desktop');
+    const select = within(desktopView).getByTestId('select');
     await userEvent.click(select);
 
-    const options = screen.getAllByRole('option');
+    const options = within(desktopView).getAllByRole('option');
     expect(options).toHaveLength(1);
     expect(options[0]).toHaveTextContent('SKR');
   });
@@ -107,7 +108,9 @@ describe('ParamPanel - Rule Selection', () => {
       />
     );
 
-    let options = screen.getAllByRole('option');
+    const desktopView = screen.getByTestId('param-panel-desktop');
+
+    let options = within(desktopView).getAllByRole('option');
     expect(options).toHaveLength(1);
     expect(options[0]).toHaveTextContent('SKR');
 
@@ -121,7 +124,7 @@ describe('ParamPanel - Rule Selection', () => {
       />
     );
 
-    options = screen.getAllByRole('option');
+    options = within(desktopView).getAllByRole('option');
     expect(options).toHaveLength(1);
     expect(options[0]).toHaveTextContent('F_th 0.97');
     
@@ -146,7 +149,8 @@ describe('ParamPanel - Rule Selection', () => {
       />
     );
 
-    const select = screen.getByTestId('select');
+    const desktopView = screen.getByTestId('param-panel-desktop');
+    const select = within(desktopView).getByTestId('select');
     expect(select).toBeDisabled();
   });
 
@@ -167,11 +171,12 @@ describe('ParamPanel - Rule Selection', () => {
       />
     );
 
+    const desktopView = screen.getByTestId('param-panel-desktop');
     // Change epsilon_G to 0.001 which should only allow F_th 0.97
-    const select = screen.getByTestId('select');
+    const select = within(desktopView).getByTestId('select');
     await userEvent.click(select);
 
-    const fthOption = screen.getByRole('option', { name: 'F_th 0.97' });
+    const fthOption = within(desktopView).getByRole('option', { name: 'F_th 0.97' });
     await userEvent.click(fthOption);
 
     // Should auto-switch to F_th 0.97 and log warning

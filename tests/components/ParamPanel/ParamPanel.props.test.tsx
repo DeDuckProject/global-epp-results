@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, screen } from '@testing-library/react';
+import { render, screen, within } from '@testing-library/react';
 import { describe, it, expect, vi } from 'vitest';
 import { ParamPanel } from '../../../src/components/ParamPanel/ParamPanel';
 import { PlotState } from '../../../src/types/PlotState';
@@ -51,12 +51,14 @@ describe('ParamPanel - Prop Passing', () => {
       />
     );
 
+    const desktopView = screen.getByTestId('param-panel-desktop');
+
     // Check eta_c SliderField for correct decimalPlaces
-    const etaCSlider = screen.getByTestId('decimal-places-η_c (BSA Coupling Efficiency)');
+    const etaCSlider = within(desktopView).getByTestId('decimal-places-η_c (BSA Coupling Efficiency)');
     expect(etaCSlider).toHaveTextContent('1');
 
     // Check epsilon_G SliderField for correct (undefined) decimalPlaces
-    const epsilonGSlider = screen.getByTestId('decimal-places-ε_G (Gate Error Rate)');
+    const epsilonGSlider = within(desktopView).getByTestId('decimal-places-ε_G (Gate Error Rate)');
     expect(epsilonGSlider).toHaveTextContent('undefined');
   });
 }); 

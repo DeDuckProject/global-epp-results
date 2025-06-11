@@ -2,6 +2,7 @@
 // It extends the vitest expect assertion with jest-dom matchers.
 import '@testing-library/jest-dom';
 import 'vitest-canvas-mock';
+import { vi } from 'vitest';
 
 // JSDOM doesn't implement PointerEvent so we need to polyfill it.
 // https://github.com/radix-ui/primitives/issues/1822
@@ -44,4 +45,27 @@ if (typeof window !== 'undefined' && !window.ResizeObserver) {
     disconnect() {}
   }
   window.ResizeObserver = ResizeObserver;
-} 
+}
+
+const IntersectionObserverMock = vi.fn(() => ({
+  disconnect: vi.fn(),
+  observe: vi.fn(),
+  takeRecords: vi.fn(),
+  unobserve: vi.fn(),
+}));
+
+vi.stubGlobal('IntersectionObserver', IntersectionObserverMock);
+
+Object.defineProperty(window, 'matchMedia', {
+  writable: true,
+  value: vi.fn().mockImplementation(query => ({
+    matches: false,
+    media: query,
+    onchange: null,
+    addListener: vi.fn(), // deprecated
+    removeListener: vi.fn(), // deprecated
+    addEventListener: vi.fn(),
+    removeEventListener: vi.fn(),
+    dispatchEvent: vi.fn(),
+  })),
+}); 

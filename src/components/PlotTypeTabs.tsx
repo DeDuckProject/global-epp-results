@@ -1,7 +1,7 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 
 interface PlotTypeTabsProps {
   plotTypes: string[];
@@ -17,7 +17,25 @@ export const PlotTypeTabs: React.FC<PlotTypeTabsProps> = ({
   return (
     <div className="bg-card rounded-lg border p-4 shadow-sm">
       <h3 className="font-semibold text-card-foreground mb-4">Plot Types</h3>
-      <div className="space-y-2">
+      
+      {/* Dropdown for mobile */}
+      <div className="md:hidden">
+        <Select value={currentPlotType} onValueChange={onPlotTypeChange}>
+          <SelectTrigger>
+            <SelectValue />
+          </SelectTrigger>
+          <SelectContent>
+            {plotTypes.map((plotType) => (
+              <SelectItem key={plotType} value={plotType}>
+                {plotType}
+              </SelectItem>
+            ))}
+          </SelectContent>
+        </Select>
+      </div>
+
+      {/* Buttons for larger screens */}
+      <div className="hidden md:block space-y-2">
         {plotTypes.map((plotType) => (
           <Button
             key={plotType}
