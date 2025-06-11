@@ -1,108 +1,90 @@
-# Welcome to your Lovable project
+# Repeater-Protocol Simulation Plot Explorer
 
-## Project info
+A static, client-side React application for interactively exploring pre-computed SVG plots of quantum-repeater simulations.
 
-**URL**: https://lovable.dev/projects/4fadf069-aa4f-4a87-aa64-78a09bc7e1dd
+**Key Features:**
+- **Interactive Exploration**: Use sliders and dropdowns to select parameters and view corresponding simulation plots.
+- **Lazy Loading**: SVGs are loaded on-demand to keep the initial application lightweight.
+- **Deep Linking**: Share specific plot configurations via URL query parameters.
+- **Parameter-aware UI**: UI controls are automatically enabled or disabled based on the selected plot type.
 
-## How can I edit this code?
+## Tech Stack
 
-There are several ways of editing your application.
+This project is built with modern web technologies:
 
-**Use Lovable**
+- **Framework**: [React 18](https://reactjs.org/) with [TypeScript](https://www.typescriptlang.org/)
+- **Bundler**: [Vite](https://vitejs.dev/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/) with [shadcn/ui](https://ui.shadcn.com/)
+- **Routing**: [React Router v6](https://reactrouter.com/)
+- **Icons**: [Lucide React](https://lucide.dev/guide/packages/lucide-react)
+- **Testing**: [Vitest](https://vitest.dev/) + [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/4fadf069-aa4f-4a87-aa64-78a09bc7e1dd) and start prompting.
+## Quickstart / Local Development
 
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
+To run this project locally, you'll need [Node.js](https://nodejs.org/en/) (v18 or higher is recommended).
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
+# 1. Clone the repository
 git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
 cd <YOUR_PROJECT_NAME>
 
-# Step 3: Install the necessary dependencies.
-npm i
+# 2. Install dependencies
+npm install
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# 3. Start the development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+The application will be available at `http://localhost:8080` (or the next available port).
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Build & Metadata Generation
 
-**Use GitHub Codespaces**
+The project includes a build-time script that generates TypeScript metadata for all plot files. This is a crucial step that catalogues all plots and their parameters.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+### How it works
 
-## What technologies are used for this project?
+The script (`scripts/src/generatePlotMeta.ts`) scans the `public/comparison_plots/` directory for SVG/PNG files and parses their filenames to extract parameters (`η_c`, `ε_G`, `N`, `M`, `rule`). It then generates `src/data/plotMeta.ts`, which exports:
 
-This project is built with:
+- A metadata array for all plots.
+- Lists of unique parameter values for sliders.
+- A dependency matrix that maps plot types to the parameters they depend on.
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+The build process will fail with an error if any plot filename does not match the expected format, ensuring data integrity.
 
-## How can I deploy this project?
+### Commands
 
-Simply open [Lovable](https://lovable.dev/projects/4fadf069-aa4f-4a87-aa64-78a09bc7e1dd) and click on Share -> Publish.
+The metadata generation is part of the standard build process.
 
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
-
-## Plot Metadata Generator
-
-The project includes a build-time script that generates TypeScript metadata for all plot files. This metadata is used by the app to:
-- Map file paths to plot types
-- Track parameter dependencies
-- Generate slider ranges
-- Enable/disable controls based on plot type
-
-### Usage
-
-The metadata generator runs automatically during build:
 ```bash
+# To generate metadata manually
+npm run build:meta
+
+# To build the full application for production
 npm run build
 ```
 
-To run it manually:
+## Testing
+
+The project uses [Vitest](https://vitest.dev/) for unit and component testing.
+
 ```bash
-npm run build:meta
-```
-
-The script:
-1. Scans the `comparison_plots/` directory for SVG/PNG files
-2. Parses filenames to extract parameters (η_c, ε_G, N, M, rule)
-3. Generates `src/data/plotMeta.ts` with:
-   - Plot metadata array
-   - Parameter value lists
-   - Dependency matrix
-
-### Testing
-
-Run the test suite:
-```bash
+# Run the test suite
 npm test
 ```
+
+Please ensure all tests pass before submitting a pull request. New features must include corresponding tests.
+
+## Deployment
+
+The `npm run build` command creates a `dist/` directory with all the static assets for the application. You can deploy this directory to any static web hosting service, such as:
+
+- [GitHub Pages](https://pages.github.com/)
+- [Netlify](https://www.netlify.com/)
+- [Vercel](https://vercel.com/)
+
+## Further Reading
+
+For more detailed information about the project's architecture and requirements, please see:
+
+- [**High-Level Proposal**](./ai_docs/proposal.md)
+- [**Technical Requirements**](./ai_docs/requirements.md)
