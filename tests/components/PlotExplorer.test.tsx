@@ -100,7 +100,7 @@ describe('PlotExplorer Integration Test', () => {
     
     const updatedPlotImage = await screen.findByRole('img', { name: /3D global-schedule plot/i }) as HTMLImageElement;
     expect(updatedPlotImage.src).toContain('3d_visualization_Fth');
-    // expect(window.location.search).toContain('rule=F_th%200.97');
+    // expect(window.location.search).toContain('rule=F_th%200.97'); // TODO should fix
   });
 
   it('disables the rule selector for plots that do not use it', async () => {
