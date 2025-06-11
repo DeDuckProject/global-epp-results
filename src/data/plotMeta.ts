@@ -19,8 +19,6 @@ export const plotTypes = [
   "3D global-schedule",
   "Best strategies 2D",
   "SKR vs F_th",
-  "Distance-ratio",
-  "Advantage heatmaps",
   "Plateau grid",
   "Threshold heatmap",
   "η_c comparisons",
@@ -31,578 +29,6 @@ export const plotMeta: PlotMeta[] = [
     plotType: "Plateau grid",
     params: {},
     relPath: "comparison_plots/advantage_analysis/grid_plateau_ratio.svg",
-  },
-  {
-    plotType: "Advantage heatmaps",
-    params: {},
-    relPath:
-      "comparison_plots/advantage_analysis/heatmap_dist_gain_F_th_0.95_etac0.3_epsg0.0001.svg",
-  },
-  {
-    plotType: "Advantage heatmaps",
-    params: {},
-    relPath:
-      "comparison_plots/advantage_analysis/heatmap_dist_gain_F_th_0.95_etac0.3_epsg0.001.svg",
-  },
-  {
-    plotType: "Advantage heatmaps",
-    params: {},
-    relPath:
-      "comparison_plots/advantage_analysis/heatmap_dist_gain_F_th_0.95_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "Advantage heatmaps",
-    params: {},
-    relPath:
-      "comparison_plots/advantage_analysis/heatmap_dist_gain_F_th_0.95_etac0.5_epsg0.001.svg",
-  },
-  {
-    plotType: "Advantage heatmaps",
-    params: {},
-    relPath:
-      "comparison_plots/advantage_analysis/heatmap_dist_gain_F_th_0.95_etac0.9_epsg0.0001.svg",
-  },
-  {
-    plotType: "Advantage heatmaps",
-    params: {},
-    relPath:
-      "comparison_plots/advantage_analysis/heatmap_dist_gain_F_th_0.95_etac0.9_epsg0.001.svg",
-  },
-  {
-    plotType: "Advantage heatmaps",
-    params: {},
-    relPath:
-      "comparison_plots/advantage_analysis/heatmap_dist_gain_F_th_0.95_etac1.0_epsg0.0001.svg",
-  },
-  {
-    plotType: "Advantage heatmaps",
-    params: {},
-    relPath:
-      "comparison_plots/advantage_analysis/heatmap_dist_gain_F_th_0.95_etac1.0_epsg0.001.svg",
-  },
-  {
-    plotType: "Advantage heatmaps",
-    params: {},
-    relPath:
-      "comparison_plots/advantage_analysis/heatmap_dist_gain_F_th_0.97_etac0.3_epsg0.0001.svg",
-  },
-  {
-    plotType: "Advantage heatmaps",
-    params: {},
-    relPath:
-      "comparison_plots/advantage_analysis/heatmap_dist_gain_F_th_0.97_etac0.3_epsg0.001.svg",
-  },
-  {
-    plotType: "Advantage heatmaps",
-    params: {},
-    relPath:
-      "comparison_plots/advantage_analysis/heatmap_dist_gain_F_th_0.97_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "Advantage heatmaps",
-    params: {},
-    relPath:
-      "comparison_plots/advantage_analysis/heatmap_dist_gain_F_th_0.97_etac0.5_epsg0.001.svg",
-  },
-  {
-    plotType: "Advantage heatmaps",
-    params: {},
-    relPath:
-      "comparison_plots/advantage_analysis/heatmap_dist_gain_F_th_0.97_etac0.9_epsg0.0001.svg",
-  },
-  {
-    plotType: "Advantage heatmaps",
-    params: {},
-    relPath:
-      "comparison_plots/advantage_analysis/heatmap_dist_gain_F_th_0.97_etac0.9_epsg0.001.svg",
-  },
-  {
-    plotType: "Advantage heatmaps",
-    params: {},
-    relPath:
-      "comparison_plots/advantage_analysis/heatmap_dist_gain_F_th_0.97_etac1.0_epsg0.0001.svg",
-  },
-  {
-    plotType: "Advantage heatmaps",
-    params: {},
-    relPath:
-      "comparison_plots/advantage_analysis/heatmap_dist_gain_F_th_0.97_etac1.0_epsg0.001.svg",
-  },
-  {
-    plotType: "Advantage heatmaps",
-    params: {
-      rule: "SKR",
-    },
-    relPath:
-      "comparison_plots/advantage_analysis/heatmap_dist_gain_SKR_etac0.3_epsg0.0001.svg",
-  },
-  {
-    plotType: "Advantage heatmaps",
-    params: {
-      rule: "SKR",
-    },
-    relPath:
-      "comparison_plots/advantage_analysis/heatmap_dist_gain_SKR_etac0.3_epsg0.001.svg",
-  },
-  {
-    plotType: "Advantage heatmaps",
-    params: {
-      rule: "SKR",
-    },
-    relPath:
-      "comparison_plots/advantage_analysis/heatmap_dist_gain_SKR_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "Advantage heatmaps",
-    params: {
-      rule: "SKR",
-    },
-    relPath:
-      "comparison_plots/advantage_analysis/heatmap_dist_gain_SKR_etac0.5_epsg0.001.svg",
-  },
-  {
-    plotType: "Advantage heatmaps",
-    params: {
-      rule: "SKR",
-    },
-    relPath:
-      "comparison_plots/advantage_analysis/heatmap_dist_gain_SKR_etac0.9_epsg0.0001.svg",
-  },
-  {
-    plotType: "Advantage heatmaps",
-    params: {
-      rule: "SKR",
-    },
-    relPath:
-      "comparison_plots/advantage_analysis/heatmap_dist_gain_SKR_etac0.9_epsg0.001.svg",
-  },
-  {
-    plotType: "Advantage heatmaps",
-    params: {
-      rule: "SKR",
-    },
-    relPath:
-      "comparison_plots/advantage_analysis/heatmap_dist_gain_SKR_etac1.0_epsg0.0001.svg",
-  },
-  {
-    plotType: "Advantage heatmaps",
-    params: {
-      rule: "SKR",
-    },
-    relPath:
-      "comparison_plots/advantage_analysis/heatmap_dist_gain_SKR_etac1.0_epsg0.001.svg",
-  },
-  {
-    plotType: "Distance-ratio",
-    params: {
-      N: 1024,
-      M: 1024,
-    },
-    relPath: "comparison_plots/cross_param/distance_ratio_N1024_M1024.png",
-  },
-  {
-    plotType: "Distance-ratio",
-    params: {
-      N: 1024,
-      M: 2048,
-    },
-    relPath: "comparison_plots/cross_param/distance_ratio_N1024_M2048.png",
-  },
-  {
-    plotType: "Distance-ratio",
-    params: {
-      N: 1024,
-      M: 512,
-    },
-    relPath: "comparison_plots/cross_param/distance_ratio_N1024_M512.png",
-  },
-  {
-    plotType: "Distance-ratio",
-    params: {
-      N: 2048,
-      M: 1024,
-    },
-    relPath: "comparison_plots/cross_param/distance_ratio_N2048_M1024.png",
-  },
-  {
-    plotType: "Distance-ratio",
-    params: {
-      N: 2048,
-      M: 2048,
-    },
-    relPath: "comparison_plots/cross_param/distance_ratio_N2048_M2048.png",
-  },
-  {
-    plotType: "Distance-ratio",
-    params: {
-      N: 2048,
-      M: 512,
-    },
-    relPath: "comparison_plots/cross_param/distance_ratio_N2048_M512.png",
-  },
-  {
-    plotType: "Distance-ratio",
-    params: {
-      N: 256,
-      M: 1024,
-    },
-    relPath: "comparison_plots/cross_param/distance_ratio_N256_M1024.png",
-  },
-  {
-    plotType: "Distance-ratio",
-    params: {
-      N: 256,
-      M: 2048,
-    },
-    relPath: "comparison_plots/cross_param/distance_ratio_N256_M2048.png",
-  },
-  {
-    plotType: "Distance-ratio",
-    params: {
-      N: 256,
-      M: 512,
-    },
-    relPath: "comparison_plots/cross_param/distance_ratio_N256_M512.png",
-  },
-  {
-    plotType: "Distance-ratio",
-    params: {
-      N: 4,
-      M: 1024,
-    },
-    relPath: "comparison_plots/cross_param/distance_ratio_N4_M1024.png",
-  },
-  {
-    plotType: "Distance-ratio",
-    params: {
-      N: 4,
-      M: 2048,
-    },
-    relPath: "comparison_plots/cross_param/distance_ratio_N4_M2048.png",
-  },
-  {
-    plotType: "Distance-ratio",
-    params: {
-      N: 4,
-      M: 512,
-    },
-    relPath: "comparison_plots/cross_param/distance_ratio_N4_M512.png",
-  },
-  {
-    plotType: "Distance-ratio",
-    params: {
-      N: 512,
-      M: 1024,
-    },
-    relPath: "comparison_plots/cross_param/distance_ratio_N512_M1024.png",
-  },
-  {
-    plotType: "Distance-ratio",
-    params: {
-      N: 512,
-      M: 2048,
-    },
-    relPath: "comparison_plots/cross_param/distance_ratio_N512_M2048.png",
-  },
-  {
-    plotType: "Distance-ratio",
-    params: {
-      N: 512,
-      M: 512,
-    },
-    relPath: "comparison_plots/cross_param/distance_ratio_N512_M512.png",
-  },
-  {
-    plotType: "Distance-ratio",
-    params: {
-      N: 64,
-      M: 1024,
-    },
-    relPath: "comparison_plots/cross_param/distance_ratio_N64_M1024.png",
-  },
-  {
-    plotType: "Distance-ratio",
-    params: {
-      N: 64,
-      M: 2048,
-    },
-    relPath: "comparison_plots/cross_param/distance_ratio_N64_M2048.png",
-  },
-  {
-    plotType: "Distance-ratio",
-    params: {
-      N: 64,
-      M: 512,
-    },
-    relPath: "comparison_plots/cross_param/distance_ratio_N64_M512.png",
-  },
-  {
-    plotType: "Advantage heatmaps",
-    params: {
-      N: 1024,
-    },
-    relPath:
-      "comparison_plots/cross_param/heatmap_dist1128_N1024_F_th_0.95.png",
-  },
-  {
-    plotType: "Advantage heatmaps",
-    params: {
-      N: 1024,
-    },
-    relPath:
-      "comparison_plots/cross_param/heatmap_dist1128_N1024_F_th_0.97.png",
-  },
-  {
-    plotType: "Advantage heatmaps",
-    params: {
-      N: 1024,
-      rule: "SKR",
-    },
-    relPath: "comparison_plots/cross_param/heatmap_dist1128_N1024_SKR.png",
-  },
-  {
-    plotType: "Advantage heatmaps",
-    params: {
-      N: 2048,
-    },
-    relPath:
-      "comparison_plots/cross_param/heatmap_dist1128_N2048_F_th_0.95.png",
-  },
-  {
-    plotType: "Advantage heatmaps",
-    params: {
-      N: 2048,
-    },
-    relPath:
-      "comparison_plots/cross_param/heatmap_dist1128_N2048_F_th_0.97.png",
-  },
-  {
-    plotType: "Advantage heatmaps",
-    params: {
-      N: 2048,
-      rule: "SKR",
-    },
-    relPath: "comparison_plots/cross_param/heatmap_dist1128_N2048_SKR.png",
-  },
-  {
-    plotType: "Advantage heatmaps",
-    params: {
-      N: 256,
-    },
-    relPath: "comparison_plots/cross_param/heatmap_dist1128_N256_F_th_0.95.png",
-  },
-  {
-    plotType: "Advantage heatmaps",
-    params: {
-      N: 256,
-    },
-    relPath: "comparison_plots/cross_param/heatmap_dist1128_N256_F_th_0.97.png",
-  },
-  {
-    plotType: "Advantage heatmaps",
-    params: {
-      N: 256,
-      rule: "SKR",
-    },
-    relPath: "comparison_plots/cross_param/heatmap_dist1128_N256_SKR.png",
-  },
-  {
-    plotType: "Advantage heatmaps",
-    params: {
-      N: 4,
-    },
-    relPath: "comparison_plots/cross_param/heatmap_dist1128_N4_F_th_0.95.png",
-  },
-  {
-    plotType: "Advantage heatmaps",
-    params: {
-      N: 4,
-    },
-    relPath: "comparison_plots/cross_param/heatmap_dist1128_N4_F_th_0.97.png",
-  },
-  {
-    plotType: "Advantage heatmaps",
-    params: {
-      N: 4,
-      rule: "SKR",
-    },
-    relPath: "comparison_plots/cross_param/heatmap_dist1128_N4_SKR.png",
-  },
-  {
-    plotType: "Advantage heatmaps",
-    params: {
-      N: 512,
-    },
-    relPath: "comparison_plots/cross_param/heatmap_dist1128_N512_F_th_0.95.png",
-  },
-  {
-    plotType: "Advantage heatmaps",
-    params: {
-      N: 512,
-    },
-    relPath: "comparison_plots/cross_param/heatmap_dist1128_N512_F_th_0.97.png",
-  },
-  {
-    plotType: "Advantage heatmaps",
-    params: {
-      N: 512,
-      rule: "SKR",
-    },
-    relPath: "comparison_plots/cross_param/heatmap_dist1128_N512_SKR.png",
-  },
-  {
-    plotType: "Advantage heatmaps",
-    params: {
-      N: 64,
-    },
-    relPath: "comparison_plots/cross_param/heatmap_dist1128_N64_F_th_0.95.png",
-  },
-  {
-    plotType: "Advantage heatmaps",
-    params: {
-      N: 64,
-    },
-    relPath: "comparison_plots/cross_param/heatmap_dist1128_N64_F_th_0.97.png",
-  },
-  {
-    plotType: "Advantage heatmaps",
-    params: {
-      N: 64,
-      rule: "SKR",
-    },
-    relPath: "comparison_plots/cross_param/heatmap_dist1128_N64_SKR.png",
-  },
-  {
-    plotType: "Advantage heatmaps",
-    params: {
-      N: 1024,
-    },
-    relPath: "comparison_plots/cross_param/heatmap_dist88_N1024_F_th_0.95.png",
-  },
-  {
-    plotType: "Advantage heatmaps",
-    params: {
-      N: 1024,
-    },
-    relPath: "comparison_plots/cross_param/heatmap_dist88_N1024_F_th_0.97.png",
-  },
-  {
-    plotType: "Advantage heatmaps",
-    params: {
-      N: 1024,
-      rule: "SKR",
-    },
-    relPath: "comparison_plots/cross_param/heatmap_dist88_N1024_SKR.png",
-  },
-  {
-    plotType: "Advantage heatmaps",
-    params: {
-      N: 2048,
-    },
-    relPath: "comparison_plots/cross_param/heatmap_dist88_N2048_F_th_0.95.png",
-  },
-  {
-    plotType: "Advantage heatmaps",
-    params: {
-      N: 2048,
-    },
-    relPath: "comparison_plots/cross_param/heatmap_dist88_N2048_F_th_0.97.png",
-  },
-  {
-    plotType: "Advantage heatmaps",
-    params: {
-      N: 2048,
-      rule: "SKR",
-    },
-    relPath: "comparison_plots/cross_param/heatmap_dist88_N2048_SKR.png",
-  },
-  {
-    plotType: "Advantage heatmaps",
-    params: {
-      N: 256,
-    },
-    relPath: "comparison_plots/cross_param/heatmap_dist88_N256_F_th_0.95.png",
-  },
-  {
-    plotType: "Advantage heatmaps",
-    params: {
-      N: 256,
-    },
-    relPath: "comparison_plots/cross_param/heatmap_dist88_N256_F_th_0.97.png",
-  },
-  {
-    plotType: "Advantage heatmaps",
-    params: {
-      N: 256,
-      rule: "SKR",
-    },
-    relPath: "comparison_plots/cross_param/heatmap_dist88_N256_SKR.png",
-  },
-  {
-    plotType: "Advantage heatmaps",
-    params: {
-      N: 4,
-    },
-    relPath: "comparison_plots/cross_param/heatmap_dist88_N4_F_th_0.95.png",
-  },
-  {
-    plotType: "Advantage heatmaps",
-    params: {
-      N: 4,
-    },
-    relPath: "comparison_plots/cross_param/heatmap_dist88_N4_F_th_0.97.png",
-  },
-  {
-    plotType: "Advantage heatmaps",
-    params: {
-      N: 4,
-      rule: "SKR",
-    },
-    relPath: "comparison_plots/cross_param/heatmap_dist88_N4_SKR.png",
-  },
-  {
-    plotType: "Advantage heatmaps",
-    params: {
-      N: 512,
-    },
-    relPath: "comparison_plots/cross_param/heatmap_dist88_N512_F_th_0.95.png",
-  },
-  {
-    plotType: "Advantage heatmaps",
-    params: {
-      N: 512,
-    },
-    relPath: "comparison_plots/cross_param/heatmap_dist88_N512_F_th_0.97.png",
-  },
-  {
-    plotType: "Advantage heatmaps",
-    params: {
-      N: 512,
-      rule: "SKR",
-    },
-    relPath: "comparison_plots/cross_param/heatmap_dist88_N512_SKR.png",
-  },
-  {
-    plotType: "Advantage heatmaps",
-    params: {
-      N: 64,
-    },
-    relPath: "comparison_plots/cross_param/heatmap_dist88_N64_F_th_0.95.png",
-  },
-  {
-    plotType: "Advantage heatmaps",
-    params: {
-      N: 64,
-    },
-    relPath: "comparison_plots/cross_param/heatmap_dist88_N64_F_th_0.97.png",
-  },
-  {
-    plotType: "Advantage heatmaps",
-    params: {
-      N: 64,
-      rule: "SKR",
-    },
-    relPath: "comparison_plots/cross_param/heatmap_dist88_N64_SKR.png",
   },
   {
     plotType: "η_c comparisons",
@@ -1506,6 +932,2931 @@ export const plotMeta: PlotMeta[] = [
     params: {},
     relPath:
       "comparison_plots/threshold_analysis/consolidated_threshold_N_heatmap.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 1024,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_Fth_N1024_M1024_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 1024,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_Fth_N1024_M2048_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 1024,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_Fth_N1024_M512_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 128,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_Fth_N128_M1024_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 128,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_Fth_N128_M2048_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 128,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_Fth_N128_M512_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 16,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_Fth_N16_M1024_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 16,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_Fth_N16_M2048_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 16,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_Fth_N16_M512_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 2048,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_Fth_N2048_M1024_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 2048,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_Fth_N2048_M2048_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 2048,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_Fth_N2048_M512_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 256,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_Fth_N256_M1024_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 256,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_Fth_N256_M2048_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 256,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_Fth_N256_M512_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 32,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_Fth_N32_M1024_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 32,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_Fth_N32_M2048_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 32,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_Fth_N32_M512_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 4096,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_Fth_N4096_M1024_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 4096,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_Fth_N4096_M2048_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 4096,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_Fth_N4096_M512_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 4,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_Fth_N4_M1024_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 4,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_Fth_N4_M2048_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 4,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_Fth_N4_M512_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 512,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_Fth_N512_M1024_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 512,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_Fth_N512_M2048_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 512,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_Fth_N512_M512_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 64,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_Fth_N64_M1024_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 64,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_Fth_N64_M2048_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 64,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_Fth_N64_M512_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 8,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_Fth_N8_M1024_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 8,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_Fth_N8_M2048_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 8,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_Fth_N8_M512_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "SKR",
+      N: 1024,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N1024_M1024_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "SKR",
+      N: 1024,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N1024_M2048_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "SKR",
+      N: 1024,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N1024_M512_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "SKR",
+      N: 128,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N128_M1024_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "SKR",
+      N: 128,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N128_M2048_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "SKR",
+      N: 128,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N128_M512_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "SKR",
+      N: 16,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N16_M1024_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "SKR",
+      N: 16,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N16_M2048_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "SKR",
+      N: 16,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N16_M512_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "SKR",
+      N: 2048,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N2048_M1024_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "SKR",
+      N: 2048,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N2048_M2048_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "SKR",
+      N: 2048,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N2048_M512_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "SKR",
+      N: 256,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N256_M1024_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "SKR",
+      N: 256,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N256_M2048_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "SKR",
+      N: 256,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N256_M512_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "SKR",
+      N: 32,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N32_M1024_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "SKR",
+      N: 32,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N32_M2048_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "SKR",
+      N: 32,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N32_M512_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "SKR",
+      N: 4096,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N4096_M1024_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "SKR",
+      N: 4096,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N4096_M2048_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "SKR",
+      N: 4096,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N4096_M512_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "SKR",
+      N: 4,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N4_M1024_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "SKR",
+      N: 4,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N4_M2048_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "SKR",
+      N: 4,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N4_M512_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "SKR",
+      N: 512,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N512_M1024_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "SKR",
+      N: 512,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N512_M2048_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "SKR",
+      N: 512,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N512_M512_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "SKR",
+      N: 64,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N64_M1024_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "SKR",
+      N: 64,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N64_M2048_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "SKR",
+      N: 64,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N64_M512_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "SKR",
+      N: 8,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N8_M1024_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "SKR",
+      N: 8,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N8_M2048_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "SKR",
+      N: 8,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N8_M512_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "Best strategies 2D",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 1024,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N1024_M1024.svg",
+  },
+  {
+    plotType: "Best strategies 2D",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 1024,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N1024_M2048.svg",
+  },
+  {
+    plotType: "Best strategies 2D",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 1024,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N1024_M512.svg",
+  },
+  {
+    plotType: "Best strategies 2D",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 128,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N128_M1024.svg",
+  },
+  {
+    plotType: "Best strategies 2D",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 128,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N128_M2048.svg",
+  },
+  {
+    plotType: "Best strategies 2D",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 128,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N128_M512.svg",
+  },
+  {
+    plotType: "Best strategies 2D",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 16,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N16_M1024.svg",
+  },
+  {
+    plotType: "Best strategies 2D",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 16,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N16_M2048.svg",
+  },
+  {
+    plotType: "Best strategies 2D",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 16,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N16_M512.svg",
+  },
+  {
+    plotType: "Best strategies 2D",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 2048,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N2048_M1024.svg",
+  },
+  {
+    plotType: "Best strategies 2D",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 2048,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N2048_M2048.svg",
+  },
+  {
+    plotType: "Best strategies 2D",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 2048,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N2048_M512.svg",
+  },
+  {
+    plotType: "Best strategies 2D",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 256,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N256_M1024.svg",
+  },
+  {
+    plotType: "Best strategies 2D",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 256,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N256_M2048.svg",
+  },
+  {
+    plotType: "Best strategies 2D",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 256,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N256_M512.svg",
+  },
+  {
+    plotType: "Best strategies 2D",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 32,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N32_M1024.svg",
+  },
+  {
+    plotType: "Best strategies 2D",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 32,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N32_M2048.svg",
+  },
+  {
+    plotType: "Best strategies 2D",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 32,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N32_M512.svg",
+  },
+  {
+    plotType: "Best strategies 2D",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 4096,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N4096_M1024.svg",
+  },
+  {
+    plotType: "Best strategies 2D",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 4096,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N4096_M2048.svg",
+  },
+  {
+    plotType: "Best strategies 2D",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 4096,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N4096_M512.svg",
+  },
+  {
+    plotType: "Best strategies 2D",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 4,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N4_M1024.svg",
+  },
+  {
+    plotType: "Best strategies 2D",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 4,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N4_M2048.svg",
+  },
+  {
+    plotType: "Best strategies 2D",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 4,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N4_M512.svg",
+  },
+  {
+    plotType: "Best strategies 2D",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 512,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N512_M1024.svg",
+  },
+  {
+    plotType: "Best strategies 2D",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 512,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N512_M2048.svg",
+  },
+  {
+    plotType: "Best strategies 2D",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 512,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N512_M512.svg",
+  },
+  {
+    plotType: "Best strategies 2D",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 64,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N64_M1024.svg",
+  },
+  {
+    plotType: "Best strategies 2D",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 64,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N64_M2048.svg",
+  },
+  {
+    plotType: "Best strategies 2D",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 64,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N64_M512.svg",
+  },
+  {
+    plotType: "Best strategies 2D",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 8,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N8_M1024.svg",
+  },
+  {
+    plotType: "Best strategies 2D",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 8,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N8_M2048.svg",
+  },
+  {
+    plotType: "Best strategies 2D",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 8,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N8_M512.svg",
+  },
+  {
+    plotType: "SKR vs F_th",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 1024,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N1024_M1024.svg",
+  },
+  {
+    plotType: "SKR vs F_th",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 1024,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N1024_M2048.svg",
+  },
+  {
+    plotType: "SKR vs F_th",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 1024,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N1024_M512.svg",
+  },
+  {
+    plotType: "SKR vs F_th",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 128,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N128_M1024.svg",
+  },
+  {
+    plotType: "SKR vs F_th",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 128,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N128_M2048.svg",
+  },
+  {
+    plotType: "SKR vs F_th",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 128,
+      M: 512,
+    },
+    relPath: "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N128_M512.svg",
+  },
+  {
+    plotType: "SKR vs F_th",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 16,
+      M: 1024,
+    },
+    relPath: "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N16_M1024.svg",
+  },
+  {
+    plotType: "SKR vs F_th",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 16,
+      M: 2048,
+    },
+    relPath: "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N16_M2048.svg",
+  },
+  {
+    plotType: "SKR vs F_th",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 16,
+      M: 512,
+    },
+    relPath: "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N16_M512.svg",
+  },
+  {
+    plotType: "SKR vs F_th",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 2048,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N2048_M1024.svg",
+  },
+  {
+    plotType: "SKR vs F_th",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 2048,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N2048_M2048.svg",
+  },
+  {
+    plotType: "SKR vs F_th",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 2048,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N2048_M512.svg",
+  },
+  {
+    plotType: "SKR vs F_th",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 256,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N256_M1024.svg",
+  },
+  {
+    plotType: "SKR vs F_th",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 256,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N256_M2048.svg",
+  },
+  {
+    plotType: "SKR vs F_th",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 256,
+      M: 512,
+    },
+    relPath: "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N256_M512.svg",
+  },
+  {
+    plotType: "SKR vs F_th",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 32,
+      M: 1024,
+    },
+    relPath: "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N32_M1024.svg",
+  },
+  {
+    plotType: "SKR vs F_th",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 32,
+      M: 2048,
+    },
+    relPath: "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N32_M2048.svg",
+  },
+  {
+    plotType: "SKR vs F_th",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 32,
+      M: 512,
+    },
+    relPath: "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N32_M512.svg",
+  },
+  {
+    plotType: "SKR vs F_th",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 4096,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N4096_M1024.svg",
+  },
+  {
+    plotType: "SKR vs F_th",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 4096,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N4096_M2048.svg",
+  },
+  {
+    plotType: "SKR vs F_th",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 4096,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N4096_M512.svg",
+  },
+  {
+    plotType: "SKR vs F_th",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 4,
+      M: 1024,
+    },
+    relPath: "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N4_M1024.svg",
+  },
+  {
+    plotType: "SKR vs F_th",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 4,
+      M: 2048,
+    },
+    relPath: "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N4_M2048.svg",
+  },
+  {
+    plotType: "SKR vs F_th",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 4,
+      M: 512,
+    },
+    relPath: "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N4_M512.svg",
+  },
+  {
+    plotType: "SKR vs F_th",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 512,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N512_M1024.svg",
+  },
+  {
+    plotType: "SKR vs F_th",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 512,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N512_M2048.svg",
+  },
+  {
+    plotType: "SKR vs F_th",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 512,
+      M: 512,
+    },
+    relPath: "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N512_M512.svg",
+  },
+  {
+    plotType: "SKR vs F_th",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 64,
+      M: 1024,
+    },
+    relPath: "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N64_M1024.svg",
+  },
+  {
+    plotType: "SKR vs F_th",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 64,
+      M: 2048,
+    },
+    relPath: "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N64_M2048.svg",
+  },
+  {
+    plotType: "SKR vs F_th",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 64,
+      M: 512,
+    },
+    relPath: "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N64_M512.svg",
+  },
+  {
+    plotType: "SKR vs F_th",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 8,
+      M: 1024,
+    },
+    relPath: "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N8_M1024.svg",
+  },
+  {
+    plotType: "SKR vs F_th",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 8,
+      M: 2048,
+    },
+    relPath: "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N8_M2048.svg",
+  },
+  {
+    plotType: "SKR vs F_th",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 8,
+      M: 512,
+    },
+    relPath: "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N8_M512.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      N: 1024,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_Fth_N1024_M1024_etac0.5_epsg0.001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      N: 1024,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_Fth_N1024_M2048_etac0.5_epsg0.001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      N: 1024,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_Fth_N1024_M512_etac0.5_epsg0.001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      N: 128,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_Fth_N128_M1024_etac0.5_epsg0.001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      N: 128,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_Fth_N128_M2048_etac0.5_epsg0.001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      N: 128,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_Fth_N128_M512_etac0.5_epsg0.001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      N: 16,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_Fth_N16_M1024_etac0.5_epsg0.001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      N: 16,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_Fth_N16_M2048_etac0.5_epsg0.001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      N: 16,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_Fth_N16_M512_etac0.5_epsg0.001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      N: 2048,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_Fth_N2048_M1024_etac0.5_epsg0.001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      N: 2048,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_Fth_N2048_M2048_etac0.5_epsg0.001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      N: 2048,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_Fth_N2048_M512_etac0.5_epsg0.001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      N: 256,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_Fth_N256_M1024_etac0.5_epsg0.001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      N: 256,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_Fth_N256_M2048_etac0.5_epsg0.001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      N: 256,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_Fth_N256_M512_etac0.5_epsg0.001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      N: 32,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_Fth_N32_M1024_etac0.5_epsg0.001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      N: 32,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_Fth_N32_M2048_etac0.5_epsg0.001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      N: 32,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_Fth_N32_M512_etac0.5_epsg0.001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      N: 4096,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_Fth_N4096_M1024_etac0.5_epsg0.001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      N: 4096,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_Fth_N4096_M2048_etac0.5_epsg0.001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      N: 4096,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_Fth_N4096_M512_etac0.5_epsg0.001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      N: 4,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_Fth_N4_M1024_etac0.5_epsg0.001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      N: 4,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_Fth_N4_M2048_etac0.5_epsg0.001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      N: 4,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_Fth_N4_M512_etac0.5_epsg0.001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      N: 512,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_Fth_N512_M1024_etac0.5_epsg0.001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      N: 512,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_Fth_N512_M2048_etac0.5_epsg0.001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      N: 512,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_Fth_N512_M512_etac0.5_epsg0.001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      N: 64,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_Fth_N64_M1024_etac0.5_epsg0.001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      N: 64,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_Fth_N64_M2048_etac0.5_epsg0.001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      N: 64,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_Fth_N64_M512_etac0.5_epsg0.001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      N: 8,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_Fth_N8_M1024_etac0.5_epsg0.001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      N: 8,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_Fth_N8_M2048_etac0.5_epsg0.001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      N: 8,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_Fth_N8_M512_etac0.5_epsg0.001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      rule: "SKR",
+      N: 1024,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_SKR_N1024_M1024_etac0.5_epsg0.001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      rule: "SKR",
+      N: 1024,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_SKR_N1024_M2048_etac0.5_epsg0.001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      rule: "SKR",
+      N: 1024,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_SKR_N1024_M512_etac0.5_epsg0.001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      rule: "SKR",
+      N: 128,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_SKR_N128_M1024_etac0.5_epsg0.001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      rule: "SKR",
+      N: 128,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_SKR_N128_M2048_etac0.5_epsg0.001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      rule: "SKR",
+      N: 128,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_SKR_N128_M512_etac0.5_epsg0.001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      rule: "SKR",
+      N: 16,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_SKR_N16_M1024_etac0.5_epsg0.001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      rule: "SKR",
+      N: 16,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_SKR_N16_M2048_etac0.5_epsg0.001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      rule: "SKR",
+      N: 16,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_SKR_N16_M512_etac0.5_epsg0.001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      rule: "SKR",
+      N: 2048,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_SKR_N2048_M1024_etac0.5_epsg0.001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      rule: "SKR",
+      N: 2048,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_SKR_N2048_M2048_etac0.5_epsg0.001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      rule: "SKR",
+      N: 2048,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_SKR_N2048_M512_etac0.5_epsg0.001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      rule: "SKR",
+      N: 256,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_SKR_N256_M1024_etac0.5_epsg0.001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      rule: "SKR",
+      N: 256,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_SKR_N256_M2048_etac0.5_epsg0.001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      rule: "SKR",
+      N: 256,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_SKR_N256_M512_etac0.5_epsg0.001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      rule: "SKR",
+      N: 32,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_SKR_N32_M1024_etac0.5_epsg0.001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      rule: "SKR",
+      N: 32,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_SKR_N32_M2048_etac0.5_epsg0.001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      rule: "SKR",
+      N: 32,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_SKR_N32_M512_etac0.5_epsg0.001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      rule: "SKR",
+      N: 4096,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_SKR_N4096_M1024_etac0.5_epsg0.001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      rule: "SKR",
+      N: 4096,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_SKR_N4096_M2048_etac0.5_epsg0.001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      rule: "SKR",
+      N: 4096,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_SKR_N4096_M512_etac0.5_epsg0.001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      rule: "SKR",
+      N: 4,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_SKR_N4_M1024_etac0.5_epsg0.001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      rule: "SKR",
+      N: 4,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_SKR_N4_M2048_etac0.5_epsg0.001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      rule: "SKR",
+      N: 4,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_SKR_N4_M512_etac0.5_epsg0.001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      rule: "SKR",
+      N: 512,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_SKR_N512_M1024_etac0.5_epsg0.001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      rule: "SKR",
+      N: 512,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_SKR_N512_M2048_etac0.5_epsg0.001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      rule: "SKR",
+      N: 512,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_SKR_N512_M512_etac0.5_epsg0.001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      rule: "SKR",
+      N: 64,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_SKR_N64_M1024_etac0.5_epsg0.001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      rule: "SKR",
+      N: 64,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_SKR_N64_M2048_etac0.5_epsg0.001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      rule: "SKR",
+      N: 64,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_SKR_N64_M512_etac0.5_epsg0.001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      rule: "SKR",
+      N: 8,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_SKR_N8_M1024_etac0.5_epsg0.001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      rule: "SKR",
+      N: 8,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_SKR_N8_M2048_etac0.5_epsg0.001.svg",
+  },
+  {
+    plotType: "3D global-schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      rule: "SKR",
+      N: 8,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_SKR_N8_M512_etac0.5_epsg0.001.svg",
+  },
+  {
+    plotType: "Best strategies 2D",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      N: 1024,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.001/svg/best_strategies_N1024_M1024.svg",
+  },
+  {
+    plotType: "Best strategies 2D",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      N: 1024,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.001/svg/best_strategies_N1024_M2048.svg",
+  },
+  {
+    plotType: "Best strategies 2D",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      N: 1024,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.001/svg/best_strategies_N1024_M512.svg",
+  },
+  {
+    plotType: "Best strategies 2D",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      N: 128,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.001/svg/best_strategies_N128_M1024.svg",
+  },
+  {
+    plotType: "Best strategies 2D",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      N: 128,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.001/svg/best_strategies_N128_M2048.svg",
+  },
+  {
+    plotType: "Best strategies 2D",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      N: 128,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.001/svg/best_strategies_N128_M512.svg",
+  },
+  {
+    plotType: "Best strategies 2D",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      N: 16,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.001/svg/best_strategies_N16_M1024.svg",
+  },
+  {
+    plotType: "Best strategies 2D",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      N: 16,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.001/svg/best_strategies_N16_M2048.svg",
+  },
+  {
+    plotType: "Best strategies 2D",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      N: 16,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.001/svg/best_strategies_N16_M512.svg",
+  },
+  {
+    plotType: "Best strategies 2D",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      N: 2048,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.001/svg/best_strategies_N2048_M1024.svg",
+  },
+  {
+    plotType: "Best strategies 2D",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      N: 2048,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.001/svg/best_strategies_N2048_M2048.svg",
+  },
+  {
+    plotType: "Best strategies 2D",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      N: 2048,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.001/svg/best_strategies_N2048_M512.svg",
+  },
+  {
+    plotType: "Best strategies 2D",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      N: 256,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.001/svg/best_strategies_N256_M1024.svg",
+  },
+  {
+    plotType: "Best strategies 2D",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      N: 256,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.001/svg/best_strategies_N256_M2048.svg",
+  },
+  {
+    plotType: "Best strategies 2D",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      N: 256,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.001/svg/best_strategies_N256_M512.svg",
+  },
+  {
+    plotType: "Best strategies 2D",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      N: 32,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.001/svg/best_strategies_N32_M1024.svg",
+  },
+  {
+    plotType: "Best strategies 2D",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      N: 32,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.001/svg/best_strategies_N32_M2048.svg",
+  },
+  {
+    plotType: "Best strategies 2D",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      N: 32,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.001/svg/best_strategies_N32_M512.svg",
+  },
+  {
+    plotType: "Best strategies 2D",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      N: 4096,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.001/svg/best_strategies_N4096_M1024.svg",
+  },
+  {
+    plotType: "Best strategies 2D",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      N: 4096,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.001/svg/best_strategies_N4096_M2048.svg",
+  },
+  {
+    plotType: "Best strategies 2D",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      N: 4096,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.001/svg/best_strategies_N4096_M512.svg",
+  },
+  {
+    plotType: "Best strategies 2D",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      N: 4,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.001/svg/best_strategies_N4_M1024.svg",
+  },
+  {
+    plotType: "Best strategies 2D",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      N: 4,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.001/svg/best_strategies_N4_M2048.svg",
+  },
+  {
+    plotType: "Best strategies 2D",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      N: 4,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.001/svg/best_strategies_N4_M512.svg",
+  },
+  {
+    plotType: "Best strategies 2D",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      N: 512,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.001/svg/best_strategies_N512_M1024.svg",
+  },
+  {
+    plotType: "Best strategies 2D",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      N: 512,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.001/svg/best_strategies_N512_M2048.svg",
+  },
+  {
+    plotType: "Best strategies 2D",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      N: 512,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.001/svg/best_strategies_N512_M512.svg",
+  },
+  {
+    plotType: "Best strategies 2D",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      N: 64,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.001/svg/best_strategies_N64_M1024.svg",
+  },
+  {
+    plotType: "Best strategies 2D",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      N: 64,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.001/svg/best_strategies_N64_M2048.svg",
+  },
+  {
+    plotType: "Best strategies 2D",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      N: 64,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.001/svg/best_strategies_N64_M512.svg",
+  },
+  {
+    plotType: "Best strategies 2D",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      N: 8,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.001/svg/best_strategies_N8_M1024.svg",
+  },
+  {
+    plotType: "Best strategies 2D",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      N: 8,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.001/svg/best_strategies_N8_M2048.svg",
+  },
+  {
+    plotType: "Best strategies 2D",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      N: 8,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.001/svg/best_strategies_N8_M512.svg",
+  },
+  {
+    plotType: "SKR vs F_th",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      N: 1024,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.001/svg/skr_vs_fth_N1024_M1024.svg",
+  },
+  {
+    plotType: "SKR vs F_th",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      N: 1024,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.001/svg/skr_vs_fth_N1024_M2048.svg",
+  },
+  {
+    plotType: "SKR vs F_th",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      N: 1024,
+      M: 512,
+    },
+    relPath: "comparison_plots/etac0.5_epsg0.001/svg/skr_vs_fth_N1024_M512.svg",
+  },
+  {
+    plotType: "SKR vs F_th",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      N: 128,
+      M: 1024,
+    },
+    relPath: "comparison_plots/etac0.5_epsg0.001/svg/skr_vs_fth_N128_M1024.svg",
+  },
+  {
+    plotType: "SKR vs F_th",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      N: 128,
+      M: 2048,
+    },
+    relPath: "comparison_plots/etac0.5_epsg0.001/svg/skr_vs_fth_N128_M2048.svg",
+  },
+  {
+    plotType: "SKR vs F_th",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      N: 128,
+      M: 512,
+    },
+    relPath: "comparison_plots/etac0.5_epsg0.001/svg/skr_vs_fth_N128_M512.svg",
+  },
+  {
+    plotType: "SKR vs F_th",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      N: 16,
+      M: 1024,
+    },
+    relPath: "comparison_plots/etac0.5_epsg0.001/svg/skr_vs_fth_N16_M1024.svg",
+  },
+  {
+    plotType: "SKR vs F_th",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      N: 16,
+      M: 2048,
+    },
+    relPath: "comparison_plots/etac0.5_epsg0.001/svg/skr_vs_fth_N16_M2048.svg",
+  },
+  {
+    plotType: "SKR vs F_th",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      N: 16,
+      M: 512,
+    },
+    relPath: "comparison_plots/etac0.5_epsg0.001/svg/skr_vs_fth_N16_M512.svg",
+  },
+  {
+    plotType: "SKR vs F_th",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      N: 2048,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.001/svg/skr_vs_fth_N2048_M1024.svg",
+  },
+  {
+    plotType: "SKR vs F_th",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      N: 2048,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.001/svg/skr_vs_fth_N2048_M2048.svg",
+  },
+  {
+    plotType: "SKR vs F_th",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      N: 2048,
+      M: 512,
+    },
+    relPath: "comparison_plots/etac0.5_epsg0.001/svg/skr_vs_fth_N2048_M512.svg",
+  },
+  {
+    plotType: "SKR vs F_th",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      N: 256,
+      M: 1024,
+    },
+    relPath: "comparison_plots/etac0.5_epsg0.001/svg/skr_vs_fth_N256_M1024.svg",
+  },
+  {
+    plotType: "SKR vs F_th",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      N: 256,
+      M: 2048,
+    },
+    relPath: "comparison_plots/etac0.5_epsg0.001/svg/skr_vs_fth_N256_M2048.svg",
+  },
+  {
+    plotType: "SKR vs F_th",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      N: 256,
+      M: 512,
+    },
+    relPath: "comparison_plots/etac0.5_epsg0.001/svg/skr_vs_fth_N256_M512.svg",
+  },
+  {
+    plotType: "SKR vs F_th",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      N: 32,
+      M: 1024,
+    },
+    relPath: "comparison_plots/etac0.5_epsg0.001/svg/skr_vs_fth_N32_M1024.svg",
+  },
+  {
+    plotType: "SKR vs F_th",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      N: 32,
+      M: 2048,
+    },
+    relPath: "comparison_plots/etac0.5_epsg0.001/svg/skr_vs_fth_N32_M2048.svg",
+  },
+  {
+    plotType: "SKR vs F_th",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      N: 32,
+      M: 512,
+    },
+    relPath: "comparison_plots/etac0.5_epsg0.001/svg/skr_vs_fth_N32_M512.svg",
+  },
+  {
+    plotType: "SKR vs F_th",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      N: 4096,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.001/svg/skr_vs_fth_N4096_M1024.svg",
+  },
+  {
+    plotType: "SKR vs F_th",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      N: 4096,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.001/svg/skr_vs_fth_N4096_M2048.svg",
+  },
+  {
+    plotType: "SKR vs F_th",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      N: 4096,
+      M: 512,
+    },
+    relPath: "comparison_plots/etac0.5_epsg0.001/svg/skr_vs_fth_N4096_M512.svg",
+  },
+  {
+    plotType: "SKR vs F_th",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      N: 4,
+      M: 1024,
+    },
+    relPath: "comparison_plots/etac0.5_epsg0.001/svg/skr_vs_fth_N4_M1024.svg",
+  },
+  {
+    plotType: "SKR vs F_th",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      N: 4,
+      M: 2048,
+    },
+    relPath: "comparison_plots/etac0.5_epsg0.001/svg/skr_vs_fth_N4_M2048.svg",
+  },
+  {
+    plotType: "SKR vs F_th",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      N: 4,
+      M: 512,
+    },
+    relPath: "comparison_plots/etac0.5_epsg0.001/svg/skr_vs_fth_N4_M512.svg",
+  },
+  {
+    plotType: "SKR vs F_th",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      N: 512,
+      M: 1024,
+    },
+    relPath: "comparison_plots/etac0.5_epsg0.001/svg/skr_vs_fth_N512_M1024.svg",
+  },
+  {
+    plotType: "SKR vs F_th",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      N: 512,
+      M: 2048,
+    },
+    relPath: "comparison_plots/etac0.5_epsg0.001/svg/skr_vs_fth_N512_M2048.svg",
+  },
+  {
+    plotType: "SKR vs F_th",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      N: 512,
+      M: 512,
+    },
+    relPath: "comparison_plots/etac0.5_epsg0.001/svg/skr_vs_fth_N512_M512.svg",
+  },
+  {
+    plotType: "SKR vs F_th",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      N: 64,
+      M: 1024,
+    },
+    relPath: "comparison_plots/etac0.5_epsg0.001/svg/skr_vs_fth_N64_M1024.svg",
+  },
+  {
+    plotType: "SKR vs F_th",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      N: 64,
+      M: 2048,
+    },
+    relPath: "comparison_plots/etac0.5_epsg0.001/svg/skr_vs_fth_N64_M2048.svg",
+  },
+  {
+    plotType: "SKR vs F_th",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      N: 64,
+      M: 512,
+    },
+    relPath: "comparison_plots/etac0.5_epsg0.001/svg/skr_vs_fth_N64_M512.svg",
+  },
+  {
+    plotType: "SKR vs F_th",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      N: 8,
+      M: 1024,
+    },
+    relPath: "comparison_plots/etac0.5_epsg0.001/svg/skr_vs_fth_N8_M1024.svg",
+  },
+  {
+    plotType: "SKR vs F_th",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      N: 8,
+      M: 2048,
+    },
+    relPath: "comparison_plots/etac0.5_epsg0.001/svg/skr_vs_fth_N8_M2048.svg",
+  },
+  {
+    plotType: "SKR vs F_th",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.001,
+      N: 8,
+      M: 512,
+    },
+    relPath: "comparison_plots/etac0.5_epsg0.001/svg/skr_vs_fth_N8_M512.svg",
   },
   {
     plotType: "3D global-schedule",
@@ -4419,1473 +6770,6 @@ export const plotMeta: PlotMeta[] = [
       M: 512,
     },
     relPath: "comparison_plots/etac0.3_epsg0.001/svg/skr_vs_fth_N8_M512.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 1024,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_Fth_N1024_M1024_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 1024,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_Fth_N1024_M2048_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 1024,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_Fth_N1024_M512_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 128,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_Fth_N128_M1024_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 128,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_Fth_N128_M2048_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 128,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_Fth_N128_M512_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 16,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_Fth_N16_M1024_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 16,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_Fth_N16_M2048_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 16,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_Fth_N16_M512_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 2048,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_Fth_N2048_M1024_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 2048,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_Fth_N2048_M2048_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 2048,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_Fth_N2048_M512_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 256,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_Fth_N256_M1024_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 256,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_Fth_N256_M2048_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 256,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_Fth_N256_M512_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 32,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_Fth_N32_M1024_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 32,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_Fth_N32_M2048_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 32,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_Fth_N32_M512_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 4096,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_Fth_N4096_M1024_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 4096,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_Fth_N4096_M2048_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 4096,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_Fth_N4096_M512_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 4,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_Fth_N4_M1024_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 4,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_Fth_N4_M2048_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 4,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_Fth_N4_M512_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 512,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_Fth_N512_M1024_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 512,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_Fth_N512_M2048_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 512,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_Fth_N512_M512_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 64,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_Fth_N64_M1024_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 64,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_Fth_N64_M2048_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 64,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_Fth_N64_M512_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 8,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_Fth_N8_M1024_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 8,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_Fth_N8_M2048_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 8,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_Fth_N8_M512_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 1024,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N1024_M1024_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 1024,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N1024_M2048_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 1024,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N1024_M512_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 128,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N128_M1024_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 128,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N128_M2048_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 128,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N128_M512_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 16,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N16_M1024_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 16,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N16_M2048_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 16,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N16_M512_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 2048,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N2048_M1024_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 2048,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N2048_M2048_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 2048,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N2048_M512_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 256,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N256_M1024_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 256,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N256_M2048_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 256,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N256_M512_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 32,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N32_M1024_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 32,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N32_M2048_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 32,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N32_M512_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 4096,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N4096_M1024_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 4096,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N4096_M2048_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 4096,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N4096_M512_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 4,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N4_M1024_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 4,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N4_M2048_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 4,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N4_M512_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 512,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N512_M1024_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 512,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N512_M2048_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 512,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N512_M512_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 64,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N64_M1024_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 64,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N64_M2048_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 64,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N64_M512_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 8,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N8_M1024_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 8,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N8_M2048_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 8,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N8_M512_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 1024,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N1024_M1024.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 1024,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N1024_M2048.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 1024,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N1024_M512.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 128,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N128_M1024.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 128,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N128_M2048.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 128,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N128_M512.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 16,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N16_M1024.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 16,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N16_M2048.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 16,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N16_M512.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 2048,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N2048_M1024.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 2048,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N2048_M2048.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 2048,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N2048_M512.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 256,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N256_M1024.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 256,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N256_M2048.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 256,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N256_M512.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 32,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N32_M1024.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 32,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N32_M2048.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 32,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N32_M512.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 4096,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N4096_M1024.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 4096,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N4096_M2048.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 4096,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N4096_M512.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 4,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N4_M1024.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 4,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N4_M2048.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 4,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N4_M512.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 512,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N512_M1024.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 512,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N512_M2048.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 512,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N512_M512.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 64,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N64_M1024.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 64,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N64_M2048.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 64,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N64_M512.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 8,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N8_M1024.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 8,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N8_M2048.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 8,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N8_M512.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 1024,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N1024_M1024.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 1024,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N1024_M2048.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 1024,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N1024_M512.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 128,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N128_M1024.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 128,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N128_M2048.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 128,
-      M: 512,
-    },
-    relPath: "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N128_M512.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 16,
-      M: 1024,
-    },
-    relPath: "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N16_M1024.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 16,
-      M: 2048,
-    },
-    relPath: "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N16_M2048.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 16,
-      M: 512,
-    },
-    relPath: "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N16_M512.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 2048,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N2048_M1024.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 2048,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N2048_M2048.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 2048,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N2048_M512.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 256,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N256_M1024.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 256,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N256_M2048.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 256,
-      M: 512,
-    },
-    relPath: "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N256_M512.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 32,
-      M: 1024,
-    },
-    relPath: "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N32_M1024.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 32,
-      M: 2048,
-    },
-    relPath: "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N32_M2048.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 32,
-      M: 512,
-    },
-    relPath: "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N32_M512.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 4096,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N4096_M1024.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 4096,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N4096_M2048.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 4096,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N4096_M512.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 4,
-      M: 1024,
-    },
-    relPath: "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N4_M1024.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 4,
-      M: 2048,
-    },
-    relPath: "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N4_M2048.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 4,
-      M: 512,
-    },
-    relPath: "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N4_M512.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 512,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N512_M1024.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 512,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N512_M2048.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 512,
-      M: 512,
-    },
-    relPath: "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N512_M512.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 64,
-      M: 1024,
-    },
-    relPath: "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N64_M1024.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 64,
-      M: 2048,
-    },
-    relPath: "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N64_M2048.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 64,
-      M: 512,
-    },
-    relPath: "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N64_M512.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 8,
-      M: 1024,
-    },
-    relPath: "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N8_M1024.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 8,
-      M: 2048,
-    },
-    relPath: "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N8_M2048.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 8,
-      M: 512,
-    },
-    relPath: "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N8_M512.svg",
   },
   {
     plotType: "3D global-schedule",
@@ -8816,1458 +9700,6 @@ export const plotMeta: PlotMeta[] = [
     plotType: "3D global-schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 1024,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_Fth_N1024_M1024_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 1024,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_Fth_N1024_M2048_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 1024,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_Fth_N1024_M512_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 128,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_Fth_N128_M1024_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 128,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_Fth_N128_M2048_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 128,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_Fth_N128_M512_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 16,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_Fth_N16_M1024_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 16,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_Fth_N16_M2048_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 16,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_Fth_N16_M512_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 2048,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_Fth_N2048_M1024_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 2048,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_Fth_N2048_M2048_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 2048,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_Fth_N2048_M512_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 256,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_Fth_N256_M1024_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 256,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_Fth_N256_M2048_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 256,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_Fth_N256_M512_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 32,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_Fth_N32_M1024_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 32,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_Fth_N32_M2048_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 32,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_Fth_N32_M512_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 4096,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_Fth_N4096_M1024_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 4096,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_Fth_N4096_M2048_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 4096,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_Fth_N4096_M512_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 4,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_Fth_N4_M1024_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 4,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_Fth_N4_M2048_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 4,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_Fth_N4_M512_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 512,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_Fth_N512_M1024_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 512,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_Fth_N512_M2048_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 512,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_Fth_N512_M512_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 64,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_Fth_N64_M1024_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 64,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_Fth_N64_M2048_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 64,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_Fth_N64_M512_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 8,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_Fth_N8_M1024_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 8,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_Fth_N8_M2048_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 8,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_Fth_N8_M512_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 1024,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N1024_M1024_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 1024,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N1024_M2048_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 1024,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N1024_M512_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 128,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N128_M1024_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 128,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N128_M2048_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 128,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N128_M512_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 16,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N16_M1024_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 16,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N16_M2048_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 16,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N16_M512_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 2048,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N2048_M1024_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 2048,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N2048_M2048_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 2048,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N2048_M512_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 256,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N256_M1024_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 256,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N256_M2048_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 256,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N256_M512_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 32,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N32_M1024_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 32,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N32_M2048_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 32,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N32_M512_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 4096,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N4096_M1024_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 4096,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N4096_M2048_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 4096,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N4096_M512_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 4,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N4_M1024_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 4,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N4_M2048_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 4,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N4_M512_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 512,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N512_M1024_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 512,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N512_M2048_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 512,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N512_M512_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 64,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N64_M1024_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 64,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N64_M2048_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 64,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N64_M512_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 8,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N8_M1024_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 8,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N8_M2048_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 8,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N8_M512_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 1024,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N1024_M1024.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 1024,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N1024_M2048.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 1024,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N1024_M512.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 128,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N128_M1024.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 128,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N128_M2048.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 128,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N128_M512.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 16,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N16_M1024.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 16,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N16_M2048.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 16,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N16_M512.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 2048,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N2048_M1024.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 2048,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N2048_M2048.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 2048,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N2048_M512.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 256,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N256_M1024.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 256,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N256_M2048.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 256,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N256_M512.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 32,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N32_M1024.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 32,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N32_M2048.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 32,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N32_M512.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 4096,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N4096_M1024.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 4096,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N4096_M2048.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 4096,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N4096_M512.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 4,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N4_M1024.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 4,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N4_M2048.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 4,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N4_M512.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 512,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N512_M1024.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 512,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N512_M2048.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 512,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N512_M512.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 64,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N64_M1024.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 64,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N64_M2048.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 64,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N64_M512.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 8,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N8_M1024.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 8,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N8_M2048.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 8,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N8_M512.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 1024,
-      M: 1024,
-    },
-    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N1024_M1024.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 1024,
-      M: 2048,
-    },
-    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N1024_M2048.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 1024,
-      M: 512,
-    },
-    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N1024_M512.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 128,
-      M: 1024,
-    },
-    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N128_M1024.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 128,
-      M: 2048,
-    },
-    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N128_M2048.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 128,
-      M: 512,
-    },
-    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N128_M512.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 16,
-      M: 1024,
-    },
-    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N16_M1024.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 16,
-      M: 2048,
-    },
-    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N16_M2048.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 16,
-      M: 512,
-    },
-    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N16_M512.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 2048,
-      M: 1024,
-    },
-    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N2048_M1024.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 2048,
-      M: 2048,
-    },
-    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N2048_M2048.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 2048,
-      M: 512,
-    },
-    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N2048_M512.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 256,
-      M: 1024,
-    },
-    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N256_M1024.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 256,
-      M: 2048,
-    },
-    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N256_M2048.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 256,
-      M: 512,
-    },
-    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N256_M512.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 32,
-      M: 1024,
-    },
-    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N32_M1024.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 32,
-      M: 2048,
-    },
-    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N32_M2048.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 32,
-      M: 512,
-    },
-    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N32_M512.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 4096,
-      M: 1024,
-    },
-    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N4096_M1024.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 4096,
-      M: 2048,
-    },
-    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N4096_M2048.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 4096,
-      M: 512,
-    },
-    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N4096_M512.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 4,
-      M: 1024,
-    },
-    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N4_M1024.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 4,
-      M: 2048,
-    },
-    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N4_M2048.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 4,
-      M: 512,
-    },
-    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N4_M512.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 512,
-      M: 1024,
-    },
-    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N512_M1024.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 512,
-      M: 2048,
-    },
-    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N512_M2048.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 512,
-      M: 512,
-    },
-    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N512_M512.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 64,
-      M: 1024,
-    },
-    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N64_M1024.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 64,
-      M: 2048,
-    },
-    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N64_M2048.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 64,
-      M: 512,
-    },
-    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N64_M512.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 8,
-      M: 1024,
-    },
-    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N8_M1024.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 8,
-      M: 2048,
-    },
-    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N8_M2048.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 8,
-      M: 512,
-    },
-    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N8_M512.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
       epsilon_G: 0.001,
       N: 1024,
       M: 1024,
@@ -11717,1460 +11149,1454 @@ export const plotMeta: PlotMeta[] = [
   {
     plotType: "3D global-schedule",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       N: 1024,
       M: 1024,
     },
     relPath:
-      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_Fth_N1024_M1024_etac0.5_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_Fth_N1024_M1024_etac1_epsg0.0001.svg",
   },
   {
     plotType: "3D global-schedule",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       N: 1024,
       M: 2048,
     },
     relPath:
-      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_Fth_N1024_M2048_etac0.5_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_Fth_N1024_M2048_etac1_epsg0.0001.svg",
   },
   {
     plotType: "3D global-schedule",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       N: 1024,
       M: 512,
     },
     relPath:
-      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_Fth_N1024_M512_etac0.5_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_Fth_N1024_M512_etac1_epsg0.0001.svg",
   },
   {
     plotType: "3D global-schedule",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       N: 128,
       M: 1024,
     },
     relPath:
-      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_Fth_N128_M1024_etac0.5_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_Fth_N128_M1024_etac1_epsg0.0001.svg",
   },
   {
     plotType: "3D global-schedule",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       N: 128,
       M: 2048,
     },
     relPath:
-      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_Fth_N128_M2048_etac0.5_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_Fth_N128_M2048_etac1_epsg0.0001.svg",
   },
   {
     plotType: "3D global-schedule",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       N: 128,
       M: 512,
     },
     relPath:
-      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_Fth_N128_M512_etac0.5_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_Fth_N128_M512_etac1_epsg0.0001.svg",
   },
   {
     plotType: "3D global-schedule",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       N: 16,
       M: 1024,
     },
     relPath:
-      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_Fth_N16_M1024_etac0.5_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_Fth_N16_M1024_etac1_epsg0.0001.svg",
   },
   {
     plotType: "3D global-schedule",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       N: 16,
       M: 2048,
     },
     relPath:
-      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_Fth_N16_M2048_etac0.5_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_Fth_N16_M2048_etac1_epsg0.0001.svg",
   },
   {
     plotType: "3D global-schedule",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       N: 16,
       M: 512,
     },
     relPath:
-      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_Fth_N16_M512_etac0.5_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_Fth_N16_M512_etac1_epsg0.0001.svg",
   },
   {
     plotType: "3D global-schedule",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       N: 2048,
       M: 1024,
     },
     relPath:
-      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_Fth_N2048_M1024_etac0.5_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_Fth_N2048_M1024_etac1_epsg0.0001.svg",
   },
   {
     plotType: "3D global-schedule",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       N: 2048,
       M: 2048,
     },
     relPath:
-      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_Fth_N2048_M2048_etac0.5_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_Fth_N2048_M2048_etac1_epsg0.0001.svg",
   },
   {
     plotType: "3D global-schedule",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       N: 2048,
       M: 512,
     },
     relPath:
-      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_Fth_N2048_M512_etac0.5_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_Fth_N2048_M512_etac1_epsg0.0001.svg",
   },
   {
     plotType: "3D global-schedule",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       N: 256,
       M: 1024,
     },
     relPath:
-      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_Fth_N256_M1024_etac0.5_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_Fth_N256_M1024_etac1_epsg0.0001.svg",
   },
   {
     plotType: "3D global-schedule",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       N: 256,
       M: 2048,
     },
     relPath:
-      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_Fth_N256_M2048_etac0.5_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_Fth_N256_M2048_etac1_epsg0.0001.svg",
   },
   {
     plotType: "3D global-schedule",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       N: 256,
       M: 512,
     },
     relPath:
-      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_Fth_N256_M512_etac0.5_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_Fth_N256_M512_etac1_epsg0.0001.svg",
   },
   {
     plotType: "3D global-schedule",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       N: 32,
       M: 1024,
     },
     relPath:
-      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_Fth_N32_M1024_etac0.5_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_Fth_N32_M1024_etac1_epsg0.0001.svg",
   },
   {
     plotType: "3D global-schedule",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       N: 32,
       M: 2048,
     },
     relPath:
-      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_Fth_N32_M2048_etac0.5_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_Fth_N32_M2048_etac1_epsg0.0001.svg",
   },
   {
     plotType: "3D global-schedule",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       N: 32,
       M: 512,
     },
     relPath:
-      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_Fth_N32_M512_etac0.5_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_Fth_N32_M512_etac1_epsg0.0001.svg",
   },
   {
     plotType: "3D global-schedule",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       N: 4096,
       M: 1024,
     },
     relPath:
-      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_Fth_N4096_M1024_etac0.5_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_Fth_N4096_M1024_etac1_epsg0.0001.svg",
   },
   {
     plotType: "3D global-schedule",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       N: 4096,
       M: 2048,
     },
     relPath:
-      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_Fth_N4096_M2048_etac0.5_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_Fth_N4096_M2048_etac1_epsg0.0001.svg",
   },
   {
     plotType: "3D global-schedule",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       N: 4096,
       M: 512,
     },
     relPath:
-      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_Fth_N4096_M512_etac0.5_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_Fth_N4096_M512_etac1_epsg0.0001.svg",
   },
   {
     plotType: "3D global-schedule",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       N: 4,
       M: 1024,
     },
     relPath:
-      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_Fth_N4_M1024_etac0.5_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_Fth_N4_M1024_etac1_epsg0.0001.svg",
   },
   {
     plotType: "3D global-schedule",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       N: 4,
       M: 2048,
     },
     relPath:
-      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_Fth_N4_M2048_etac0.5_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_Fth_N4_M2048_etac1_epsg0.0001.svg",
   },
   {
     plotType: "3D global-schedule",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       N: 4,
       M: 512,
     },
     relPath:
-      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_Fth_N4_M512_etac0.5_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_Fth_N4_M512_etac1_epsg0.0001.svg",
   },
   {
     plotType: "3D global-schedule",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       N: 512,
       M: 1024,
     },
     relPath:
-      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_Fth_N512_M1024_etac0.5_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_Fth_N512_M1024_etac1_epsg0.0001.svg",
   },
   {
     plotType: "3D global-schedule",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       N: 512,
       M: 2048,
     },
     relPath:
-      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_Fth_N512_M2048_etac0.5_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_Fth_N512_M2048_etac1_epsg0.0001.svg",
   },
   {
     plotType: "3D global-schedule",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       N: 512,
       M: 512,
     },
     relPath:
-      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_Fth_N512_M512_etac0.5_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_Fth_N512_M512_etac1_epsg0.0001.svg",
   },
   {
     plotType: "3D global-schedule",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       N: 64,
       M: 1024,
     },
     relPath:
-      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_Fth_N64_M1024_etac0.5_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_Fth_N64_M1024_etac1_epsg0.0001.svg",
   },
   {
     plotType: "3D global-schedule",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       N: 64,
       M: 2048,
     },
     relPath:
-      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_Fth_N64_M2048_etac0.5_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_Fth_N64_M2048_etac1_epsg0.0001.svg",
   },
   {
     plotType: "3D global-schedule",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       N: 64,
       M: 512,
     },
     relPath:
-      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_Fth_N64_M512_etac0.5_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_Fth_N64_M512_etac1_epsg0.0001.svg",
   },
   {
     plotType: "3D global-schedule",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       N: 8,
       M: 1024,
     },
     relPath:
-      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_Fth_N8_M1024_etac0.5_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_Fth_N8_M1024_etac1_epsg0.0001.svg",
   },
   {
     plotType: "3D global-schedule",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       N: 8,
       M: 2048,
     },
     relPath:
-      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_Fth_N8_M2048_etac0.5_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_Fth_N8_M2048_etac1_epsg0.0001.svg",
   },
   {
     plotType: "3D global-schedule",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       N: 8,
       M: 512,
     },
     relPath:
-      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_Fth_N8_M512_etac0.5_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_Fth_N8_M512_etac1_epsg0.0001.svg",
   },
   {
     plotType: "3D global-schedule",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       rule: "SKR",
       N: 1024,
       M: 1024,
     },
     relPath:
-      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_SKR_N1024_M1024_etac0.5_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N1024_M1024_etac1_epsg0.0001.svg",
   },
   {
     plotType: "3D global-schedule",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       rule: "SKR",
       N: 1024,
       M: 2048,
     },
     relPath:
-      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_SKR_N1024_M2048_etac0.5_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N1024_M2048_etac1_epsg0.0001.svg",
   },
   {
     plotType: "3D global-schedule",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       rule: "SKR",
       N: 1024,
       M: 512,
     },
     relPath:
-      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_SKR_N1024_M512_etac0.5_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N1024_M512_etac1_epsg0.0001.svg",
   },
   {
     plotType: "3D global-schedule",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       rule: "SKR",
       N: 128,
       M: 1024,
     },
     relPath:
-      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_SKR_N128_M1024_etac0.5_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N128_M1024_etac1_epsg0.0001.svg",
   },
   {
     plotType: "3D global-schedule",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       rule: "SKR",
       N: 128,
       M: 2048,
     },
     relPath:
-      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_SKR_N128_M2048_etac0.5_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N128_M2048_etac1_epsg0.0001.svg",
   },
   {
     plotType: "3D global-schedule",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       rule: "SKR",
       N: 128,
       M: 512,
     },
     relPath:
-      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_SKR_N128_M512_etac0.5_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N128_M512_etac1_epsg0.0001.svg",
   },
   {
     plotType: "3D global-schedule",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       rule: "SKR",
       N: 16,
       M: 1024,
     },
     relPath:
-      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_SKR_N16_M1024_etac0.5_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N16_M1024_etac1_epsg0.0001.svg",
   },
   {
     plotType: "3D global-schedule",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       rule: "SKR",
       N: 16,
       M: 2048,
     },
     relPath:
-      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_SKR_N16_M2048_etac0.5_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N16_M2048_etac1_epsg0.0001.svg",
   },
   {
     plotType: "3D global-schedule",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       rule: "SKR",
       N: 16,
       M: 512,
     },
     relPath:
-      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_SKR_N16_M512_etac0.5_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N16_M512_etac1_epsg0.0001.svg",
   },
   {
     plotType: "3D global-schedule",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       rule: "SKR",
       N: 2048,
       M: 1024,
     },
     relPath:
-      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_SKR_N2048_M1024_etac0.5_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N2048_M1024_etac1_epsg0.0001.svg",
   },
   {
     plotType: "3D global-schedule",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       rule: "SKR",
       N: 2048,
       M: 2048,
     },
     relPath:
-      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_SKR_N2048_M2048_etac0.5_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N2048_M2048_etac1_epsg0.0001.svg",
   },
   {
     plotType: "3D global-schedule",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       rule: "SKR",
       N: 2048,
       M: 512,
     },
     relPath:
-      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_SKR_N2048_M512_etac0.5_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N2048_M512_etac1_epsg0.0001.svg",
   },
   {
     plotType: "3D global-schedule",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       rule: "SKR",
       N: 256,
       M: 1024,
     },
     relPath:
-      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_SKR_N256_M1024_etac0.5_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N256_M1024_etac1_epsg0.0001.svg",
   },
   {
     plotType: "3D global-schedule",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       rule: "SKR",
       N: 256,
       M: 2048,
     },
     relPath:
-      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_SKR_N256_M2048_etac0.5_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N256_M2048_etac1_epsg0.0001.svg",
   },
   {
     plotType: "3D global-schedule",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       rule: "SKR",
       N: 256,
       M: 512,
     },
     relPath:
-      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_SKR_N256_M512_etac0.5_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N256_M512_etac1_epsg0.0001.svg",
   },
   {
     plotType: "3D global-schedule",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       rule: "SKR",
       N: 32,
       M: 1024,
     },
     relPath:
-      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_SKR_N32_M1024_etac0.5_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N32_M1024_etac1_epsg0.0001.svg",
   },
   {
     plotType: "3D global-schedule",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       rule: "SKR",
       N: 32,
       M: 2048,
     },
     relPath:
-      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_SKR_N32_M2048_etac0.5_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N32_M2048_etac1_epsg0.0001.svg",
   },
   {
     plotType: "3D global-schedule",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       rule: "SKR",
       N: 32,
       M: 512,
     },
     relPath:
-      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_SKR_N32_M512_etac0.5_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N32_M512_etac1_epsg0.0001.svg",
   },
   {
     plotType: "3D global-schedule",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       rule: "SKR",
       N: 4096,
       M: 1024,
     },
     relPath:
-      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_SKR_N4096_M1024_etac0.5_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N4096_M1024_etac1_epsg0.0001.svg",
   },
   {
     plotType: "3D global-schedule",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       rule: "SKR",
       N: 4096,
       M: 2048,
     },
     relPath:
-      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_SKR_N4096_M2048_etac0.5_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N4096_M2048_etac1_epsg0.0001.svg",
   },
   {
     plotType: "3D global-schedule",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       rule: "SKR",
       N: 4096,
       M: 512,
     },
     relPath:
-      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_SKR_N4096_M512_etac0.5_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N4096_M512_etac1_epsg0.0001.svg",
   },
   {
     plotType: "3D global-schedule",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       rule: "SKR",
       N: 4,
       M: 1024,
     },
     relPath:
-      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_SKR_N4_M1024_etac0.5_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N4_M1024_etac1_epsg0.0001.svg",
   },
   {
     plotType: "3D global-schedule",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       rule: "SKR",
       N: 4,
       M: 2048,
     },
     relPath:
-      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_SKR_N4_M2048_etac0.5_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N4_M2048_etac1_epsg0.0001.svg",
   },
   {
     plotType: "3D global-schedule",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       rule: "SKR",
       N: 4,
       M: 512,
     },
     relPath:
-      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_SKR_N4_M512_etac0.5_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N4_M512_etac1_epsg0.0001.svg",
   },
   {
     plotType: "3D global-schedule",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       rule: "SKR",
       N: 512,
       M: 1024,
     },
     relPath:
-      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_SKR_N512_M1024_etac0.5_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N512_M1024_etac1_epsg0.0001.svg",
   },
   {
     plotType: "3D global-schedule",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       rule: "SKR",
       N: 512,
       M: 2048,
     },
     relPath:
-      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_SKR_N512_M2048_etac0.5_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N512_M2048_etac1_epsg0.0001.svg",
   },
   {
     plotType: "3D global-schedule",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       rule: "SKR",
       N: 512,
       M: 512,
     },
     relPath:
-      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_SKR_N512_M512_etac0.5_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N512_M512_etac1_epsg0.0001.svg",
   },
   {
     plotType: "3D global-schedule",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       rule: "SKR",
       N: 64,
       M: 1024,
     },
     relPath:
-      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_SKR_N64_M1024_etac0.5_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N64_M1024_etac1_epsg0.0001.svg",
   },
   {
     plotType: "3D global-schedule",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       rule: "SKR",
       N: 64,
       M: 2048,
     },
     relPath:
-      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_SKR_N64_M2048_etac0.5_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N64_M2048_etac1_epsg0.0001.svg",
   },
   {
     plotType: "3D global-schedule",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       rule: "SKR",
       N: 64,
       M: 512,
     },
     relPath:
-      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_SKR_N64_M512_etac0.5_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N64_M512_etac1_epsg0.0001.svg",
   },
   {
     plotType: "3D global-schedule",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       rule: "SKR",
       N: 8,
       M: 1024,
     },
     relPath:
-      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_SKR_N8_M1024_etac0.5_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N8_M1024_etac1_epsg0.0001.svg",
   },
   {
     plotType: "3D global-schedule",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       rule: "SKR",
       N: 8,
       M: 2048,
     },
     relPath:
-      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_SKR_N8_M2048_etac0.5_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N8_M2048_etac1_epsg0.0001.svg",
   },
   {
     plotType: "3D global-schedule",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       rule: "SKR",
       N: 8,
       M: 512,
     },
     relPath:
-      "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_SKR_N8_M512_etac0.5_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N8_M512_etac1_epsg0.0001.svg",
   },
   {
     plotType: "Best strategies 2D",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       N: 1024,
       M: 1024,
     },
     relPath:
-      "comparison_plots/etac0.5_epsg0.001/svg/best_strategies_N1024_M1024.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N1024_M1024.svg",
   },
   {
     plotType: "Best strategies 2D",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       N: 1024,
       M: 2048,
     },
     relPath:
-      "comparison_plots/etac0.5_epsg0.001/svg/best_strategies_N1024_M2048.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N1024_M2048.svg",
   },
   {
     plotType: "Best strategies 2D",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       N: 1024,
       M: 512,
     },
     relPath:
-      "comparison_plots/etac0.5_epsg0.001/svg/best_strategies_N1024_M512.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N1024_M512.svg",
   },
   {
     plotType: "Best strategies 2D",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       N: 128,
       M: 1024,
     },
     relPath:
-      "comparison_plots/etac0.5_epsg0.001/svg/best_strategies_N128_M1024.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N128_M1024.svg",
   },
   {
     plotType: "Best strategies 2D",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       N: 128,
       M: 2048,
     },
     relPath:
-      "comparison_plots/etac0.5_epsg0.001/svg/best_strategies_N128_M2048.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N128_M2048.svg",
   },
   {
     plotType: "Best strategies 2D",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       N: 128,
       M: 512,
     },
     relPath:
-      "comparison_plots/etac0.5_epsg0.001/svg/best_strategies_N128_M512.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N128_M512.svg",
   },
   {
     plotType: "Best strategies 2D",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       N: 16,
       M: 1024,
     },
     relPath:
-      "comparison_plots/etac0.5_epsg0.001/svg/best_strategies_N16_M1024.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N16_M1024.svg",
   },
   {
     plotType: "Best strategies 2D",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       N: 16,
       M: 2048,
     },
     relPath:
-      "comparison_plots/etac0.5_epsg0.001/svg/best_strategies_N16_M2048.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N16_M2048.svg",
   },
   {
     plotType: "Best strategies 2D",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       N: 16,
       M: 512,
     },
     relPath:
-      "comparison_plots/etac0.5_epsg0.001/svg/best_strategies_N16_M512.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N16_M512.svg",
   },
   {
     plotType: "Best strategies 2D",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       N: 2048,
       M: 1024,
     },
     relPath:
-      "comparison_plots/etac0.5_epsg0.001/svg/best_strategies_N2048_M1024.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N2048_M1024.svg",
   },
   {
     plotType: "Best strategies 2D",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       N: 2048,
       M: 2048,
     },
     relPath:
-      "comparison_plots/etac0.5_epsg0.001/svg/best_strategies_N2048_M2048.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N2048_M2048.svg",
   },
   {
     plotType: "Best strategies 2D",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       N: 2048,
       M: 512,
     },
     relPath:
-      "comparison_plots/etac0.5_epsg0.001/svg/best_strategies_N2048_M512.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N2048_M512.svg",
   },
   {
     plotType: "Best strategies 2D",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       N: 256,
       M: 1024,
     },
     relPath:
-      "comparison_plots/etac0.5_epsg0.001/svg/best_strategies_N256_M1024.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N256_M1024.svg",
   },
   {
     plotType: "Best strategies 2D",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       N: 256,
       M: 2048,
     },
     relPath:
-      "comparison_plots/etac0.5_epsg0.001/svg/best_strategies_N256_M2048.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N256_M2048.svg",
   },
   {
     plotType: "Best strategies 2D",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       N: 256,
       M: 512,
     },
     relPath:
-      "comparison_plots/etac0.5_epsg0.001/svg/best_strategies_N256_M512.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N256_M512.svg",
   },
   {
     plotType: "Best strategies 2D",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       N: 32,
       M: 1024,
     },
     relPath:
-      "comparison_plots/etac0.5_epsg0.001/svg/best_strategies_N32_M1024.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N32_M1024.svg",
   },
   {
     plotType: "Best strategies 2D",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       N: 32,
       M: 2048,
     },
     relPath:
-      "comparison_plots/etac0.5_epsg0.001/svg/best_strategies_N32_M2048.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N32_M2048.svg",
   },
   {
     plotType: "Best strategies 2D",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       N: 32,
       M: 512,
     },
     relPath:
-      "comparison_plots/etac0.5_epsg0.001/svg/best_strategies_N32_M512.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N32_M512.svg",
   },
   {
     plotType: "Best strategies 2D",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       N: 4096,
       M: 1024,
     },
     relPath:
-      "comparison_plots/etac0.5_epsg0.001/svg/best_strategies_N4096_M1024.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N4096_M1024.svg",
   },
   {
     plotType: "Best strategies 2D",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       N: 4096,
       M: 2048,
     },
     relPath:
-      "comparison_plots/etac0.5_epsg0.001/svg/best_strategies_N4096_M2048.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N4096_M2048.svg",
   },
   {
     plotType: "Best strategies 2D",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       N: 4096,
       M: 512,
     },
     relPath:
-      "comparison_plots/etac0.5_epsg0.001/svg/best_strategies_N4096_M512.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N4096_M512.svg",
   },
   {
     plotType: "Best strategies 2D",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       N: 4,
       M: 1024,
     },
     relPath:
-      "comparison_plots/etac0.5_epsg0.001/svg/best_strategies_N4_M1024.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N4_M1024.svg",
   },
   {
     plotType: "Best strategies 2D",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       N: 4,
       M: 2048,
     },
     relPath:
-      "comparison_plots/etac0.5_epsg0.001/svg/best_strategies_N4_M2048.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N4_M2048.svg",
   },
   {
     plotType: "Best strategies 2D",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       N: 4,
       M: 512,
     },
     relPath:
-      "comparison_plots/etac0.5_epsg0.001/svg/best_strategies_N4_M512.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N4_M512.svg",
   },
   {
     plotType: "Best strategies 2D",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       N: 512,
       M: 1024,
     },
     relPath:
-      "comparison_plots/etac0.5_epsg0.001/svg/best_strategies_N512_M1024.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N512_M1024.svg",
   },
   {
     plotType: "Best strategies 2D",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       N: 512,
       M: 2048,
     },
     relPath:
-      "comparison_plots/etac0.5_epsg0.001/svg/best_strategies_N512_M2048.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N512_M2048.svg",
   },
   {
     plotType: "Best strategies 2D",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       N: 512,
       M: 512,
     },
     relPath:
-      "comparison_plots/etac0.5_epsg0.001/svg/best_strategies_N512_M512.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N512_M512.svg",
   },
   {
     plotType: "Best strategies 2D",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       N: 64,
       M: 1024,
     },
     relPath:
-      "comparison_plots/etac0.5_epsg0.001/svg/best_strategies_N64_M1024.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N64_M1024.svg",
   },
   {
     plotType: "Best strategies 2D",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       N: 64,
       M: 2048,
     },
     relPath:
-      "comparison_plots/etac0.5_epsg0.001/svg/best_strategies_N64_M2048.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N64_M2048.svg",
   },
   {
     plotType: "Best strategies 2D",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       N: 64,
       M: 512,
     },
     relPath:
-      "comparison_plots/etac0.5_epsg0.001/svg/best_strategies_N64_M512.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N64_M512.svg",
   },
   {
     plotType: "Best strategies 2D",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       N: 8,
       M: 1024,
     },
     relPath:
-      "comparison_plots/etac0.5_epsg0.001/svg/best_strategies_N8_M1024.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N8_M1024.svg",
   },
   {
     plotType: "Best strategies 2D",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       N: 8,
       M: 2048,
     },
     relPath:
-      "comparison_plots/etac0.5_epsg0.001/svg/best_strategies_N8_M2048.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N8_M2048.svg",
   },
   {
     plotType: "Best strategies 2D",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       N: 8,
       M: 512,
     },
     relPath:
-      "comparison_plots/etac0.5_epsg0.001/svg/best_strategies_N8_M512.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N8_M512.svg",
   },
   {
     plotType: "SKR vs F_th",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       N: 1024,
       M: 1024,
     },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.001/svg/skr_vs_fth_N1024_M1024.svg",
+    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N1024_M1024.svg",
   },
   {
     plotType: "SKR vs F_th",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       N: 1024,
       M: 2048,
     },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.001/svg/skr_vs_fth_N1024_M2048.svg",
+    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N1024_M2048.svg",
   },
   {
     plotType: "SKR vs F_th",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       N: 1024,
       M: 512,
     },
-    relPath: "comparison_plots/etac0.5_epsg0.001/svg/skr_vs_fth_N1024_M512.svg",
+    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N1024_M512.svg",
   },
   {
     plotType: "SKR vs F_th",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       N: 128,
       M: 1024,
     },
-    relPath: "comparison_plots/etac0.5_epsg0.001/svg/skr_vs_fth_N128_M1024.svg",
+    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N128_M1024.svg",
   },
   {
     plotType: "SKR vs F_th",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       N: 128,
       M: 2048,
     },
-    relPath: "comparison_plots/etac0.5_epsg0.001/svg/skr_vs_fth_N128_M2048.svg",
+    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N128_M2048.svg",
   },
   {
     plotType: "SKR vs F_th",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       N: 128,
       M: 512,
     },
-    relPath: "comparison_plots/etac0.5_epsg0.001/svg/skr_vs_fth_N128_M512.svg",
+    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N128_M512.svg",
   },
   {
     plotType: "SKR vs F_th",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       N: 16,
       M: 1024,
     },
-    relPath: "comparison_plots/etac0.5_epsg0.001/svg/skr_vs_fth_N16_M1024.svg",
+    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N16_M1024.svg",
   },
   {
     plotType: "SKR vs F_th",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       N: 16,
       M: 2048,
     },
-    relPath: "comparison_plots/etac0.5_epsg0.001/svg/skr_vs_fth_N16_M2048.svg",
+    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N16_M2048.svg",
   },
   {
     plotType: "SKR vs F_th",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       N: 16,
       M: 512,
     },
-    relPath: "comparison_plots/etac0.5_epsg0.001/svg/skr_vs_fth_N16_M512.svg",
+    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N16_M512.svg",
   },
   {
     plotType: "SKR vs F_th",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       N: 2048,
       M: 1024,
     },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.001/svg/skr_vs_fth_N2048_M1024.svg",
+    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N2048_M1024.svg",
   },
   {
     plotType: "SKR vs F_th",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       N: 2048,
       M: 2048,
     },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.001/svg/skr_vs_fth_N2048_M2048.svg",
+    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N2048_M2048.svg",
   },
   {
     plotType: "SKR vs F_th",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       N: 2048,
       M: 512,
     },
-    relPath: "comparison_plots/etac0.5_epsg0.001/svg/skr_vs_fth_N2048_M512.svg",
+    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N2048_M512.svg",
   },
   {
     plotType: "SKR vs F_th",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       N: 256,
       M: 1024,
     },
-    relPath: "comparison_plots/etac0.5_epsg0.001/svg/skr_vs_fth_N256_M1024.svg",
+    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N256_M1024.svg",
   },
   {
     plotType: "SKR vs F_th",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       N: 256,
       M: 2048,
     },
-    relPath: "comparison_plots/etac0.5_epsg0.001/svg/skr_vs_fth_N256_M2048.svg",
+    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N256_M2048.svg",
   },
   {
     plotType: "SKR vs F_th",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       N: 256,
       M: 512,
     },
-    relPath: "comparison_plots/etac0.5_epsg0.001/svg/skr_vs_fth_N256_M512.svg",
+    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N256_M512.svg",
   },
   {
     plotType: "SKR vs F_th",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       N: 32,
       M: 1024,
     },
-    relPath: "comparison_plots/etac0.5_epsg0.001/svg/skr_vs_fth_N32_M1024.svg",
+    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N32_M1024.svg",
   },
   {
     plotType: "SKR vs F_th",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       N: 32,
       M: 2048,
     },
-    relPath: "comparison_plots/etac0.5_epsg0.001/svg/skr_vs_fth_N32_M2048.svg",
+    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N32_M2048.svg",
   },
   {
     plotType: "SKR vs F_th",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       N: 32,
       M: 512,
     },
-    relPath: "comparison_plots/etac0.5_epsg0.001/svg/skr_vs_fth_N32_M512.svg",
+    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N32_M512.svg",
   },
   {
     plotType: "SKR vs F_th",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       N: 4096,
       M: 1024,
     },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.001/svg/skr_vs_fth_N4096_M1024.svg",
+    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N4096_M1024.svg",
   },
   {
     plotType: "SKR vs F_th",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       N: 4096,
       M: 2048,
     },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.001/svg/skr_vs_fth_N4096_M2048.svg",
+    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N4096_M2048.svg",
   },
   {
     plotType: "SKR vs F_th",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       N: 4096,
       M: 512,
     },
-    relPath: "comparison_plots/etac0.5_epsg0.001/svg/skr_vs_fth_N4096_M512.svg",
+    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N4096_M512.svg",
   },
   {
     plotType: "SKR vs F_th",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       N: 4,
       M: 1024,
     },
-    relPath: "comparison_plots/etac0.5_epsg0.001/svg/skr_vs_fth_N4_M1024.svg",
+    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N4_M1024.svg",
   },
   {
     plotType: "SKR vs F_th",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       N: 4,
       M: 2048,
     },
-    relPath: "comparison_plots/etac0.5_epsg0.001/svg/skr_vs_fth_N4_M2048.svg",
+    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N4_M2048.svg",
   },
   {
     plotType: "SKR vs F_th",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       N: 4,
       M: 512,
     },
-    relPath: "comparison_plots/etac0.5_epsg0.001/svg/skr_vs_fth_N4_M512.svg",
+    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N4_M512.svg",
   },
   {
     plotType: "SKR vs F_th",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       N: 512,
       M: 1024,
     },
-    relPath: "comparison_plots/etac0.5_epsg0.001/svg/skr_vs_fth_N512_M1024.svg",
+    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N512_M1024.svg",
   },
   {
     plotType: "SKR vs F_th",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       N: 512,
       M: 2048,
     },
-    relPath: "comparison_plots/etac0.5_epsg0.001/svg/skr_vs_fth_N512_M2048.svg",
+    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N512_M2048.svg",
   },
   {
     plotType: "SKR vs F_th",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       N: 512,
       M: 512,
     },
-    relPath: "comparison_plots/etac0.5_epsg0.001/svg/skr_vs_fth_N512_M512.svg",
+    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N512_M512.svg",
   },
   {
     plotType: "SKR vs F_th",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       N: 64,
       M: 1024,
     },
-    relPath: "comparison_plots/etac0.5_epsg0.001/svg/skr_vs_fth_N64_M1024.svg",
+    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N64_M1024.svg",
   },
   {
     plotType: "SKR vs F_th",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       N: 64,
       M: 2048,
     },
-    relPath: "comparison_plots/etac0.5_epsg0.001/svg/skr_vs_fth_N64_M2048.svg",
+    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N64_M2048.svg",
   },
   {
     plotType: "SKR vs F_th",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       N: 64,
       M: 512,
     },
-    relPath: "comparison_plots/etac0.5_epsg0.001/svg/skr_vs_fth_N64_M512.svg",
+    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N64_M512.svg",
   },
   {
     plotType: "SKR vs F_th",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       N: 8,
       M: 1024,
     },
-    relPath: "comparison_plots/etac0.5_epsg0.001/svg/skr_vs_fth_N8_M1024.svg",
+    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N8_M1024.svg",
   },
   {
     plotType: "SKR vs F_th",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       N: 8,
       M: 2048,
     },
-    relPath: "comparison_plots/etac0.5_epsg0.001/svg/skr_vs_fth_N8_M2048.svg",
+    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N8_M2048.svg",
   },
   {
     plotType: "SKR vs F_th",
     params: {
-      eta_c: 0.5,
-      epsilon_G: 0.001,
+      eta_c: 1,
+      epsilon_G: 0.0001,
       N: 8,
       M: 512,
     },
-    relPath: "comparison_plots/etac0.5_epsg0.001/svg/skr_vs_fth_N8_M512.svg",
+    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N8_M512.svg",
   },
 ];
 
@@ -13203,20 +12629,6 @@ export const dependencyMatrix = {
     N: true,
     M: true,
     rule: false,
-  },
-  "Distance-ratio": {
-    eta_c: false,
-    epsilon_G: false,
-    N: true,
-    M: true,
-    rule: false,
-  },
-  "Advantage heatmaps": {
-    eta_c: true,
-    epsilon_G: true,
-    N: false,
-    M: false,
-    rule: true,
   },
   "Plateau grid": {
     eta_c: false,
