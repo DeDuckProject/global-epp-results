@@ -118,7 +118,7 @@ export function parseFileMeta(filePath: string): PlotMeta {
   const relPath = filePath.replace(/\\/g, '/');
   const dirname = path.dirname(relPath).split('/')[1];
   const basename = path.basename(filePath, path.extname(filePath));
-  const tokens = basename.split('_');
+  let tokens = basename.split('_');
   
   const params: PlotParams = {};
   
@@ -128,16 +128,32 @@ export function parseFileMeta(filePath: string): PlotMeta {
     params.eta_c = parseEtaC(etacPart);
     params.epsilon_G = parseEpsilonG(epsgPart);
   }
+
+  // Re-join tokens for rules like 'F_th_0.95' that get split by '_'
+  const reconstructedTokens: string[] = [];
+  for (let i = 0; i < tokens.length; i++) {
+    if (tokens[i] === 'F' && tokens[i + 1] === 'th') {
+      reconstructedTokens.push(`${tokens[i]}_${tokens[i + 1]}_${tokens[i + 2]}`);
+      i += 2; // Skip the next two tokens as they've been consumed
+    } else {
+      reconstructedTokens.push(tokens[i]);
+    }
+  }
+  tokens = reconstructedTokens;
   
   // Parse filename-based parameters
   tokens.forEach(token => {
     const n = parseN(token);
     const m = parseM(token);
     const rule = parseRule(token);
-    
+    const etaC = parseEtaC(token);
+    const epsilonG = parseEpsilonG(token);
+
     if (n) params.N = n;
     if (m) params.M = m;
     if (rule) params.rule = rule;
+    if (etaC) params.eta_c = etaC;
+    if (epsilonG) params.epsilon_G = epsilonG;
   });
   
   const plotType = getPlotType(basename);
