@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { SliderField } from './SliderField';
 import { SelectField } from './SelectField';
 import { parameterValues } from '@/data/plotMeta';
-import { PlotState } from '@/components/PlotExplorer';
+import { PlotState } from '@/types/PlotState';
+import { logger } from '@/utils/logger';
+import { getAvailableRules } from '@/utils/getAvailableRules';
 
 interface ParamPanelProps {
   plotState: PlotState;
@@ -16,6 +18,26 @@ export const ParamPanel: React.FC<ParamPanelProps> = ({
   onStateChange
 }) => {
   const isActive = (param: string) => activeDependencies[param] ?? false;
+
+  const availableRules = useMemo(() => {
+    if (!isActive('rule')) return undefined;
+    
+    const { rule, ...otherParams } = plotState;
+    return getAvailableRules(otherParams);
+  }, [plotState, activeDependencies]);
+
+  // If the current rule is not in the set of available rules, log a warning
+  // and pick the first available rule as the new state.
+  useMemo(() => {
+    if (availableRules && !availableRules.has(plotState.rule) && availableRules.size > 0) {
+      const newRule = availableRules.values().next().value;
+      logger.warn(
+        `Selected rule "${plotState.rule}" is not available with current parameters. ` +
+        `Switching to "${newRule}".`
+      );
+      onStateChange({ rule: newRule });
+    }
+  }, [plotState.rule, availableRules, onStateChange]);
 
   return (
     <div className="bg-card rounded-lg border p-4 shadow-sm">
@@ -62,6 +84,7 @@ export const ParamPanel: React.FC<ParamPanelProps> = ({
           options={parameterValues.rule}
           onChange={(value) => onStateChange({ rule: value })}
           disabled={!isActive('rule')}
+          availableOptions={availableRules}
         />
       </div>
     </div>

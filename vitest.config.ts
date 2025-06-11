@@ -4,16 +4,16 @@ import path from 'path';
 export default defineConfig({
   test: {
     globals: true,
-    environment: 'node',
+    environment: 'jsdom',
+    setupFiles: './tests/setup.ts',
     include: [
-      'scripts/__tests__/**/*.test.ts',
-      'tests/**/*.test.ts'
+      'scripts/**/*.test.ts',
+      'tests/**/*.test.{ts,tsx}'
     ],
   },
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
     },
-    extensions: ['.ts', '.tsx', '.js']
   },
 }); 

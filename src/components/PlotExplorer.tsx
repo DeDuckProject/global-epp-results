@@ -6,15 +6,7 @@ import { PlotCanvas } from './PlotCanvas';
 import { Footer } from './Footer';
 import { plotTypes, parameterValues, dependencyMatrix } from '@/data/plotMeta';
 import { useSearchParams } from 'react-router-dom';
-
-export interface PlotState {
-  currentPlotType: string;
-  eta_c: number;
-  epsilon_G: number;
-  N: number;
-  M: number;
-  rule: string;
-}
+import { PlotState } from '@/types/PlotState';
 
 export const PlotExplorer: React.FC = () => {
   const [searchParams, setSearchParams] = useSearchParams();

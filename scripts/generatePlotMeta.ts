@@ -97,6 +97,7 @@ export function parseM(token: string): M | undefined {
 
 export function parseRule(token: string): Rule | undefined {
   if (token === 'SKR') return 'SKR';
+  if (token === 'Fth') return 'F_th 0.97';  // Handle 3D visualization Fth token
   const match = token.match(/^F_th_(\d+\.\d+)$/);
   if (!match) return undefined;
   const value = `F_th ${match[1]}`;

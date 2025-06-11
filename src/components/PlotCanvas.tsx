@@ -1,5 +1,5 @@
 import React, { Suspense } from 'react';
-import { PlotState } from './PlotExplorer';
+import { PlotState } from '@/types/PlotState';
 import { useLazySVG } from '@/hooks/useLazySVG';
 import { buildPlotPath } from '@/utils/pathBuilder';
 
