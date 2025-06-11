@@ -44,7 +44,7 @@ export const ParamPanel: React.FC<ParamPanelProps> = ({
       <h3 className="font-semibold text-card-foreground mb-4">Parameters</h3>
       <div className="space-y-6">
         <SliderField
-          label="η_c (Channel Efficiency)"
+          label="η_c (BSA Coupling Efficiency)"
           value={plotState.eta_c}
           values={parameterValues.eta_c}
           onChange={(value) => onStateChange({ eta_c: value })}
@@ -62,7 +62,7 @@ export const ParamPanel: React.FC<ParamPanelProps> = ({
         />
         
         <SliderField
-          label="N (Network Size)"
+          label="N (Segment Count)"
           value={plotState.N}
           values={parameterValues.N}
           onChange={(value) => onStateChange({ N: value })}
@@ -71,7 +71,7 @@ export const ParamPanel: React.FC<ParamPanelProps> = ({
         />
         
         <SliderField
-          label="M (Memory Time)"
+          label="M (Multiplexing Amount)"
           value={plotState.M}
           values={parameterValues.M}
           onChange={(value) => onStateChange({ M: value })}

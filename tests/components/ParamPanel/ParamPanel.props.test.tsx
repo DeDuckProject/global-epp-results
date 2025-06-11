@@ -26,7 +26,7 @@ describe('ParamPanel - Prop Passing', () => {
   const mockOnStateChange = vi.fn();
 
   const basePlotState: PlotState = {
-    plotType: '3D global-schedule',
+    currentPlotType: '3D global-schedule',
     eta_c: 0.9,
     epsilon_G: 0.001,
     N: 1024,
@@ -52,7 +52,7 @@ describe('ParamPanel - Prop Passing', () => {
     );
 
     // Check eta_c SliderField for correct decimalPlaces
-    const etaCSlider = screen.getByTestId('decimal-places-η_c (Channel Efficiency)');
+    const etaCSlider = screen.getByTestId('decimal-places-η_c (BSA Coupling Efficiency)');
     expect(etaCSlider).toHaveTextContent('1');
 
     // Check epsilon_G SliderField for correct (undefined) decimalPlaces

@@ -23,7 +23,7 @@ const PLOTS_ROOT = 'comparison_plots';
 const OUTPUT_FILE = 'src/data/plotMeta.ts';
 
 // Plots to exclude
-const EXCLUDED_PLOTS = ['distance_ratio', 'heatmap_dist'];
+const EXCLUDED_PLOTS = ['distance_ratio'];
 
 // Parameter values
 type EtaC = 0.3 | 0.5 | 0.9 | 1.0;
@@ -46,11 +46,12 @@ const PLOT_TYPE_MAPPING: Record<string, string> = {
   '3d_visualization': '3D global-schedule',
   'best_strategies': 'Best strategies 2D',
   'skr_vs_fth': 'SKR vs F_th',
+  'heatmap_dist': 'Advantage heatmaps',
   'grid_plateau': 'Plateau grid',
   'threshold': 'Threshold heatmap',
-  'max_distance': 'η_c comparisons',
+  'max_distance': 'BSA Coupling Efficiency comparisons',
   'consolidated_threshold': 'Threshold heatmap',
-  'manual_advantage': 'η_c comparisons'
+  'manual_advantage': 'BSA Coupling Efficiency comparisons'
 };
 
 // Dependency matrix from requirements
@@ -58,9 +59,10 @@ export const DEPENDENCY_MATRIX: Record<string, Record<keyof PlotParams, boolean>
   '3D global-schedule': { eta_c: true, epsilon_G: true, N: true, M: true, rule: true },
   'Best strategies 2D': { eta_c: true, epsilon_G: true, N: true, M: true, rule: false },
   'SKR vs F_th': { eta_c: true, epsilon_G: true, N: true, M: true, rule: false },
+  'Advantage heatmaps': { eta_c: true, epsilon_G: true, N: false, M: false, rule: true },
   'Plateau grid': { eta_c: false, epsilon_G: false, N: false, M: false, rule: false },
   'Threshold heatmap': { eta_c: false, epsilon_G: false, N: false, M: true, rule: false },
-  'η_c comparisons': { eta_c: false, epsilon_G: true, N: true, M: true, rule: true } // TODO decide if to remove later (see task014.md)
+  'BSA Coupling Efficiency comparisons': { eta_c: false, epsilon_G: true, N: true, M: true, rule: true } // TODO decide if to remove later (see task014.md)
 };
 
 export function parseEtaC(dirname: string): EtaC | undefined {
