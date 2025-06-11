@@ -1,0 +1,480 @@
+MANUAL STRATEGY ADVANTAGE THRESHOLD ANALYSIS
+==================================================
+
+EXECUTIVE SUMMARY:
+--------------------
+This analysis determines the minimum N (number of segments) and M (memory size)
+values where the MANUAL distillation strategy starts showing advantages over
+baseline strategies (SKR, F_th_0.95, F_th_0.97) across different channel
+parameters (eta_c, epsilon_G).
+
+KEY FINDINGS:
+---------------
+1. STRATEGY COMPARISON:
+   • F_th_0.95:
+     - Average threshold N: 144
+     - Range: N=32 to N=256
+     - All cases require M≥512
+     - Average SKR values at threshold:
+       * MANUAL: 7.85e-02
+       * F_th_0.95: 5.11e-02
+     - Ratio range: 1.52 to 3.89
+
+   • F_th_0.97:
+     - Average threshold N: 72
+     - Range: N=16 to N=128
+     - All cases require M≥512
+     - Average SKR values at threshold:
+       * MANUAL: 1.01e-01
+       * F_th_0.97: 5.98e-02
+     - Ratio range: 1.77 to 3.79
+
+   • SKR:
+     - Average threshold N: 288
+     - Range: N=64 to N=512
+     - All cases require M≥512
+     - Average SKR values at threshold:
+       * MANUAL: 4.30e-02
+       * SKR: 3.46e-02
+     - Ratio range: 1.11 to 1.29
+
+
+2. DISTANCE-RELATED ANALYSIS:
+   • Working ranges and overlap:
+
+   F_th_0.95:
+     • For eta_c=0.3, epsilon_G=0.0001:
+       - MANUAL working range: 10.0 to 6951.9
+       - F_th_0.95 working range: 10.0 to 6951.9
+       - Overlapping distances: 19
+       - Valid comparison points: 19
+       - Ratio variation: 1.65 to 43.49
+       - Maximum advantage at distance 6951.9:
+         * MANUAL SKR: 5.40e-04
+         * F_th_0.95 SKR: 1.24e-05
+       - Minimum advantage at distance 10.0:
+         * MANUAL SKR: 1.12e-02
+         * F_th_0.95 SKR: 6.83e-03
+       * Significant advantage with meaningful SKR values
+     • For eta_c=0.3, epsilon_G=0.0010:
+       - MANUAL working range: 10.0 to 1623.8
+       - F_th_0.95 working range: 10.0 to 1128.8
+       - Overlapping distances: 14
+       - Valid comparison points: 14
+       - Ratio variation: 1.54 to 10.40
+       - Maximum advantage at distance 1128.8:
+         * MANUAL SKR: 5.11e-04
+         * F_th_0.95 SKR: 4.91e-05
+       - Minimum advantage at distance 10.0:
+         * MANUAL SKR: 1.19e-02
+         * F_th_0.95 SKR: 7.74e-03
+       * Significant advantage with meaningful SKR values
+     • For eta_c=0.5, epsilon_G=0.0001:
+       - MANUAL working range: 10.0 to 10000.0
+       - F_th_0.95 working range: 10.0 to 10000.0
+       - Overlapping distances: 20
+       - Valid comparison points: 20
+       - Ratio variation: 1.59 to 2.03
+       - Maximum advantage at distance 10000.0:
+         * MANUAL SKR: 2.03e-03
+         * F_th_0.95 SKR: 1.00e-03
+       - Minimum advantage at distance 10.0:
+         * MANUAL SKR: 4.49e-02
+         * F_th_0.95 SKR: 2.83e-02
+     • For eta_c=0.5, epsilon_G=0.0010:
+       - MANUAL working range: 10.0 to 2335.7
+       - F_th_0.95 working range: 10.0 to 1623.8
+       - Overlapping distances: 15
+       - Valid comparison points: 15
+       - Ratio variation: 1.50 to 2.88
+       - Maximum advantage at distance 1623.8:
+         * MANUAL SKR: 9.89e-04
+         * F_th_0.95 SKR: 3.44e-04
+       - Minimum advantage at distance 10.0:
+         * MANUAL SKR: 4.21e-02
+         * F_th_0.95 SKR: 2.80e-02
+     • For eta_c=0.9, epsilon_G=0.0001:
+       - MANUAL working range: 10.0 to 10000.0
+       - F_th_0.95 working range: 10.0 to 10000.0
+       - Overlapping distances: 20
+       - Valid comparison points: 20
+       - Ratio variation: 1.57 to 1.62
+       - Maximum advantage at distance 10000.0:
+         * MANUAL SKR: 1.61e-02
+         * F_th_0.95 SKR: 9.92e-03
+       - Minimum advantage at distance 10.0:
+         * MANUAL SKR: 1.81e-01
+         * F_th_0.95 SKR: 1.15e-01
+     • For eta_c=0.9, epsilon_G=0.0010:
+       - MANUAL working range: 10.0 to 2335.7
+       - F_th_0.95 working range: 10.0 to 2335.7
+       - Overlapping distances: 16
+       - Valid comparison points: 16
+       - Ratio variation: 1.49 to 2.45
+       - Maximum advantage at distance 2335.7:
+         * MANUAL SKR: 1.14e-03
+         * F_th_0.95 SKR: 4.67e-04
+       - Minimum advantage at distance 10.0:
+         * MANUAL SKR: 1.59e-01
+         * F_th_0.95 SKR: 1.07e-01
+     • For eta_c=1.0, epsilon_G=0.0001:
+       - MANUAL working range: 10.0 to 10000.0
+       - F_th_0.95 working range: 10.0 to 10000.0
+       - Overlapping distances: 20
+       - Valid comparison points: 20
+       - Ratio variation: 1.57 to 1.61
+       - Maximum advantage at distance 10000.0:
+         * MANUAL SKR: 2.15e-02
+         * F_th_0.95 SKR: 1.34e-02
+       - Minimum advantage at distance 10.0:
+         * MANUAL SKR: 2.30e-01
+         * F_th_0.95 SKR: 1.46e-01
+     • For eta_c=1.0, epsilon_G=0.0010:
+       - MANUAL working range: 10.0 to 2335.7
+       - F_th_0.95 working range: 10.0 to 2335.7
+       - Overlapping distances: 16
+       - Valid comparison points: 16
+       - Ratio variation: 1.49 to 1.95
+       - Maximum advantage at distance 2335.7:
+         * MANUAL SKR: 1.77e-03
+         * F_th_0.95 SKR: 9.08e-04
+       - Minimum advantage at distance 10.0:
+         * MANUAL SKR: 2.00e-01
+         * F_th_0.95 SKR: 1.34e-01
+
+   F_th_0.97:
+     • For eta_c=0.3, epsilon_G=0.0001:
+       - MANUAL working range: 10.0 to 4832.9
+       - F_th_0.97 working range: 10.0 to 3359.8
+       - Overlapping distances: 17
+       - Valid comparison points: 17
+       - Ratio variation: 1.85 to 5.18
+       - Maximum advantage at distance 3359.8:
+         * MANUAL SKR: 1.32e-03
+         * F_th_0.97 SKR: 2.55e-04
+       - Minimum advantage at distance 10.0:
+         * MANUAL SKR: 1.66e-02
+         * F_th_0.97 SKR: 8.97e-03
+     • For eta_c=0.3, epsilon_G=0.0010:
+       - MANUAL working range: 10.0 to 784.8
+       - F_th_0.97 working range: 10.0 to 545.6
+       - Overlapping distances: 12
+       - Valid comparison points: 12
+       - Ratio variation: 1.80 to 3.44
+       - Maximum advantage at distance 545.6:
+         * MANUAL SKR: 1.42e-03
+         * F_th_0.97 SKR: 4.13e-04
+       - Minimum advantage at distance 10.0:
+         * MANUAL SKR: 1.92e-02
+         * F_th_0.97 SKR: 1.06e-02
+     • For eta_c=0.5, epsilon_G=0.0001:
+       - MANUAL working range: 10.0 to 6951.9
+       - F_th_0.97 working range: 10.0 to 4832.9
+       - Overlapping distances: 18
+       - Valid comparison points: 18
+       - Ratio variation: 1.79 to 2.18
+       - Maximum advantage at distance 4832.9:
+         * MANUAL SKR: 3.91e-03
+         * F_th_0.97 SKR: 1.79e-03
+       - Minimum advantage at distance 10.0:
+         * MANUAL SKR: 6.35e-02
+         * F_th_0.97 SKR: 3.55e-02
+     • For eta_c=0.5, epsilon_G=0.0010:
+       - MANUAL working range: 10.0 to 1128.8
+       - F_th_0.97 working range: 10.0 to 784.8
+       - Overlapping distances: 13
+       - Valid comparison points: 13
+       - Ratio variation: 1.76 to 2.36
+       - Maximum advantage at distance 784.8:
+         * MANUAL SKR: 2.45e-03
+         * F_th_0.97 SKR: 1.04e-03
+       - Minimum advantage at distance 10.0:
+         * MANUAL SKR: 6.48e-02
+         * F_th_0.97 SKR: 3.69e-02
+     • For eta_c=0.9, epsilon_G=0.0001:
+       - MANUAL working range: 10.0 to 10000.0
+       - F_th_0.97 working range: 10.0 to 6951.9
+       - Overlapping distances: 19
+       - Valid comparison points: 19
+       - Ratio variation: 1.77 to 1.95
+       - Maximum advantage at distance 6951.9:
+         * MANUAL SKR: 7.42e-03
+         * F_th_0.97 SKR: 3.81e-03
+       - Minimum advantage at distance 10.0:
+         * MANUAL SKR: 2.50e-01
+         * F_th_0.97 SKR: 1.41e-01
+     • For eta_c=0.9, epsilon_G=0.0010:
+       - MANUAL working range: 10.0 to 1623.8
+       - F_th_0.97 working range: 10.0 to 1128.8
+       - Overlapping distances: 14
+       - Valid comparison points: 14
+       - Ratio variation: 1.75 to 2.24
+       - Maximum advantage at distance 1128.8:
+         * MANUAL SKR: 2.93e-03
+         * F_th_0.97 SKR: 1.31e-03
+       - Minimum advantage at distance 10.0:
+         * MANUAL SKR: 2.39e-01
+         * F_th_0.97 SKR: 1.37e-01
+     • For eta_c=1.0, epsilon_G=0.0001:
+       - MANUAL working range: 10.0 to 10000.0
+       - F_th_0.97 working range: 10.0 to 10000.0
+       - Overlapping distances: 20
+       - Valid comparison points: 20
+       - Ratio variation: 1.77 to 42.04
+       - Maximum advantage at distance 10000.0:
+         * MANUAL SKR: 6.94e-04
+         * F_th_0.97 SKR: 1.65e-05
+       - Minimum advantage at distance 10.0:
+         * MANUAL SKR: 3.17e-01
+         * F_th_0.97 SKR: 1.79e-01
+       * Significant advantage with meaningful SKR values
+     • For eta_c=1.0, epsilon_G=0.0010:
+       - MANUAL working range: 10.0 to 1623.8
+       - F_th_0.97 working range: 10.0 to 1128.8
+       - Overlapping distances: 14
+       - Valid comparison points: 14
+       - Ratio variation: 1.74 to 2.07
+       - Maximum advantage at distance 1128.8:
+         * MANUAL SKR: 4.17e-03
+         * F_th_0.97 SKR: 2.02e-03
+       - Minimum advantage at distance 10.0:
+         * MANUAL SKR: 3.00e-01
+         * F_th_0.97 SKR: 1.72e-01
+
+   SKR:
+     • For eta_c=0.3, epsilon_G=0.0001:
+       - MANUAL working range: 10.0 to 10000.0
+       - SKR working range: 10.0 to 10000.0
+       - Overlapping distances: 20
+       - Valid comparison points: 20
+       - Ratio variation: 1.00 to 1.14
+       - Maximum advantage at distance 10.0:
+         * MANUAL SKR: 5.26e-03
+         * SKR SKR: 4.62e-03
+       - Minimum advantage at distance 6951.9:
+         * MANUAL SKR: 1.33e-03
+         * SKR SKR: 1.33e-03
+     • For eta_c=0.3, epsilon_G=0.0010:
+       - MANUAL working range: 10.0 to 2335.7
+       - SKR working range: 10.0 to 2335.7
+       - Overlapping distances: 16
+       - Valid comparison points: 16
+       - Ratio variation: 1.00 to 1.28
+       - Maximum advantage at distance 10.0:
+         * MANUAL SKR: 5.09e-03
+         * SKR SKR: 3.98e-03
+       - Minimum advantage at distance 2335.7:
+         * MANUAL SKR: 4.92e-05
+         * SKR SKR: 4.92e-05
+     • For eta_c=0.5, epsilon_G=0.0001:
+       - MANUAL working range: 10.0 to 10000.0
+       - SKR working range: 10.0 to 10000.0
+       - Overlapping distances: 20
+       - Valid comparison points: 20
+       - Ratio variation: 1.15 to 1.19
+       - Maximum advantage at distance 10.0:
+         * MANUAL SKR: 2.30e-02
+         * SKR SKR: 1.92e-02
+       - Minimum advantage at distance 10000.0:
+         * MANUAL SKR: 5.67e-03
+         * SKR SKR: 4.95e-03
+     • For eta_c=0.5, epsilon_G=0.0010:
+       - MANUAL working range: 10.0 to 3359.8
+       - SKR working range: 10.0 to 3359.8
+       - Overlapping distances: 17
+       - Valid comparison points: 17
+       - Ratio variation: 1.00 to 1.30
+       - Maximum advantage at distance 10.0:
+         * MANUAL SKR: 1.96e-02
+         * SKR SKR: 1.51e-02
+       - Minimum advantage at distance 3359.8:
+         * MANUAL SKR: 1.33e-04
+         * SKR SKR: 1.33e-04
+     • For eta_c=0.9, epsilon_G=0.0001:
+       - MANUAL working range: 10.0 to 10000.0
+       - SKR working range: 10.0 to 10000.0
+       - Overlapping distances: 20
+       - Valid comparison points: 20
+       - Ratio variation: 1.20 to 1.21
+       - Maximum advantage at distance 10.0:
+         * MANUAL SKR: 9.55e-02
+         * SKR SKR: 7.90e-02
+       - Minimum advantage at distance 10000.0:
+         * MANUAL SKR: 2.96e-02
+         * SKR SKR: 2.47e-02
+     • For eta_c=0.9, epsilon_G=0.0010:
+       - MANUAL working range: 10.0 to 4832.9
+       - SKR working range: 10.0 to 4832.9
+       - Overlapping distances: 18
+       - Valid comparison points: 18
+       - Ratio variation: 1.00 to 1.31
+       - Maximum advantage at distance 10.0:
+         * MANUAL SKR: 7.66e-02
+         * SKR SKR: 5.86e-02
+       - Minimum advantage at distance 4832.9:
+         * MANUAL SKR: 1.45e-04
+         * SKR SKR: 1.45e-04
+     • For eta_c=1.0, epsilon_G=0.0001:
+       - MANUAL working range: 10.0 to 10000.0
+       - SKR working range: 10.0 to 10000.0
+       - Overlapping distances: 20
+       - Valid comparison points: 20
+       - Ratio variation: 1.20 to 1.21
+       - Maximum advantage at distance 10.0:
+         * MANUAL SKR: 1.22e-01
+         * SKR SKR: 1.01e-01
+       - Minimum advantage at distance 10000.0:
+         * MANUAL SKR: 3.85e-02
+         * SKR SKR: 3.20e-02
+     • For eta_c=1.0, epsilon_G=0.0010:
+       - MANUAL working range: 10.0 to 4832.9
+       - SKR working range: 10.0 to 4832.9
+       - Overlapping distances: 18
+       - Valid comparison points: 18
+       - Ratio variation: 1.00 to 1.31
+       - Maximum advantage at distance 10.0:
+         * MANUAL SKR: 9.70e-02
+         * SKR SKR: 7.42e-02
+       - Minimum advantage at distance 4832.9:
+         * MANUAL SKR: 2.66e-04
+         * SKR SKR: 2.66e-04
+
+   Summary of distance-related findings:
+
+   • Ratio variation analysis:
+     Cases with high ratio variation (max/min > 2):
+     - F_th_0.95: eta_c=0.3, epsilon_G=0.0001
+       Ratio range: 1.65 to 43.49
+       Maximum at d=6951.9 (SKRs: 5.40e-04 vs 1.24e-05)
+       Minimum at d=10.0 (SKRs: 1.12e-02 vs 6.83e-03)
+     - F_th_0.97: eta_c=0.3, epsilon_G=0.0001
+       Ratio range: 1.85 to 5.18
+       Maximum at d=3359.8 (SKRs: 1.32e-03 vs 2.55e-04)
+       Minimum at d=10.0 (SKRs: 1.66e-02 vs 8.97e-03)
+     - F_th_0.95: eta_c=0.3, epsilon_G=0.0010
+       Ratio range: 1.54 to 10.40
+       Maximum at d=1128.8 (SKRs: 5.11e-04 vs 4.91e-05)
+       Minimum at d=10.0 (SKRs: 1.19e-02 vs 7.74e-03)
+     - F_th_0.97: eta_c=1.0, epsilon_G=0.0001
+       Ratio range: 1.77 to 42.04
+       Maximum at d=10000.0 (SKRs: 6.94e-04 vs 1.65e-05)
+       Minimum at d=10.0 (SKRs: 3.17e-01 vs 1.79e-01)
+
+3. ADVANTAGE MAGNITUDE ANALYSIS:
+   • Categories of advantage:
+   A. Marginal advantages (ratio ≤ 1.1):
+      * None found
+
+   B. Moderate advantages (1.1 < ratio ≤ 2):
+      * SKR: eta_c=0.3, epsilon_G=0.0001
+        SKR values - MANUAL: 4.26e-03, Baseline: 3.78e-03
+      * F_th_0.97: eta_c=0.3, epsilon_G=0.0010
+        SKR values - MANUAL: 1.18e-02, Baseline: 6.97e-03
+      * SKR: eta_c=0.3, epsilon_G=0.0010
+        SKR values - MANUAL: 3.52e-03, Baseline: 2.76e-03
+      * F_th_0.95: eta_c=0.5, epsilon_G=0.0001
+        SKR values - MANUAL: 3.44e-02, Baseline: 2.16e-02
+      * F_th_0.97: eta_c=0.5, epsilon_G=0.0001
+        SKR values - MANUAL: 4.52e-02, Baseline: 2.66e-02
+      * SKR: eta_c=0.5, epsilon_G=0.0001
+        SKR values - MANUAL: 1.95e-02, Baseline: 1.63e-02
+      * F_th_0.95: eta_c=0.5, epsilon_G=0.0010
+        SKR values - MANUAL: 2.64e-02, Baseline: 1.86e-02
+      * F_th_0.97: eta_c=0.5, epsilon_G=0.0010
+        SKR values - MANUAL: 3.87e-02, Baseline: 2.35e-02
+      * SKR: eta_c=0.5, epsilon_G=0.0010
+        SKR values - MANUAL: 1.34e-02, Baseline: 1.04e-02
+      * F_th_0.95: eta_c=0.9, epsilon_G=0.0001
+        SKR values - MANUAL: 1.41e-01, Baseline: 8.96e-02
+      * F_th_0.97: eta_c=0.9, epsilon_G=0.0001
+        SKR values - MANUAL: 1.73e-01, Baseline: 1.03e-01
+      * SKR: eta_c=0.9, epsilon_G=0.0001
+        SKR values - MANUAL: 8.22e-02, Baseline: 6.81e-02
+      * F_th_0.95: eta_c=0.9, epsilon_G=0.0010
+        SKR values - MANUAL: 1.02e-01, Baseline: 6.81e-02
+      * F_th_0.97: eta_c=0.9, epsilon_G=0.0010
+        SKR values - MANUAL: 1.36e-01, Baseline: 8.32e-02
+      * SKR: eta_c=0.9, epsilon_G=0.0010
+        SKR values - MANUAL: 5.10e-02, Baseline: 3.91e-02
+      * F_th_0.95: eta_c=1.0, epsilon_G=0.0001
+        SKR values - MANUAL: 1.80e-01, Baseline: 1.14e-01
+      * SKR: eta_c=1.0, epsilon_G=0.0001
+        SKR values - MANUAL: 1.05e-01, Baseline: 8.69e-02
+      * F_th_0.95: eta_c=1.0, epsilon_G=0.0010
+        SKR values - MANUAL: 1.28e-01, Baseline: 8.61e-02
+      * F_th_0.97: eta_c=1.0, epsilon_G=0.0010
+        SKR values - MANUAL: 1.71e-01, Baseline: 1.05e-01
+      * SKR: eta_c=1.0, epsilon_G=0.0010
+        SKR values - MANUAL: 6.47e-02, Baseline: 4.95e-02
+
+   C. Significant advantages (2 < ratio ≤ 10):
+      * F_th_0.95: eta_c=0.3, epsilon_G=0.0001
+        SKR values - MANUAL: 8.67e-03, Baseline: 5.20e-03
+      * F_th_0.97: eta_c=0.3, epsilon_G=0.0001
+        SKR values - MANUAL: 1.19e-02, Baseline: 6.73e-03
+      * F_th_0.95: eta_c=0.3, epsilon_G=0.0010
+        SKR values - MANUAL: 7.64e-03, Baseline: 5.22e-03
+      * F_th_0.97: eta_c=1.0, epsilon_G=0.0001
+        SKR values - MANUAL: 2.20e-01, Baseline: 1.24e-01
+
+   D. Large advantages (ratio > 10):
+      * None found
+
+4. CHANNEL PARAMETER EFFECTS:
+   • eta_c (coupling efficiency) effects:
+     - F_th_0.95: No clear trend with eta_c
+     - F_th_0.97: No clear trend with eta_c
+     - SKR: No clear trend with eta_c
+
+   • epsilon_G (gate error) effects:
+     - F_th_0.95: Lower N needed as epsilon_G increases
+     - F_th_0.97: Lower N needed as epsilon_G increases
+     - SKR: Lower N needed as epsilon_G increases
+
+5. REGIME-SPECIFIC RECOMMENDATIONS:
+   • Low gate error (epsilon_G = 0.0001):
+     - F_th_0.95: N≥256 shows advantage
+     - F_th_0.97: N≥128 shows advantage
+     - SKR: N≥512 shows advantage
+
+   • High gate error (epsilon_G = 0.001):
+     - F_th_0.95: N≥32 shows advantage
+     - F_th_0.97: N≥16 shows advantage
+     - SKR: N≥64 shows advantage
+
+6. PRACTICAL IMPLICATIONS:
+   • F_th strategies show advantages at lower N values than SKR
+   • F_th_0.97 typically requires the lowest N for advantage
+   • SKR strategy requires the highest N values for advantage
+   • All strategies require at least M=512 for advantages to appear
+   • Higher gate errors generally require lower N for MANUAL advantages
+
+
+DETAILED RESULTS TABLE:
+-------------------------
+eta_c | eps_G  | Strategy  | Min_N | Min_M | Ratio
+--------------------------------------------------
+ 0.3 | 0.0001 | F_th_0.95 |   256 |   512 |  3.89
+ 0.3 | 0.0001 | F_th_0.97 |   128 |   512 |  2.09
+ 0.3 | 0.0001 | SKR       |   512 |   512 |  1.11
+ 0.3 | 0.0010 | F_th_0.95 |    32 |   512 |  2.23
+ 0.3 | 0.0010 | F_th_0.97 |    16 |   512 |  1.99
+ 0.3 | 0.0010 | SKR       |    64 |   512 |  1.24
+ 0.5 | 0.0001 | F_th_0.95 |   256 |   512 |  1.62
+ 0.5 | 0.0001 | F_th_0.97 |   128 |   512 |  1.82
+ 0.5 | 0.0001 | SKR       |   512 |   512 |  1.19
+ 0.5 | 0.0010 | F_th_0.95 |    32 |   512 |  1.61
+ 0.5 | 0.0010 | F_th_0.97 |    16 |   512 |  1.82
+ 0.5 | 0.0010 | SKR       |    64 |   512 |  1.27
+ 0.9 | 0.0001 | F_th_0.95 |   256 |   512 |  1.58
+ 0.9 | 0.0001 | F_th_0.97 |   128 |   512 |  1.79
+ 0.9 | 0.0001 | SKR       |   512 |   512 |  1.21
+ 0.9 | 0.0010 | F_th_0.95 |    32 |   512 |  1.56
+ 0.9 | 0.0010 | F_th_0.97 |    16 |   512 |  1.79
+ 0.9 | 0.0010 | SKR       |    64 |   512 |  1.29
+ 1.0 | 0.0001 | F_th_0.95 |   256 |   512 |  1.58
+ 1.0 | 0.0001 | F_th_0.97 |   128 |   512 |  3.79
+ 1.0 | 0.0001 | SKR       |   512 |   512 |  1.21
+ 1.0 | 0.0010 | F_th_0.95 |    32 |   512 |  1.52
+ 1.0 | 0.0010 | F_th_0.97 |    16 |   512 |  1.77
+ 1.0 | 0.0010 | SKR       |    64 |   512 |  1.29
