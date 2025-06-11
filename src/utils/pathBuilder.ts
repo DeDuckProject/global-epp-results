@@ -1,38 +1,29 @@
-
 import { PlotState } from '@/components/PlotExplorer';
+import { plotMeta } from '@/data/plotMeta';
 
 export const buildPlotPath = (plotState: PlotState): string => {
-  const { currentPlotType, eta_c, epsilon_g, n, m, rule } = plotState;
+  const { currentPlotType, eta_c, epsilon_G, N, M, rule } = plotState;
   
-  // Mock path building - in real app this would match the actual file structure
-  const baseDir = 'repeater_protocol/comparison_plots';
-  
-  switch (currentPlotType) {
-    case '3D Global Schedule':
-      return `${baseDir}/etac${eta_c}_epsg${epsilon_g}/3d_visualization_${rule}_N${n}_M${m}_etac${eta_c}_epsg${epsilon_g}.svg`;
+  // Find matching plot metadata entry
+  const matchingPlot = plotMeta.find(entry => {
+    // Match plot type
+    if (entry.plotType !== currentPlotType) return false;
     
-    case 'Best Strategies 2D':
-      return `${baseDir}/etac${eta_c}_epsg${epsilon_g}/best_strategies_N${n}_M${m}.svg`;
+    // Match all non-undefined parameters
+    const params = entry.params;
+    if (params.eta_c !== undefined && params.eta_c !== eta_c) return false;
+    if (params.epsilon_G !== undefined && params.epsilon_G !== epsilon_G) return false;
+    if (params.N !== undefined && params.N !== N) return false;
+    if (params.M !== undefined && params.M !== M) return false;
+    if (params.rule !== undefined && params.rule !== rule) return false;
     
-    case 'SKR vs F_th':
-      return `${baseDir}/etac${eta_c}_epsg${epsilon_g}/skr_vs_fth_N${n}_M${m}.png`;
-    
-    case 'Distance Ratio':
-      return `${baseDir}/cross_param/distance_ratio_N${n}_M${m}.png`;
-    
-    case 'Advantage Heatmaps':
-      return `${baseDir}/advantage_analysis/heatmap_dist_gain_${rule}_etac${eta_c}_epsg${epsilon_g}.svg`;
-    
-    case 'Plateau Grid':
-      return `${baseDir}/advantage_analysis/grid_plateau_ratio.svg`;
-    
-    case 'Threshold Heatmap':
-      return `${baseDir}/threshold_analysis/consolidated_threshold_N_heatmap.svg`;
-    
-    case 'η_c Comparisons':
-      return `${baseDir}/eta_c_comparison/manual_advantage_over_fth_distance_N${n}_M${m}.png`;
-    
-    default:
-      return `${baseDir}/default_plot.svg`;
+    return true;
+  });
+
+  if (!matchingPlot) {
+    console.error(`No matching plot found for state:`, plotState);
+    return '/comparison_plots/default_plot.svg';
   }
+
+  return '/' + matchingPlot.relPath;
 };

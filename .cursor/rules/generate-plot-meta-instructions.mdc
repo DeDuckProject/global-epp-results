@@ -1,0 +1,10 @@
+---
+description: generatePlotMeta.ts
+globs: 
+alwaysApply: false
+---
+use:
+
+npx tsx generatePlotMeta.ts
+
+to run this file.

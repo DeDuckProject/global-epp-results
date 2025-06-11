@@ -1,0 +1,6 @@
+---
+description: something regarding plotMeta.ts
+globs: 
+alwaysApply: false
+---
+Never change plotMeta.ts directly, since it is auto-generate by genratePlotMeta.ts.

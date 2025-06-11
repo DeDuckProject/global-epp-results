@@ -22,3 +22,8 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# TODO remove. Just for now until we decide which we want to include:
+comparison_plots/
+scripts/generatePlotMeta*.js
+scripts/generatePlotMeta*.mjs
