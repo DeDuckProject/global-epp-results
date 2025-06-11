@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Slider } from '@/components/ui/slider';
 import { Label } from '@/components/ui/label';
@@ -12,6 +11,7 @@ interface SliderFieldProps {
   disabled?: boolean;
   step?: number;
   isInteger?: boolean;
+  decimalPlaces?: number;
 }
 
 export const SliderField: React.FC<SliderFieldProps> = ({
@@ -20,7 +20,8 @@ export const SliderField: React.FC<SliderFieldProps> = ({
   values,
   onChange,
   disabled = false,
-  isInteger = false
+  isInteger = false,
+  decimalPlaces
 }) => {
   const min = Math.min(...values);
   const max = Math.max(...values);
@@ -33,6 +34,19 @@ export const SliderField: React.FC<SliderFieldProps> = ({
     }
   };
 
+  const formatValue = (num: number) => {
+    if (isInteger) {
+      return num.toString();
+    }
+    if (decimalPlaces !== undefined) {
+      return num.toFixed(decimalPlaces);
+    }
+    
+    const s = num.toString();
+    const actualDecimalCount = s.includes('.') ? s.split('.')[1].length : 0;
+    return num.toFixed(Math.max(3, actualDecimalCount));
+  };
+
   return (
     <div className={cn("space-y-3", disabled && "opacity-50")}>
       <div className="flex items-center justify-between">
@@ -41,7 +55,7 @@ export const SliderField: React.FC<SliderFieldProps> = ({
           {disabled && " 🔒"}
         </Label>
         <span className="text-sm text-muted-foreground font-mono">
-          {isInteger ? value : value.toFixed(3)}
+          {formatValue(value)}
         </span>
       </div>
       
@@ -56,8 +70,8 @@ export const SliderField: React.FC<SliderFieldProps> = ({
       />
       
       <div className="flex justify-between text-xs text-muted-foreground">
-        <span>{isInteger ? min : min.toFixed(3)}</span>
-        <span>{isInteger ? max : max.toFixed(3)}</span>
+        <span>{formatValue(min)}</span>
+        <span>{formatValue(max)}</span>
       </div>
     </div>
   );

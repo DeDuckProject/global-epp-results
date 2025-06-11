@@ -49,6 +49,7 @@ export const ParamPanel: React.FC<ParamPanelProps> = ({
           values={parameterValues.eta_c}
           onChange={(value) => onStateChange({ eta_c: value })}
           disabled={!isActive('eta_c')}
+          decimalPlaces={1}
         />
         
         <SliderField

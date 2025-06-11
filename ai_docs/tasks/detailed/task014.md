@@ -3,9 +3,9 @@
 ## Problem
 Multiple issues with plot functionality and data:
 
-1. 3D Global Schedule Plot
-- Not responding to rule changes
-- Shows F_th 0.97 regardless of rule controller changes
+~1. 3D Global Schedule Plot~
+~- Not responding to rule changes~
+~- Shows F_th 0.97 regardless of rule controller changes~
 
 2. Threshold Heatmap
 - Missing proper M value specification in consolidated_threshold_N_heatmap filename
@@ -32,7 +32,7 @@ Multiple issues with plot functionality and data:
 - Plan data structure updates
 
 ## Acceptance Criteria
-- [ ] 3D plot responds correctly to rule changes
+- [x] 3D plot responds correctly to rule changes
 - [ ] Threshold heatmap uses correct file naming convention
 - [ ] eta_c comparison updates with rule changes
 - [ ] All required data points are properly documented
