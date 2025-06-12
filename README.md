@@ -2,6 +2,8 @@
 
 A static, client-side React application for interactively exploring pre-computed SVG plots of quantum-repeater simulations.
 
+**Live App**: [https://deduckproject.github.io/global-epp-results](https://deduckproject.github.io/global-epp-results)
+
 **Key Features:**
 - **Interactive Exploration**: Use sliders and dropdowns to select parameters and view corresponding simulation plots.
 - **Lazy Loading**: SVGs are loaded on-demand to keep the initial application lightweight.
