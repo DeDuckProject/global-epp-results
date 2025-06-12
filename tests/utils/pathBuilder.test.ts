@@ -59,7 +59,7 @@ describe('buildPlotPath', () => {
       M: 1024,
       rule: 'SKR',
     };
-    const expectedPath = '/global-epp-results/comparison_plots/etac0.9_epsg0.0001/3d_visualization_N1024_M1024_SKR.svg';
+    const expectedPath = '/comparison_plots/etac0.9_epsg0.0001/3d_visualization_N1024_M1024_SKR.svg';
     expect(buildPlotPath(plotState)).toBe(expectedPath);
   });
 
@@ -72,7 +72,7 @@ describe('buildPlotPath', () => {
       M: 1024,
       rule: 'SKR',
     };
-    expect(buildPlotPath(plotState)).toBe('/global-epp-results/comparison_plots/default_plot.svg');
+    expect(buildPlotPath(plotState)).toBe('/comparison_plots/default_plot.svg');
   });
 
   it('should log an error if no plot is found', () => {
@@ -96,11 +96,11 @@ describe('buildPlotPath', () => {
         currentPlotType: 'Advantage heatmaps',
         eta_c: 0.9,
         epsilon_G: 0.001,
-        N: 1024, 
-        M: 1024,
+        N: 1024,  // This will be ignored since it's not in the mock params
+        M: 1024,  // This will be ignored since it's not in the mock params
         rule: 'SKR',
       };
-      const expectedPath = '/global-epp-results/comparison_plots/advantage_analysis/heatmap_dist_gain_SKR_etac0.9_epsg0.001.svg';
+      const expectedPath = '/comparison_plots/advantage_analysis/heatmap_dist_gain_SKR_etac0.9_epsg0.001.svg';
       const result = buildPlotPath(plotState);
       expect(result).toBe(expectedPath);
     });
@@ -110,11 +110,11 @@ describe('buildPlotPath', () => {
         currentPlotType: 'Advantage heatmaps',
         eta_c: 0.3,
         epsilon_G: 0.0001,
-        N: 512,
-        M: 2048,
+        N: 512,  // This will be ignored since it's not in the mock params
+        M: 2048, // This will be ignored since it's not in the mock params
         rule: 'F_th 0.97',
       };
-      const expectedPath = '/global-epp-results/comparison_plots/advantage_analysis/heatmap_dist_gain_F_th_0.97_etac0.3_epsg0.0001.svg';
+      const expectedPath = '/comparison_plots/advantage_analysis/heatmap_dist_gain_F_th_0.97_etac0.3_epsg0.0001.svg';
       const result = buildPlotPath(plotState);
       expect(result).toBe(expectedPath);
     });
@@ -124,11 +124,11 @@ describe('buildPlotPath', () => {
         currentPlotType: 'Advantage heatmaps',
         eta_c: 1.0,
         epsilon_G: 0.001,
-        N: 256,
-        M: 1024,
+        N: 256,  // This will be ignored since it's not in the mock params
+        M: 1024, // This will be ignored since it's not in the mock params
         rule: 'F_th 0.95',
       };
-      const expectedPath = '/global-epp-results/comparison_plots/advantage_analysis/heatmap_dist_gain_F_th_0.95_etac1.0_epsg0.001.svg';
+      const expectedPath = '/comparison_plots/advantage_analysis/heatmap_dist_gain_F_th_0.95_etac1.0_epsg0.001.svg';
       const result = buildPlotPath(plotState);
       expect(result).toBe(expectedPath);
     });
@@ -142,7 +142,7 @@ describe('buildPlotPath', () => {
         M: 1024,
         rule: 'SKR',
       };
-      const expectedPath = '/global-epp-results/comparison_plots/default_plot.svg';
+      const expectedPath = '/comparison_plots/default_plot.svg';
       const result = buildPlotPath(plotState);
       expect(result).toBe(expectedPath);
     });
@@ -161,8 +161,8 @@ describe('buildPlotPath', () => {
         currentPlotType: 'Advantage heatmaps',
         eta_c: 0.9,
         epsilon_G: 0.001,
-        N: 1024,
-        M: 1024,
+        N: 1024,  // This will be ignored since it's not in the mock params
+        M: 1024,  // This will be ignored since it's not in the mock params
         rule: 'SKR',
       };
       const expectedPath = '/comparison_plots/advantage_analysis/heatmap_dist_gain_SKR_etac0.9_epsg0.001.svg';
