@@ -9,7 +9,7 @@ Set up automated deployment pipeline to GitHub Pages.
 - Section 8: Build & Deployment Pipeline
 
 ## Status
-⏳ Pending
+Completed
 
 ## Implementation Details
 - GitHub Actions workflow
