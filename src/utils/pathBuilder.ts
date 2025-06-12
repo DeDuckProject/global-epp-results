@@ -1,4 +1,4 @@
-import { PlotState } from '@/components/PlotExplorer';
+import { PlotState } from '@/types/PlotState';
 import { plotMeta } from '@/data/plotMeta';
 
 export const buildPlotPath = (plotState: PlotState): string => {
@@ -22,8 +22,11 @@ export const buildPlotPath = (plotState: PlotState): string => {
 
   if (!matchingPlot) {
     console.error(`No matching plot found for state:`, plotState);
-    return '/comparison_plots/default_plot.svg';
+    return import.meta.env.BASE_URL.replace(/\/$/, '') + '/comparison_plots/default_plot.svg';
   }
 
-  return '/' + matchingPlot.relPath;
+  // Ensure we don't double up slashes when concatenating paths
+  const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+  const relPath = matchingPlot.relPath.replace(/^\//, '');
+  return `${base}/${relPath}`;
 };
