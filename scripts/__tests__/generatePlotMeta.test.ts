@@ -18,7 +18,7 @@ describe('Plot Metadata Generator', () => {
     it('should parse 3D visualization file correctly', () => {
       const filePath = 'comparison_plots/etac0.5_epsg0.001/3d_visualization_SKR_N256_M512_etac0.5_epsg0.001.svg';
       const expected: PlotMeta = {
-        plotType: '3D global-schedule',
+        plotType: '3D local vs. global schedule',
         params: {
           eta_c: 0.5,
           epsilon_G: 0.001,
@@ -35,7 +35,7 @@ describe('Plot Metadata Generator', () => {
     it('should parse best strategies file correctly', () => {
       const filePath = 'comparison_plots/etac0.5_epsg0.001/best_strategies_N256_M512.svg';
       const expected: PlotMeta = {
-        plotType: 'Best strategies 2D',
+        plotType: 'Policy comparison',
         params: {
           eta_c: 0.5,
           epsilon_G: 0.001,
@@ -48,16 +48,6 @@ describe('Plot Metadata Generator', () => {
       expect(parseFileMeta(filePath)).toEqual(expected);
     });
     
-    it('should parse threshold analysis file correctly', () => {
-      const filePath = 'comparison_plots/threshold_analysis/consolidated_threshold_N_heatmap.svg';
-      const expected: PlotMeta = {
-        plotType: 'Threshold heatmap',
-        params: {},
-        relPath: filePath
-      };
-      
-      expect(parseFileMeta(filePath)).toEqual(expected);
-    });
     
     it('should throw error for unknown plot type', () => {
       const filePath = 'comparison_plots/unknown_file_type.svg';

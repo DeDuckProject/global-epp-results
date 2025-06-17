@@ -42,13 +42,13 @@ vi.mock('../../../src/data/plotMeta', () => ({
     rule: ["SKR", "F_th 0.97"]
   },
   plotMeta: [
-    { plotType: '3D global-schedule', params: { eta_c: 0.9, epsilon_G: 0.0001, N: 1024, M: 1024, rule: 'SKR' } },
-    { plotType: '3D global-schedule', params: { eta_c: 0.9, epsilon_G: 0.001, N: 1024, M: 1024, rule: 'F_th 0.97' } }
+    { plotType: '3D local vs. global schedule', params: { eta_c: 0.9, epsilon_G: 0.0001, N: 1024, M: 1024, rule: 'SKR' } },
+    { plotType: '3D local vs. global schedule', params: { eta_c: 0.9, epsilon_G: 0.001, N: 1024, M: 1024, rule: 'F_th 0.97' } }
   ],
-  plotTypes: ["3D global-schedule", "Best strategies 2D"],
+  plotTypes: ["3D local vs. global schedule", "Policy comparison"],
   dependencyMatrix: {
-    '3D global-schedule': { eta_c: true, epsilon_G: true, N: true, M: true, rule: true },
-    'Best strategies 2D': { eta_c: true, epsilon_G: true, N: true, M: true, rule: false },
+    '3D local vs. global schedule': { eta_c: true, epsilon_G: true, N: true, M: true, rule: true },
+    'Policy comparison': { eta_c: true, epsilon_G: true, N: true, M: true, rule: false },
   }
 }));
 
@@ -62,7 +62,7 @@ describe('ParamPanel - Rule Selection', () => {
     render(
       <ParamPanel
         plotState={{
-          currentPlotType: '3D global-schedule',
+          currentPlotType: '3D local vs. global schedule',
           eta_c: 0.9,
           epsilon_G: 0.0001,
           N: 1024,
@@ -82,7 +82,7 @@ describe('ParamPanel - Rule Selection', () => {
   it('updates available rules when a parameter changes', async () => {
     const onStateChange = vi.fn();
     const initialPlotState = {
-      currentPlotType: '3D global-schedule',
+      currentPlotType: '3D local vs. global schedule',
       eta_c: 0.9,
       epsilon_G: 0.0001,
       N: 1024,
@@ -123,7 +123,7 @@ describe('ParamPanel - Rule Selection', () => {
     render(
       <ParamPanel
         plotState={{
-          currentPlotType: 'Best strategies 2D',
+          currentPlotType: 'Policy comparison',
           eta_c: 0.9,
           epsilon_G: 0.0001,
           N: 1024,
@@ -147,7 +147,7 @@ describe('ParamPanel - Rule Selection', () => {
     render(
       <ParamPanel
         plotState={{
-          currentPlotType: '3D global-schedule',
+          currentPlotType: '3D local vs. global schedule',
           eta_c: 0.9,
           epsilon_G: 0.001,
           N: 1024,
