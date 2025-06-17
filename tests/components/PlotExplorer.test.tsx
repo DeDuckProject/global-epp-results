@@ -46,12 +46,12 @@ vi.mock('../../src/utils/logger', () => ({
 // Use vi.doMock to prevent hoisting issues
 vi.doMock('../../src/data/plotMeta', () => {
   const params = { eta_c: 0.9, epsilon_G: 0.0001, N: 1024, M: 1024 };
-  const plotState1 = { plotType: '3D global-schedule', params: { ...params, rule: 'SKR' } };
-  const plotState2 = { plotType: '3D global-schedule', params: { ...params, rule: 'F_th 0.97' } };
-  const plotState3 = { plotType: 'Best strategies 2D', params: { eta_c: 0.9, epsilon_G: 0.0001, N: 1024, M: 1024 } };
+  const plotState1 = { plotType: '3D local vs. global schedule', params: { ...params, rule: 'SKR' } };
+  const plotState2 = { plotType: '3D local vs. global schedule', params: { ...params, rule: 'F_th 0.97' } };
+  const plotState3 = { plotType: 'Policy comparison', params: { eta_c: 0.9, epsilon_G: 0.0001, N: 1024, M: 1024 } };
   
   return {
-    plotTypes: ["3D global-schedule", "Best strategies 2D"],
+    plotTypes: ["3D local vs. global schedule", "Policy comparison"],
     plotMeta: [
       { ...plotState1, relPath: 'comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_SKR_N1024_M1024_etac0.9_epsg0.0001.svg' },
       { ...plotState2, relPath: 'comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.97_N1024_M1024_etac0.9_epsg0.0001.svg' },
@@ -65,8 +65,8 @@ vi.doMock('../../src/data/plotMeta', () => {
       rule: ["SKR", "F_th 0.85", "F_th 0.90", "F_th 0.95", "F_th 0.97", "F_th 0.99", "Manual"],
     },
     dependencyMatrix: {
-      '3D global-schedule': { eta_c: true, epsilon_G: true, N: true, M: true, rule: true },
-      'Best strategies 2D': { eta_c: true, epsilon_G: true, N: true, M: true, rule: false },
+      '3D local vs. global schedule': { eta_c: true, epsilon_G: true, N: true, M: true, rule: true },
+      'Policy comparison': { eta_c: true, epsilon_G: true, N: true, M: true, rule: false },
     }
   }
 });
@@ -84,10 +84,10 @@ describe('PlotExplorer Integration Test', () => {
   it('updates the 3D plot and URL when the rule is changed', async () => {
     renderWithRouter(<PlotExplorer />);
     
-    const plotTypeTab = await screen.findByRole('button', { name: /3D global-schedule/i });
+    const plotTypeTab = await screen.findByRole('button', { name: /3D local vs. global schedule/i });
     await userEvent.click(plotTypeTab);
     
-    const plotImage = await screen.findByRole('img', { name: /3D global-schedule plot/i }) as HTMLImageElement;
+    const plotImage = await screen.findByRole('img', { name: /3D local vs. global schedule plot/i }) as HTMLImageElement;
     expect(plotImage.src).toContain('3d_visualization_SKR');
 
     const desktopParamPanel = screen.getByTestId('param-panel-desktop');
@@ -101,7 +101,7 @@ describe('PlotExplorer Integration Test', () => {
     
     fireEvent.change(ruleSlider, { target: { value: ruleIndex } });
     
-    const updatedPlotImage = await screen.findByRole('img', { name: /3D global-schedule plot/i }) as HTMLImageElement;
+    const updatedPlotImage = await screen.findByRole('img', { name: /3D local vs. global schedule plot/i }) as HTMLImageElement;
     expect(updatedPlotImage.src).toContain('3d_visualization_F_th_0.97');
     // expect(window.location.search).toContain('rule=F_th%200.97'); // TODO should fix
   });
@@ -109,10 +109,10 @@ describe('PlotExplorer Integration Test', () => {
   it('disables the rule selector for plots that do not use it', async () => {
     renderWithRouter(<PlotExplorer />);
 
-    const plotTypeTab = await screen.findByRole('button', { name: /Best strategies 2D/i });
+    const plotTypeTab = await screen.findByRole('button', { name: /^Policy comparison$/i });
     await userEvent.click(plotTypeTab);
 
-    const plotImage = await screen.findByRole('img', { name: /Best strategies 2D plot/i }) as HTMLImageElement;
+    const plotImage = await screen.findByRole('img', { name: /Policy comparison plot/i }) as HTMLImageElement;
     expect(plotImage.src).toContain('best_strategies');
     
     const desktopParamPanel = screen.getByTestId('param-panel-desktop');
