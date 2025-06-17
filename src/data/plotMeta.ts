@@ -16,23 +16,22 @@ export interface PlotMeta {
 }
 
 export const plotTypes = [
-  "3D global-schedule",
-  "Best strategies 2D",
-  "SKR vs F_th",
-  "Advantage heatmaps",
-  "Plateau grid",
-  "Threshold heatmap",
-  "BSA Coupling Efficiency comparisons",
+  "3D loca vs. global schedule",
+  "Policies comparison",
+  "Policies comparison (only local)",
+  "Distance gain heatmap",
+  "Inverse plateau ratio LD/GD",
+  "BSA Coupling Efficiency comparison",
 ];
 
 export const plotMeta: PlotMeta[] = [
   {
-    plotType: "Plateau grid",
+    plotType: "Inverse plateau ratio LD/GD",
     params: {},
     relPath: "comparison_plots/advantage_analysis/grid_plateau_ratio.svg",
   },
   {
-    plotType: "Advantage heatmaps",
+    plotType: "Distance gain heatmap",
     params: {
       rule: "F_th 0.95",
       eta_c: 0.3,
@@ -42,7 +41,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/advantage_analysis/heatmap_dist_gain_F_th_0.95_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "Advantage heatmaps",
+    plotType: "Distance gain heatmap",
     params: {
       rule: "F_th 0.95",
       eta_c: 0.3,
@@ -52,7 +51,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/advantage_analysis/heatmap_dist_gain_F_th_0.95_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "Advantage heatmaps",
+    plotType: "Distance gain heatmap",
     params: {
       rule: "F_th 0.95",
       eta_c: 0.5,
@@ -62,7 +61,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/advantage_analysis/heatmap_dist_gain_F_th_0.95_etac0.5_epsg0.0001.svg",
   },
   {
-    plotType: "Advantage heatmaps",
+    plotType: "Distance gain heatmap",
     params: {
       rule: "F_th 0.95",
       eta_c: 0.5,
@@ -72,7 +71,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/advantage_analysis/heatmap_dist_gain_F_th_0.95_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "Advantage heatmaps",
+    plotType: "Distance gain heatmap",
     params: {
       rule: "F_th 0.95",
       eta_c: 0.9,
@@ -82,7 +81,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/advantage_analysis/heatmap_dist_gain_F_th_0.95_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "Advantage heatmaps",
+    plotType: "Distance gain heatmap",
     params: {
       rule: "F_th 0.95",
       eta_c: 0.9,
@@ -92,7 +91,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/advantage_analysis/heatmap_dist_gain_F_th_0.95_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "Advantage heatmaps",
+    plotType: "Distance gain heatmap",
     params: {
       rule: "F_th 0.95",
       eta_c: 1,
@@ -102,7 +101,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/advantage_analysis/heatmap_dist_gain_F_th_0.95_etac1.0_epsg0.0001.svg",
   },
   {
-    plotType: "Advantage heatmaps",
+    plotType: "Distance gain heatmap",
     params: {
       rule: "F_th 0.95",
       eta_c: 1,
@@ -112,7 +111,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/advantage_analysis/heatmap_dist_gain_F_th_0.95_etac1.0_epsg0.001.svg",
   },
   {
-    plotType: "Advantage heatmaps",
+    plotType: "Distance gain heatmap",
     params: {
       rule: "F_th 0.97",
       eta_c: 0.3,
@@ -122,7 +121,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/advantage_analysis/heatmap_dist_gain_F_th_0.97_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "Advantage heatmaps",
+    plotType: "Distance gain heatmap",
     params: {
       rule: "F_th 0.97",
       eta_c: 0.3,
@@ -132,7 +131,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/advantage_analysis/heatmap_dist_gain_F_th_0.97_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "Advantage heatmaps",
+    plotType: "Distance gain heatmap",
     params: {
       rule: "F_th 0.97",
       eta_c: 0.5,
@@ -142,7 +141,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/advantage_analysis/heatmap_dist_gain_F_th_0.97_etac0.5_epsg0.0001.svg",
   },
   {
-    plotType: "Advantage heatmaps",
+    plotType: "Distance gain heatmap",
     params: {
       rule: "F_th 0.97",
       eta_c: 0.5,
@@ -152,7 +151,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/advantage_analysis/heatmap_dist_gain_F_th_0.97_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "Advantage heatmaps",
+    plotType: "Distance gain heatmap",
     params: {
       rule: "F_th 0.97",
       eta_c: 0.9,
@@ -162,7 +161,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/advantage_analysis/heatmap_dist_gain_F_th_0.97_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "Advantage heatmaps",
+    plotType: "Distance gain heatmap",
     params: {
       rule: "F_th 0.97",
       eta_c: 0.9,
@@ -172,7 +171,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/advantage_analysis/heatmap_dist_gain_F_th_0.97_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "Advantage heatmaps",
+    plotType: "Distance gain heatmap",
     params: {
       rule: "F_th 0.97",
       eta_c: 1,
@@ -182,7 +181,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/advantage_analysis/heatmap_dist_gain_F_th_0.97_etac1.0_epsg0.0001.svg",
   },
   {
-    plotType: "Advantage heatmaps",
+    plotType: "Distance gain heatmap",
     params: {
       rule: "F_th 0.97",
       eta_c: 1,
@@ -192,7 +191,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/advantage_analysis/heatmap_dist_gain_F_th_0.97_etac1.0_epsg0.001.svg",
   },
   {
-    plotType: "Advantage heatmaps",
+    plotType: "Distance gain heatmap",
     params: {
       rule: "SKR",
       eta_c: 0.3,
@@ -202,7 +201,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/advantage_analysis/heatmap_dist_gain_SKR_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "Advantage heatmaps",
+    plotType: "Distance gain heatmap",
     params: {
       rule: "SKR",
       eta_c: 0.3,
@@ -212,7 +211,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/advantage_analysis/heatmap_dist_gain_SKR_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "Advantage heatmaps",
+    plotType: "Distance gain heatmap",
     params: {
       rule: "SKR",
       eta_c: 0.5,
@@ -222,7 +221,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/advantage_analysis/heatmap_dist_gain_SKR_etac0.5_epsg0.0001.svg",
   },
   {
-    plotType: "Advantage heatmaps",
+    plotType: "Distance gain heatmap",
     params: {
       rule: "SKR",
       eta_c: 0.5,
@@ -232,7 +231,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/advantage_analysis/heatmap_dist_gain_SKR_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "Advantage heatmaps",
+    plotType: "Distance gain heatmap",
     params: {
       rule: "SKR",
       eta_c: 0.9,
@@ -242,7 +241,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/advantage_analysis/heatmap_dist_gain_SKR_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "Advantage heatmaps",
+    plotType: "Distance gain heatmap",
     params: {
       rule: "SKR",
       eta_c: 0.9,
@@ -252,7 +251,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/advantage_analysis/heatmap_dist_gain_SKR_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "Advantage heatmaps",
+    plotType: "Distance gain heatmap",
     params: {
       rule: "SKR",
       eta_c: 1,
@@ -262,7 +261,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/advantage_analysis/heatmap_dist_gain_SKR_etac1.0_epsg0.0001.svg",
   },
   {
-    plotType: "Advantage heatmaps",
+    plotType: "Distance gain heatmap",
     params: {
       rule: "SKR",
       eta_c: 1,
@@ -272,7 +271,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/advantage_analysis/heatmap_dist_gain_SKR_etac1.0_epsg0.001.svg",
   },
   {
-    plotType: "BSA Coupling Efficiency comparisons",
+    plotType: "BSA Coupling Efficiency comparison",
     params: {
       N: 1024,
       M: 1024,
@@ -281,7 +280,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/eta_c_comparison/manual_advantage_over_fth_distance_N1024_M1024.png",
   },
   {
-    plotType: "BSA Coupling Efficiency comparisons",
+    plotType: "BSA Coupling Efficiency comparison",
     params: {
       N: 1024,
       M: 2048,
@@ -290,7 +289,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/eta_c_comparison/manual_advantage_over_fth_distance_N1024_M2048.png",
   },
   {
-    plotType: "BSA Coupling Efficiency comparisons",
+    plotType: "BSA Coupling Efficiency comparison",
     params: {
       N: 1024,
       M: 512,
@@ -299,7 +298,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/eta_c_comparison/manual_advantage_over_fth_distance_N1024_M512.png",
   },
   {
-    plotType: "BSA Coupling Efficiency comparisons",
+    plotType: "BSA Coupling Efficiency comparison",
     params: {
       N: 128,
       M: 1024,
@@ -308,7 +307,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/eta_c_comparison/manual_advantage_over_fth_distance_N128_M1024.png",
   },
   {
-    plotType: "BSA Coupling Efficiency comparisons",
+    plotType: "BSA Coupling Efficiency comparison",
     params: {
       N: 128,
       M: 2048,
@@ -317,7 +316,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/eta_c_comparison/manual_advantage_over_fth_distance_N128_M2048.png",
   },
   {
-    plotType: "BSA Coupling Efficiency comparisons",
+    plotType: "BSA Coupling Efficiency comparison",
     params: {
       N: 128,
       M: 512,
@@ -326,7 +325,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/eta_c_comparison/manual_advantage_over_fth_distance_N128_M512.png",
   },
   {
-    plotType: "BSA Coupling Efficiency comparisons",
+    plotType: "BSA Coupling Efficiency comparison",
     params: {
       N: 16,
       M: 1024,
@@ -335,7 +334,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/eta_c_comparison/manual_advantage_over_fth_distance_N16_M1024.png",
   },
   {
-    plotType: "BSA Coupling Efficiency comparisons",
+    plotType: "BSA Coupling Efficiency comparison",
     params: {
       N: 16,
       M: 2048,
@@ -344,7 +343,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/eta_c_comparison/manual_advantage_over_fth_distance_N16_M2048.png",
   },
   {
-    plotType: "BSA Coupling Efficiency comparisons",
+    plotType: "BSA Coupling Efficiency comparison",
     params: {
       N: 16,
       M: 512,
@@ -353,7 +352,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/eta_c_comparison/manual_advantage_over_fth_distance_N16_M512.png",
   },
   {
-    plotType: "BSA Coupling Efficiency comparisons",
+    plotType: "BSA Coupling Efficiency comparison",
     params: {
       N: 2048,
       M: 1024,
@@ -362,7 +361,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/eta_c_comparison/manual_advantage_over_fth_distance_N2048_M1024.png",
   },
   {
-    plotType: "BSA Coupling Efficiency comparisons",
+    plotType: "BSA Coupling Efficiency comparison",
     params: {
       N: 2048,
       M: 2048,
@@ -371,7 +370,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/eta_c_comparison/manual_advantage_over_fth_distance_N2048_M2048.png",
   },
   {
-    plotType: "BSA Coupling Efficiency comparisons",
+    plotType: "BSA Coupling Efficiency comparison",
     params: {
       N: 2048,
       M: 512,
@@ -380,7 +379,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/eta_c_comparison/manual_advantage_over_fth_distance_N2048_M512.png",
   },
   {
-    plotType: "BSA Coupling Efficiency comparisons",
+    plotType: "BSA Coupling Efficiency comparison",
     params: {
       N: 256,
       M: 1024,
@@ -389,7 +388,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/eta_c_comparison/manual_advantage_over_fth_distance_N256_M1024.png",
   },
   {
-    plotType: "BSA Coupling Efficiency comparisons",
+    plotType: "BSA Coupling Efficiency comparison",
     params: {
       N: 256,
       M: 2048,
@@ -398,7 +397,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/eta_c_comparison/manual_advantage_over_fth_distance_N256_M2048.png",
   },
   {
-    plotType: "BSA Coupling Efficiency comparisons",
+    plotType: "BSA Coupling Efficiency comparison",
     params: {
       N: 256,
       M: 512,
@@ -407,7 +406,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/eta_c_comparison/manual_advantage_over_fth_distance_N256_M512.png",
   },
   {
-    plotType: "BSA Coupling Efficiency comparisons",
+    plotType: "BSA Coupling Efficiency comparison",
     params: {
       N: 32,
       M: 1024,
@@ -416,7 +415,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/eta_c_comparison/manual_advantage_over_fth_distance_N32_M1024.png",
   },
   {
-    plotType: "BSA Coupling Efficiency comparisons",
+    plotType: "BSA Coupling Efficiency comparison",
     params: {
       N: 32,
       M: 2048,
@@ -425,7 +424,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/eta_c_comparison/manual_advantage_over_fth_distance_N32_M2048.png",
   },
   {
-    plotType: "BSA Coupling Efficiency comparisons",
+    plotType: "BSA Coupling Efficiency comparison",
     params: {
       N: 32,
       M: 512,
@@ -434,7 +433,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/eta_c_comparison/manual_advantage_over_fth_distance_N32_M512.png",
   },
   {
-    plotType: "BSA Coupling Efficiency comparisons",
+    plotType: "BSA Coupling Efficiency comparison",
     params: {
       N: 4096,
       M: 1024,
@@ -443,7 +442,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/eta_c_comparison/manual_advantage_over_fth_distance_N4096_M1024.png",
   },
   {
-    plotType: "BSA Coupling Efficiency comparisons",
+    plotType: "BSA Coupling Efficiency comparison",
     params: {
       N: 4096,
       M: 2048,
@@ -452,7 +451,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/eta_c_comparison/manual_advantage_over_fth_distance_N4096_M2048.png",
   },
   {
-    plotType: "BSA Coupling Efficiency comparisons",
+    plotType: "BSA Coupling Efficiency comparison",
     params: {
       N: 4096,
       M: 512,
@@ -461,7 +460,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/eta_c_comparison/manual_advantage_over_fth_distance_N4096_M512.png",
   },
   {
-    plotType: "BSA Coupling Efficiency comparisons",
+    plotType: "BSA Coupling Efficiency comparison",
     params: {
       N: 4,
       M: 1024,
@@ -470,7 +469,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/eta_c_comparison/manual_advantage_over_fth_distance_N4_M1024.png",
   },
   {
-    plotType: "BSA Coupling Efficiency comparisons",
+    plotType: "BSA Coupling Efficiency comparison",
     params: {
       N: 4,
       M: 2048,
@@ -479,7 +478,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/eta_c_comparison/manual_advantage_over_fth_distance_N4_M2048.png",
   },
   {
-    plotType: "BSA Coupling Efficiency comparisons",
+    plotType: "BSA Coupling Efficiency comparison",
     params: {
       N: 4,
       M: 512,
@@ -488,7 +487,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/eta_c_comparison/manual_advantage_over_fth_distance_N4_M512.png",
   },
   {
-    plotType: "BSA Coupling Efficiency comparisons",
+    plotType: "BSA Coupling Efficiency comparison",
     params: {
       N: 512,
       M: 1024,
@@ -497,7 +496,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/eta_c_comparison/manual_advantage_over_fth_distance_N512_M1024.png",
   },
   {
-    plotType: "BSA Coupling Efficiency comparisons",
+    plotType: "BSA Coupling Efficiency comparison",
     params: {
       N: 512,
       M: 2048,
@@ -506,7 +505,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/eta_c_comparison/manual_advantage_over_fth_distance_N512_M2048.png",
   },
   {
-    plotType: "BSA Coupling Efficiency comparisons",
+    plotType: "BSA Coupling Efficiency comparison",
     params: {
       N: 512,
       M: 512,
@@ -515,7 +514,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/eta_c_comparison/manual_advantage_over_fth_distance_N512_M512.png",
   },
   {
-    plotType: "BSA Coupling Efficiency comparisons",
+    plotType: "BSA Coupling Efficiency comparison",
     params: {
       N: 64,
       M: 1024,
@@ -524,7 +523,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/eta_c_comparison/manual_advantage_over_fth_distance_N64_M1024.png",
   },
   {
-    plotType: "BSA Coupling Efficiency comparisons",
+    plotType: "BSA Coupling Efficiency comparison",
     params: {
       N: 64,
       M: 2048,
@@ -533,7 +532,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/eta_c_comparison/manual_advantage_over_fth_distance_N64_M2048.png",
   },
   {
-    plotType: "BSA Coupling Efficiency comparisons",
+    plotType: "BSA Coupling Efficiency comparison",
     params: {
       N: 64,
       M: 512,
@@ -542,7 +541,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/eta_c_comparison/manual_advantage_over_fth_distance_N64_M512.png",
   },
   {
-    plotType: "BSA Coupling Efficiency comparisons",
+    plotType: "BSA Coupling Efficiency comparison",
     params: {
       N: 8,
       M: 1024,
@@ -551,7 +550,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/eta_c_comparison/manual_advantage_over_fth_distance_N8_M1024.png",
   },
   {
-    plotType: "BSA Coupling Efficiency comparisons",
+    plotType: "BSA Coupling Efficiency comparison",
     params: {
       N: 8,
       M: 2048,
@@ -560,7 +559,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/eta_c_comparison/manual_advantage_over_fth_distance_N8_M2048.png",
   },
   {
-    plotType: "BSA Coupling Efficiency comparisons",
+    plotType: "BSA Coupling Efficiency comparison",
     params: {
       N: 8,
       M: 512,
@@ -569,7 +568,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/eta_c_comparison/manual_advantage_over_fth_distance_N8_M512.png",
   },
   {
-    plotType: "BSA Coupling Efficiency comparisons",
+    plotType: "BSA Coupling Efficiency comparison",
     params: {
       N: 1024,
       M: 1024,
@@ -578,7 +577,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/eta_c_comparison/manual_advantage_over_skr_distance_N1024_M1024.png",
   },
   {
-    plotType: "BSA Coupling Efficiency comparisons",
+    plotType: "BSA Coupling Efficiency comparison",
     params: {
       N: 1024,
       M: 2048,
@@ -587,7 +586,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/eta_c_comparison/manual_advantage_over_skr_distance_N1024_M2048.png",
   },
   {
-    plotType: "BSA Coupling Efficiency comparisons",
+    plotType: "BSA Coupling Efficiency comparison",
     params: {
       N: 1024,
       M: 512,
@@ -596,7 +595,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/eta_c_comparison/manual_advantage_over_skr_distance_N1024_M512.png",
   },
   {
-    plotType: "BSA Coupling Efficiency comparisons",
+    plotType: "BSA Coupling Efficiency comparison",
     params: {
       N: 128,
       M: 1024,
@@ -605,7 +604,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/eta_c_comparison/manual_advantage_over_skr_distance_N128_M1024.png",
   },
   {
-    plotType: "BSA Coupling Efficiency comparisons",
+    plotType: "BSA Coupling Efficiency comparison",
     params: {
       N: 128,
       M: 2048,
@@ -614,7 +613,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/eta_c_comparison/manual_advantage_over_skr_distance_N128_M2048.png",
   },
   {
-    plotType: "BSA Coupling Efficiency comparisons",
+    plotType: "BSA Coupling Efficiency comparison",
     params: {
       N: 128,
       M: 512,
@@ -623,7 +622,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/eta_c_comparison/manual_advantage_over_skr_distance_N128_M512.png",
   },
   {
-    plotType: "BSA Coupling Efficiency comparisons",
+    plotType: "BSA Coupling Efficiency comparison",
     params: {
       N: 16,
       M: 1024,
@@ -632,7 +631,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/eta_c_comparison/manual_advantage_over_skr_distance_N16_M1024.png",
   },
   {
-    plotType: "BSA Coupling Efficiency comparisons",
+    plotType: "BSA Coupling Efficiency comparison",
     params: {
       N: 16,
       M: 2048,
@@ -641,7 +640,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/eta_c_comparison/manual_advantage_over_skr_distance_N16_M2048.png",
   },
   {
-    plotType: "BSA Coupling Efficiency comparisons",
+    plotType: "BSA Coupling Efficiency comparison",
     params: {
       N: 16,
       M: 512,
@@ -650,7 +649,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/eta_c_comparison/manual_advantage_over_skr_distance_N16_M512.png",
   },
   {
-    plotType: "BSA Coupling Efficiency comparisons",
+    plotType: "BSA Coupling Efficiency comparison",
     params: {
       N: 2048,
       M: 1024,
@@ -659,7 +658,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/eta_c_comparison/manual_advantage_over_skr_distance_N2048_M1024.png",
   },
   {
-    plotType: "BSA Coupling Efficiency comparisons",
+    plotType: "BSA Coupling Efficiency comparison",
     params: {
       N: 2048,
       M: 2048,
@@ -668,7 +667,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/eta_c_comparison/manual_advantage_over_skr_distance_N2048_M2048.png",
   },
   {
-    plotType: "BSA Coupling Efficiency comparisons",
+    plotType: "BSA Coupling Efficiency comparison",
     params: {
       N: 2048,
       M: 512,
@@ -677,7 +676,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/eta_c_comparison/manual_advantage_over_skr_distance_N2048_M512.png",
   },
   {
-    plotType: "BSA Coupling Efficiency comparisons",
+    plotType: "BSA Coupling Efficiency comparison",
     params: {
       N: 256,
       M: 1024,
@@ -686,7 +685,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/eta_c_comparison/manual_advantage_over_skr_distance_N256_M1024.png",
   },
   {
-    plotType: "BSA Coupling Efficiency comparisons",
+    plotType: "BSA Coupling Efficiency comparison",
     params: {
       N: 256,
       M: 2048,
@@ -695,7 +694,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/eta_c_comparison/manual_advantage_over_skr_distance_N256_M2048.png",
   },
   {
-    plotType: "BSA Coupling Efficiency comparisons",
+    plotType: "BSA Coupling Efficiency comparison",
     params: {
       N: 256,
       M: 512,
@@ -704,7 +703,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/eta_c_comparison/manual_advantage_over_skr_distance_N256_M512.png",
   },
   {
-    plotType: "BSA Coupling Efficiency comparisons",
+    plotType: "BSA Coupling Efficiency comparison",
     params: {
       N: 32,
       M: 1024,
@@ -713,7 +712,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/eta_c_comparison/manual_advantage_over_skr_distance_N32_M1024.png",
   },
   {
-    plotType: "BSA Coupling Efficiency comparisons",
+    plotType: "BSA Coupling Efficiency comparison",
     params: {
       N: 32,
       M: 2048,
@@ -722,7 +721,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/eta_c_comparison/manual_advantage_over_skr_distance_N32_M2048.png",
   },
   {
-    plotType: "BSA Coupling Efficiency comparisons",
+    plotType: "BSA Coupling Efficiency comparison",
     params: {
       N: 32,
       M: 512,
@@ -731,7 +730,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/eta_c_comparison/manual_advantage_over_skr_distance_N32_M512.png",
   },
   {
-    plotType: "BSA Coupling Efficiency comparisons",
+    plotType: "BSA Coupling Efficiency comparison",
     params: {
       N: 4096,
       M: 1024,
@@ -740,7 +739,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/eta_c_comparison/manual_advantage_over_skr_distance_N4096_M1024.png",
   },
   {
-    plotType: "BSA Coupling Efficiency comparisons",
+    plotType: "BSA Coupling Efficiency comparison",
     params: {
       N: 4096,
       M: 2048,
@@ -749,7 +748,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/eta_c_comparison/manual_advantage_over_skr_distance_N4096_M2048.png",
   },
   {
-    plotType: "BSA Coupling Efficiency comparisons",
+    plotType: "BSA Coupling Efficiency comparison",
     params: {
       N: 4096,
       M: 512,
@@ -758,7 +757,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/eta_c_comparison/manual_advantage_over_skr_distance_N4096_M512.png",
   },
   {
-    plotType: "BSA Coupling Efficiency comparisons",
+    plotType: "BSA Coupling Efficiency comparison",
     params: {
       N: 4,
       M: 1024,
@@ -767,7 +766,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/eta_c_comparison/manual_advantage_over_skr_distance_N4_M1024.png",
   },
   {
-    plotType: "BSA Coupling Efficiency comparisons",
+    plotType: "BSA Coupling Efficiency comparison",
     params: {
       N: 4,
       M: 2048,
@@ -776,7 +775,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/eta_c_comparison/manual_advantage_over_skr_distance_N4_M2048.png",
   },
   {
-    plotType: "BSA Coupling Efficiency comparisons",
+    plotType: "BSA Coupling Efficiency comparison",
     params: {
       N: 4,
       M: 512,
@@ -785,7 +784,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/eta_c_comparison/manual_advantage_over_skr_distance_N4_M512.png",
   },
   {
-    plotType: "BSA Coupling Efficiency comparisons",
+    plotType: "BSA Coupling Efficiency comparison",
     params: {
       N: 512,
       M: 1024,
@@ -794,7 +793,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/eta_c_comparison/manual_advantage_over_skr_distance_N512_M1024.png",
   },
   {
-    plotType: "BSA Coupling Efficiency comparisons",
+    plotType: "BSA Coupling Efficiency comparison",
     params: {
       N: 512,
       M: 2048,
@@ -803,7 +802,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/eta_c_comparison/manual_advantage_over_skr_distance_N512_M2048.png",
   },
   {
-    plotType: "BSA Coupling Efficiency comparisons",
+    plotType: "BSA Coupling Efficiency comparison",
     params: {
       N: 512,
       M: 512,
@@ -812,7 +811,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/eta_c_comparison/manual_advantage_over_skr_distance_N512_M512.png",
   },
   {
-    plotType: "BSA Coupling Efficiency comparisons",
+    plotType: "BSA Coupling Efficiency comparison",
     params: {
       N: 64,
       M: 1024,
@@ -821,7 +820,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/eta_c_comparison/manual_advantage_over_skr_distance_N64_M1024.png",
   },
   {
-    plotType: "BSA Coupling Efficiency comparisons",
+    plotType: "BSA Coupling Efficiency comparison",
     params: {
       N: 64,
       M: 2048,
@@ -830,7 +829,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/eta_c_comparison/manual_advantage_over_skr_distance_N64_M2048.png",
   },
   {
-    plotType: "BSA Coupling Efficiency comparisons",
+    plotType: "BSA Coupling Efficiency comparison",
     params: {
       N: 64,
       M: 512,
@@ -839,7 +838,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/eta_c_comparison/manual_advantage_over_skr_distance_N64_M512.png",
   },
   {
-    plotType: "BSA Coupling Efficiency comparisons",
+    plotType: "BSA Coupling Efficiency comparison",
     params: {
       N: 8,
       M: 1024,
@@ -848,7 +847,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/eta_c_comparison/manual_advantage_over_skr_distance_N8_M1024.png",
   },
   {
-    plotType: "BSA Coupling Efficiency comparisons",
+    plotType: "BSA Coupling Efficiency comparison",
     params: {
       N: 8,
       M: 2048,
@@ -857,7 +856,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/eta_c_comparison/manual_advantage_over_skr_distance_N8_M2048.png",
   },
   {
-    plotType: "BSA Coupling Efficiency comparisons",
+    plotType: "BSA Coupling Efficiency comparison",
     params: {
       N: 8,
       M: 512,
@@ -866,7 +865,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/eta_c_comparison/manual_advantage_over_skr_distance_N8_M512.png",
   },
   {
-    plotType: "BSA Coupling Efficiency comparisons",
+    plotType: "BSA Coupling Efficiency comparison",
     params: {
       N: 1024,
       M: 1024,
@@ -875,7 +874,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/eta_c_comparison/max_distance_vs_eta_c_N1024_M1024.png",
   },
   {
-    plotType: "BSA Coupling Efficiency comparisons",
+    plotType: "BSA Coupling Efficiency comparison",
     params: {
       N: 1024,
       M: 2048,
@@ -884,7 +883,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/eta_c_comparison/max_distance_vs_eta_c_N1024_M2048.png",
   },
   {
-    plotType: "BSA Coupling Efficiency comparisons",
+    plotType: "BSA Coupling Efficiency comparison",
     params: {
       N: 1024,
       M: 512,
@@ -893,7 +892,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/eta_c_comparison/max_distance_vs_eta_c_N1024_M512.png",
   },
   {
-    plotType: "BSA Coupling Efficiency comparisons",
+    plotType: "BSA Coupling Efficiency comparison",
     params: {
       N: 128,
       M: 1024,
@@ -902,7 +901,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/eta_c_comparison/max_distance_vs_eta_c_N128_M1024.png",
   },
   {
-    plotType: "BSA Coupling Efficiency comparisons",
+    plotType: "BSA Coupling Efficiency comparison",
     params: {
       N: 128,
       M: 2048,
@@ -911,7 +910,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/eta_c_comparison/max_distance_vs_eta_c_N128_M2048.png",
   },
   {
-    plotType: "BSA Coupling Efficiency comparisons",
+    plotType: "BSA Coupling Efficiency comparison",
     params: {
       N: 128,
       M: 512,
@@ -920,7 +919,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/eta_c_comparison/max_distance_vs_eta_c_N128_M512.png",
   },
   {
-    plotType: "BSA Coupling Efficiency comparisons",
+    plotType: "BSA Coupling Efficiency comparison",
     params: {
       N: 16,
       M: 1024,
@@ -929,7 +928,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/eta_c_comparison/max_distance_vs_eta_c_N16_M1024.png",
   },
   {
-    plotType: "BSA Coupling Efficiency comparisons",
+    plotType: "BSA Coupling Efficiency comparison",
     params: {
       N: 16,
       M: 2048,
@@ -938,7 +937,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/eta_c_comparison/max_distance_vs_eta_c_N16_M2048.png",
   },
   {
-    plotType: "BSA Coupling Efficiency comparisons",
+    plotType: "BSA Coupling Efficiency comparison",
     params: {
       N: 16,
       M: 512,
@@ -947,7 +946,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/eta_c_comparison/max_distance_vs_eta_c_N16_M512.png",
   },
   {
-    plotType: "BSA Coupling Efficiency comparisons",
+    plotType: "BSA Coupling Efficiency comparison",
     params: {
       N: 2048,
       M: 1024,
@@ -956,7 +955,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/eta_c_comparison/max_distance_vs_eta_c_N2048_M1024.png",
   },
   {
-    plotType: "BSA Coupling Efficiency comparisons",
+    plotType: "BSA Coupling Efficiency comparison",
     params: {
       N: 2048,
       M: 2048,
@@ -965,7 +964,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/eta_c_comparison/max_distance_vs_eta_c_N2048_M2048.png",
   },
   {
-    plotType: "BSA Coupling Efficiency comparisons",
+    plotType: "BSA Coupling Efficiency comparison",
     params: {
       N: 2048,
       M: 512,
@@ -974,7 +973,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/eta_c_comparison/max_distance_vs_eta_c_N2048_M512.png",
   },
   {
-    plotType: "BSA Coupling Efficiency comparisons",
+    plotType: "BSA Coupling Efficiency comparison",
     params: {
       N: 256,
       M: 1024,
@@ -983,7 +982,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/eta_c_comparison/max_distance_vs_eta_c_N256_M1024.png",
   },
   {
-    plotType: "BSA Coupling Efficiency comparisons",
+    plotType: "BSA Coupling Efficiency comparison",
     params: {
       N: 256,
       M: 2048,
@@ -992,7 +991,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/eta_c_comparison/max_distance_vs_eta_c_N256_M2048.png",
   },
   {
-    plotType: "BSA Coupling Efficiency comparisons",
+    plotType: "BSA Coupling Efficiency comparison",
     params: {
       N: 256,
       M: 512,
@@ -1001,7 +1000,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/eta_c_comparison/max_distance_vs_eta_c_N256_M512.png",
   },
   {
-    plotType: "BSA Coupling Efficiency comparisons",
+    plotType: "BSA Coupling Efficiency comparison",
     params: {
       N: 32,
       M: 1024,
@@ -1010,7 +1009,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/eta_c_comparison/max_distance_vs_eta_c_N32_M1024.png",
   },
   {
-    plotType: "BSA Coupling Efficiency comparisons",
+    plotType: "BSA Coupling Efficiency comparison",
     params: {
       N: 32,
       M: 2048,
@@ -1019,7 +1018,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/eta_c_comparison/max_distance_vs_eta_c_N32_M2048.png",
   },
   {
-    plotType: "BSA Coupling Efficiency comparisons",
+    plotType: "BSA Coupling Efficiency comparison",
     params: {
       N: 32,
       M: 512,
@@ -1028,7 +1027,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/eta_c_comparison/max_distance_vs_eta_c_N32_M512.png",
   },
   {
-    plotType: "BSA Coupling Efficiency comparisons",
+    plotType: "BSA Coupling Efficiency comparison",
     params: {
       N: 4096,
       M: 1024,
@@ -1037,7 +1036,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/eta_c_comparison/max_distance_vs_eta_c_N4096_M1024.png",
   },
   {
-    plotType: "BSA Coupling Efficiency comparisons",
+    plotType: "BSA Coupling Efficiency comparison",
     params: {
       N: 4096,
       M: 2048,
@@ -1046,7 +1045,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/eta_c_comparison/max_distance_vs_eta_c_N4096_M2048.png",
   },
   {
-    plotType: "BSA Coupling Efficiency comparisons",
+    plotType: "BSA Coupling Efficiency comparison",
     params: {
       N: 4096,
       M: 512,
@@ -1055,7 +1054,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/eta_c_comparison/max_distance_vs_eta_c_N4096_M512.png",
   },
   {
-    plotType: "BSA Coupling Efficiency comparisons",
+    plotType: "BSA Coupling Efficiency comparison",
     params: {
       N: 4,
       M: 1024,
@@ -1064,7 +1063,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/eta_c_comparison/max_distance_vs_eta_c_N4_M1024.png",
   },
   {
-    plotType: "BSA Coupling Efficiency comparisons",
+    plotType: "BSA Coupling Efficiency comparison",
     params: {
       N: 4,
       M: 2048,
@@ -1073,7 +1072,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/eta_c_comparison/max_distance_vs_eta_c_N4_M2048.png",
   },
   {
-    plotType: "BSA Coupling Efficiency comparisons",
+    plotType: "BSA Coupling Efficiency comparison",
     params: {
       N: 4,
       M: 512,
@@ -1082,7 +1081,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/eta_c_comparison/max_distance_vs_eta_c_N4_M512.png",
   },
   {
-    plotType: "BSA Coupling Efficiency comparisons",
+    plotType: "BSA Coupling Efficiency comparison",
     params: {
       N: 512,
       M: 1024,
@@ -1091,7 +1090,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/eta_c_comparison/max_distance_vs_eta_c_N512_M1024.png",
   },
   {
-    plotType: "BSA Coupling Efficiency comparisons",
+    plotType: "BSA Coupling Efficiency comparison",
     params: {
       N: 512,
       M: 2048,
@@ -1100,7 +1099,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/eta_c_comparison/max_distance_vs_eta_c_N512_M2048.png",
   },
   {
-    plotType: "BSA Coupling Efficiency comparisons",
+    plotType: "BSA Coupling Efficiency comparison",
     params: {
       N: 512,
       M: 512,
@@ -1109,7 +1108,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/eta_c_comparison/max_distance_vs_eta_c_N512_M512.png",
   },
   {
-    plotType: "BSA Coupling Efficiency comparisons",
+    plotType: "BSA Coupling Efficiency comparison",
     params: {
       N: 64,
       M: 1024,
@@ -1118,7 +1117,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/eta_c_comparison/max_distance_vs_eta_c_N64_M1024.png",
   },
   {
-    plotType: "BSA Coupling Efficiency comparisons",
+    plotType: "BSA Coupling Efficiency comparison",
     params: {
       N: 64,
       M: 2048,
@@ -1127,7 +1126,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/eta_c_comparison/max_distance_vs_eta_c_N64_M2048.png",
   },
   {
-    plotType: "BSA Coupling Efficiency comparisons",
+    plotType: "BSA Coupling Efficiency comparison",
     params: {
       N: 64,
       M: 512,
@@ -1136,7 +1135,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/eta_c_comparison/max_distance_vs_eta_c_N64_M512.png",
   },
   {
-    plotType: "BSA Coupling Efficiency comparisons",
+    plotType: "BSA Coupling Efficiency comparison",
     params: {
       N: 8,
       M: 1024,
@@ -1145,7 +1144,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/eta_c_comparison/max_distance_vs_eta_c_N8_M1024.png",
   },
   {
-    plotType: "BSA Coupling Efficiency comparisons",
+    plotType: "BSA Coupling Efficiency comparison",
     params: {
       N: 8,
       M: 2048,
@@ -1154,7 +1153,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/eta_c_comparison/max_distance_vs_eta_c_N8_M2048.png",
   },
   {
-    plotType: "BSA Coupling Efficiency comparisons",
+    plotType: "BSA Coupling Efficiency comparison",
     params: {
       N: 8,
       M: 512,
@@ -1163,19 +1162,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/eta_c_comparison/max_distance_vs_eta_c_N8_M512.png",
   },
   {
-    plotType: "Threshold heatmap",
-    params: {},
-    relPath:
-      "comparison_plots/threshold_analysis/consolidated_threshold_M_heatmap.svg",
-  },
-  {
-    plotType: "Threshold heatmap",
-    params: {},
-    relPath:
-      "comparison_plots/threshold_analysis/consolidated_threshold_N_heatmap.svg",
-  },
-  {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -1187,7 +1174,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.85_N1024_M1024_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -1199,7 +1186,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.85_N1024_M2048_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -1211,7 +1198,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.85_N1024_M512_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -1223,7 +1210,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.85_N128_M1024_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -1235,7 +1222,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.85_N128_M2048_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -1247,7 +1234,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.85_N128_M512_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -1259,7 +1246,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.85_N16_M1024_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -1271,7 +1258,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.85_N16_M2048_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -1283,7 +1270,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.85_N16_M512_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -1295,7 +1282,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.85_N2048_M1024_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -1307,7 +1294,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.85_N2048_M2048_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -1319,7 +1306,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.85_N2048_M512_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -1331,7 +1318,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.85_N256_M1024_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -1343,7 +1330,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.85_N256_M2048_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -1355,7 +1342,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.85_N256_M512_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -1367,7 +1354,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.85_N32_M1024_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -1379,7 +1366,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.85_N32_M2048_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -1391,7 +1378,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.85_N32_M512_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -1403,7 +1390,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.85_N4096_M1024_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -1415,7 +1402,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.85_N4096_M2048_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -1427,7 +1414,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.85_N4096_M512_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -1439,7 +1426,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.85_N4_M1024_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -1451,7 +1438,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.85_N4_M2048_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -1463,7 +1450,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.85_N4_M512_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -1475,7 +1462,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.85_N512_M1024_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -1487,7 +1474,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.85_N512_M2048_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -1499,7 +1486,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.85_N512_M512_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -1511,7 +1498,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.85_N64_M1024_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -1523,7 +1510,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.85_N64_M2048_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -1535,7 +1522,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.85_N64_M512_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -1547,7 +1534,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.85_N8_M1024_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -1559,7 +1546,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.85_N8_M2048_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -1571,7 +1558,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.85_N8_M512_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -1583,7 +1570,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.95_N1024_M1024_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -1595,7 +1582,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.95_N1024_M2048_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -1607,7 +1594,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.95_N1024_M512_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -1619,7 +1606,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.95_N128_M1024_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -1631,7 +1618,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.95_N128_M2048_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -1643,7 +1630,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.95_N128_M512_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -1655,7 +1642,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.95_N16_M1024_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -1667,7 +1654,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.95_N16_M2048_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -1679,7 +1666,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.95_N16_M512_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -1691,7 +1678,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.95_N2048_M1024_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -1703,7 +1690,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.95_N2048_M2048_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -1715,7 +1702,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.95_N2048_M512_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -1727,7 +1714,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.95_N256_M1024_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -1739,7 +1726,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.95_N256_M2048_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -1751,7 +1738,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.95_N256_M512_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -1763,7 +1750,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.95_N32_M1024_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -1775,7 +1762,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.95_N32_M2048_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -1787,7 +1774,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.95_N32_M512_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -1799,7 +1786,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.95_N4096_M1024_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -1811,7 +1798,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.95_N4096_M2048_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -1823,7 +1810,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.95_N4096_M512_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -1835,7 +1822,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.95_N4_M1024_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -1847,7 +1834,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.95_N4_M2048_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -1859,7 +1846,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.95_N4_M512_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -1871,7 +1858,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.95_N512_M1024_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -1883,7 +1870,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.95_N512_M2048_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -1895,7 +1882,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.95_N512_M512_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -1907,7 +1894,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.95_N64_M1024_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -1919,7 +1906,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.95_N64_M2048_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -1931,7 +1918,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.95_N64_M512_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -1943,7 +1930,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.95_N8_M1024_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -1955,7 +1942,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.95_N8_M2048_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -1967,7 +1954,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.95_N8_M512_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -1979,7 +1966,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.97_N1024_M1024_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -1991,7 +1978,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.97_N1024_M2048_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -2003,7 +1990,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.97_N1024_M512_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -2015,7 +2002,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.97_N128_M1024_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -2027,7 +2014,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.97_N128_M2048_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -2039,7 +2026,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.97_N128_M512_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -2051,7 +2038,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.97_N16_M1024_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -2063,7 +2050,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.97_N16_M2048_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -2075,7 +2062,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.97_N16_M512_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -2087,7 +2074,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.97_N2048_M1024_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -2099,7 +2086,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.97_N2048_M2048_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -2111,7 +2098,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.97_N2048_M512_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -2123,7 +2110,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.97_N256_M1024_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -2135,7 +2122,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.97_N256_M2048_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -2147,7 +2134,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.97_N256_M512_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -2159,7 +2146,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.97_N32_M1024_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -2171,7 +2158,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.97_N32_M2048_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -2183,7 +2170,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.97_N32_M512_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -2195,7 +2182,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.97_N4096_M1024_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -2207,7 +2194,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.97_N4096_M2048_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -2219,7 +2206,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.97_N4096_M512_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -2231,7 +2218,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.97_N4_M1024_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -2243,7 +2230,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.97_N4_M2048_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -2255,7 +2242,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.97_N4_M512_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -2267,7 +2254,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.97_N512_M1024_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -2279,7 +2266,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.97_N512_M2048_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -2291,7 +2278,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.97_N512_M512_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -2303,7 +2290,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.97_N64_M1024_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -2315,7 +2302,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.97_N64_M2048_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -2327,7 +2314,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.97_N64_M512_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -2339,7 +2326,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.97_N8_M1024_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -2351,7 +2338,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.97_N8_M2048_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -2363,7 +2350,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.97_N8_M512_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -2375,7 +2362,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.99_N1024_M1024_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -2387,7 +2374,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.99_N1024_M2048_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -2399,7 +2386,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.99_N1024_M512_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -2411,7 +2398,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.99_N128_M1024_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -2423,7 +2410,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.99_N128_M2048_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -2435,7 +2422,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.99_N128_M512_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -2447,7 +2434,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.99_N16_M1024_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -2459,7 +2446,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.99_N16_M2048_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -2471,7 +2458,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.99_N16_M512_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -2483,7 +2470,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.99_N2048_M1024_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -2495,7 +2482,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.99_N2048_M2048_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -2507,7 +2494,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.99_N2048_M512_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -2519,7 +2506,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.99_N256_M1024_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -2531,7 +2518,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.99_N256_M2048_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -2543,7 +2530,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.99_N256_M512_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -2555,7 +2542,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.99_N32_M1024_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -2567,7 +2554,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.99_N32_M2048_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -2579,7 +2566,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.99_N32_M512_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -2591,7 +2578,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.99_N4096_M1024_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -2603,7 +2590,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.99_N4096_M2048_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -2615,7 +2602,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.99_N4096_M512_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -2627,7 +2614,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.99_N4_M1024_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -2639,7 +2626,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.99_N4_M2048_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -2651,7 +2638,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.99_N4_M512_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -2663,7 +2650,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.99_N512_M1024_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -2675,7 +2662,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.99_N512_M2048_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -2687,7 +2674,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.99_N512_M512_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -2699,7 +2686,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.99_N64_M1024_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -2711,7 +2698,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.99_N64_M2048_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -2723,7 +2710,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.99_N64_M512_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -2735,7 +2722,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.99_N8_M1024_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -2747,7 +2734,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.99_N8_M2048_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -2759,7 +2746,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.99_N8_M512_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -2771,7 +2758,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.9_N1024_M1024_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -2783,7 +2770,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.9_N1024_M2048_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -2795,7 +2782,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.9_N1024_M512_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -2807,7 +2794,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.9_N128_M1024_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -2819,7 +2806,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.9_N128_M2048_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -2831,7 +2818,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.9_N128_M512_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -2843,7 +2830,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.9_N16_M1024_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -2855,7 +2842,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.9_N16_M2048_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -2867,7 +2854,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.9_N16_M512_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -2879,7 +2866,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.9_N2048_M1024_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -2891,7 +2878,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.9_N2048_M2048_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -2903,7 +2890,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.9_N2048_M512_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -2915,7 +2902,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.9_N256_M1024_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -2927,7 +2914,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.9_N256_M2048_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -2939,7 +2926,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.9_N256_M512_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -2951,7 +2938,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.9_N32_M1024_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -2963,7 +2950,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.9_N32_M2048_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -2975,7 +2962,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.9_N32_M512_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -2987,7 +2974,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.9_N4096_M1024_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -2999,7 +2986,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.9_N4096_M2048_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -3011,7 +2998,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.9_N4096_M512_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -3023,7 +3010,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.9_N4_M1024_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -3035,7 +3022,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.9_N4_M2048_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -3047,7 +3034,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.9_N4_M512_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -3059,7 +3046,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.9_N512_M1024_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -3071,7 +3058,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.9_N512_M2048_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -3083,7 +3070,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.9_N512_M512_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -3095,7 +3082,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.9_N64_M1024_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -3107,7 +3094,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.9_N64_M2048_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -3119,7 +3106,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.9_N64_M512_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -3131,7 +3118,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.9_N8_M1024_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -3143,7 +3130,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.9_N8_M2048_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -3155,7 +3142,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_F_th_0.9_N8_M512_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -3167,7 +3154,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_SKR_N1024_M1024_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -3179,7 +3166,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_SKR_N1024_M2048_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -3191,7 +3178,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_SKR_N1024_M512_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -3203,7 +3190,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_SKR_N128_M1024_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -3215,7 +3202,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_SKR_N128_M2048_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -3227,7 +3214,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_SKR_N128_M512_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -3239,7 +3226,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_SKR_N16_M1024_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -3251,7 +3238,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_SKR_N16_M2048_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -3263,7 +3250,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_SKR_N16_M512_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -3275,7 +3262,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_SKR_N2048_M1024_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -3287,7 +3274,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_SKR_N2048_M2048_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -3299,7 +3286,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_SKR_N2048_M512_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -3311,7 +3298,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_SKR_N256_M1024_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -3323,7 +3310,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_SKR_N256_M2048_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -3335,7 +3322,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_SKR_N256_M512_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -3347,7 +3334,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_SKR_N32_M1024_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -3359,7 +3346,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_SKR_N32_M2048_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -3371,7 +3358,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_SKR_N32_M512_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -3383,7 +3370,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_SKR_N4096_M1024_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -3395,7 +3382,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_SKR_N4096_M2048_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -3407,7 +3394,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_SKR_N4096_M512_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -3419,7 +3406,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_SKR_N4_M1024_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -3431,7 +3418,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_SKR_N4_M2048_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -3443,7 +3430,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_SKR_N4_M512_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -3455,7 +3442,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_SKR_N512_M1024_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -3467,7 +3454,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_SKR_N512_M2048_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -3479,7 +3466,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_SKR_N512_M512_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -3491,7 +3478,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_SKR_N64_M1024_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -3503,7 +3490,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_SKR_N64_M2048_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -3515,7 +3502,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_SKR_N64_M512_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -3527,7 +3514,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_SKR_N8_M1024_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -3539,7 +3526,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_SKR_N8_M2048_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -3551,7 +3538,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/3d_visualization_SKR_N8_M512_etac0.3_epsg0.0001.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -3562,7 +3549,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/best_strategies_N1024_M1024.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -3573,7 +3560,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/best_strategies_N1024_M2048.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -3584,7 +3571,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/best_strategies_N1024_M512.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -3595,7 +3582,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/best_strategies_N128_M1024.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -3606,7 +3593,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/best_strategies_N128_M2048.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -3617,7 +3604,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/best_strategies_N128_M512.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -3628,7 +3615,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/best_strategies_N16_M1024.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -3639,7 +3626,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/best_strategies_N16_M2048.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -3650,7 +3637,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/best_strategies_N16_M512.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -3661,7 +3648,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/best_strategies_N2048_M1024.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -3672,7 +3659,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/best_strategies_N2048_M2048.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -3683,7 +3670,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/best_strategies_N2048_M512.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -3694,7 +3681,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/best_strategies_N256_M1024.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -3705,7 +3692,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/best_strategies_N256_M2048.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -3716,7 +3703,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/best_strategies_N256_M512.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -3727,7 +3714,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/best_strategies_N32_M1024.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -3738,7 +3725,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/best_strategies_N32_M2048.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -3749,7 +3736,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/best_strategies_N32_M512.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -3760,7 +3747,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/best_strategies_N4096_M1024.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -3771,7 +3758,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/best_strategies_N4096_M2048.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -3782,7 +3769,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/best_strategies_N4096_M512.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -3793,7 +3780,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/best_strategies_N4_M1024.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -3804,7 +3791,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/best_strategies_N4_M2048.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -3815,7 +3802,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/best_strategies_N4_M512.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -3826,7 +3813,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/best_strategies_N512_M1024.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -3837,7 +3824,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/best_strategies_N512_M2048.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -3848,7 +3835,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/best_strategies_N512_M512.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -3859,7 +3846,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/best_strategies_N64_M1024.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -3870,7 +3857,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/best_strategies_N64_M2048.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -3881,7 +3868,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/best_strategies_N64_M512.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -3892,7 +3879,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/best_strategies_N8_M1024.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -3903,7 +3890,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/best_strategies_N8_M2048.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -3914,7 +3901,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/best_strategies_N8_M512.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -3925,7 +3912,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/skr_vs_fth_N1024_M1024.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -3936,7 +3923,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/skr_vs_fth_N1024_M2048.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -3947,7 +3934,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/skr_vs_fth_N1024_M512.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -3958,7 +3945,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/skr_vs_fth_N128_M1024.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -3969,7 +3956,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/skr_vs_fth_N128_M2048.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -3979,7 +3966,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.3_epsg0.0001/svg/skr_vs_fth_N128_M512.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -3989,7 +3976,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.3_epsg0.0001/svg/skr_vs_fth_N16_M1024.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -3999,7 +3986,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.3_epsg0.0001/svg/skr_vs_fth_N16_M2048.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -4009,7 +3996,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.3_epsg0.0001/svg/skr_vs_fth_N16_M512.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -4020,7 +4007,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/skr_vs_fth_N2048_M1024.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -4031,7 +4018,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/skr_vs_fth_N2048_M2048.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -4042,7 +4029,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/skr_vs_fth_N2048_M512.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -4053,7 +4040,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/skr_vs_fth_N256_M1024.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -4064,7 +4051,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/skr_vs_fth_N256_M2048.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -4074,7 +4061,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.3_epsg0.0001/svg/skr_vs_fth_N256_M512.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -4084,7 +4071,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.3_epsg0.0001/svg/skr_vs_fth_N32_M1024.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -4094,7 +4081,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.3_epsg0.0001/svg/skr_vs_fth_N32_M2048.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -4104,7 +4091,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.3_epsg0.0001/svg/skr_vs_fth_N32_M512.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -4115,7 +4102,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/skr_vs_fth_N4096_M1024.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -4126,7 +4113,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/skr_vs_fth_N4096_M2048.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -4137,7 +4124,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/skr_vs_fth_N4096_M512.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -4147,7 +4134,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.3_epsg0.0001/svg/skr_vs_fth_N4_M1024.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -4157,7 +4144,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.3_epsg0.0001/svg/skr_vs_fth_N4_M2048.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -4167,7 +4154,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.3_epsg0.0001/svg/skr_vs_fth_N4_M512.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -4178,7 +4165,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/skr_vs_fth_N512_M1024.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -4189,7 +4176,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.0001/svg/skr_vs_fth_N512_M2048.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -4199,7 +4186,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.3_epsg0.0001/svg/skr_vs_fth_N512_M512.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -4209,7 +4196,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.3_epsg0.0001/svg/skr_vs_fth_N64_M1024.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -4219,7 +4206,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.3_epsg0.0001/svg/skr_vs_fth_N64_M2048.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -4229,7 +4216,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.3_epsg0.0001/svg/skr_vs_fth_N64_M512.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -4239,7 +4226,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.3_epsg0.0001/svg/skr_vs_fth_N8_M1024.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -4249,7 +4236,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.3_epsg0.0001/svg/skr_vs_fth_N8_M2048.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.0001,
@@ -4259,3091 +4246,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.3_epsg0.0001/svg/skr_vs_fth_N8_M512.svg",
   },
   {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.85",
-      N: 1024,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.85_N1024_M1024_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.85",
-      N: 1024,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.85_N1024_M2048_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.85",
-      N: 1024,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.85_N1024_M512_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.85",
-      N: 128,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.85_N128_M1024_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.85",
-      N: 128,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.85_N128_M2048_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.85",
-      N: 128,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.85_N128_M512_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.85",
-      N: 16,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.85_N16_M1024_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.85",
-      N: 16,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.85_N16_M2048_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.85",
-      N: 16,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.85_N16_M512_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.85",
-      N: 2048,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.85_N2048_M1024_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.85",
-      N: 2048,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.85_N2048_M2048_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.85",
-      N: 2048,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.85_N2048_M512_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.85",
-      N: 256,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.85_N256_M1024_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.85",
-      N: 256,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.85_N256_M2048_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.85",
-      N: 256,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.85_N256_M512_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.85",
-      N: 32,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.85_N32_M1024_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.85",
-      N: 32,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.85_N32_M2048_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.85",
-      N: 32,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.85_N32_M512_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.85",
-      N: 4096,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.85_N4096_M1024_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.85",
-      N: 4096,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.85_N4096_M2048_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.85",
-      N: 4096,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.85_N4096_M512_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.85",
-      N: 4,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.85_N4_M1024_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.85",
-      N: 4,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.85_N4_M2048_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.85",
-      N: 4,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.85_N4_M512_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.85",
-      N: 512,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.85_N512_M1024_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.85",
-      N: 512,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.85_N512_M2048_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.85",
-      N: 512,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.85_N512_M512_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.85",
-      N: 64,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.85_N64_M1024_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.85",
-      N: 64,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.85_N64_M2048_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.85",
-      N: 64,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.85_N64_M512_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.85",
-      N: 8,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.85_N8_M1024_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.85",
-      N: 8,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.85_N8_M2048_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.85",
-      N: 8,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.85_N8_M512_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.95",
-      N: 1024,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.95_N1024_M1024_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.95",
-      N: 1024,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.95_N1024_M2048_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.95",
-      N: 1024,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.95_N1024_M512_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.95",
-      N: 128,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.95_N128_M1024_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.95",
-      N: 128,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.95_N128_M2048_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.95",
-      N: 128,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.95_N128_M512_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.95",
-      N: 16,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.95_N16_M1024_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.95",
-      N: 16,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.95_N16_M2048_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.95",
-      N: 16,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.95_N16_M512_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.95",
-      N: 2048,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.95_N2048_M1024_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.95",
-      N: 2048,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.95_N2048_M2048_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.95",
-      N: 2048,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.95_N2048_M512_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.95",
-      N: 256,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.95_N256_M1024_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.95",
-      N: 256,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.95_N256_M2048_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.95",
-      N: 256,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.95_N256_M512_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.95",
-      N: 32,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.95_N32_M1024_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.95",
-      N: 32,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.95_N32_M2048_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.95",
-      N: 32,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.95_N32_M512_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.95",
-      N: 4096,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.95_N4096_M1024_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.95",
-      N: 4096,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.95_N4096_M2048_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.95",
-      N: 4096,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.95_N4096_M512_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.95",
-      N: 4,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.95_N4_M1024_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.95",
-      N: 4,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.95_N4_M2048_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.95",
-      N: 4,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.95_N4_M512_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.95",
-      N: 512,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.95_N512_M1024_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.95",
-      N: 512,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.95_N512_M2048_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.95",
-      N: 512,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.95_N512_M512_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.95",
-      N: 64,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.95_N64_M1024_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.95",
-      N: 64,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.95_N64_M2048_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.95",
-      N: 64,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.95_N64_M512_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.95",
-      N: 8,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.95_N8_M1024_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.95",
-      N: 8,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.95_N8_M2048_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.95",
-      N: 8,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.95_N8_M512_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.97",
-      N: 1024,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.97_N1024_M1024_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.97",
-      N: 1024,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.97_N1024_M2048_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.97",
-      N: 1024,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.97_N1024_M512_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.97",
-      N: 128,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.97_N128_M1024_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.97",
-      N: 128,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.97_N128_M2048_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.97",
-      N: 128,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.97_N128_M512_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.97",
-      N: 16,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.97_N16_M1024_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.97",
-      N: 16,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.97_N16_M2048_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.97",
-      N: 16,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.97_N16_M512_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.97",
-      N: 2048,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.97_N2048_M1024_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.97",
-      N: 2048,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.97_N2048_M2048_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.97",
-      N: 2048,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.97_N2048_M512_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.97",
-      N: 256,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.97_N256_M1024_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.97",
-      N: 256,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.97_N256_M2048_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.97",
-      N: 256,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.97_N256_M512_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.97",
-      N: 32,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.97_N32_M1024_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.97",
-      N: 32,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.97_N32_M2048_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.97",
-      N: 32,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.97_N32_M512_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.97",
-      N: 4096,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.97_N4096_M1024_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.97",
-      N: 4096,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.97_N4096_M2048_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.97",
-      N: 4096,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.97_N4096_M512_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.97",
-      N: 4,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.97_N4_M1024_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.97",
-      N: 4,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.97_N4_M2048_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.97",
-      N: 4,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.97_N4_M512_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.97",
-      N: 512,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.97_N512_M1024_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.97",
-      N: 512,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.97_N512_M2048_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.97",
-      N: 512,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.97_N512_M512_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.97",
-      N: 64,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.97_N64_M1024_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.97",
-      N: 64,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.97_N64_M2048_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.97",
-      N: 64,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.97_N64_M512_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.97",
-      N: 8,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.97_N8_M1024_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.97",
-      N: 8,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.97_N8_M2048_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.97",
-      N: 8,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.97_N8_M512_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.99",
-      N: 1024,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.99_N1024_M1024_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.99",
-      N: 1024,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.99_N1024_M2048_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.99",
-      N: 1024,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.99_N1024_M512_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.99",
-      N: 128,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.99_N128_M1024_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.99",
-      N: 128,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.99_N128_M2048_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.99",
-      N: 128,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.99_N128_M512_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.99",
-      N: 16,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.99_N16_M1024_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.99",
-      N: 16,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.99_N16_M2048_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.99",
-      N: 16,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.99_N16_M512_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.99",
-      N: 2048,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.99_N2048_M1024_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.99",
-      N: 2048,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.99_N2048_M2048_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.99",
-      N: 2048,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.99_N2048_M512_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.99",
-      N: 256,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.99_N256_M1024_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.99",
-      N: 256,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.99_N256_M2048_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.99",
-      N: 256,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.99_N256_M512_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.99",
-      N: 32,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.99_N32_M1024_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.99",
-      N: 32,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.99_N32_M2048_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.99",
-      N: 32,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.99_N32_M512_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.99",
-      N: 4096,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.99_N4096_M1024_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.99",
-      N: 4096,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.99_N4096_M2048_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.99",
-      N: 4096,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.99_N4096_M512_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.99",
-      N: 4,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.99_N4_M1024_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.99",
-      N: 4,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.99_N4_M2048_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.99",
-      N: 4,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.99_N4_M512_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.99",
-      N: 512,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.99_N512_M1024_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.99",
-      N: 512,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.99_N512_M2048_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.99",
-      N: 512,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.99_N512_M512_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.99",
-      N: 64,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.99_N64_M1024_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.99",
-      N: 64,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.99_N64_M2048_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.99",
-      N: 64,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.99_N64_M512_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.99",
-      N: 8,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.99_N8_M1024_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.99",
-      N: 8,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.99_N8_M2048_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.99",
-      N: 8,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.99_N8_M512_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.9",
-      N: 1024,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.9_N1024_M1024_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.9",
-      N: 1024,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.9_N1024_M2048_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.9",
-      N: 1024,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.9_N1024_M512_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.9",
-      N: 128,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.9_N128_M1024_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.9",
-      N: 128,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.9_N128_M2048_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.9",
-      N: 128,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.9_N128_M512_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.9",
-      N: 16,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.9_N16_M1024_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.9",
-      N: 16,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.9_N16_M2048_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.9",
-      N: 16,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.9_N16_M512_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.9",
-      N: 2048,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.9_N2048_M1024_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.9",
-      N: 2048,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.9_N2048_M2048_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.9",
-      N: 2048,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.9_N2048_M512_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.9",
-      N: 256,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.9_N256_M1024_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.9",
-      N: 256,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.9_N256_M2048_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.9",
-      N: 256,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.9_N256_M512_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.9",
-      N: 32,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.9_N32_M1024_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.9",
-      N: 32,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.9_N32_M2048_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.9",
-      N: 32,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.9_N32_M512_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.9",
-      N: 4096,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.9_N4096_M1024_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.9",
-      N: 4096,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.9_N4096_M2048_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.9",
-      N: 4096,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.9_N4096_M512_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.9",
-      N: 4,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.9_N4_M1024_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.9",
-      N: 4,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.9_N4_M2048_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.9",
-      N: 4,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.9_N4_M512_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.9",
-      N: 512,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.9_N512_M1024_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.9",
-      N: 512,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.9_N512_M2048_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.9",
-      N: 512,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.9_N512_M512_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.9",
-      N: 64,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.9_N64_M1024_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.9",
-      N: 64,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.9_N64_M2048_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.9",
-      N: 64,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.9_N64_M512_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.9",
-      N: 8,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.9_N8_M1024_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.9",
-      N: 8,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.9_N8_M2048_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.9",
-      N: 8,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.9_N8_M512_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 1024,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N1024_M1024_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 1024,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N1024_M2048_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 1024,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N1024_M512_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 128,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N128_M1024_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 128,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N128_M2048_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 128,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N128_M512_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 16,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N16_M1024_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 16,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N16_M2048_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 16,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N16_M512_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 2048,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N2048_M1024_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 2048,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N2048_M2048_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 2048,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N2048_M512_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 256,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N256_M1024_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 256,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N256_M2048_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 256,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N256_M512_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 32,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N32_M1024_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 32,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N32_M2048_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 32,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N32_M512_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 4096,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N4096_M1024_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 4096,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N4096_M2048_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 4096,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N4096_M512_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 4,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N4_M1024_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 4,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N4_M2048_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 4,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N4_M512_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 512,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N512_M1024_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 512,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N512_M2048_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 512,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N512_M512_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 64,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N64_M1024_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 64,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N64_M2048_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 64,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N64_M512_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 8,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N8_M1024_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 8,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N8_M2048_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 8,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N8_M512_etac0.5_epsg0.0001.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 1024,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N1024_M1024.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 1024,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N1024_M2048.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 1024,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N1024_M512.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 128,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N128_M1024.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 128,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N128_M2048.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 128,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N128_M512.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 16,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N16_M1024.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 16,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N16_M2048.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 16,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N16_M512.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 2048,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N2048_M1024.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 2048,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N2048_M2048.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 2048,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N2048_M512.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 256,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N256_M1024.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 256,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N256_M2048.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 256,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N256_M512.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 32,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N32_M1024.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 32,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N32_M2048.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 32,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N32_M512.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 4096,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N4096_M1024.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 4096,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N4096_M2048.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 4096,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N4096_M512.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 4,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N4_M1024.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 4,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N4_M2048.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 4,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N4_M512.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 512,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N512_M1024.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 512,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N512_M2048.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 512,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N512_M512.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 64,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N64_M1024.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 64,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N64_M2048.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 64,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N64_M512.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 8,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N8_M1024.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 8,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N8_M2048.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 8,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N8_M512.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 1024,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N1024_M1024.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 1024,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N1024_M2048.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 1024,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N1024_M512.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 128,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N128_M1024.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 128,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N128_M2048.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 128,
-      M: 512,
-    },
-    relPath: "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N128_M512.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 16,
-      M: 1024,
-    },
-    relPath: "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N16_M1024.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 16,
-      M: 2048,
-    },
-    relPath: "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N16_M2048.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 16,
-      M: 512,
-    },
-    relPath: "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N16_M512.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 2048,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N2048_M1024.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 2048,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N2048_M2048.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 2048,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N2048_M512.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 256,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N256_M1024.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 256,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N256_M2048.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 256,
-      M: 512,
-    },
-    relPath: "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N256_M512.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 32,
-      M: 1024,
-    },
-    relPath: "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N32_M1024.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 32,
-      M: 2048,
-    },
-    relPath: "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N32_M2048.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 32,
-      M: 512,
-    },
-    relPath: "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N32_M512.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 4096,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N4096_M1024.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 4096,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N4096_M2048.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 4096,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N4096_M512.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 4,
-      M: 1024,
-    },
-    relPath: "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N4_M1024.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 4,
-      M: 2048,
-    },
-    relPath: "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N4_M2048.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 4,
-      M: 512,
-    },
-    relPath: "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N4_M512.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 512,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N512_M1024.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 512,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N512_M2048.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 512,
-      M: 512,
-    },
-    relPath: "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N512_M512.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 64,
-      M: 1024,
-    },
-    relPath: "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N64_M1024.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 64,
-      M: 2048,
-    },
-    relPath: "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N64_M2048.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 64,
-      M: 512,
-    },
-    relPath: "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N64_M512.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 8,
-      M: 1024,
-    },
-    relPath: "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N8_M1024.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 8,
-      M: 2048,
-    },
-    relPath: "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N8_M2048.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 0.5,
-      epsilon_G: 0.0001,
-      N: 8,
-      M: 512,
-    },
-    relPath: "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N8_M512.svg",
-  },
-  {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -7355,7 +4258,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.85_N1024_M1024_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -7367,7 +4270,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.85_N1024_M2048_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -7379,7 +4282,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.85_N1024_M512_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -7391,7 +4294,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.85_N128_M1024_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -7403,7 +4306,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.85_N128_M2048_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -7415,7 +4318,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.85_N128_M512_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -7427,7 +4330,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.85_N16_M1024_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -7439,7 +4342,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.85_N16_M2048_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -7451,7 +4354,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.85_N16_M512_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -7463,7 +4366,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.85_N2048_M1024_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -7475,7 +4378,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.85_N2048_M2048_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -7487,7 +4390,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.85_N2048_M512_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -7499,7 +4402,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.85_N256_M1024_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -7511,7 +4414,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.85_N256_M2048_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -7523,7 +4426,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.85_N256_M512_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -7535,7 +4438,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.85_N32_M1024_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -7547,7 +4450,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.85_N32_M2048_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -7559,7 +4462,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.85_N32_M512_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -7571,7 +4474,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.85_N4096_M1024_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -7583,7 +4486,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.85_N4096_M2048_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -7595,7 +4498,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.85_N4096_M512_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -7607,7 +4510,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.85_N4_M1024_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -7619,7 +4522,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.85_N4_M2048_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -7631,7 +4534,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.85_N4_M512_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -7643,7 +4546,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.85_N512_M1024_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -7655,7 +4558,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.85_N512_M2048_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -7667,7 +4570,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.85_N512_M512_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -7679,7 +4582,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.85_N64_M1024_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -7691,7 +4594,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.85_N64_M2048_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -7703,7 +4606,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.85_N64_M512_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -7715,7 +4618,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.85_N8_M1024_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -7727,7 +4630,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.85_N8_M2048_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -7739,7 +4642,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.85_N8_M512_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -7751,7 +4654,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.95_N1024_M1024_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -7763,7 +4666,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.95_N1024_M2048_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -7775,7 +4678,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.95_N1024_M512_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -7787,7 +4690,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.95_N128_M1024_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -7799,7 +4702,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.95_N128_M2048_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -7811,7 +4714,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.95_N128_M512_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -7823,7 +4726,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.95_N16_M1024_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -7835,7 +4738,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.95_N16_M2048_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -7847,7 +4750,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.95_N16_M512_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -7859,7 +4762,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.95_N2048_M1024_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -7871,7 +4774,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.95_N2048_M2048_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -7883,7 +4786,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.95_N2048_M512_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -7895,7 +4798,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.95_N256_M1024_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -7907,7 +4810,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.95_N256_M2048_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -7919,7 +4822,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.95_N256_M512_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -7931,7 +4834,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.95_N32_M1024_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -7943,7 +4846,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.95_N32_M2048_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -7955,7 +4858,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.95_N32_M512_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -7967,7 +4870,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.95_N4096_M1024_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -7979,7 +4882,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.95_N4096_M2048_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -7991,7 +4894,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.95_N4096_M512_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -8003,7 +4906,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.95_N4_M1024_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -8015,7 +4918,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.95_N4_M2048_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -8027,7 +4930,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.95_N4_M512_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -8039,7 +4942,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.95_N512_M1024_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -8051,7 +4954,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.95_N512_M2048_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -8063,7 +4966,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.95_N512_M512_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -8075,7 +4978,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.95_N64_M1024_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -8087,7 +4990,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.95_N64_M2048_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -8099,7 +5002,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.95_N64_M512_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -8111,7 +5014,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.95_N8_M1024_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -8123,7 +5026,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.95_N8_M2048_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -8135,7 +5038,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.95_N8_M512_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -8147,7 +5050,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.97_N1024_M1024_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -8159,7 +5062,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.97_N1024_M2048_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -8171,7 +5074,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.97_N1024_M512_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -8183,7 +5086,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.97_N128_M1024_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -8195,7 +5098,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.97_N128_M2048_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -8207,7 +5110,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.97_N128_M512_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -8219,7 +5122,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.97_N16_M1024_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -8231,7 +5134,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.97_N16_M2048_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -8243,7 +5146,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.97_N16_M512_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -8255,7 +5158,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.97_N2048_M1024_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -8267,7 +5170,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.97_N2048_M2048_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -8279,7 +5182,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.97_N2048_M512_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -8291,7 +5194,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.97_N256_M1024_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -8303,7 +5206,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.97_N256_M2048_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -8315,7 +5218,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.97_N256_M512_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -8327,7 +5230,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.97_N32_M1024_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -8339,7 +5242,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.97_N32_M2048_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -8351,7 +5254,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.97_N32_M512_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -8363,7 +5266,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.97_N4096_M1024_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -8375,7 +5278,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.97_N4096_M2048_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -8387,7 +5290,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.97_N4096_M512_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -8399,7 +5302,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.97_N4_M1024_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -8411,7 +5314,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.97_N4_M2048_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -8423,7 +5326,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.97_N4_M512_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -8435,7 +5338,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.97_N512_M1024_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -8447,7 +5350,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.97_N512_M2048_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -8459,7 +5362,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.97_N512_M512_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -8471,7 +5374,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.97_N64_M1024_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -8483,7 +5386,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.97_N64_M2048_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -8495,7 +5398,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.97_N64_M512_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -8507,7 +5410,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.97_N8_M1024_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -8519,7 +5422,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.97_N8_M2048_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -8531,7 +5434,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.97_N8_M512_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -8543,7 +5446,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.99_N1024_M1024_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -8555,7 +5458,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.99_N1024_M2048_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -8567,7 +5470,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.99_N1024_M512_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -8579,7 +5482,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.99_N128_M1024_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -8591,7 +5494,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.99_N128_M2048_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -8603,7 +5506,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.99_N128_M512_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -8615,7 +5518,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.99_N16_M1024_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -8627,7 +5530,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.99_N16_M2048_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -8639,7 +5542,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.99_N16_M512_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -8651,7 +5554,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.99_N2048_M1024_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -8663,7 +5566,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.99_N2048_M2048_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -8675,7 +5578,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.99_N2048_M512_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -8687,7 +5590,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.99_N256_M1024_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -8699,7 +5602,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.99_N256_M2048_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -8711,7 +5614,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.99_N256_M512_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -8723,7 +5626,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.99_N32_M1024_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -8735,7 +5638,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.99_N32_M2048_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -8747,7 +5650,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.99_N32_M512_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -8759,7 +5662,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.99_N4096_M1024_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -8771,7 +5674,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.99_N4096_M2048_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -8783,7 +5686,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.99_N4096_M512_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -8795,7 +5698,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.99_N4_M1024_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -8807,7 +5710,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.99_N4_M2048_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -8819,7 +5722,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.99_N4_M512_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -8831,7 +5734,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.99_N512_M1024_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -8843,7 +5746,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.99_N512_M2048_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -8855,7 +5758,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.99_N512_M512_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -8867,7 +5770,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.99_N64_M1024_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -8879,7 +5782,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.99_N64_M2048_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -8891,7 +5794,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.99_N64_M512_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -8903,7 +5806,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.99_N8_M1024_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -8915,7 +5818,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.99_N8_M2048_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -8927,7 +5830,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.99_N8_M512_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -8939,7 +5842,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.9_N1024_M1024_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -8951,7 +5854,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.9_N1024_M2048_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -8963,7 +5866,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.9_N1024_M512_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -8975,7 +5878,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.9_N128_M1024_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -8987,7 +5890,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.9_N128_M2048_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -8999,7 +5902,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.9_N128_M512_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -9011,7 +5914,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.9_N16_M1024_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -9023,7 +5926,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.9_N16_M2048_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -9035,7 +5938,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.9_N16_M512_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -9047,7 +5950,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.9_N2048_M1024_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -9059,7 +5962,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.9_N2048_M2048_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -9071,7 +5974,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.9_N2048_M512_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -9083,7 +5986,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.9_N256_M1024_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -9095,7 +5998,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.9_N256_M2048_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -9107,7 +6010,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.9_N256_M512_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -9119,7 +6022,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.9_N32_M1024_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -9131,7 +6034,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.9_N32_M2048_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -9143,7 +6046,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.9_N32_M512_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -9155,7 +6058,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.9_N4096_M1024_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -9167,7 +6070,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.9_N4096_M2048_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -9179,7 +6082,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.9_N4096_M512_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -9191,7 +6094,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.9_N4_M1024_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -9203,7 +6106,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.9_N4_M2048_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -9215,7 +6118,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.9_N4_M512_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -9227,7 +6130,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.9_N512_M1024_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -9239,7 +6142,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.9_N512_M2048_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -9251,7 +6154,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.9_N512_M512_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -9263,7 +6166,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.9_N64_M1024_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -9275,7 +6178,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.9_N64_M2048_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -9287,7 +6190,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.9_N64_M512_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -9299,7 +6202,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.9_N8_M1024_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -9311,7 +6214,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.9_N8_M2048_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -9323,7 +6226,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_F_th_0.9_N8_M512_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -9335,7 +6238,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_SKR_N1024_M1024_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -9347,7 +6250,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_SKR_N1024_M2048_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -9359,7 +6262,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_SKR_N1024_M512_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -9371,7 +6274,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_SKR_N128_M1024_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -9383,7 +6286,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_SKR_N128_M2048_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -9395,7 +6298,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_SKR_N128_M512_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -9407,7 +6310,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_SKR_N16_M1024_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -9419,7 +6322,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_SKR_N16_M2048_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -9431,7 +6334,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_SKR_N16_M512_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -9443,7 +6346,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_SKR_N2048_M1024_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -9455,7 +6358,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_SKR_N2048_M2048_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -9467,7 +6370,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_SKR_N2048_M512_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -9479,7 +6382,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_SKR_N256_M1024_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -9491,7 +6394,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_SKR_N256_M2048_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -9503,7 +6406,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_SKR_N256_M512_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -9515,7 +6418,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_SKR_N32_M1024_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -9527,7 +6430,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_SKR_N32_M2048_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -9539,7 +6442,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_SKR_N32_M512_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -9551,7 +6454,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_SKR_N4096_M1024_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -9563,7 +6466,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_SKR_N4096_M2048_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -9575,7 +6478,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_SKR_N4096_M512_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -9587,7 +6490,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_SKR_N4_M1024_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -9599,7 +6502,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_SKR_N4_M2048_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -9611,7 +6514,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_SKR_N4_M512_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -9623,7 +6526,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_SKR_N512_M1024_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -9635,7 +6538,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_SKR_N512_M2048_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -9647,7 +6550,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_SKR_N512_M512_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -9659,7 +6562,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_SKR_N64_M1024_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -9671,7 +6574,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_SKR_N64_M2048_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -9683,7 +6586,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_SKR_N64_M512_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -9695,7 +6598,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_SKR_N8_M1024_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -9707,7 +6610,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_SKR_N8_M2048_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -9719,7 +6622,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/3d_visualization_SKR_N8_M512_etac0.3_epsg0.001.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -9730,7 +6633,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/best_strategies_N1024_M1024.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -9741,7 +6644,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/best_strategies_N1024_M2048.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -9752,7 +6655,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/best_strategies_N1024_M512.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -9763,7 +6666,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/best_strategies_N128_M1024.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -9774,7 +6677,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/best_strategies_N128_M2048.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -9785,7 +6688,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/best_strategies_N128_M512.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -9796,7 +6699,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/best_strategies_N16_M1024.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -9807,7 +6710,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/best_strategies_N16_M2048.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -9818,7 +6721,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/best_strategies_N16_M512.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -9829,7 +6732,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/best_strategies_N2048_M1024.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -9840,7 +6743,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/best_strategies_N2048_M2048.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -9851,7 +6754,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/best_strategies_N2048_M512.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -9862,7 +6765,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/best_strategies_N256_M1024.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -9873,7 +6776,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/best_strategies_N256_M2048.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -9884,7 +6787,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/best_strategies_N256_M512.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -9895,7 +6798,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/best_strategies_N32_M1024.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -9906,7 +6809,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/best_strategies_N32_M2048.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -9917,7 +6820,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/best_strategies_N32_M512.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -9928,7 +6831,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/best_strategies_N4096_M1024.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -9939,7 +6842,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/best_strategies_N4096_M2048.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -9950,7 +6853,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/best_strategies_N4096_M512.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -9961,7 +6864,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/best_strategies_N4_M1024.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -9972,7 +6875,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/best_strategies_N4_M2048.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -9983,7 +6886,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/best_strategies_N4_M512.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -9994,7 +6897,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/best_strategies_N512_M1024.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -10005,7 +6908,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/best_strategies_N512_M2048.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -10016,7 +6919,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/best_strategies_N512_M512.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -10027,7 +6930,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/best_strategies_N64_M1024.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -10038,7 +6941,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/best_strategies_N64_M2048.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -10049,7 +6952,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/best_strategies_N64_M512.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -10060,7 +6963,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/best_strategies_N8_M1024.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -10071,7 +6974,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/best_strategies_N8_M2048.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -10082,7 +6985,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/best_strategies_N8_M512.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -10093,7 +6996,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/skr_vs_fth_N1024_M1024.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -10104,7 +7007,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/skr_vs_fth_N1024_M2048.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -10114,7 +7017,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.3_epsg0.001/svg/skr_vs_fth_N1024_M512.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -10124,7 +7027,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.3_epsg0.001/svg/skr_vs_fth_N128_M1024.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -10134,7 +7037,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.3_epsg0.001/svg/skr_vs_fth_N128_M2048.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -10144,7 +7047,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.3_epsg0.001/svg/skr_vs_fth_N128_M512.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -10154,7 +7057,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.3_epsg0.001/svg/skr_vs_fth_N16_M1024.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -10164,7 +7067,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.3_epsg0.001/svg/skr_vs_fth_N16_M2048.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -10174,7 +7077,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.3_epsg0.001/svg/skr_vs_fth_N16_M512.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -10185,7 +7088,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/skr_vs_fth_N2048_M1024.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -10196,7 +7099,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/skr_vs_fth_N2048_M2048.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -10206,7 +7109,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.3_epsg0.001/svg/skr_vs_fth_N2048_M512.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -10216,7 +7119,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.3_epsg0.001/svg/skr_vs_fth_N256_M1024.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -10226,7 +7129,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.3_epsg0.001/svg/skr_vs_fth_N256_M2048.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -10236,7 +7139,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.3_epsg0.001/svg/skr_vs_fth_N256_M512.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -10246,7 +7149,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.3_epsg0.001/svg/skr_vs_fth_N32_M1024.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -10256,7 +7159,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.3_epsg0.001/svg/skr_vs_fth_N32_M2048.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -10266,7 +7169,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.3_epsg0.001/svg/skr_vs_fth_N32_M512.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -10277,7 +7180,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/skr_vs_fth_N4096_M1024.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -10288,7 +7191,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.3_epsg0.001/svg/skr_vs_fth_N4096_M2048.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -10298,7 +7201,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.3_epsg0.001/svg/skr_vs_fth_N4096_M512.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -10308,7 +7211,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.3_epsg0.001/svg/skr_vs_fth_N4_M1024.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -10318,7 +7221,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.3_epsg0.001/svg/skr_vs_fth_N4_M2048.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -10328,7 +7231,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.3_epsg0.001/svg/skr_vs_fth_N4_M512.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -10338,7 +7241,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.3_epsg0.001/svg/skr_vs_fth_N512_M1024.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -10348,7 +7251,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.3_epsg0.001/svg/skr_vs_fth_N512_M2048.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -10358,7 +7261,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.3_epsg0.001/svg/skr_vs_fth_N512_M512.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -10368,7 +7271,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.3_epsg0.001/svg/skr_vs_fth_N64_M1024.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -10378,7 +7281,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.3_epsg0.001/svg/skr_vs_fth_N64_M2048.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -10388,7 +7291,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.3_epsg0.001/svg/skr_vs_fth_N64_M512.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -10398,7 +7301,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.3_epsg0.001/svg/skr_vs_fth_N8_M1024.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -10408,7 +7311,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.3_epsg0.001/svg/skr_vs_fth_N8_M2048.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.3,
       epsilon_G: 0.001,
@@ -10418,7 +7321,3091 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.3_epsg0.001/svg/skr_vs_fth_N8_M512.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.85",
+      N: 1024,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.85_N1024_M1024_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.85",
+      N: 1024,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.85_N1024_M2048_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.85",
+      N: 1024,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.85_N1024_M512_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.85",
+      N: 128,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.85_N128_M1024_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.85",
+      N: 128,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.85_N128_M2048_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.85",
+      N: 128,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.85_N128_M512_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.85",
+      N: 16,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.85_N16_M1024_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.85",
+      N: 16,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.85_N16_M2048_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.85",
+      N: 16,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.85_N16_M512_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.85",
+      N: 2048,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.85_N2048_M1024_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.85",
+      N: 2048,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.85_N2048_M2048_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.85",
+      N: 2048,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.85_N2048_M512_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.85",
+      N: 256,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.85_N256_M1024_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.85",
+      N: 256,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.85_N256_M2048_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.85",
+      N: 256,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.85_N256_M512_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.85",
+      N: 32,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.85_N32_M1024_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.85",
+      N: 32,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.85_N32_M2048_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.85",
+      N: 32,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.85_N32_M512_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.85",
+      N: 4096,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.85_N4096_M1024_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.85",
+      N: 4096,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.85_N4096_M2048_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.85",
+      N: 4096,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.85_N4096_M512_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.85",
+      N: 4,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.85_N4_M1024_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.85",
+      N: 4,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.85_N4_M2048_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.85",
+      N: 4,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.85_N4_M512_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.85",
+      N: 512,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.85_N512_M1024_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.85",
+      N: 512,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.85_N512_M2048_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.85",
+      N: 512,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.85_N512_M512_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.85",
+      N: 64,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.85_N64_M1024_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.85",
+      N: 64,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.85_N64_M2048_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.85",
+      N: 64,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.85_N64_M512_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.85",
+      N: 8,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.85_N8_M1024_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.85",
+      N: 8,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.85_N8_M2048_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.85",
+      N: 8,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.85_N8_M512_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.95",
+      N: 1024,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.95_N1024_M1024_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.95",
+      N: 1024,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.95_N1024_M2048_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.95",
+      N: 1024,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.95_N1024_M512_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.95",
+      N: 128,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.95_N128_M1024_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.95",
+      N: 128,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.95_N128_M2048_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.95",
+      N: 128,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.95_N128_M512_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.95",
+      N: 16,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.95_N16_M1024_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.95",
+      N: 16,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.95_N16_M2048_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.95",
+      N: 16,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.95_N16_M512_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.95",
+      N: 2048,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.95_N2048_M1024_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.95",
+      N: 2048,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.95_N2048_M2048_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.95",
+      N: 2048,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.95_N2048_M512_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.95",
+      N: 256,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.95_N256_M1024_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.95",
+      N: 256,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.95_N256_M2048_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.95",
+      N: 256,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.95_N256_M512_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.95",
+      N: 32,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.95_N32_M1024_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.95",
+      N: 32,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.95_N32_M2048_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.95",
+      N: 32,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.95_N32_M512_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.95",
+      N: 4096,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.95_N4096_M1024_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.95",
+      N: 4096,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.95_N4096_M2048_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.95",
+      N: 4096,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.95_N4096_M512_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.95",
+      N: 4,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.95_N4_M1024_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.95",
+      N: 4,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.95_N4_M2048_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.95",
+      N: 4,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.95_N4_M512_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.95",
+      N: 512,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.95_N512_M1024_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.95",
+      N: 512,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.95_N512_M2048_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.95",
+      N: 512,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.95_N512_M512_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.95",
+      N: 64,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.95_N64_M1024_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.95",
+      N: 64,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.95_N64_M2048_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.95",
+      N: 64,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.95_N64_M512_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.95",
+      N: 8,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.95_N8_M1024_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.95",
+      N: 8,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.95_N8_M2048_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.95",
+      N: 8,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.95_N8_M512_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.97",
+      N: 1024,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.97_N1024_M1024_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.97",
+      N: 1024,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.97_N1024_M2048_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.97",
+      N: 1024,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.97_N1024_M512_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.97",
+      N: 128,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.97_N128_M1024_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.97",
+      N: 128,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.97_N128_M2048_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.97",
+      N: 128,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.97_N128_M512_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.97",
+      N: 16,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.97_N16_M1024_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.97",
+      N: 16,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.97_N16_M2048_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.97",
+      N: 16,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.97_N16_M512_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.97",
+      N: 2048,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.97_N2048_M1024_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.97",
+      N: 2048,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.97_N2048_M2048_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.97",
+      N: 2048,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.97_N2048_M512_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.97",
+      N: 256,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.97_N256_M1024_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.97",
+      N: 256,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.97_N256_M2048_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.97",
+      N: 256,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.97_N256_M512_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.97",
+      N: 32,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.97_N32_M1024_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.97",
+      N: 32,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.97_N32_M2048_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.97",
+      N: 32,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.97_N32_M512_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.97",
+      N: 4096,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.97_N4096_M1024_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.97",
+      N: 4096,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.97_N4096_M2048_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.97",
+      N: 4096,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.97_N4096_M512_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.97",
+      N: 4,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.97_N4_M1024_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.97",
+      N: 4,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.97_N4_M2048_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.97",
+      N: 4,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.97_N4_M512_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.97",
+      N: 512,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.97_N512_M1024_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.97",
+      N: 512,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.97_N512_M2048_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.97",
+      N: 512,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.97_N512_M512_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.97",
+      N: 64,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.97_N64_M1024_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.97",
+      N: 64,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.97_N64_M2048_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.97",
+      N: 64,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.97_N64_M512_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.97",
+      N: 8,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.97_N8_M1024_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.97",
+      N: 8,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.97_N8_M2048_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.97",
+      N: 8,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.97_N8_M512_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.99",
+      N: 1024,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.99_N1024_M1024_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.99",
+      N: 1024,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.99_N1024_M2048_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.99",
+      N: 1024,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.99_N1024_M512_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.99",
+      N: 128,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.99_N128_M1024_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.99",
+      N: 128,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.99_N128_M2048_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.99",
+      N: 128,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.99_N128_M512_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.99",
+      N: 16,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.99_N16_M1024_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.99",
+      N: 16,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.99_N16_M2048_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.99",
+      N: 16,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.99_N16_M512_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.99",
+      N: 2048,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.99_N2048_M1024_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.99",
+      N: 2048,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.99_N2048_M2048_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.99",
+      N: 2048,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.99_N2048_M512_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.99",
+      N: 256,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.99_N256_M1024_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.99",
+      N: 256,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.99_N256_M2048_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.99",
+      N: 256,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.99_N256_M512_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.99",
+      N: 32,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.99_N32_M1024_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.99",
+      N: 32,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.99_N32_M2048_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.99",
+      N: 32,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.99_N32_M512_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.99",
+      N: 4096,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.99_N4096_M1024_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.99",
+      N: 4096,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.99_N4096_M2048_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.99",
+      N: 4096,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.99_N4096_M512_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.99",
+      N: 4,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.99_N4_M1024_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.99",
+      N: 4,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.99_N4_M2048_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.99",
+      N: 4,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.99_N4_M512_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.99",
+      N: 512,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.99_N512_M1024_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.99",
+      N: 512,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.99_N512_M2048_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.99",
+      N: 512,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.99_N512_M512_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.99",
+      N: 64,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.99_N64_M1024_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.99",
+      N: 64,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.99_N64_M2048_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.99",
+      N: 64,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.99_N64_M512_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.99",
+      N: 8,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.99_N8_M1024_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.99",
+      N: 8,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.99_N8_M2048_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.99",
+      N: 8,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.99_N8_M512_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.9",
+      N: 1024,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.9_N1024_M1024_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.9",
+      N: 1024,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.9_N1024_M2048_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.9",
+      N: 1024,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.9_N1024_M512_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.9",
+      N: 128,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.9_N128_M1024_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.9",
+      N: 128,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.9_N128_M2048_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.9",
+      N: 128,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.9_N128_M512_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.9",
+      N: 16,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.9_N16_M1024_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.9",
+      N: 16,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.9_N16_M2048_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.9",
+      N: 16,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.9_N16_M512_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.9",
+      N: 2048,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.9_N2048_M1024_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.9",
+      N: 2048,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.9_N2048_M2048_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.9",
+      N: 2048,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.9_N2048_M512_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.9",
+      N: 256,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.9_N256_M1024_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.9",
+      N: 256,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.9_N256_M2048_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.9",
+      N: 256,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.9_N256_M512_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.9",
+      N: 32,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.9_N32_M1024_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.9",
+      N: 32,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.9_N32_M2048_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.9",
+      N: 32,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.9_N32_M512_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.9",
+      N: 4096,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.9_N4096_M1024_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.9",
+      N: 4096,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.9_N4096_M2048_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.9",
+      N: 4096,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.9_N4096_M512_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.9",
+      N: 4,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.9_N4_M1024_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.9",
+      N: 4,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.9_N4_M2048_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.9",
+      N: 4,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.9_N4_M512_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.9",
+      N: 512,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.9_N512_M1024_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.9",
+      N: 512,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.9_N512_M2048_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.9",
+      N: 512,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.9_N512_M512_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.9",
+      N: 64,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.9_N64_M1024_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.9",
+      N: 64,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.9_N64_M2048_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.9",
+      N: 64,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.9_N64_M512_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.9",
+      N: 8,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.9_N8_M1024_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.9",
+      N: 8,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.9_N8_M2048_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "F_th 0.9",
+      N: 8,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_F_th_0.9_N8_M512_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "SKR",
+      N: 1024,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N1024_M1024_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "SKR",
+      N: 1024,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N1024_M2048_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "SKR",
+      N: 1024,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N1024_M512_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "SKR",
+      N: 128,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N128_M1024_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "SKR",
+      N: 128,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N128_M2048_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "SKR",
+      N: 128,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N128_M512_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "SKR",
+      N: 16,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N16_M1024_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "SKR",
+      N: 16,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N16_M2048_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "SKR",
+      N: 16,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N16_M512_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "SKR",
+      N: 2048,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N2048_M1024_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "SKR",
+      N: 2048,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N2048_M2048_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "SKR",
+      N: 2048,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N2048_M512_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "SKR",
+      N: 256,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N256_M1024_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "SKR",
+      N: 256,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N256_M2048_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "SKR",
+      N: 256,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N256_M512_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "SKR",
+      N: 32,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N32_M1024_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "SKR",
+      N: 32,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N32_M2048_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "SKR",
+      N: 32,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N32_M512_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "SKR",
+      N: 4096,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N4096_M1024_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "SKR",
+      N: 4096,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N4096_M2048_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "SKR",
+      N: 4096,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N4096_M512_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "SKR",
+      N: 4,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N4_M1024_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "SKR",
+      N: 4,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N4_M2048_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "SKR",
+      N: 4,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N4_M512_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "SKR",
+      N: 512,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N512_M1024_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "SKR",
+      N: 512,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N512_M2048_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "SKR",
+      N: 512,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N512_M512_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "SKR",
+      N: 64,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N64_M1024_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "SKR",
+      N: 64,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N64_M2048_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "SKR",
+      N: 64,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N64_M512_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "SKR",
+      N: 8,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N8_M1024_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "SKR",
+      N: 8,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N8_M2048_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      rule: "SKR",
+      N: 8,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/3d_visualization_SKR_N8_M512_etac0.5_epsg0.0001.svg",
+  },
+  {
+    plotType: "Policies comparison",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 1024,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N1024_M1024.svg",
+  },
+  {
+    plotType: "Policies comparison",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 1024,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N1024_M2048.svg",
+  },
+  {
+    plotType: "Policies comparison",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 1024,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N1024_M512.svg",
+  },
+  {
+    plotType: "Policies comparison",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 128,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N128_M1024.svg",
+  },
+  {
+    plotType: "Policies comparison",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 128,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N128_M2048.svg",
+  },
+  {
+    plotType: "Policies comparison",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 128,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N128_M512.svg",
+  },
+  {
+    plotType: "Policies comparison",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 16,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N16_M1024.svg",
+  },
+  {
+    plotType: "Policies comparison",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 16,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N16_M2048.svg",
+  },
+  {
+    plotType: "Policies comparison",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 16,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N16_M512.svg",
+  },
+  {
+    plotType: "Policies comparison",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 2048,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N2048_M1024.svg",
+  },
+  {
+    plotType: "Policies comparison",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 2048,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N2048_M2048.svg",
+  },
+  {
+    plotType: "Policies comparison",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 2048,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N2048_M512.svg",
+  },
+  {
+    plotType: "Policies comparison",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 256,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N256_M1024.svg",
+  },
+  {
+    plotType: "Policies comparison",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 256,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N256_M2048.svg",
+  },
+  {
+    plotType: "Policies comparison",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 256,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N256_M512.svg",
+  },
+  {
+    plotType: "Policies comparison",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 32,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N32_M1024.svg",
+  },
+  {
+    plotType: "Policies comparison",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 32,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N32_M2048.svg",
+  },
+  {
+    plotType: "Policies comparison",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 32,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N32_M512.svg",
+  },
+  {
+    plotType: "Policies comparison",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 4096,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N4096_M1024.svg",
+  },
+  {
+    plotType: "Policies comparison",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 4096,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N4096_M2048.svg",
+  },
+  {
+    plotType: "Policies comparison",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 4096,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N4096_M512.svg",
+  },
+  {
+    plotType: "Policies comparison",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 4,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N4_M1024.svg",
+  },
+  {
+    plotType: "Policies comparison",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 4,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N4_M2048.svg",
+  },
+  {
+    plotType: "Policies comparison",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 4,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N4_M512.svg",
+  },
+  {
+    plotType: "Policies comparison",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 512,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N512_M1024.svg",
+  },
+  {
+    plotType: "Policies comparison",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 512,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N512_M2048.svg",
+  },
+  {
+    plotType: "Policies comparison",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 512,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N512_M512.svg",
+  },
+  {
+    plotType: "Policies comparison",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 64,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N64_M1024.svg",
+  },
+  {
+    plotType: "Policies comparison",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 64,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N64_M2048.svg",
+  },
+  {
+    plotType: "Policies comparison",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 64,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N64_M512.svg",
+  },
+  {
+    plotType: "Policies comparison",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 8,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N8_M1024.svg",
+  },
+  {
+    plotType: "Policies comparison",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 8,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N8_M2048.svg",
+  },
+  {
+    plotType: "Policies comparison",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 8,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/best_strategies_N8_M512.svg",
+  },
+  {
+    plotType: "Policies comparison (only local)",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 1024,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N1024_M1024.svg",
+  },
+  {
+    plotType: "Policies comparison (only local)",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 1024,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N1024_M2048.svg",
+  },
+  {
+    plotType: "Policies comparison (only local)",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 1024,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N1024_M512.svg",
+  },
+  {
+    plotType: "Policies comparison (only local)",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 128,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N128_M1024.svg",
+  },
+  {
+    plotType: "Policies comparison (only local)",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 128,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N128_M2048.svg",
+  },
+  {
+    plotType: "Policies comparison (only local)",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 128,
+      M: 512,
+    },
+    relPath: "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N128_M512.svg",
+  },
+  {
+    plotType: "Policies comparison (only local)",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 16,
+      M: 1024,
+    },
+    relPath: "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N16_M1024.svg",
+  },
+  {
+    plotType: "Policies comparison (only local)",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 16,
+      M: 2048,
+    },
+    relPath: "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N16_M2048.svg",
+  },
+  {
+    plotType: "Policies comparison (only local)",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 16,
+      M: 512,
+    },
+    relPath: "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N16_M512.svg",
+  },
+  {
+    plotType: "Policies comparison (only local)",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 2048,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N2048_M1024.svg",
+  },
+  {
+    plotType: "Policies comparison (only local)",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 2048,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N2048_M2048.svg",
+  },
+  {
+    plotType: "Policies comparison (only local)",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 2048,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N2048_M512.svg",
+  },
+  {
+    plotType: "Policies comparison (only local)",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 256,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N256_M1024.svg",
+  },
+  {
+    plotType: "Policies comparison (only local)",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 256,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N256_M2048.svg",
+  },
+  {
+    plotType: "Policies comparison (only local)",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 256,
+      M: 512,
+    },
+    relPath: "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N256_M512.svg",
+  },
+  {
+    plotType: "Policies comparison (only local)",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 32,
+      M: 1024,
+    },
+    relPath: "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N32_M1024.svg",
+  },
+  {
+    plotType: "Policies comparison (only local)",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 32,
+      M: 2048,
+    },
+    relPath: "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N32_M2048.svg",
+  },
+  {
+    plotType: "Policies comparison (only local)",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 32,
+      M: 512,
+    },
+    relPath: "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N32_M512.svg",
+  },
+  {
+    plotType: "Policies comparison (only local)",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 4096,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N4096_M1024.svg",
+  },
+  {
+    plotType: "Policies comparison (only local)",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 4096,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N4096_M2048.svg",
+  },
+  {
+    plotType: "Policies comparison (only local)",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 4096,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N4096_M512.svg",
+  },
+  {
+    plotType: "Policies comparison (only local)",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 4,
+      M: 1024,
+    },
+    relPath: "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N4_M1024.svg",
+  },
+  {
+    plotType: "Policies comparison (only local)",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 4,
+      M: 2048,
+    },
+    relPath: "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N4_M2048.svg",
+  },
+  {
+    plotType: "Policies comparison (only local)",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 4,
+      M: 512,
+    },
+    relPath: "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N4_M512.svg",
+  },
+  {
+    plotType: "Policies comparison (only local)",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 512,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N512_M1024.svg",
+  },
+  {
+    plotType: "Policies comparison (only local)",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 512,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N512_M2048.svg",
+  },
+  {
+    plotType: "Policies comparison (only local)",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 512,
+      M: 512,
+    },
+    relPath: "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N512_M512.svg",
+  },
+  {
+    plotType: "Policies comparison (only local)",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 64,
+      M: 1024,
+    },
+    relPath: "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N64_M1024.svg",
+  },
+  {
+    plotType: "Policies comparison (only local)",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 64,
+      M: 2048,
+    },
+    relPath: "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N64_M2048.svg",
+  },
+  {
+    plotType: "Policies comparison (only local)",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 64,
+      M: 512,
+    },
+    relPath: "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N64_M512.svg",
+  },
+  {
+    plotType: "Policies comparison (only local)",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 8,
+      M: 1024,
+    },
+    relPath: "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N8_M1024.svg",
+  },
+  {
+    plotType: "Policies comparison (only local)",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 8,
+      M: 2048,
+    },
+    relPath: "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N8_M2048.svg",
+  },
+  {
+    plotType: "Policies comparison (only local)",
+    params: {
+      eta_c: 0.5,
+      epsilon_G: 0.0001,
+      N: 8,
+      M: 512,
+    },
+    relPath: "comparison_plots/etac0.5_epsg0.0001/svg/skr_vs_fth_N8_M512.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -10430,7 +10417,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.85_N1024_M1024_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -10442,7 +10429,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.85_N1024_M2048_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -10454,7 +10441,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.85_N1024_M512_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -10466,7 +10453,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.85_N128_M1024_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -10478,7 +10465,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.85_N128_M2048_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -10490,7 +10477,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.85_N128_M512_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -10502,7 +10489,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.85_N16_M1024_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -10514,7 +10501,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.85_N16_M2048_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -10526,7 +10513,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.85_N16_M512_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -10538,7 +10525,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.85_N2048_M1024_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -10550,7 +10537,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.85_N2048_M2048_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -10562,7 +10549,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.85_N2048_M512_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -10574,7 +10561,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.85_N256_M1024_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -10586,7 +10573,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.85_N256_M2048_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -10598,7 +10585,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.85_N256_M512_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -10610,7 +10597,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.85_N32_M1024_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -10622,7 +10609,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.85_N32_M2048_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -10634,7 +10621,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.85_N32_M512_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -10646,7 +10633,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.85_N4096_M1024_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -10658,7 +10645,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.85_N4096_M2048_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -10670,7 +10657,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.85_N4096_M512_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -10682,7 +10669,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.85_N4_M1024_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -10694,7 +10681,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.85_N4_M2048_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -10706,7 +10693,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.85_N4_M512_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -10718,7 +10705,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.85_N512_M1024_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -10730,7 +10717,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.85_N512_M2048_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -10742,7 +10729,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.85_N512_M512_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -10754,7 +10741,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.85_N64_M1024_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -10766,7 +10753,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.85_N64_M2048_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -10778,7 +10765,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.85_N64_M512_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -10790,7 +10777,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.85_N8_M1024_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -10802,7 +10789,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.85_N8_M2048_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -10814,7 +10801,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.85_N8_M512_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -10826,7 +10813,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.95_N1024_M1024_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -10838,7 +10825,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.95_N1024_M2048_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -10850,7 +10837,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.95_N1024_M512_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -10862,7 +10849,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.95_N128_M1024_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -10874,7 +10861,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.95_N128_M2048_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -10886,7 +10873,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.95_N128_M512_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -10898,7 +10885,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.95_N16_M1024_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -10910,7 +10897,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.95_N16_M2048_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -10922,7 +10909,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.95_N16_M512_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -10934,7 +10921,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.95_N2048_M1024_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -10946,7 +10933,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.95_N2048_M2048_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -10958,7 +10945,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.95_N2048_M512_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -10970,7 +10957,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.95_N256_M1024_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -10982,7 +10969,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.95_N256_M2048_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -10994,7 +10981,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.95_N256_M512_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -11006,7 +10993,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.95_N32_M1024_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -11018,7 +11005,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.95_N32_M2048_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -11030,7 +11017,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.95_N32_M512_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -11042,7 +11029,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.95_N4096_M1024_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -11054,7 +11041,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.95_N4096_M2048_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -11066,7 +11053,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.95_N4096_M512_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -11078,7 +11065,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.95_N4_M1024_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -11090,7 +11077,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.95_N4_M2048_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -11102,7 +11089,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.95_N4_M512_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -11114,7 +11101,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.95_N512_M1024_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -11126,7 +11113,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.95_N512_M2048_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -11138,7 +11125,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.95_N512_M512_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -11150,7 +11137,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.95_N64_M1024_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -11162,7 +11149,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.95_N64_M2048_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -11174,7 +11161,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.95_N64_M512_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -11186,7 +11173,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.95_N8_M1024_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -11198,7 +11185,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.95_N8_M2048_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -11210,7 +11197,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.95_N8_M512_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -11222,7 +11209,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.97_N1024_M1024_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -11234,7 +11221,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.97_N1024_M2048_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -11246,7 +11233,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.97_N1024_M512_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -11258,7 +11245,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.97_N128_M1024_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -11270,7 +11257,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.97_N128_M2048_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -11282,7 +11269,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.97_N128_M512_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -11294,7 +11281,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.97_N16_M1024_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -11306,7 +11293,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.97_N16_M2048_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -11318,7 +11305,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.97_N16_M512_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -11330,7 +11317,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.97_N2048_M1024_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -11342,7 +11329,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.97_N2048_M2048_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -11354,7 +11341,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.97_N2048_M512_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -11366,7 +11353,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.97_N256_M1024_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -11378,7 +11365,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.97_N256_M2048_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -11390,7 +11377,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.97_N256_M512_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -11402,7 +11389,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.97_N32_M1024_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -11414,7 +11401,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.97_N32_M2048_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -11426,7 +11413,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.97_N32_M512_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -11438,7 +11425,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.97_N4096_M1024_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -11450,7 +11437,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.97_N4096_M2048_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -11462,7 +11449,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.97_N4096_M512_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -11474,7 +11461,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.97_N4_M1024_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -11486,7 +11473,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.97_N4_M2048_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -11498,7 +11485,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.97_N4_M512_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -11510,7 +11497,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.97_N512_M1024_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -11522,7 +11509,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.97_N512_M2048_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -11534,7 +11521,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.97_N512_M512_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -11546,7 +11533,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.97_N64_M1024_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -11558,7 +11545,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.97_N64_M2048_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -11570,7 +11557,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.97_N64_M512_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -11582,7 +11569,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.97_N8_M1024_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -11594,7 +11581,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.97_N8_M2048_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -11606,7 +11593,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.97_N8_M512_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -11618,7 +11605,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.99_N1024_M1024_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -11630,7 +11617,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.99_N1024_M2048_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -11642,7 +11629,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.99_N1024_M512_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -11654,7 +11641,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.99_N128_M1024_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -11666,7 +11653,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.99_N128_M2048_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -11678,7 +11665,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.99_N128_M512_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -11690,7 +11677,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.99_N16_M1024_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -11702,7 +11689,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.99_N16_M2048_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -11714,7 +11701,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.99_N16_M512_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -11726,7 +11713,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.99_N2048_M1024_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -11738,7 +11725,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.99_N2048_M2048_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -11750,7 +11737,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.99_N2048_M512_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -11762,7 +11749,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.99_N256_M1024_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -11774,7 +11761,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.99_N256_M2048_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -11786,7 +11773,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.99_N256_M512_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -11798,7 +11785,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.99_N32_M1024_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -11810,7 +11797,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.99_N32_M2048_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -11822,7 +11809,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.99_N32_M512_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -11834,7 +11821,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.99_N4096_M1024_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -11846,7 +11833,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.99_N4096_M2048_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -11858,7 +11845,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.99_N4096_M512_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -11870,7 +11857,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.99_N4_M1024_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -11882,7 +11869,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.99_N4_M2048_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -11894,7 +11881,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.99_N4_M512_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -11906,7 +11893,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.99_N512_M1024_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -11918,7 +11905,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.99_N512_M2048_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -11930,7 +11917,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.99_N512_M512_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -11942,7 +11929,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.99_N64_M1024_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -11954,7 +11941,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.99_N64_M2048_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -11966,7 +11953,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.99_N64_M512_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -11978,7 +11965,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.99_N8_M1024_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -11990,7 +11977,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.99_N8_M2048_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -12002,7 +11989,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.99_N8_M512_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -12014,7 +12001,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.9_N1024_M1024_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -12026,7 +12013,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.9_N1024_M2048_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -12038,7 +12025,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.9_N1024_M512_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -12050,7 +12037,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.9_N128_M1024_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -12062,7 +12049,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.9_N128_M2048_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -12074,7 +12061,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.9_N128_M512_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -12086,7 +12073,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.9_N16_M1024_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -12098,7 +12085,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.9_N16_M2048_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -12110,7 +12097,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.9_N16_M512_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -12122,7 +12109,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.9_N2048_M1024_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -12134,7 +12121,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.9_N2048_M2048_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -12146,7 +12133,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.9_N2048_M512_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -12158,7 +12145,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.9_N256_M1024_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -12170,7 +12157,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.9_N256_M2048_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -12182,7 +12169,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.9_N256_M512_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -12194,7 +12181,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.9_N32_M1024_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -12206,7 +12193,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.9_N32_M2048_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -12218,7 +12205,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.9_N32_M512_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -12230,7 +12217,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.9_N4096_M1024_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -12242,7 +12229,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.9_N4096_M2048_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -12254,7 +12241,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.9_N4096_M512_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -12266,7 +12253,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.9_N4_M1024_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -12278,7 +12265,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.9_N4_M2048_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -12290,7 +12277,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.9_N4_M512_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -12302,7 +12289,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.9_N512_M1024_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -12314,7 +12301,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.9_N512_M2048_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -12326,7 +12313,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.9_N512_M512_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -12338,7 +12325,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.9_N64_M1024_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -12350,7 +12337,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.9_N64_M2048_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -12362,7 +12349,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.9_N64_M512_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -12374,7 +12361,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.9_N8_M1024_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -12386,7 +12373,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.9_N8_M2048_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -12398,7 +12385,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_F_th_0.9_N8_M512_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -12410,7 +12397,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_SKR_N1024_M1024_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -12422,7 +12409,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_SKR_N1024_M2048_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -12434,7 +12421,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_SKR_N1024_M512_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -12446,7 +12433,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_SKR_N128_M1024_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -12458,7 +12445,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_SKR_N128_M2048_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -12470,7 +12457,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_SKR_N128_M512_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -12482,7 +12469,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_SKR_N16_M1024_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -12494,7 +12481,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_SKR_N16_M2048_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -12506,7 +12493,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_SKR_N16_M512_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -12518,7 +12505,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_SKR_N2048_M1024_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -12530,7 +12517,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_SKR_N2048_M2048_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -12542,7 +12529,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_SKR_N2048_M512_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -12554,7 +12541,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_SKR_N256_M1024_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -12566,7 +12553,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_SKR_N256_M2048_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -12578,7 +12565,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_SKR_N256_M512_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -12590,7 +12577,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_SKR_N32_M1024_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -12602,7 +12589,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_SKR_N32_M2048_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -12614,7 +12601,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_SKR_N32_M512_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -12626,7 +12613,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_SKR_N4096_M1024_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -12638,7 +12625,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_SKR_N4096_M2048_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -12650,7 +12637,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_SKR_N4096_M512_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -12662,7 +12649,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_SKR_N4_M1024_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -12674,7 +12661,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_SKR_N4_M2048_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -12686,7 +12673,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_SKR_N4_M512_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -12698,7 +12685,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_SKR_N512_M1024_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -12710,7 +12697,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_SKR_N512_M2048_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -12722,7 +12709,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_SKR_N512_M512_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -12734,7 +12721,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_SKR_N64_M1024_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -12746,7 +12733,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_SKR_N64_M2048_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -12758,7 +12745,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_SKR_N64_M512_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -12770,7 +12757,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_SKR_N8_M1024_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -12782,7 +12769,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_SKR_N8_M2048_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -12794,7 +12781,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/3d_visualization_SKR_N8_M512_etac0.9_epsg0.0001.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -12805,7 +12792,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/best_strategies_N1024_M1024.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -12816,7 +12803,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/best_strategies_N1024_M2048.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -12827,7 +12814,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/best_strategies_N1024_M512.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -12838,7 +12825,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/best_strategies_N128_M1024.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -12849,7 +12836,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/best_strategies_N128_M2048.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -12860,7 +12847,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/best_strategies_N128_M512.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -12871,7 +12858,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/best_strategies_N16_M1024.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -12882,7 +12869,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/best_strategies_N16_M2048.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -12893,7 +12880,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/best_strategies_N16_M512.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -12904,7 +12891,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/best_strategies_N2048_M1024.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -12915,7 +12902,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/best_strategies_N2048_M2048.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -12926,7 +12913,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/best_strategies_N2048_M512.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -12937,7 +12924,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/best_strategies_N256_M1024.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -12948,7 +12935,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/best_strategies_N256_M2048.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -12959,7 +12946,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/best_strategies_N256_M512.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -12970,7 +12957,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/best_strategies_N32_M1024.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -12981,7 +12968,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/best_strategies_N32_M2048.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -12992,7 +12979,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/best_strategies_N32_M512.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -13003,7 +12990,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/best_strategies_N4096_M1024.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -13014,7 +13001,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/best_strategies_N4096_M2048.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -13025,7 +13012,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/best_strategies_N4096_M512.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -13036,7 +13023,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/best_strategies_N4_M1024.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -13047,7 +13034,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/best_strategies_N4_M2048.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -13058,7 +13045,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/best_strategies_N4_M512.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -13069,7 +13056,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/best_strategies_N512_M1024.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -13080,7 +13067,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/best_strategies_N512_M2048.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -13091,7 +13078,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/best_strategies_N512_M512.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -13102,7 +13089,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/best_strategies_N64_M1024.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -13113,7 +13100,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/best_strategies_N64_M2048.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -13124,7 +13111,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/best_strategies_N64_M512.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -13135,7 +13122,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/best_strategies_N8_M1024.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -13146,7 +13133,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/best_strategies_N8_M2048.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -13157,7 +13144,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/best_strategies_N8_M512.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -13168,7 +13155,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/skr_vs_fth_N1024_M1024.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -13179,7 +13166,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/skr_vs_fth_N1024_M2048.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -13190,7 +13177,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/skr_vs_fth_N1024_M512.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -13201,7 +13188,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/skr_vs_fth_N128_M1024.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -13212,7 +13199,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/skr_vs_fth_N128_M2048.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -13222,7 +13209,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.9_epsg0.0001/svg/skr_vs_fth_N128_M512.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -13232,7 +13219,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.9_epsg0.0001/svg/skr_vs_fth_N16_M1024.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -13242,7 +13229,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.9_epsg0.0001/svg/skr_vs_fth_N16_M2048.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -13252,7 +13239,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.9_epsg0.0001/svg/skr_vs_fth_N16_M512.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -13263,7 +13250,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/skr_vs_fth_N2048_M1024.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -13274,7 +13261,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/skr_vs_fth_N2048_M2048.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -13285,7 +13272,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/skr_vs_fth_N2048_M512.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -13296,7 +13283,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/skr_vs_fth_N256_M1024.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -13307,7 +13294,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/skr_vs_fth_N256_M2048.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -13317,7 +13304,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.9_epsg0.0001/svg/skr_vs_fth_N256_M512.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -13327,7 +13314,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.9_epsg0.0001/svg/skr_vs_fth_N32_M1024.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -13337,7 +13324,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.9_epsg0.0001/svg/skr_vs_fth_N32_M2048.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -13347,7 +13334,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.9_epsg0.0001/svg/skr_vs_fth_N32_M512.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -13358,7 +13345,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/skr_vs_fth_N4096_M1024.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -13369,7 +13356,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/skr_vs_fth_N4096_M2048.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -13380,7 +13367,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/skr_vs_fth_N4096_M512.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -13390,7 +13377,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.9_epsg0.0001/svg/skr_vs_fth_N4_M1024.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -13400,7 +13387,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.9_epsg0.0001/svg/skr_vs_fth_N4_M2048.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -13410,7 +13397,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.9_epsg0.0001/svg/skr_vs_fth_N4_M512.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -13421,7 +13408,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/skr_vs_fth_N512_M1024.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -13432,7 +13419,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.0001/svg/skr_vs_fth_N512_M2048.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -13442,7 +13429,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.9_epsg0.0001/svg/skr_vs_fth_N512_M512.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -13452,7 +13439,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.9_epsg0.0001/svg/skr_vs_fth_N64_M1024.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -13462,7 +13449,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.9_epsg0.0001/svg/skr_vs_fth_N64_M2048.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -13472,7 +13459,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.9_epsg0.0001/svg/skr_vs_fth_N64_M512.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -13482,7 +13469,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.9_epsg0.0001/svg/skr_vs_fth_N8_M1024.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -13492,7 +13479,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.9_epsg0.0001/svg/skr_vs_fth_N8_M2048.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.0001,
@@ -13502,3076 +13489,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.9_epsg0.0001/svg/skr_vs_fth_N8_M512.svg",
   },
   {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.85",
-      N: 1024,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.85_N1024_M1024_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.85",
-      N: 1024,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.85_N1024_M2048_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.85",
-      N: 1024,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.85_N1024_M512_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.85",
-      N: 128,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.85_N128_M1024_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.85",
-      N: 128,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.85_N128_M2048_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.85",
-      N: 128,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.85_N128_M512_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.85",
-      N: 16,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.85_N16_M1024_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.85",
-      N: 16,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.85_N16_M2048_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.85",
-      N: 16,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.85_N16_M512_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.85",
-      N: 2048,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.85_N2048_M1024_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.85",
-      N: 2048,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.85_N2048_M2048_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.85",
-      N: 2048,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.85_N2048_M512_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.85",
-      N: 256,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.85_N256_M1024_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.85",
-      N: 256,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.85_N256_M2048_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.85",
-      N: 256,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.85_N256_M512_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.85",
-      N: 32,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.85_N32_M1024_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.85",
-      N: 32,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.85_N32_M2048_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.85",
-      N: 32,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.85_N32_M512_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.85",
-      N: 4096,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.85_N4096_M1024_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.85",
-      N: 4096,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.85_N4096_M2048_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.85",
-      N: 4096,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.85_N4096_M512_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.85",
-      N: 4,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.85_N4_M1024_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.85",
-      N: 4,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.85_N4_M2048_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.85",
-      N: 4,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.85_N4_M512_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.85",
-      N: 512,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.85_N512_M1024_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.85",
-      N: 512,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.85_N512_M2048_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.85",
-      N: 512,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.85_N512_M512_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.85",
-      N: 64,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.85_N64_M1024_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.85",
-      N: 64,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.85_N64_M2048_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.85",
-      N: 64,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.85_N64_M512_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.85",
-      N: 8,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.85_N8_M1024_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.85",
-      N: 8,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.85_N8_M2048_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.85",
-      N: 8,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.85_N8_M512_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.95",
-      N: 1024,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.95_N1024_M1024_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.95",
-      N: 1024,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.95_N1024_M2048_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.95",
-      N: 1024,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.95_N1024_M512_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.95",
-      N: 128,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.95_N128_M1024_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.95",
-      N: 128,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.95_N128_M2048_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.95",
-      N: 128,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.95_N128_M512_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.95",
-      N: 16,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.95_N16_M1024_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.95",
-      N: 16,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.95_N16_M2048_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.95",
-      N: 16,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.95_N16_M512_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.95",
-      N: 2048,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.95_N2048_M1024_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.95",
-      N: 2048,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.95_N2048_M2048_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.95",
-      N: 2048,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.95_N2048_M512_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.95",
-      N: 256,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.95_N256_M1024_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.95",
-      N: 256,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.95_N256_M2048_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.95",
-      N: 256,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.95_N256_M512_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.95",
-      N: 32,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.95_N32_M1024_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.95",
-      N: 32,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.95_N32_M2048_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.95",
-      N: 32,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.95_N32_M512_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.95",
-      N: 4096,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.95_N4096_M1024_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.95",
-      N: 4096,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.95_N4096_M2048_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.95",
-      N: 4096,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.95_N4096_M512_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.95",
-      N: 4,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.95_N4_M1024_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.95",
-      N: 4,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.95_N4_M2048_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.95",
-      N: 4,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.95_N4_M512_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.95",
-      N: 512,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.95_N512_M1024_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.95",
-      N: 512,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.95_N512_M2048_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.95",
-      N: 512,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.95_N512_M512_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.95",
-      N: 64,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.95_N64_M1024_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.95",
-      N: 64,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.95_N64_M2048_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.95",
-      N: 64,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.95_N64_M512_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.95",
-      N: 8,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.95_N8_M1024_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.95",
-      N: 8,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.95_N8_M2048_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.95",
-      N: 8,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.95_N8_M512_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.97",
-      N: 1024,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.97_N1024_M1024_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.97",
-      N: 1024,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.97_N1024_M2048_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.97",
-      N: 1024,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.97_N1024_M512_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.97",
-      N: 128,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.97_N128_M1024_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.97",
-      N: 128,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.97_N128_M2048_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.97",
-      N: 128,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.97_N128_M512_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.97",
-      N: 16,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.97_N16_M1024_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.97",
-      N: 16,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.97_N16_M2048_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.97",
-      N: 16,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.97_N16_M512_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.97",
-      N: 2048,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.97_N2048_M1024_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.97",
-      N: 2048,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.97_N2048_M2048_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.97",
-      N: 2048,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.97_N2048_M512_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.97",
-      N: 256,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.97_N256_M1024_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.97",
-      N: 256,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.97_N256_M2048_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.97",
-      N: 256,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.97_N256_M512_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.97",
-      N: 32,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.97_N32_M1024_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.97",
-      N: 32,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.97_N32_M2048_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.97",
-      N: 32,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.97_N32_M512_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.97",
-      N: 4096,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.97_N4096_M1024_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.97",
-      N: 4096,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.97_N4096_M2048_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.97",
-      N: 4096,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.97_N4096_M512_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.97",
-      N: 4,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.97_N4_M1024_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.97",
-      N: 4,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.97_N4_M2048_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.97",
-      N: 4,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.97_N4_M512_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.97",
-      N: 512,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.97_N512_M1024_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.97",
-      N: 512,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.97_N512_M2048_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.97",
-      N: 512,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.97_N512_M512_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.97",
-      N: 64,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.97_N64_M1024_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.97",
-      N: 64,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.97_N64_M2048_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.97",
-      N: 64,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.97_N64_M512_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.97",
-      N: 8,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.97_N8_M1024_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.97",
-      N: 8,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.97_N8_M2048_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.97",
-      N: 8,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.97_N8_M512_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.99",
-      N: 1024,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.99_N1024_M1024_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.99",
-      N: 1024,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.99_N1024_M2048_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.99",
-      N: 1024,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.99_N1024_M512_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.99",
-      N: 128,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.99_N128_M1024_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.99",
-      N: 128,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.99_N128_M2048_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.99",
-      N: 128,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.99_N128_M512_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.99",
-      N: 16,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.99_N16_M1024_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.99",
-      N: 16,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.99_N16_M2048_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.99",
-      N: 16,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.99_N16_M512_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.99",
-      N: 2048,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.99_N2048_M1024_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.99",
-      N: 2048,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.99_N2048_M2048_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.99",
-      N: 2048,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.99_N2048_M512_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.99",
-      N: 256,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.99_N256_M1024_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.99",
-      N: 256,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.99_N256_M2048_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.99",
-      N: 256,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.99_N256_M512_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.99",
-      N: 32,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.99_N32_M1024_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.99",
-      N: 32,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.99_N32_M2048_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.99",
-      N: 32,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.99_N32_M512_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.99",
-      N: 4096,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.99_N4096_M1024_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.99",
-      N: 4096,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.99_N4096_M2048_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.99",
-      N: 4096,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.99_N4096_M512_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.99",
-      N: 4,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.99_N4_M1024_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.99",
-      N: 4,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.99_N4_M2048_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.99",
-      N: 4,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.99_N4_M512_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.99",
-      N: 512,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.99_N512_M1024_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.99",
-      N: 512,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.99_N512_M2048_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.99",
-      N: 512,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.99_N512_M512_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.99",
-      N: 64,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.99_N64_M1024_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.99",
-      N: 64,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.99_N64_M2048_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.99",
-      N: 64,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.99_N64_M512_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.99",
-      N: 8,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.99_N8_M1024_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.99",
-      N: 8,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.99_N8_M2048_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.99",
-      N: 8,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.99_N8_M512_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.9",
-      N: 1024,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.9_N1024_M1024_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.9",
-      N: 1024,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.9_N1024_M2048_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.9",
-      N: 1024,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.9_N1024_M512_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.9",
-      N: 128,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.9_N128_M1024_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.9",
-      N: 128,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.9_N128_M2048_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.9",
-      N: 128,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.9_N128_M512_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.9",
-      N: 16,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.9_N16_M1024_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.9",
-      N: 16,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.9_N16_M2048_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.9",
-      N: 16,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.9_N16_M512_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.9",
-      N: 2048,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.9_N2048_M1024_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.9",
-      N: 2048,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.9_N2048_M2048_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.9",
-      N: 2048,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.9_N2048_M512_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.9",
-      N: 256,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.9_N256_M1024_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.9",
-      N: 256,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.9_N256_M2048_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.9",
-      N: 256,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.9_N256_M512_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.9",
-      N: 32,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.9_N32_M1024_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.9",
-      N: 32,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.9_N32_M2048_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.9",
-      N: 32,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.9_N32_M512_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.9",
-      N: 4096,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.9_N4096_M1024_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.9",
-      N: 4096,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.9_N4096_M2048_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.9",
-      N: 4096,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.9_N4096_M512_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.9",
-      N: 4,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.9_N4_M1024_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.9",
-      N: 4,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.9_N4_M2048_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.9",
-      N: 4,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.9_N4_M512_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.9",
-      N: 512,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.9_N512_M1024_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.9",
-      N: 512,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.9_N512_M2048_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.9",
-      N: 512,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.9_N512_M512_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.9",
-      N: 64,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.9_N64_M1024_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.9",
-      N: 64,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.9_N64_M2048_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.9",
-      N: 64,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.9_N64_M512_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.9",
-      N: 8,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.9_N8_M1024_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.9",
-      N: 8,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.9_N8_M2048_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "F_th 0.9",
-      N: 8,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.9_N8_M512_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 1024,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N1024_M1024_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 1024,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N1024_M2048_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 1024,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N1024_M512_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 128,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N128_M1024_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 128,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N128_M2048_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 128,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N128_M512_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 16,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N16_M1024_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 16,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N16_M2048_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 16,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N16_M512_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 2048,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N2048_M1024_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 2048,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N2048_M2048_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 2048,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N2048_M512_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 256,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N256_M1024_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 256,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N256_M2048_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 256,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N256_M512_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 32,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N32_M1024_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 32,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N32_M2048_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 32,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N32_M512_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 4096,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N4096_M1024_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 4096,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N4096_M2048_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 4096,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N4096_M512_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 4,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N4_M1024_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 4,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N4_M2048_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 4,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N4_M512_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 512,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N512_M1024_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 512,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N512_M2048_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 512,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N512_M512_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 64,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N64_M1024_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 64,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N64_M2048_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 64,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N64_M512_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 8,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N8_M1024_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 8,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N8_M2048_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "3D global-schedule",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      rule: "SKR",
-      N: 8,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N8_M512_etac1_epsg0.0001.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 1024,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N1024_M1024.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 1024,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N1024_M2048.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 1024,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N1024_M512.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 128,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N128_M1024.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 128,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N128_M2048.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 128,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N128_M512.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 16,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N16_M1024.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 16,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N16_M2048.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 16,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N16_M512.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 2048,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N2048_M1024.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 2048,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N2048_M2048.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 2048,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N2048_M512.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 256,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N256_M1024.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 256,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N256_M2048.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 256,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N256_M512.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 32,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N32_M1024.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 32,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N32_M2048.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 32,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N32_M512.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 4096,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N4096_M1024.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 4096,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N4096_M2048.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 4096,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N4096_M512.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 4,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N4_M1024.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 4,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N4_M2048.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 4,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N4_M512.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 512,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N512_M1024.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 512,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N512_M2048.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 512,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N512_M512.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 64,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N64_M1024.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 64,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N64_M2048.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 64,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N64_M512.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 8,
-      M: 1024,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N8_M1024.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 8,
-      M: 2048,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N8_M2048.svg",
-  },
-  {
-    plotType: "Best strategies 2D",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 8,
-      M: 512,
-    },
-    relPath:
-      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N8_M512.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 1024,
-      M: 1024,
-    },
-    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N1024_M1024.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 1024,
-      M: 2048,
-    },
-    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N1024_M2048.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 1024,
-      M: 512,
-    },
-    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N1024_M512.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 128,
-      M: 1024,
-    },
-    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N128_M1024.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 128,
-      M: 2048,
-    },
-    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N128_M2048.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 128,
-      M: 512,
-    },
-    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N128_M512.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 16,
-      M: 1024,
-    },
-    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N16_M1024.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 16,
-      M: 2048,
-    },
-    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N16_M2048.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 16,
-      M: 512,
-    },
-    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N16_M512.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 2048,
-      M: 1024,
-    },
-    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N2048_M1024.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 2048,
-      M: 2048,
-    },
-    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N2048_M2048.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 2048,
-      M: 512,
-    },
-    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N2048_M512.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 256,
-      M: 1024,
-    },
-    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N256_M1024.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 256,
-      M: 2048,
-    },
-    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N256_M2048.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 256,
-      M: 512,
-    },
-    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N256_M512.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 32,
-      M: 1024,
-    },
-    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N32_M1024.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 32,
-      M: 2048,
-    },
-    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N32_M2048.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 32,
-      M: 512,
-    },
-    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N32_M512.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 4096,
-      M: 1024,
-    },
-    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N4096_M1024.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 4096,
-      M: 2048,
-    },
-    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N4096_M2048.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 4096,
-      M: 512,
-    },
-    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N4096_M512.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 4,
-      M: 1024,
-    },
-    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N4_M1024.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 4,
-      M: 2048,
-    },
-    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N4_M2048.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 4,
-      M: 512,
-    },
-    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N4_M512.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 512,
-      M: 1024,
-    },
-    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N512_M1024.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 512,
-      M: 2048,
-    },
-    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N512_M2048.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 512,
-      M: 512,
-    },
-    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N512_M512.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 64,
-      M: 1024,
-    },
-    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N64_M1024.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 64,
-      M: 2048,
-    },
-    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N64_M2048.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 64,
-      M: 512,
-    },
-    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N64_M512.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 8,
-      M: 1024,
-    },
-    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N8_M1024.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 8,
-      M: 2048,
-    },
-    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N8_M2048.svg",
-  },
-  {
-    plotType: "SKR vs F_th",
-    params: {
-      eta_c: 1,
-      epsilon_G: 0.0001,
-      N: 8,
-      M: 512,
-    },
-    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N8_M512.svg",
-  },
-  {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -16583,7 +13501,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.85_N1024_M1024_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -16595,7 +13513,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.85_N1024_M2048_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -16607,7 +13525,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.85_N1024_M512_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -16619,7 +13537,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.85_N128_M1024_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -16631,7 +13549,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.85_N128_M2048_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -16643,7 +13561,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.85_N128_M512_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -16655,7 +13573,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.85_N16_M1024_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -16667,7 +13585,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.85_N16_M2048_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -16679,7 +13597,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.85_N16_M512_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -16691,7 +13609,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.85_N2048_M1024_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -16703,7 +13621,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.85_N2048_M2048_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -16715,7 +13633,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.85_N2048_M512_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -16727,7 +13645,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.85_N256_M1024_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -16739,7 +13657,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.85_N256_M2048_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -16751,7 +13669,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.85_N256_M512_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -16763,7 +13681,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.85_N32_M1024_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -16775,7 +13693,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.85_N32_M2048_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -16787,7 +13705,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.85_N32_M512_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -16799,7 +13717,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.85_N4096_M1024_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -16811,7 +13729,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.85_N4096_M2048_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -16823,7 +13741,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.85_N4096_M512_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -16835,7 +13753,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.85_N4_M1024_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -16847,7 +13765,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.85_N4_M2048_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -16859,7 +13777,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.85_N4_M512_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -16871,7 +13789,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.85_N512_M1024_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -16883,7 +13801,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.85_N512_M2048_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -16895,7 +13813,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.85_N512_M512_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -16907,7 +13825,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.85_N64_M1024_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -16919,7 +13837,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.85_N64_M2048_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -16931,7 +13849,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.85_N64_M512_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -16943,7 +13861,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.85_N8_M1024_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -16955,7 +13873,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.85_N8_M2048_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -16967,7 +13885,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.85_N8_M512_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -16979,7 +13897,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.95_N1024_M1024_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -16991,7 +13909,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.95_N1024_M2048_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -17003,7 +13921,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.95_N1024_M512_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -17015,7 +13933,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.95_N128_M1024_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -17027,7 +13945,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.95_N128_M2048_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -17039,7 +13957,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.95_N128_M512_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -17051,7 +13969,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.95_N16_M1024_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -17063,7 +13981,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.95_N16_M2048_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -17075,7 +13993,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.95_N16_M512_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -17087,7 +14005,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.95_N2048_M1024_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -17099,7 +14017,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.95_N2048_M2048_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -17111,7 +14029,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.95_N2048_M512_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -17123,7 +14041,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.95_N256_M1024_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -17135,7 +14053,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.95_N256_M2048_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -17147,7 +14065,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.95_N256_M512_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -17159,7 +14077,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.95_N32_M1024_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -17171,7 +14089,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.95_N32_M2048_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -17183,7 +14101,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.95_N32_M512_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -17195,7 +14113,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.95_N4096_M1024_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -17207,7 +14125,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.95_N4096_M2048_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -17219,7 +14137,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.95_N4096_M512_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -17231,7 +14149,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.95_N4_M1024_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -17243,7 +14161,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.95_N4_M2048_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -17255,7 +14173,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.95_N4_M512_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -17267,7 +14185,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.95_N512_M1024_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -17279,7 +14197,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.95_N512_M2048_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -17291,7 +14209,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.95_N512_M512_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -17303,7 +14221,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.95_N64_M1024_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -17315,7 +14233,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.95_N64_M2048_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -17327,7 +14245,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.95_N64_M512_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -17339,7 +14257,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.95_N8_M1024_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -17351,7 +14269,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.95_N8_M2048_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -17363,7 +14281,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.95_N8_M512_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -17375,7 +14293,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.97_N1024_M1024_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -17387,7 +14305,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.97_N1024_M2048_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -17399,7 +14317,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.97_N1024_M512_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -17411,7 +14329,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.97_N128_M1024_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -17423,7 +14341,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.97_N128_M2048_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -17435,7 +14353,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.97_N128_M512_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -17447,7 +14365,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.97_N16_M1024_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -17459,7 +14377,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.97_N16_M2048_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -17471,7 +14389,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.97_N16_M512_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -17483,7 +14401,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.97_N2048_M1024_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -17495,7 +14413,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.97_N2048_M2048_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -17507,7 +14425,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.97_N2048_M512_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -17519,7 +14437,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.97_N256_M1024_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -17531,7 +14449,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.97_N256_M2048_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -17543,7 +14461,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.97_N256_M512_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -17555,7 +14473,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.97_N32_M1024_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -17567,7 +14485,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.97_N32_M2048_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -17579,7 +14497,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.97_N32_M512_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -17591,7 +14509,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.97_N4096_M1024_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -17603,7 +14521,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.97_N4096_M2048_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -17615,7 +14533,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.97_N4096_M512_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -17627,7 +14545,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.97_N4_M1024_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -17639,7 +14557,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.97_N4_M2048_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -17651,7 +14569,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.97_N4_M512_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -17663,7 +14581,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.97_N512_M1024_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -17675,7 +14593,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.97_N512_M2048_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -17687,7 +14605,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.97_N512_M512_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -17699,7 +14617,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.97_N64_M1024_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -17711,7 +14629,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.97_N64_M2048_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -17723,7 +14641,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.97_N64_M512_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -17735,7 +14653,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.97_N8_M1024_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -17747,7 +14665,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.97_N8_M2048_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -17759,7 +14677,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.97_N8_M512_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -17771,7 +14689,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.99_N1024_M1024_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -17783,7 +14701,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.99_N1024_M2048_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -17795,7 +14713,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.99_N1024_M512_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -17807,7 +14725,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.99_N128_M1024_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -17819,7 +14737,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.99_N128_M2048_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -17831,7 +14749,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.99_N128_M512_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -17843,7 +14761,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.99_N16_M1024_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -17855,7 +14773,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.99_N16_M2048_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -17867,7 +14785,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.99_N16_M512_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -17879,7 +14797,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.99_N2048_M1024_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -17891,7 +14809,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.99_N2048_M2048_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -17903,7 +14821,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.99_N2048_M512_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -17915,7 +14833,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.99_N256_M1024_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -17927,7 +14845,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.99_N256_M2048_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -17939,7 +14857,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.99_N256_M512_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -17951,7 +14869,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.99_N32_M1024_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -17963,7 +14881,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.99_N32_M2048_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -17975,7 +14893,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.99_N32_M512_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -17987,7 +14905,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.99_N4096_M1024_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -17999,7 +14917,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.99_N4096_M2048_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -18011,7 +14929,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.99_N4096_M512_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -18023,7 +14941,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.99_N4_M1024_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -18035,7 +14953,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.99_N4_M2048_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -18047,7 +14965,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.99_N4_M512_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -18059,7 +14977,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.99_N512_M1024_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -18071,7 +14989,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.99_N512_M2048_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -18083,7 +15001,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.99_N512_M512_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -18095,7 +15013,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.99_N64_M1024_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -18107,7 +15025,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.99_N64_M2048_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -18119,7 +15037,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.99_N64_M512_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -18131,7 +15049,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.99_N8_M1024_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -18143,7 +15061,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.99_N8_M2048_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -18155,7 +15073,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.99_N8_M512_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -18167,7 +15085,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.9_N1024_M1024_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -18179,7 +15097,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.9_N1024_M2048_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -18191,7 +15109,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.9_N1024_M512_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -18203,7 +15121,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.9_N128_M1024_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -18215,7 +15133,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.9_N128_M2048_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -18227,7 +15145,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.9_N128_M512_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -18239,7 +15157,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.9_N16_M1024_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -18251,7 +15169,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.9_N16_M2048_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -18263,7 +15181,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.9_N16_M512_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -18275,7 +15193,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.9_N2048_M1024_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -18287,7 +15205,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.9_N2048_M2048_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -18299,7 +15217,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.9_N2048_M512_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -18311,7 +15229,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.9_N256_M1024_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -18323,7 +15241,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.9_N256_M2048_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -18335,7 +15253,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.9_N256_M512_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -18347,7 +15265,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.9_N32_M1024_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -18359,7 +15277,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.9_N32_M2048_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -18371,7 +15289,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.9_N32_M512_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -18383,7 +15301,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.9_N4096_M1024_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -18395,7 +15313,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.9_N4096_M2048_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -18407,7 +15325,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.9_N4096_M512_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -18419,7 +15337,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.9_N4_M1024_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -18431,7 +15349,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.9_N4_M2048_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -18443,7 +15361,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.9_N4_M512_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -18455,7 +15373,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.9_N512_M1024_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -18467,7 +15385,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.9_N512_M2048_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -18479,7 +15397,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.9_N512_M512_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -18491,7 +15409,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.9_N64_M1024_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -18503,7 +15421,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.9_N64_M2048_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -18515,7 +15433,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.9_N64_M512_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -18527,7 +15445,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.9_N8_M1024_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -18539,7 +15457,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.9_N8_M2048_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -18551,7 +15469,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_F_th_0.9_N8_M512_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -18563,7 +15481,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_SKR_N1024_M1024_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -18575,7 +15493,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_SKR_N1024_M2048_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -18587,7 +15505,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_SKR_N1024_M512_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -18599,7 +15517,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_SKR_N128_M1024_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -18611,7 +15529,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_SKR_N128_M2048_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -18623,7 +15541,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_SKR_N128_M512_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -18635,7 +15553,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_SKR_N16_M1024_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -18647,7 +15565,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_SKR_N16_M2048_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -18659,7 +15577,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_SKR_N16_M512_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -18671,7 +15589,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_SKR_N2048_M1024_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -18683,7 +15601,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_SKR_N2048_M2048_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -18695,7 +15613,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_SKR_N2048_M512_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -18707,7 +15625,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_SKR_N256_M1024_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -18719,7 +15637,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_SKR_N256_M2048_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -18731,7 +15649,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_SKR_N256_M512_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -18743,7 +15661,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_SKR_N32_M1024_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -18755,7 +15673,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_SKR_N32_M2048_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -18767,7 +15685,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_SKR_N32_M512_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -18779,7 +15697,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_SKR_N4096_M1024_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -18791,7 +15709,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_SKR_N4096_M2048_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -18803,7 +15721,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_SKR_N4096_M512_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -18815,7 +15733,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_SKR_N4_M1024_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -18827,7 +15745,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_SKR_N4_M2048_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -18839,7 +15757,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_SKR_N4_M512_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -18851,7 +15769,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_SKR_N512_M1024_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -18863,7 +15781,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_SKR_N512_M2048_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -18875,7 +15793,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_SKR_N512_M512_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -18887,7 +15805,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_SKR_N64_M1024_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -18899,7 +15817,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_SKR_N64_M2048_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -18911,7 +15829,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_SKR_N64_M512_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -18923,7 +15841,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_SKR_N8_M1024_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -18935,7 +15853,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_SKR_N8_M2048_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -18947,7 +15865,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/3d_visualization_SKR_N8_M512_etac0.9_epsg0.001.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -18958,7 +15876,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/best_strategies_N1024_M1024.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -18969,7 +15887,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/best_strategies_N1024_M2048.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -18980,7 +15898,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/best_strategies_N1024_M512.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -18991,7 +15909,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/best_strategies_N128_M1024.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -19002,7 +15920,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/best_strategies_N128_M2048.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -19013,7 +15931,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/best_strategies_N128_M512.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -19024,7 +15942,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/best_strategies_N16_M1024.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -19035,7 +15953,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/best_strategies_N16_M2048.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -19046,7 +15964,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/best_strategies_N16_M512.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -19057,7 +15975,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/best_strategies_N2048_M1024.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -19068,7 +15986,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/best_strategies_N2048_M2048.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -19079,7 +15997,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/best_strategies_N2048_M512.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -19090,7 +16008,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/best_strategies_N256_M1024.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -19101,7 +16019,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/best_strategies_N256_M2048.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -19112,7 +16030,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/best_strategies_N256_M512.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -19123,7 +16041,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/best_strategies_N32_M1024.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -19134,7 +16052,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/best_strategies_N32_M2048.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -19145,7 +16063,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/best_strategies_N32_M512.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -19156,7 +16074,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/best_strategies_N4096_M1024.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -19167,7 +16085,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/best_strategies_N4096_M2048.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -19178,7 +16096,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/best_strategies_N4096_M512.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -19189,7 +16107,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/best_strategies_N4_M1024.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -19200,7 +16118,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/best_strategies_N4_M2048.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -19211,7 +16129,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/best_strategies_N4_M512.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -19222,7 +16140,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/best_strategies_N512_M1024.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -19233,7 +16151,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/best_strategies_N512_M2048.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -19244,7 +16162,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/best_strategies_N512_M512.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -19255,7 +16173,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/best_strategies_N64_M1024.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -19266,7 +16184,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/best_strategies_N64_M2048.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -19277,7 +16195,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/best_strategies_N64_M512.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -19288,7 +16206,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/best_strategies_N8_M1024.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -19299,7 +16217,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/best_strategies_N8_M2048.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -19310,7 +16228,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/best_strategies_N8_M512.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -19321,7 +16239,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/skr_vs_fth_N1024_M1024.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -19332,7 +16250,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/skr_vs_fth_N1024_M2048.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -19342,7 +16260,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.9_epsg0.001/svg/skr_vs_fth_N1024_M512.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -19352,7 +16270,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.9_epsg0.001/svg/skr_vs_fth_N128_M1024.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -19362,7 +16280,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.9_epsg0.001/svg/skr_vs_fth_N128_M2048.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -19372,7 +16290,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.9_epsg0.001/svg/skr_vs_fth_N128_M512.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -19382,7 +16300,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.9_epsg0.001/svg/skr_vs_fth_N16_M1024.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -19392,7 +16310,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.9_epsg0.001/svg/skr_vs_fth_N16_M2048.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -19402,7 +16320,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.9_epsg0.001/svg/skr_vs_fth_N16_M512.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -19413,7 +16331,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/skr_vs_fth_N2048_M1024.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -19424,7 +16342,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/skr_vs_fth_N2048_M2048.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -19434,7 +16352,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.9_epsg0.001/svg/skr_vs_fth_N2048_M512.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -19444,7 +16362,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.9_epsg0.001/svg/skr_vs_fth_N256_M1024.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -19454,7 +16372,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.9_epsg0.001/svg/skr_vs_fth_N256_M2048.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -19464,7 +16382,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.9_epsg0.001/svg/skr_vs_fth_N256_M512.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -19474,7 +16392,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.9_epsg0.001/svg/skr_vs_fth_N32_M1024.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -19484,7 +16402,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.9_epsg0.001/svg/skr_vs_fth_N32_M2048.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -19494,7 +16412,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.9_epsg0.001/svg/skr_vs_fth_N32_M512.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -19505,7 +16423,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/skr_vs_fth_N4096_M1024.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -19516,7 +16434,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.9_epsg0.001/svg/skr_vs_fth_N4096_M2048.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -19526,7 +16444,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.9_epsg0.001/svg/skr_vs_fth_N4096_M512.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -19536,7 +16454,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.9_epsg0.001/svg/skr_vs_fth_N4_M1024.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -19546,7 +16464,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.9_epsg0.001/svg/skr_vs_fth_N4_M2048.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -19556,7 +16474,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.9_epsg0.001/svg/skr_vs_fth_N4_M512.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -19566,7 +16484,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.9_epsg0.001/svg/skr_vs_fth_N512_M1024.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -19576,7 +16494,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.9_epsg0.001/svg/skr_vs_fth_N512_M2048.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -19586,7 +16504,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.9_epsg0.001/svg/skr_vs_fth_N512_M512.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -19596,7 +16514,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.9_epsg0.001/svg/skr_vs_fth_N64_M1024.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -19606,7 +16524,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.9_epsg0.001/svg/skr_vs_fth_N64_M2048.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -19616,7 +16534,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.9_epsg0.001/svg/skr_vs_fth_N64_M512.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -19626,7 +16544,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.9_epsg0.001/svg/skr_vs_fth_N8_M1024.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -19636,7 +16554,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.9_epsg0.001/svg/skr_vs_fth_N8_M2048.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.9,
       epsilon_G: 0.001,
@@ -19646,3074 +16564,3076 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.9_epsg0.001/svg/skr_vs_fth_N8_M512.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.85",
       N: 1024,
       M: 1024,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.85_N1024_M1024_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.85_N1024_M1024_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.85",
       N: 1024,
       M: 2048,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.85_N1024_M2048_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.85_N1024_M2048_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.85",
       N: 1024,
       M: 512,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.85_N1024_M512_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.85_N1024_M512_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.85",
       N: 128,
       M: 1024,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.85_N128_M1024_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.85_N128_M1024_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.85",
       N: 128,
       M: 2048,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.85_N128_M2048_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.85_N128_M2048_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.85",
       N: 128,
       M: 512,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.85_N128_M512_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.85_N128_M512_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.85",
       N: 16,
       M: 1024,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.85_N16_M1024_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.85_N16_M1024_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.85",
       N: 16,
       M: 2048,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.85_N16_M2048_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.85_N16_M2048_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.85",
       N: 16,
       M: 512,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.85_N16_M512_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.85_N16_M512_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.85",
       N: 2048,
       M: 1024,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.85_N2048_M1024_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.85_N2048_M1024_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.85",
       N: 2048,
       M: 2048,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.85_N2048_M2048_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.85_N2048_M2048_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.85",
       N: 2048,
       M: 512,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.85_N2048_M512_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.85_N2048_M512_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.85",
       N: 256,
       M: 1024,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.85_N256_M1024_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.85_N256_M1024_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.85",
       N: 256,
       M: 2048,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.85_N256_M2048_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.85_N256_M2048_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.85",
       N: 256,
       M: 512,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.85_N256_M512_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.85_N256_M512_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.85",
       N: 32,
       M: 1024,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.85_N32_M1024_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.85_N32_M1024_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.85",
       N: 32,
       M: 2048,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.85_N32_M2048_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.85_N32_M2048_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.85",
       N: 32,
       M: 512,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.85_N32_M512_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.85_N32_M512_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.85",
       N: 4096,
       M: 1024,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.85_N4096_M1024_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.85_N4096_M1024_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.85",
       N: 4096,
       M: 2048,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.85_N4096_M2048_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.85_N4096_M2048_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.85",
       N: 4096,
       M: 512,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.85_N4096_M512_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.85_N4096_M512_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.85",
       N: 4,
       M: 1024,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.85_N4_M1024_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.85_N4_M1024_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.85",
       N: 4,
       M: 2048,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.85_N4_M2048_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.85_N4_M2048_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.85",
       N: 4,
       M: 512,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.85_N4_M512_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.85_N4_M512_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.85",
       N: 512,
       M: 1024,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.85_N512_M1024_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.85_N512_M1024_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.85",
       N: 512,
       M: 2048,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.85_N512_M2048_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.85_N512_M2048_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.85",
       N: 512,
       M: 512,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.85_N512_M512_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.85_N512_M512_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.85",
       N: 64,
       M: 1024,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.85_N64_M1024_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.85_N64_M1024_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.85",
       N: 64,
       M: 2048,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.85_N64_M2048_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.85_N64_M2048_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.85",
       N: 64,
       M: 512,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.85_N64_M512_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.85_N64_M512_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.85",
       N: 8,
       M: 1024,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.85_N8_M1024_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.85_N8_M1024_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.85",
       N: 8,
       M: 2048,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.85_N8_M2048_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.85_N8_M2048_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.85",
       N: 8,
       M: 512,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.85_N8_M512_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.85_N8_M512_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.95",
       N: 1024,
       M: 1024,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.95_N1024_M1024_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.95_N1024_M1024_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.95",
       N: 1024,
       M: 2048,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.95_N1024_M2048_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.95_N1024_M2048_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.95",
       N: 1024,
       M: 512,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.95_N1024_M512_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.95_N1024_M512_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.95",
       N: 128,
       M: 1024,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.95_N128_M1024_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.95_N128_M1024_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.95",
       N: 128,
       M: 2048,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.95_N128_M2048_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.95_N128_M2048_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.95",
       N: 128,
       M: 512,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.95_N128_M512_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.95_N128_M512_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.95",
       N: 16,
       M: 1024,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.95_N16_M1024_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.95_N16_M1024_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.95",
       N: 16,
       M: 2048,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.95_N16_M2048_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.95_N16_M2048_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.95",
       N: 16,
       M: 512,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.95_N16_M512_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.95_N16_M512_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.95",
       N: 2048,
       M: 1024,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.95_N2048_M1024_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.95_N2048_M1024_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.95",
       N: 2048,
       M: 2048,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.95_N2048_M2048_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.95_N2048_M2048_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.95",
       N: 2048,
       M: 512,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.95_N2048_M512_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.95_N2048_M512_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.95",
       N: 256,
       M: 1024,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.95_N256_M1024_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.95_N256_M1024_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.95",
       N: 256,
       M: 2048,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.95_N256_M2048_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.95_N256_M2048_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.95",
       N: 256,
       M: 512,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.95_N256_M512_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.95_N256_M512_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.95",
       N: 32,
       M: 1024,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.95_N32_M1024_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.95_N32_M1024_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.95",
       N: 32,
       M: 2048,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.95_N32_M2048_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.95_N32_M2048_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.95",
       N: 32,
       M: 512,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.95_N32_M512_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.95_N32_M512_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.95",
       N: 4096,
       M: 1024,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.95_N4096_M1024_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.95_N4096_M1024_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.95",
       N: 4096,
       M: 2048,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.95_N4096_M2048_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.95_N4096_M2048_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.95",
       N: 4096,
       M: 512,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.95_N4096_M512_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.95_N4096_M512_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.95",
       N: 4,
       M: 1024,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.95_N4_M1024_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.95_N4_M1024_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.95",
       N: 4,
       M: 2048,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.95_N4_M2048_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.95_N4_M2048_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.95",
       N: 4,
       M: 512,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.95_N4_M512_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.95_N4_M512_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.95",
       N: 512,
       M: 1024,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.95_N512_M1024_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.95_N512_M1024_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.95",
       N: 512,
       M: 2048,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.95_N512_M2048_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.95_N512_M2048_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.95",
       N: 512,
       M: 512,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.95_N512_M512_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.95_N512_M512_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.95",
       N: 64,
       M: 1024,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.95_N64_M1024_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.95_N64_M1024_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.95",
       N: 64,
       M: 2048,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.95_N64_M2048_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.95_N64_M2048_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.95",
       N: 64,
       M: 512,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.95_N64_M512_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.95_N64_M512_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.95",
       N: 8,
       M: 1024,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.95_N8_M1024_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.95_N8_M1024_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.95",
       N: 8,
       M: 2048,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.95_N8_M2048_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.95_N8_M2048_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.95",
       N: 8,
       M: 512,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.95_N8_M512_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.95_N8_M512_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.97",
       N: 1024,
       M: 1024,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.97_N1024_M1024_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.97_N1024_M1024_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.97",
       N: 1024,
       M: 2048,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.97_N1024_M2048_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.97_N1024_M2048_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.97",
       N: 1024,
       M: 512,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.97_N1024_M512_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.97_N1024_M512_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.97",
       N: 128,
       M: 1024,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.97_N128_M1024_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.97_N128_M1024_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.97",
       N: 128,
       M: 2048,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.97_N128_M2048_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.97_N128_M2048_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.97",
       N: 128,
       M: 512,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.97_N128_M512_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.97_N128_M512_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.97",
       N: 16,
       M: 1024,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.97_N16_M1024_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.97_N16_M1024_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.97",
       N: 16,
       M: 2048,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.97_N16_M2048_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.97_N16_M2048_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.97",
       N: 16,
       M: 512,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.97_N16_M512_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.97_N16_M512_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.97",
       N: 2048,
       M: 1024,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.97_N2048_M1024_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.97_N2048_M1024_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.97",
       N: 2048,
       M: 2048,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.97_N2048_M2048_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.97_N2048_M2048_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.97",
       N: 2048,
       M: 512,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.97_N2048_M512_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.97_N2048_M512_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.97",
       N: 256,
       M: 1024,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.97_N256_M1024_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.97_N256_M1024_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.97",
       N: 256,
       M: 2048,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.97_N256_M2048_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.97_N256_M2048_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.97",
       N: 256,
       M: 512,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.97_N256_M512_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.97_N256_M512_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.97",
       N: 32,
       M: 1024,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.97_N32_M1024_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.97_N32_M1024_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.97",
       N: 32,
       M: 2048,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.97_N32_M2048_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.97_N32_M2048_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.97",
       N: 32,
       M: 512,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.97_N32_M512_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.97_N32_M512_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.97",
       N: 4096,
       M: 1024,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.97_N4096_M1024_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.97_N4096_M1024_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.97",
       N: 4096,
       M: 2048,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.97_N4096_M2048_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.97_N4096_M2048_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.97",
       N: 4096,
       M: 512,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.97_N4096_M512_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.97_N4096_M512_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.97",
       N: 4,
       M: 1024,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.97_N4_M1024_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.97_N4_M1024_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.97",
       N: 4,
       M: 2048,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.97_N4_M2048_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.97_N4_M2048_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.97",
       N: 4,
       M: 512,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.97_N4_M512_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.97_N4_M512_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.97",
       N: 512,
       M: 1024,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.97_N512_M1024_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.97_N512_M1024_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.97",
       N: 512,
       M: 2048,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.97_N512_M2048_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.97_N512_M2048_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.97",
       N: 512,
       M: 512,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.97_N512_M512_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.97_N512_M512_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.97",
       N: 64,
       M: 1024,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.97_N64_M1024_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.97_N64_M1024_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.97",
       N: 64,
       M: 2048,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.97_N64_M2048_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.97_N64_M2048_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.97",
       N: 64,
       M: 512,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.97_N64_M512_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.97_N64_M512_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.97",
       N: 8,
       M: 1024,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.97_N8_M1024_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.97_N8_M1024_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.97",
       N: 8,
       M: 2048,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.97_N8_M2048_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.97_N8_M2048_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.97",
       N: 8,
       M: 512,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.97_N8_M512_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.97_N8_M512_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.99",
       N: 1024,
       M: 1024,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.99_N1024_M1024_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.99_N1024_M1024_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.99",
       N: 1024,
       M: 2048,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.99_N1024_M2048_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.99_N1024_M2048_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.99",
       N: 1024,
       M: 512,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.99_N1024_M512_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.99_N1024_M512_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.99",
       N: 128,
       M: 1024,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.99_N128_M1024_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.99_N128_M1024_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.99",
       N: 128,
       M: 2048,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.99_N128_M2048_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.99_N128_M2048_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.99",
       N: 128,
       M: 512,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.99_N128_M512_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.99_N128_M512_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.99",
       N: 16,
       M: 1024,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.99_N16_M1024_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.99_N16_M1024_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.99",
       N: 16,
       M: 2048,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.99_N16_M2048_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.99_N16_M2048_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.99",
       N: 16,
       M: 512,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.99_N16_M512_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.99_N16_M512_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.99",
       N: 2048,
       M: 1024,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.99_N2048_M1024_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.99_N2048_M1024_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.99",
       N: 2048,
       M: 2048,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.99_N2048_M2048_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.99_N2048_M2048_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.99",
       N: 2048,
       M: 512,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.99_N2048_M512_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.99_N2048_M512_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.99",
       N: 256,
       M: 1024,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.99_N256_M1024_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.99_N256_M1024_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.99",
       N: 256,
       M: 2048,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.99_N256_M2048_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.99_N256_M2048_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.99",
       N: 256,
       M: 512,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.99_N256_M512_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.99_N256_M512_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.99",
       N: 32,
       M: 1024,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.99_N32_M1024_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.99_N32_M1024_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.99",
       N: 32,
       M: 2048,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.99_N32_M2048_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.99_N32_M2048_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.99",
       N: 32,
       M: 512,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.99_N32_M512_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.99_N32_M512_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.99",
       N: 4096,
       M: 1024,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.99_N4096_M1024_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.99_N4096_M1024_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.99",
       N: 4096,
       M: 2048,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.99_N4096_M2048_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.99_N4096_M2048_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.99",
       N: 4096,
       M: 512,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.99_N4096_M512_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.99_N4096_M512_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.99",
       N: 4,
       M: 1024,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.99_N4_M1024_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.99_N4_M1024_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.99",
       N: 4,
       M: 2048,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.99_N4_M2048_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.99_N4_M2048_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.99",
       N: 4,
       M: 512,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.99_N4_M512_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.99_N4_M512_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.99",
       N: 512,
       M: 1024,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.99_N512_M1024_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.99_N512_M1024_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.99",
       N: 512,
       M: 2048,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.99_N512_M2048_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.99_N512_M2048_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.99",
       N: 512,
       M: 512,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.99_N512_M512_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.99_N512_M512_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.99",
       N: 64,
       M: 1024,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.99_N64_M1024_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.99_N64_M1024_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.99",
       N: 64,
       M: 2048,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.99_N64_M2048_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.99_N64_M2048_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.99",
       N: 64,
       M: 512,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.99_N64_M512_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.99_N64_M512_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.99",
       N: 8,
       M: 1024,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.99_N8_M1024_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.99_N8_M1024_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.99",
       N: 8,
       M: 2048,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.99_N8_M2048_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.99_N8_M2048_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.99",
       N: 8,
       M: 512,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.99_N8_M512_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.99_N8_M512_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.9",
       N: 1024,
       M: 1024,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.9_N1024_M1024_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.9_N1024_M1024_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.9",
       N: 1024,
       M: 2048,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.9_N1024_M2048_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.9_N1024_M2048_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.9",
       N: 1024,
       M: 512,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.9_N1024_M512_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.9_N1024_M512_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.9",
       N: 128,
       M: 1024,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.9_N128_M1024_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.9_N128_M1024_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.9",
       N: 128,
       M: 2048,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.9_N128_M2048_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.9_N128_M2048_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.9",
       N: 128,
       M: 512,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.9_N128_M512_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.9_N128_M512_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.9",
       N: 16,
       M: 1024,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.9_N16_M1024_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.9_N16_M1024_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.9",
       N: 16,
       M: 2048,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.9_N16_M2048_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.9_N16_M2048_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.9",
       N: 16,
       M: 512,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.9_N16_M512_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.9_N16_M512_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.9",
       N: 2048,
       M: 1024,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.9_N2048_M1024_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.9_N2048_M1024_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.9",
       N: 2048,
       M: 2048,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.9_N2048_M2048_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.9_N2048_M2048_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.9",
       N: 2048,
       M: 512,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.9_N2048_M512_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.9_N2048_M512_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.9",
       N: 256,
       M: 1024,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.9_N256_M1024_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.9_N256_M1024_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.9",
       N: 256,
       M: 2048,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.9_N256_M2048_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.9_N256_M2048_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.9",
       N: 256,
       M: 512,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.9_N256_M512_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.9_N256_M512_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.9",
       N: 32,
       M: 1024,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.9_N32_M1024_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.9_N32_M1024_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.9",
       N: 32,
       M: 2048,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.9_N32_M2048_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.9_N32_M2048_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.9",
       N: 32,
       M: 512,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.9_N32_M512_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.9_N32_M512_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.9",
       N: 4096,
       M: 1024,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.9_N4096_M1024_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.9_N4096_M1024_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.9",
       N: 4096,
       M: 2048,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.9_N4096_M2048_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.9_N4096_M2048_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.9",
       N: 4096,
       M: 512,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.9_N4096_M512_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.9_N4096_M512_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.9",
       N: 4,
       M: 1024,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.9_N4_M1024_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.9_N4_M1024_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.9",
       N: 4,
       M: 2048,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.9_N4_M2048_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.9_N4_M2048_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.9",
       N: 4,
       M: 512,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.9_N4_M512_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.9_N4_M512_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.9",
       N: 512,
       M: 1024,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.9_N512_M1024_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.9_N512_M1024_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.9",
       N: 512,
       M: 2048,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.9_N512_M2048_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.9_N512_M2048_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.9",
       N: 512,
       M: 512,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.9_N512_M512_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.9_N512_M512_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.9",
       N: 64,
       M: 1024,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.9_N64_M1024_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.9_N64_M1024_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.9",
       N: 64,
       M: 2048,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.9_N64_M2048_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.9_N64_M2048_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.9",
       N: 64,
       M: 512,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.9_N64_M512_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.9_N64_M512_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.9",
       N: 8,
       M: 1024,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.9_N8_M1024_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.9_N8_M1024_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.9",
       N: 8,
       M: 2048,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.9_N8_M2048_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.9_N8_M2048_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "F_th 0.9",
       N: 8,
       M: 512,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.9_N8_M512_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_F_th_0.9_N8_M512_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "SKR",
       N: 1024,
       M: 1024,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_SKR_N1024_M1024_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N1024_M1024_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "SKR",
       N: 1024,
       M: 2048,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_SKR_N1024_M2048_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N1024_M2048_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "SKR",
       N: 1024,
       M: 512,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_SKR_N1024_M512_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N1024_M512_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "SKR",
       N: 128,
       M: 1024,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_SKR_N128_M1024_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N128_M1024_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "SKR",
       N: 128,
       M: 2048,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_SKR_N128_M2048_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N128_M2048_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "SKR",
       N: 128,
       M: 512,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_SKR_N128_M512_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N128_M512_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "SKR",
       N: 16,
       M: 1024,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_SKR_N16_M1024_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N16_M1024_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "SKR",
       N: 16,
       M: 2048,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_SKR_N16_M2048_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N16_M2048_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "SKR",
       N: 16,
       M: 512,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_SKR_N16_M512_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N16_M512_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "SKR",
       N: 2048,
       M: 1024,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_SKR_N2048_M1024_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N2048_M1024_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "SKR",
       N: 2048,
       M: 2048,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_SKR_N2048_M2048_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N2048_M2048_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "SKR",
       N: 2048,
       M: 512,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_SKR_N2048_M512_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N2048_M512_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "SKR",
       N: 256,
       M: 1024,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_SKR_N256_M1024_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N256_M1024_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "SKR",
       N: 256,
       M: 2048,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_SKR_N256_M2048_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N256_M2048_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "SKR",
       N: 256,
       M: 512,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_SKR_N256_M512_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N256_M512_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "SKR",
       N: 32,
       M: 1024,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_SKR_N32_M1024_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N32_M1024_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "SKR",
       N: 32,
       M: 2048,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_SKR_N32_M2048_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N32_M2048_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "SKR",
       N: 32,
       M: 512,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_SKR_N32_M512_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N32_M512_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "SKR",
       N: 4096,
       M: 1024,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_SKR_N4096_M1024_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N4096_M1024_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "SKR",
       N: 4096,
       M: 2048,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_SKR_N4096_M2048_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N4096_M2048_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "SKR",
       N: 4096,
       M: 512,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_SKR_N4096_M512_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N4096_M512_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "SKR",
       N: 4,
       M: 1024,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_SKR_N4_M1024_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N4_M1024_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "SKR",
       N: 4,
       M: 2048,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_SKR_N4_M2048_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N4_M2048_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "SKR",
       N: 4,
       M: 512,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_SKR_N4_M512_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N4_M512_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "SKR",
       N: 512,
       M: 1024,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_SKR_N512_M1024_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N512_M1024_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "SKR",
       N: 512,
       M: 2048,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_SKR_N512_M2048_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N512_M2048_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "SKR",
       N: 512,
       M: 512,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_SKR_N512_M512_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N512_M512_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "SKR",
       N: 64,
       M: 1024,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_SKR_N64_M1024_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N64_M1024_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "SKR",
       N: 64,
       M: 2048,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_SKR_N64_M2048_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N64_M2048_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "SKR",
       N: 64,
       M: 512,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_SKR_N64_M512_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N64_M512_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "SKR",
       N: 8,
       M: 1024,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_SKR_N8_M1024_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N8_M1024_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "SKR",
       N: 8,
       M: 2048,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_SKR_N8_M2048_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N8_M2048_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       rule: "SKR",
       N: 8,
       M: 512,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_SKR_N8_M512_etac1_epsg0.001.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/3d_visualization_SKR_N8_M512_etac1_epsg0.0001.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       N: 1024,
       M: 1024,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/best_strategies_N1024_M1024.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N1024_M1024.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       N: 1024,
       M: 2048,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/best_strategies_N1024_M2048.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N1024_M2048.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       N: 1024,
       M: 512,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/best_strategies_N1024_M512.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N1024_M512.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       N: 128,
       M: 1024,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/best_strategies_N128_M1024.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N128_M1024.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       N: 128,
       M: 2048,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/best_strategies_N128_M2048.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N128_M2048.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       N: 128,
       M: 512,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/best_strategies_N128_M512.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N128_M512.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       N: 16,
       M: 1024,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/best_strategies_N16_M1024.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N16_M1024.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       N: 16,
       M: 2048,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/best_strategies_N16_M2048.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N16_M2048.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       N: 16,
       M: 512,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/best_strategies_N16_M512.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N16_M512.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       N: 2048,
       M: 1024,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/best_strategies_N2048_M1024.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N2048_M1024.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       N: 2048,
       M: 2048,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/best_strategies_N2048_M2048.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N2048_M2048.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       N: 2048,
       M: 512,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/best_strategies_N2048_M512.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N2048_M512.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       N: 256,
       M: 1024,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/best_strategies_N256_M1024.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N256_M1024.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       N: 256,
       M: 2048,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/best_strategies_N256_M2048.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N256_M2048.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       N: 256,
       M: 512,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/best_strategies_N256_M512.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N256_M512.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       N: 32,
       M: 1024,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/best_strategies_N32_M1024.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N32_M1024.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       N: 32,
       M: 2048,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/best_strategies_N32_M2048.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N32_M2048.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       N: 32,
       M: 512,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/best_strategies_N32_M512.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N32_M512.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       N: 4096,
       M: 1024,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/best_strategies_N4096_M1024.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N4096_M1024.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       N: 4096,
       M: 2048,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/best_strategies_N4096_M2048.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N4096_M2048.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       N: 4096,
       M: 512,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/best_strategies_N4096_M512.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N4096_M512.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       N: 4,
       M: 1024,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/best_strategies_N4_M1024.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N4_M1024.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       N: 4,
       M: 2048,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/best_strategies_N4_M2048.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N4_M2048.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       N: 4,
       M: 512,
     },
-    relPath: "comparison_plots/etac1_epsg0.001/svg/best_strategies_N4_M512.svg",
+    relPath:
+      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N4_M512.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       N: 512,
       M: 1024,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/best_strategies_N512_M1024.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N512_M1024.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       N: 512,
       M: 2048,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/best_strategies_N512_M2048.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N512_M2048.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       N: 512,
       M: 512,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/best_strategies_N512_M512.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N512_M512.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       N: 64,
       M: 1024,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/best_strategies_N64_M1024.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N64_M1024.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       N: 64,
       M: 2048,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/best_strategies_N64_M2048.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N64_M2048.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       N: 64,
       M: 512,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/best_strategies_N64_M512.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N64_M512.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       N: 8,
       M: 1024,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/best_strategies_N8_M1024.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N8_M1024.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       N: 8,
       M: 2048,
     },
     relPath:
-      "comparison_plots/etac1_epsg0.001/svg/best_strategies_N8_M2048.svg",
+      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N8_M2048.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       N: 8,
       M: 512,
     },
-    relPath: "comparison_plots/etac1_epsg0.001/svg/best_strategies_N8_M512.svg",
+    relPath:
+      "comparison_plots/etac1_epsg0.0001/svg/best_strategies_N8_M512.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       N: 1024,
       M: 1024,
     },
-    relPath: "comparison_plots/etac1_epsg0.001/svg/skr_vs_fth_N1024_M1024.svg",
+    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N1024_M1024.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       N: 1024,
       M: 2048,
     },
-    relPath: "comparison_plots/etac1_epsg0.001/svg/skr_vs_fth_N1024_M2048.svg",
+    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N1024_M2048.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       N: 1024,
       M: 512,
     },
-    relPath: "comparison_plots/etac1_epsg0.001/svg/skr_vs_fth_N1024_M512.svg",
+    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N1024_M512.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       N: 128,
       M: 1024,
     },
-    relPath: "comparison_plots/etac1_epsg0.001/svg/skr_vs_fth_N128_M1024.svg",
+    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N128_M1024.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       N: 128,
       M: 2048,
     },
-    relPath: "comparison_plots/etac1_epsg0.001/svg/skr_vs_fth_N128_M2048.svg",
+    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N128_M2048.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       N: 128,
       M: 512,
     },
-    relPath: "comparison_plots/etac1_epsg0.001/svg/skr_vs_fth_N128_M512.svg",
+    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N128_M512.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       N: 16,
       M: 1024,
     },
-    relPath: "comparison_plots/etac1_epsg0.001/svg/skr_vs_fth_N16_M1024.svg",
+    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N16_M1024.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       N: 16,
       M: 2048,
     },
-    relPath: "comparison_plots/etac1_epsg0.001/svg/skr_vs_fth_N16_M2048.svg",
+    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N16_M2048.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       N: 16,
       M: 512,
     },
-    relPath: "comparison_plots/etac1_epsg0.001/svg/skr_vs_fth_N16_M512.svg",
+    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N16_M512.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       N: 2048,
       M: 1024,
     },
-    relPath: "comparison_plots/etac1_epsg0.001/svg/skr_vs_fth_N2048_M1024.svg",
+    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N2048_M1024.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       N: 2048,
       M: 2048,
     },
-    relPath: "comparison_plots/etac1_epsg0.001/svg/skr_vs_fth_N2048_M2048.svg",
+    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N2048_M2048.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       N: 2048,
       M: 512,
     },
-    relPath: "comparison_plots/etac1_epsg0.001/svg/skr_vs_fth_N2048_M512.svg",
+    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N2048_M512.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       N: 256,
       M: 1024,
     },
-    relPath: "comparison_plots/etac1_epsg0.001/svg/skr_vs_fth_N256_M1024.svg",
+    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N256_M1024.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       N: 256,
       M: 2048,
     },
-    relPath: "comparison_plots/etac1_epsg0.001/svg/skr_vs_fth_N256_M2048.svg",
+    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N256_M2048.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       N: 256,
       M: 512,
     },
-    relPath: "comparison_plots/etac1_epsg0.001/svg/skr_vs_fth_N256_M512.svg",
+    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N256_M512.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       N: 32,
       M: 1024,
     },
-    relPath: "comparison_plots/etac1_epsg0.001/svg/skr_vs_fth_N32_M1024.svg",
+    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N32_M1024.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       N: 32,
       M: 2048,
     },
-    relPath: "comparison_plots/etac1_epsg0.001/svg/skr_vs_fth_N32_M2048.svg",
+    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N32_M2048.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       N: 32,
       M: 512,
     },
-    relPath: "comparison_plots/etac1_epsg0.001/svg/skr_vs_fth_N32_M512.svg",
+    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N32_M512.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       N: 4096,
       M: 1024,
     },
-    relPath: "comparison_plots/etac1_epsg0.001/svg/skr_vs_fth_N4096_M1024.svg",
+    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N4096_M1024.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       N: 4096,
       M: 2048,
     },
-    relPath: "comparison_plots/etac1_epsg0.001/svg/skr_vs_fth_N4096_M2048.svg",
+    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N4096_M2048.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       N: 4096,
       M: 512,
     },
-    relPath: "comparison_plots/etac1_epsg0.001/svg/skr_vs_fth_N4096_M512.svg",
+    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N4096_M512.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       N: 4,
       M: 1024,
     },
-    relPath: "comparison_plots/etac1_epsg0.001/svg/skr_vs_fth_N4_M1024.svg",
+    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N4_M1024.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       N: 4,
       M: 2048,
     },
-    relPath: "comparison_plots/etac1_epsg0.001/svg/skr_vs_fth_N4_M2048.svg",
+    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N4_M2048.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       N: 4,
       M: 512,
     },
-    relPath: "comparison_plots/etac1_epsg0.001/svg/skr_vs_fth_N4_M512.svg",
+    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N4_M512.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       N: 512,
       M: 1024,
     },
-    relPath: "comparison_plots/etac1_epsg0.001/svg/skr_vs_fth_N512_M1024.svg",
+    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N512_M1024.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       N: 512,
       M: 2048,
     },
-    relPath: "comparison_plots/etac1_epsg0.001/svg/skr_vs_fth_N512_M2048.svg",
+    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N512_M2048.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       N: 512,
       M: 512,
     },
-    relPath: "comparison_plots/etac1_epsg0.001/svg/skr_vs_fth_N512_M512.svg",
+    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N512_M512.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       N: 64,
       M: 1024,
     },
-    relPath: "comparison_plots/etac1_epsg0.001/svg/skr_vs_fth_N64_M1024.svg",
+    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N64_M1024.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       N: 64,
       M: 2048,
     },
-    relPath: "comparison_plots/etac1_epsg0.001/svg/skr_vs_fth_N64_M2048.svg",
+    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N64_M2048.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       N: 64,
       M: 512,
     },
-    relPath: "comparison_plots/etac1_epsg0.001/svg/skr_vs_fth_N64_M512.svg",
+    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N64_M512.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       N: 8,
       M: 1024,
     },
-    relPath: "comparison_plots/etac1_epsg0.001/svg/skr_vs_fth_N8_M1024.svg",
+    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N8_M1024.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       N: 8,
       M: 2048,
     },
-    relPath: "comparison_plots/etac1_epsg0.001/svg/skr_vs_fth_N8_M2048.svg",
+    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N8_M2048.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 1,
-      epsilon_G: 0.001,
+      epsilon_G: 0.0001,
       N: 8,
       M: 512,
     },
-    relPath: "comparison_plots/etac1_epsg0.001/svg/skr_vs_fth_N8_M512.svg",
+    relPath: "comparison_plots/etac1_epsg0.0001/svg/skr_vs_fth_N8_M512.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -22725,7 +19645,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.85_N1024_M1024_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -22737,7 +19657,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.85_N1024_M2048_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -22749,7 +19669,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.85_N1024_M512_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -22761,7 +19681,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.85_N128_M1024_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -22773,7 +19693,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.85_N128_M2048_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -22785,7 +19705,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.85_N128_M512_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -22797,7 +19717,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.85_N16_M1024_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -22809,7 +19729,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.85_N16_M2048_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -22821,7 +19741,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.85_N16_M512_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -22833,7 +19753,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.85_N2048_M1024_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -22845,7 +19765,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.85_N2048_M2048_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -22857,7 +19777,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.85_N2048_M512_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -22869,7 +19789,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.85_N256_M1024_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -22881,7 +19801,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.85_N256_M2048_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -22893,7 +19813,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.85_N256_M512_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -22905,7 +19825,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.85_N32_M1024_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -22917,7 +19837,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.85_N32_M2048_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -22929,7 +19849,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.85_N32_M512_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -22941,7 +19861,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.85_N4096_M1024_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -22953,7 +19873,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.85_N4096_M2048_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -22965,7 +19885,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.85_N4096_M512_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -22977,7 +19897,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.85_N4_M1024_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -22989,7 +19909,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.85_N4_M2048_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -23001,7 +19921,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.85_N4_M512_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -23013,7 +19933,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.85_N512_M1024_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -23025,7 +19945,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.85_N512_M2048_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -23037,7 +19957,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.85_N512_M512_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -23049,7 +19969,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.85_N64_M1024_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -23061,7 +19981,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.85_N64_M2048_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -23073,7 +19993,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.85_N64_M512_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -23085,7 +20005,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.85_N8_M1024_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -23097,7 +20017,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.85_N8_M2048_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -23109,7 +20029,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.85_N8_M512_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -23121,7 +20041,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.95_N1024_M1024_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -23133,7 +20053,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.95_N1024_M2048_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -23145,7 +20065,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.95_N1024_M512_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -23157,7 +20077,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.95_N128_M1024_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -23169,7 +20089,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.95_N128_M2048_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -23181,7 +20101,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.95_N128_M512_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -23193,7 +20113,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.95_N16_M1024_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -23205,7 +20125,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.95_N16_M2048_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -23217,7 +20137,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.95_N16_M512_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -23229,7 +20149,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.95_N2048_M1024_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -23241,7 +20161,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.95_N2048_M2048_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -23253,7 +20173,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.95_N2048_M512_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -23265,7 +20185,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.95_N256_M1024_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -23277,7 +20197,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.95_N256_M2048_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -23289,7 +20209,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.95_N256_M512_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -23301,7 +20221,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.95_N32_M1024_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -23313,7 +20233,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.95_N32_M2048_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -23325,7 +20245,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.95_N32_M512_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -23337,7 +20257,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.95_N4096_M1024_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -23349,7 +20269,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.95_N4096_M2048_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -23361,7 +20281,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.95_N4096_M512_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -23373,7 +20293,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.95_N4_M1024_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -23385,7 +20305,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.95_N4_M2048_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -23397,7 +20317,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.95_N4_M512_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -23409,7 +20329,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.95_N512_M1024_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -23421,7 +20341,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.95_N512_M2048_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -23433,7 +20353,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.95_N512_M512_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -23445,7 +20365,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.95_N64_M1024_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -23457,7 +20377,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.95_N64_M2048_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -23469,7 +20389,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.95_N64_M512_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -23481,7 +20401,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.95_N8_M1024_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -23493,7 +20413,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.95_N8_M2048_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -23505,7 +20425,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.95_N8_M512_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -23517,7 +20437,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.97_N1024_M1024_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -23529,7 +20449,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.97_N1024_M2048_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -23541,7 +20461,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.97_N1024_M512_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -23553,7 +20473,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.97_N128_M1024_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -23565,7 +20485,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.97_N128_M2048_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -23577,7 +20497,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.97_N128_M512_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -23589,7 +20509,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.97_N16_M1024_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -23601,7 +20521,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.97_N16_M2048_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -23613,7 +20533,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.97_N16_M512_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -23625,7 +20545,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.97_N2048_M1024_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -23637,7 +20557,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.97_N2048_M2048_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -23649,7 +20569,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.97_N2048_M512_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -23661,7 +20581,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.97_N256_M1024_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -23673,7 +20593,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.97_N256_M2048_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -23685,7 +20605,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.97_N256_M512_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -23697,7 +20617,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.97_N32_M1024_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -23709,7 +20629,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.97_N32_M2048_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -23721,7 +20641,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.97_N32_M512_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -23733,7 +20653,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.97_N4096_M1024_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -23745,7 +20665,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.97_N4096_M2048_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -23757,7 +20677,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.97_N4096_M512_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -23769,7 +20689,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.97_N4_M1024_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -23781,7 +20701,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.97_N4_M2048_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -23793,7 +20713,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.97_N4_M512_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -23805,7 +20725,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.97_N512_M1024_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -23817,7 +20737,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.97_N512_M2048_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -23829,7 +20749,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.97_N512_M512_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -23841,7 +20761,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.97_N64_M1024_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -23853,7 +20773,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.97_N64_M2048_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -23865,7 +20785,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.97_N64_M512_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -23877,7 +20797,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.97_N8_M1024_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -23889,7 +20809,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.97_N8_M2048_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -23901,7 +20821,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.97_N8_M512_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -23913,7 +20833,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.99_N1024_M1024_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -23925,7 +20845,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.99_N1024_M2048_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -23937,7 +20857,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.99_N1024_M512_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -23949,7 +20869,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.99_N128_M1024_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -23961,7 +20881,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.99_N128_M2048_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -23973,7 +20893,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.99_N128_M512_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -23985,7 +20905,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.99_N16_M1024_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -23997,7 +20917,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.99_N16_M2048_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -24009,7 +20929,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.99_N16_M512_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -24021,7 +20941,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.99_N2048_M1024_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -24033,7 +20953,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.99_N2048_M2048_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -24045,7 +20965,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.99_N2048_M512_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -24057,7 +20977,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.99_N256_M1024_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -24069,7 +20989,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.99_N256_M2048_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -24081,7 +21001,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.99_N256_M512_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -24093,7 +21013,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.99_N32_M1024_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -24105,7 +21025,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.99_N32_M2048_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -24117,7 +21037,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.99_N32_M512_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -24129,7 +21049,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.99_N4096_M1024_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -24141,7 +21061,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.99_N4096_M2048_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -24153,7 +21073,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.99_N4096_M512_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -24165,7 +21085,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.99_N4_M1024_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -24177,7 +21097,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.99_N4_M2048_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -24189,7 +21109,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.99_N4_M512_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -24201,7 +21121,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.99_N512_M1024_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -24213,7 +21133,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.99_N512_M2048_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -24225,7 +21145,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.99_N512_M512_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -24237,7 +21157,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.99_N64_M1024_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -24249,7 +21169,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.99_N64_M2048_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -24261,7 +21181,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.99_N64_M512_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -24273,7 +21193,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.99_N8_M1024_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -24285,7 +21205,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.99_N8_M2048_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -24297,7 +21217,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.99_N8_M512_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -24309,7 +21229,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.9_N1024_M1024_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -24321,7 +21241,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.9_N1024_M2048_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -24333,7 +21253,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.9_N1024_M512_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -24345,7 +21265,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.9_N128_M1024_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -24357,7 +21277,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.9_N128_M2048_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -24369,7 +21289,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.9_N128_M512_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -24381,7 +21301,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.9_N16_M1024_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -24393,7 +21313,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.9_N16_M2048_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -24405,7 +21325,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.9_N16_M512_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -24417,7 +21337,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.9_N2048_M1024_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -24429,7 +21349,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.9_N2048_M2048_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -24441,7 +21361,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.9_N2048_M512_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -24453,7 +21373,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.9_N256_M1024_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -24465,7 +21385,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.9_N256_M2048_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -24477,7 +21397,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.9_N256_M512_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -24489,7 +21409,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.9_N32_M1024_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -24501,7 +21421,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.9_N32_M2048_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -24513,7 +21433,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.9_N32_M512_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -24525,7 +21445,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.9_N4096_M1024_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -24537,7 +21457,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.9_N4096_M2048_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -24549,7 +21469,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.9_N4096_M512_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -24561,7 +21481,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.9_N4_M1024_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -24573,7 +21493,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.9_N4_M2048_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -24585,7 +21505,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.9_N4_M512_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -24597,7 +21517,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.9_N512_M1024_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -24609,7 +21529,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.9_N512_M2048_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -24621,7 +21541,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.9_N512_M512_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -24633,7 +21553,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.9_N64_M1024_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -24645,7 +21565,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.9_N64_M2048_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -24657,7 +21577,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.9_N64_M512_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -24669,7 +21589,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.9_N8_M1024_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -24681,7 +21601,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.9_N8_M2048_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -24693,7 +21613,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_F_th_0.9_N8_M512_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -24705,7 +21625,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_SKR_N1024_M1024_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -24717,7 +21637,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_SKR_N1024_M2048_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -24729,7 +21649,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_SKR_N1024_M512_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -24741,7 +21661,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_SKR_N128_M1024_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -24753,7 +21673,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_SKR_N128_M2048_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -24765,7 +21685,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_SKR_N128_M512_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -24777,7 +21697,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_SKR_N16_M1024_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -24789,7 +21709,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_SKR_N16_M2048_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -24801,7 +21721,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_SKR_N16_M512_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -24813,7 +21733,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_SKR_N2048_M1024_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -24825,7 +21745,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_SKR_N2048_M2048_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -24837,7 +21757,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_SKR_N2048_M512_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -24849,7 +21769,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_SKR_N256_M1024_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -24861,7 +21781,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_SKR_N256_M2048_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -24873,7 +21793,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_SKR_N256_M512_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -24885,7 +21805,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_SKR_N32_M1024_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -24897,7 +21817,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_SKR_N32_M2048_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -24909,7 +21829,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_SKR_N32_M512_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -24921,7 +21841,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_SKR_N4096_M1024_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -24933,7 +21853,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_SKR_N4096_M2048_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -24945,7 +21865,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_SKR_N4096_M512_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -24957,7 +21877,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_SKR_N4_M1024_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -24969,7 +21889,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_SKR_N4_M2048_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -24981,7 +21901,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_SKR_N4_M512_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -24993,7 +21913,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_SKR_N512_M1024_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -25005,7 +21925,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_SKR_N512_M2048_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -25017,7 +21937,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_SKR_N512_M512_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -25029,7 +21949,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_SKR_N64_M1024_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -25041,7 +21961,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_SKR_N64_M2048_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -25053,7 +21973,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_SKR_N64_M512_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -25065,7 +21985,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_SKR_N8_M1024_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -25077,7 +21997,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_SKR_N8_M2048_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "3D global-schedule",
+    plotType: "3D loca vs. global schedule",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -25089,7 +22009,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/3d_visualization_SKR_N8_M512_etac0.5_epsg0.001.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -25100,7 +22020,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/best_strategies_N1024_M1024.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -25111,7 +22031,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/best_strategies_N1024_M2048.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -25122,7 +22042,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/best_strategies_N1024_M512.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -25133,7 +22053,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/best_strategies_N128_M1024.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -25144,7 +22064,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/best_strategies_N128_M2048.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -25155,7 +22075,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/best_strategies_N128_M512.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -25166,7 +22086,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/best_strategies_N16_M1024.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -25177,7 +22097,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/best_strategies_N16_M2048.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -25188,7 +22108,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/best_strategies_N16_M512.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -25199,7 +22119,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/best_strategies_N2048_M1024.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -25210,7 +22130,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/best_strategies_N2048_M2048.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -25221,7 +22141,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/best_strategies_N2048_M512.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -25232,7 +22152,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/best_strategies_N256_M1024.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -25243,7 +22163,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/best_strategies_N256_M2048.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -25254,7 +22174,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/best_strategies_N256_M512.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -25265,7 +22185,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/best_strategies_N32_M1024.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -25276,7 +22196,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/best_strategies_N32_M2048.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -25287,7 +22207,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/best_strategies_N32_M512.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -25298,7 +22218,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/best_strategies_N4096_M1024.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -25309,7 +22229,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/best_strategies_N4096_M2048.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -25320,7 +22240,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/best_strategies_N4096_M512.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -25331,7 +22251,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/best_strategies_N4_M1024.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -25342,7 +22262,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/best_strategies_N4_M2048.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -25353,7 +22273,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/best_strategies_N4_M512.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -25364,7 +22284,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/best_strategies_N512_M1024.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -25375,7 +22295,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/best_strategies_N512_M2048.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -25386,7 +22306,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/best_strategies_N512_M512.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -25397,7 +22317,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/best_strategies_N64_M1024.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -25408,7 +22328,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/best_strategies_N64_M2048.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -25419,7 +22339,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/best_strategies_N64_M512.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -25430,7 +22350,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/best_strategies_N8_M1024.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -25441,7 +22361,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/best_strategies_N8_M2048.svg",
   },
   {
-    plotType: "Best strategies 2D",
+    plotType: "Policies comparison",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -25452,7 +22372,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/best_strategies_N8_M512.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -25463,7 +22383,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/skr_vs_fth_N1024_M1024.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -25474,7 +22394,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/skr_vs_fth_N1024_M2048.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -25484,7 +22404,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.5_epsg0.001/svg/skr_vs_fth_N1024_M512.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -25494,7 +22414,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.5_epsg0.001/svg/skr_vs_fth_N128_M1024.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -25504,7 +22424,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.5_epsg0.001/svg/skr_vs_fth_N128_M2048.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -25514,7 +22434,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.5_epsg0.001/svg/skr_vs_fth_N128_M512.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -25524,7 +22444,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.5_epsg0.001/svg/skr_vs_fth_N16_M1024.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -25534,7 +22454,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.5_epsg0.001/svg/skr_vs_fth_N16_M2048.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -25544,7 +22464,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.5_epsg0.001/svg/skr_vs_fth_N16_M512.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -25555,7 +22475,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/skr_vs_fth_N2048_M1024.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -25566,7 +22486,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/skr_vs_fth_N2048_M2048.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -25576,7 +22496,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.5_epsg0.001/svg/skr_vs_fth_N2048_M512.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -25586,7 +22506,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.5_epsg0.001/svg/skr_vs_fth_N256_M1024.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -25596,7 +22516,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.5_epsg0.001/svg/skr_vs_fth_N256_M2048.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -25606,7 +22526,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.5_epsg0.001/svg/skr_vs_fth_N256_M512.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -25616,7 +22536,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.5_epsg0.001/svg/skr_vs_fth_N32_M1024.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -25626,7 +22546,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.5_epsg0.001/svg/skr_vs_fth_N32_M2048.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -25636,7 +22556,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.5_epsg0.001/svg/skr_vs_fth_N32_M512.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -25647,7 +22567,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/skr_vs_fth_N4096_M1024.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -25658,7 +22578,7 @@ export const plotMeta: PlotMeta[] = [
       "comparison_plots/etac0.5_epsg0.001/svg/skr_vs_fth_N4096_M2048.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -25668,7 +22588,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.5_epsg0.001/svg/skr_vs_fth_N4096_M512.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -25678,7 +22598,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.5_epsg0.001/svg/skr_vs_fth_N4_M1024.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -25688,7 +22608,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.5_epsg0.001/svg/skr_vs_fth_N4_M2048.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -25698,7 +22618,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.5_epsg0.001/svg/skr_vs_fth_N4_M512.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -25708,7 +22628,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.5_epsg0.001/svg/skr_vs_fth_N512_M1024.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -25718,7 +22638,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.5_epsg0.001/svg/skr_vs_fth_N512_M2048.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -25728,7 +22648,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.5_epsg0.001/svg/skr_vs_fth_N512_M512.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -25738,7 +22658,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.5_epsg0.001/svg/skr_vs_fth_N64_M1024.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -25748,7 +22668,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.5_epsg0.001/svg/skr_vs_fth_N64_M2048.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -25758,7 +22678,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.5_epsg0.001/svg/skr_vs_fth_N64_M512.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -25768,7 +22688,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.5_epsg0.001/svg/skr_vs_fth_N8_M1024.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -25778,7 +22698,7 @@ export const plotMeta: PlotMeta[] = [
     relPath: "comparison_plots/etac0.5_epsg0.001/svg/skr_vs_fth_N8_M2048.svg",
   },
   {
-    plotType: "SKR vs F_th",
+    plotType: "Policies comparison (only local)",
     params: {
       eta_c: 0.5,
       epsilon_G: 0.001,
@@ -25786,6 +22706,3073 @@ export const plotMeta: PlotMeta[] = [
       M: 512,
     },
     relPath: "comparison_plots/etac0.5_epsg0.001/svg/skr_vs_fth_N8_M512.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.85",
+      N: 1024,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.85_N1024_M1024_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.85",
+      N: 1024,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.85_N1024_M2048_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.85",
+      N: 1024,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.85_N1024_M512_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.85",
+      N: 128,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.85_N128_M1024_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.85",
+      N: 128,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.85_N128_M2048_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.85",
+      N: 128,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.85_N128_M512_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.85",
+      N: 16,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.85_N16_M1024_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.85",
+      N: 16,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.85_N16_M2048_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.85",
+      N: 16,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.85_N16_M512_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.85",
+      N: 2048,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.85_N2048_M1024_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.85",
+      N: 2048,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.85_N2048_M2048_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.85",
+      N: 2048,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.85_N2048_M512_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.85",
+      N: 256,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.85_N256_M1024_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.85",
+      N: 256,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.85_N256_M2048_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.85",
+      N: 256,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.85_N256_M512_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.85",
+      N: 32,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.85_N32_M1024_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.85",
+      N: 32,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.85_N32_M2048_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.85",
+      N: 32,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.85_N32_M512_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.85",
+      N: 4096,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.85_N4096_M1024_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.85",
+      N: 4096,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.85_N4096_M2048_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.85",
+      N: 4096,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.85_N4096_M512_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.85",
+      N: 4,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.85_N4_M1024_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.85",
+      N: 4,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.85_N4_M2048_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.85",
+      N: 4,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.85_N4_M512_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.85",
+      N: 512,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.85_N512_M1024_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.85",
+      N: 512,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.85_N512_M2048_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.85",
+      N: 512,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.85_N512_M512_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.85",
+      N: 64,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.85_N64_M1024_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.85",
+      N: 64,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.85_N64_M2048_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.85",
+      N: 64,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.85_N64_M512_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.85",
+      N: 8,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.85_N8_M1024_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.85",
+      N: 8,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.85_N8_M2048_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.85",
+      N: 8,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.85_N8_M512_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.95",
+      N: 1024,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.95_N1024_M1024_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.95",
+      N: 1024,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.95_N1024_M2048_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.95",
+      N: 1024,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.95_N1024_M512_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.95",
+      N: 128,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.95_N128_M1024_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.95",
+      N: 128,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.95_N128_M2048_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.95",
+      N: 128,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.95_N128_M512_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.95",
+      N: 16,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.95_N16_M1024_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.95",
+      N: 16,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.95_N16_M2048_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.95",
+      N: 16,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.95_N16_M512_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.95",
+      N: 2048,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.95_N2048_M1024_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.95",
+      N: 2048,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.95_N2048_M2048_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.95",
+      N: 2048,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.95_N2048_M512_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.95",
+      N: 256,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.95_N256_M1024_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.95",
+      N: 256,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.95_N256_M2048_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.95",
+      N: 256,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.95_N256_M512_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.95",
+      N: 32,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.95_N32_M1024_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.95",
+      N: 32,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.95_N32_M2048_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.95",
+      N: 32,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.95_N32_M512_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.95",
+      N: 4096,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.95_N4096_M1024_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.95",
+      N: 4096,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.95_N4096_M2048_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.95",
+      N: 4096,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.95_N4096_M512_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.95",
+      N: 4,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.95_N4_M1024_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.95",
+      N: 4,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.95_N4_M2048_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.95",
+      N: 4,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.95_N4_M512_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.95",
+      N: 512,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.95_N512_M1024_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.95",
+      N: 512,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.95_N512_M2048_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.95",
+      N: 512,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.95_N512_M512_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.95",
+      N: 64,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.95_N64_M1024_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.95",
+      N: 64,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.95_N64_M2048_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.95",
+      N: 64,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.95_N64_M512_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.95",
+      N: 8,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.95_N8_M1024_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.95",
+      N: 8,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.95_N8_M2048_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.95",
+      N: 8,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.95_N8_M512_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.97",
+      N: 1024,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.97_N1024_M1024_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.97",
+      N: 1024,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.97_N1024_M2048_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.97",
+      N: 1024,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.97_N1024_M512_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.97",
+      N: 128,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.97_N128_M1024_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.97",
+      N: 128,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.97_N128_M2048_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.97",
+      N: 128,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.97_N128_M512_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.97",
+      N: 16,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.97_N16_M1024_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.97",
+      N: 16,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.97_N16_M2048_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.97",
+      N: 16,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.97_N16_M512_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.97",
+      N: 2048,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.97_N2048_M1024_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.97",
+      N: 2048,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.97_N2048_M2048_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.97",
+      N: 2048,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.97_N2048_M512_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.97",
+      N: 256,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.97_N256_M1024_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.97",
+      N: 256,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.97_N256_M2048_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.97",
+      N: 256,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.97_N256_M512_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.97",
+      N: 32,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.97_N32_M1024_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.97",
+      N: 32,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.97_N32_M2048_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.97",
+      N: 32,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.97_N32_M512_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.97",
+      N: 4096,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.97_N4096_M1024_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.97",
+      N: 4096,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.97_N4096_M2048_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.97",
+      N: 4096,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.97_N4096_M512_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.97",
+      N: 4,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.97_N4_M1024_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.97",
+      N: 4,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.97_N4_M2048_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.97",
+      N: 4,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.97_N4_M512_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.97",
+      N: 512,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.97_N512_M1024_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.97",
+      N: 512,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.97_N512_M2048_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.97",
+      N: 512,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.97_N512_M512_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.97",
+      N: 64,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.97_N64_M1024_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.97",
+      N: 64,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.97_N64_M2048_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.97",
+      N: 64,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.97_N64_M512_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.97",
+      N: 8,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.97_N8_M1024_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.97",
+      N: 8,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.97_N8_M2048_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.97",
+      N: 8,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.97_N8_M512_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.99",
+      N: 1024,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.99_N1024_M1024_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.99",
+      N: 1024,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.99_N1024_M2048_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.99",
+      N: 1024,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.99_N1024_M512_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.99",
+      N: 128,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.99_N128_M1024_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.99",
+      N: 128,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.99_N128_M2048_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.99",
+      N: 128,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.99_N128_M512_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.99",
+      N: 16,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.99_N16_M1024_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.99",
+      N: 16,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.99_N16_M2048_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.99",
+      N: 16,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.99_N16_M512_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.99",
+      N: 2048,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.99_N2048_M1024_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.99",
+      N: 2048,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.99_N2048_M2048_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.99",
+      N: 2048,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.99_N2048_M512_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.99",
+      N: 256,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.99_N256_M1024_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.99",
+      N: 256,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.99_N256_M2048_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.99",
+      N: 256,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.99_N256_M512_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.99",
+      N: 32,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.99_N32_M1024_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.99",
+      N: 32,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.99_N32_M2048_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.99",
+      N: 32,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.99_N32_M512_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.99",
+      N: 4096,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.99_N4096_M1024_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.99",
+      N: 4096,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.99_N4096_M2048_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.99",
+      N: 4096,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.99_N4096_M512_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.99",
+      N: 4,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.99_N4_M1024_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.99",
+      N: 4,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.99_N4_M2048_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.99",
+      N: 4,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.99_N4_M512_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.99",
+      N: 512,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.99_N512_M1024_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.99",
+      N: 512,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.99_N512_M2048_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.99",
+      N: 512,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.99_N512_M512_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.99",
+      N: 64,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.99_N64_M1024_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.99",
+      N: 64,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.99_N64_M2048_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.99",
+      N: 64,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.99_N64_M512_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.99",
+      N: 8,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.99_N8_M1024_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.99",
+      N: 8,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.99_N8_M2048_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.99",
+      N: 8,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.99_N8_M512_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.9",
+      N: 1024,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.9_N1024_M1024_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.9",
+      N: 1024,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.9_N1024_M2048_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.9",
+      N: 1024,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.9_N1024_M512_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.9",
+      N: 128,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.9_N128_M1024_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.9",
+      N: 128,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.9_N128_M2048_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.9",
+      N: 128,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.9_N128_M512_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.9",
+      N: 16,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.9_N16_M1024_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.9",
+      N: 16,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.9_N16_M2048_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.9",
+      N: 16,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.9_N16_M512_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.9",
+      N: 2048,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.9_N2048_M1024_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.9",
+      N: 2048,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.9_N2048_M2048_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.9",
+      N: 2048,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.9_N2048_M512_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.9",
+      N: 256,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.9_N256_M1024_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.9",
+      N: 256,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.9_N256_M2048_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.9",
+      N: 256,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.9_N256_M512_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.9",
+      N: 32,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.9_N32_M1024_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.9",
+      N: 32,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.9_N32_M2048_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.9",
+      N: 32,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.9_N32_M512_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.9",
+      N: 4096,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.9_N4096_M1024_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.9",
+      N: 4096,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.9_N4096_M2048_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.9",
+      N: 4096,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.9_N4096_M512_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.9",
+      N: 4,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.9_N4_M1024_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.9",
+      N: 4,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.9_N4_M2048_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.9",
+      N: 4,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.9_N4_M512_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.9",
+      N: 512,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.9_N512_M1024_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.9",
+      N: 512,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.9_N512_M2048_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.9",
+      N: 512,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.9_N512_M512_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.9",
+      N: 64,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.9_N64_M1024_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.9",
+      N: 64,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.9_N64_M2048_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.9",
+      N: 64,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.9_N64_M512_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.9",
+      N: 8,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.9_N8_M1024_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.9",
+      N: 8,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.9_N8_M2048_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "F_th 0.9",
+      N: 8,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_F_th_0.9_N8_M512_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "SKR",
+      N: 1024,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_SKR_N1024_M1024_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "SKR",
+      N: 1024,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_SKR_N1024_M2048_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "SKR",
+      N: 1024,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_SKR_N1024_M512_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "SKR",
+      N: 128,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_SKR_N128_M1024_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "SKR",
+      N: 128,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_SKR_N128_M2048_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "SKR",
+      N: 128,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_SKR_N128_M512_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "SKR",
+      N: 16,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_SKR_N16_M1024_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "SKR",
+      N: 16,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_SKR_N16_M2048_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "SKR",
+      N: 16,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_SKR_N16_M512_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "SKR",
+      N: 2048,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_SKR_N2048_M1024_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "SKR",
+      N: 2048,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_SKR_N2048_M2048_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "SKR",
+      N: 2048,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_SKR_N2048_M512_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "SKR",
+      N: 256,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_SKR_N256_M1024_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "SKR",
+      N: 256,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_SKR_N256_M2048_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "SKR",
+      N: 256,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_SKR_N256_M512_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "SKR",
+      N: 32,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_SKR_N32_M1024_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "SKR",
+      N: 32,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_SKR_N32_M2048_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "SKR",
+      N: 32,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_SKR_N32_M512_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "SKR",
+      N: 4096,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_SKR_N4096_M1024_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "SKR",
+      N: 4096,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_SKR_N4096_M2048_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "SKR",
+      N: 4096,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_SKR_N4096_M512_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "SKR",
+      N: 4,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_SKR_N4_M1024_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "SKR",
+      N: 4,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_SKR_N4_M2048_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "SKR",
+      N: 4,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_SKR_N4_M512_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "SKR",
+      N: 512,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_SKR_N512_M1024_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "SKR",
+      N: 512,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_SKR_N512_M2048_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "SKR",
+      N: 512,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_SKR_N512_M512_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "SKR",
+      N: 64,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_SKR_N64_M1024_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "SKR",
+      N: 64,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_SKR_N64_M2048_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "SKR",
+      N: 64,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_SKR_N64_M512_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "SKR",
+      N: 8,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_SKR_N8_M1024_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "SKR",
+      N: 8,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_SKR_N8_M2048_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "3D loca vs. global schedule",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      rule: "SKR",
+      N: 8,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/3d_visualization_SKR_N8_M512_etac1_epsg0.001.svg",
+  },
+  {
+    plotType: "Policies comparison",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      N: 1024,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/best_strategies_N1024_M1024.svg",
+  },
+  {
+    plotType: "Policies comparison",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      N: 1024,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/best_strategies_N1024_M2048.svg",
+  },
+  {
+    plotType: "Policies comparison",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      N: 1024,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/best_strategies_N1024_M512.svg",
+  },
+  {
+    plotType: "Policies comparison",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      N: 128,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/best_strategies_N128_M1024.svg",
+  },
+  {
+    plotType: "Policies comparison",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      N: 128,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/best_strategies_N128_M2048.svg",
+  },
+  {
+    plotType: "Policies comparison",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      N: 128,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/best_strategies_N128_M512.svg",
+  },
+  {
+    plotType: "Policies comparison",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      N: 16,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/best_strategies_N16_M1024.svg",
+  },
+  {
+    plotType: "Policies comparison",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      N: 16,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/best_strategies_N16_M2048.svg",
+  },
+  {
+    plotType: "Policies comparison",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      N: 16,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/best_strategies_N16_M512.svg",
+  },
+  {
+    plotType: "Policies comparison",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      N: 2048,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/best_strategies_N2048_M1024.svg",
+  },
+  {
+    plotType: "Policies comparison",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      N: 2048,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/best_strategies_N2048_M2048.svg",
+  },
+  {
+    plotType: "Policies comparison",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      N: 2048,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/best_strategies_N2048_M512.svg",
+  },
+  {
+    plotType: "Policies comparison",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      N: 256,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/best_strategies_N256_M1024.svg",
+  },
+  {
+    plotType: "Policies comparison",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      N: 256,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/best_strategies_N256_M2048.svg",
+  },
+  {
+    plotType: "Policies comparison",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      N: 256,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/best_strategies_N256_M512.svg",
+  },
+  {
+    plotType: "Policies comparison",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      N: 32,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/best_strategies_N32_M1024.svg",
+  },
+  {
+    plotType: "Policies comparison",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      N: 32,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/best_strategies_N32_M2048.svg",
+  },
+  {
+    plotType: "Policies comparison",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      N: 32,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/best_strategies_N32_M512.svg",
+  },
+  {
+    plotType: "Policies comparison",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      N: 4096,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/best_strategies_N4096_M1024.svg",
+  },
+  {
+    plotType: "Policies comparison",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      N: 4096,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/best_strategies_N4096_M2048.svg",
+  },
+  {
+    plotType: "Policies comparison",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      N: 4096,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/best_strategies_N4096_M512.svg",
+  },
+  {
+    plotType: "Policies comparison",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      N: 4,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/best_strategies_N4_M1024.svg",
+  },
+  {
+    plotType: "Policies comparison",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      N: 4,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/best_strategies_N4_M2048.svg",
+  },
+  {
+    plotType: "Policies comparison",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      N: 4,
+      M: 512,
+    },
+    relPath: "comparison_plots/etac1_epsg0.001/svg/best_strategies_N4_M512.svg",
+  },
+  {
+    plotType: "Policies comparison",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      N: 512,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/best_strategies_N512_M1024.svg",
+  },
+  {
+    plotType: "Policies comparison",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      N: 512,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/best_strategies_N512_M2048.svg",
+  },
+  {
+    plotType: "Policies comparison",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      N: 512,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/best_strategies_N512_M512.svg",
+  },
+  {
+    plotType: "Policies comparison",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      N: 64,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/best_strategies_N64_M1024.svg",
+  },
+  {
+    plotType: "Policies comparison",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      N: 64,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/best_strategies_N64_M2048.svg",
+  },
+  {
+    plotType: "Policies comparison",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      N: 64,
+      M: 512,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/best_strategies_N64_M512.svg",
+  },
+  {
+    plotType: "Policies comparison",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      N: 8,
+      M: 1024,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/best_strategies_N8_M1024.svg",
+  },
+  {
+    plotType: "Policies comparison",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      N: 8,
+      M: 2048,
+    },
+    relPath:
+      "comparison_plots/etac1_epsg0.001/svg/best_strategies_N8_M2048.svg",
+  },
+  {
+    plotType: "Policies comparison",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      N: 8,
+      M: 512,
+    },
+    relPath: "comparison_plots/etac1_epsg0.001/svg/best_strategies_N8_M512.svg",
+  },
+  {
+    plotType: "Policies comparison (only local)",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      N: 1024,
+      M: 1024,
+    },
+    relPath: "comparison_plots/etac1_epsg0.001/svg/skr_vs_fth_N1024_M1024.svg",
+  },
+  {
+    plotType: "Policies comparison (only local)",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      N: 1024,
+      M: 2048,
+    },
+    relPath: "comparison_plots/etac1_epsg0.001/svg/skr_vs_fth_N1024_M2048.svg",
+  },
+  {
+    plotType: "Policies comparison (only local)",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      N: 1024,
+      M: 512,
+    },
+    relPath: "comparison_plots/etac1_epsg0.001/svg/skr_vs_fth_N1024_M512.svg",
+  },
+  {
+    plotType: "Policies comparison (only local)",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      N: 128,
+      M: 1024,
+    },
+    relPath: "comparison_plots/etac1_epsg0.001/svg/skr_vs_fth_N128_M1024.svg",
+  },
+  {
+    plotType: "Policies comparison (only local)",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      N: 128,
+      M: 2048,
+    },
+    relPath: "comparison_plots/etac1_epsg0.001/svg/skr_vs_fth_N128_M2048.svg",
+  },
+  {
+    plotType: "Policies comparison (only local)",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      N: 128,
+      M: 512,
+    },
+    relPath: "comparison_plots/etac1_epsg0.001/svg/skr_vs_fth_N128_M512.svg",
+  },
+  {
+    plotType: "Policies comparison (only local)",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      N: 16,
+      M: 1024,
+    },
+    relPath: "comparison_plots/etac1_epsg0.001/svg/skr_vs_fth_N16_M1024.svg",
+  },
+  {
+    plotType: "Policies comparison (only local)",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      N: 16,
+      M: 2048,
+    },
+    relPath: "comparison_plots/etac1_epsg0.001/svg/skr_vs_fth_N16_M2048.svg",
+  },
+  {
+    plotType: "Policies comparison (only local)",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      N: 16,
+      M: 512,
+    },
+    relPath: "comparison_plots/etac1_epsg0.001/svg/skr_vs_fth_N16_M512.svg",
+  },
+  {
+    plotType: "Policies comparison (only local)",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      N: 2048,
+      M: 1024,
+    },
+    relPath: "comparison_plots/etac1_epsg0.001/svg/skr_vs_fth_N2048_M1024.svg",
+  },
+  {
+    plotType: "Policies comparison (only local)",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      N: 2048,
+      M: 2048,
+    },
+    relPath: "comparison_plots/etac1_epsg0.001/svg/skr_vs_fth_N2048_M2048.svg",
+  },
+  {
+    plotType: "Policies comparison (only local)",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      N: 2048,
+      M: 512,
+    },
+    relPath: "comparison_plots/etac1_epsg0.001/svg/skr_vs_fth_N2048_M512.svg",
+  },
+  {
+    plotType: "Policies comparison (only local)",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      N: 256,
+      M: 1024,
+    },
+    relPath: "comparison_plots/etac1_epsg0.001/svg/skr_vs_fth_N256_M1024.svg",
+  },
+  {
+    plotType: "Policies comparison (only local)",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      N: 256,
+      M: 2048,
+    },
+    relPath: "comparison_plots/etac1_epsg0.001/svg/skr_vs_fth_N256_M2048.svg",
+  },
+  {
+    plotType: "Policies comparison (only local)",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      N: 256,
+      M: 512,
+    },
+    relPath: "comparison_plots/etac1_epsg0.001/svg/skr_vs_fth_N256_M512.svg",
+  },
+  {
+    plotType: "Policies comparison (only local)",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      N: 32,
+      M: 1024,
+    },
+    relPath: "comparison_plots/etac1_epsg0.001/svg/skr_vs_fth_N32_M1024.svg",
+  },
+  {
+    plotType: "Policies comparison (only local)",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      N: 32,
+      M: 2048,
+    },
+    relPath: "comparison_plots/etac1_epsg0.001/svg/skr_vs_fth_N32_M2048.svg",
+  },
+  {
+    plotType: "Policies comparison (only local)",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      N: 32,
+      M: 512,
+    },
+    relPath: "comparison_plots/etac1_epsg0.001/svg/skr_vs_fth_N32_M512.svg",
+  },
+  {
+    plotType: "Policies comparison (only local)",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      N: 4096,
+      M: 1024,
+    },
+    relPath: "comparison_plots/etac1_epsg0.001/svg/skr_vs_fth_N4096_M1024.svg",
+  },
+  {
+    plotType: "Policies comparison (only local)",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      N: 4096,
+      M: 2048,
+    },
+    relPath: "comparison_plots/etac1_epsg0.001/svg/skr_vs_fth_N4096_M2048.svg",
+  },
+  {
+    plotType: "Policies comparison (only local)",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      N: 4096,
+      M: 512,
+    },
+    relPath: "comparison_plots/etac1_epsg0.001/svg/skr_vs_fth_N4096_M512.svg",
+  },
+  {
+    plotType: "Policies comparison (only local)",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      N: 4,
+      M: 1024,
+    },
+    relPath: "comparison_plots/etac1_epsg0.001/svg/skr_vs_fth_N4_M1024.svg",
+  },
+  {
+    plotType: "Policies comparison (only local)",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      N: 4,
+      M: 2048,
+    },
+    relPath: "comparison_plots/etac1_epsg0.001/svg/skr_vs_fth_N4_M2048.svg",
+  },
+  {
+    plotType: "Policies comparison (only local)",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      N: 4,
+      M: 512,
+    },
+    relPath: "comparison_plots/etac1_epsg0.001/svg/skr_vs_fth_N4_M512.svg",
+  },
+  {
+    plotType: "Policies comparison (only local)",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      N: 512,
+      M: 1024,
+    },
+    relPath: "comparison_plots/etac1_epsg0.001/svg/skr_vs_fth_N512_M1024.svg",
+  },
+  {
+    plotType: "Policies comparison (only local)",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      N: 512,
+      M: 2048,
+    },
+    relPath: "comparison_plots/etac1_epsg0.001/svg/skr_vs_fth_N512_M2048.svg",
+  },
+  {
+    plotType: "Policies comparison (only local)",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      N: 512,
+      M: 512,
+    },
+    relPath: "comparison_plots/etac1_epsg0.001/svg/skr_vs_fth_N512_M512.svg",
+  },
+  {
+    plotType: "Policies comparison (only local)",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      N: 64,
+      M: 1024,
+    },
+    relPath: "comparison_plots/etac1_epsg0.001/svg/skr_vs_fth_N64_M1024.svg",
+  },
+  {
+    plotType: "Policies comparison (only local)",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      N: 64,
+      M: 2048,
+    },
+    relPath: "comparison_plots/etac1_epsg0.001/svg/skr_vs_fth_N64_M2048.svg",
+  },
+  {
+    plotType: "Policies comparison (only local)",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      N: 64,
+      M: 512,
+    },
+    relPath: "comparison_plots/etac1_epsg0.001/svg/skr_vs_fth_N64_M512.svg",
+  },
+  {
+    plotType: "Policies comparison (only local)",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      N: 8,
+      M: 1024,
+    },
+    relPath: "comparison_plots/etac1_epsg0.001/svg/skr_vs_fth_N8_M1024.svg",
+  },
+  {
+    plotType: "Policies comparison (only local)",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      N: 8,
+      M: 2048,
+    },
+    relPath: "comparison_plots/etac1_epsg0.001/svg/skr_vs_fth_N8_M2048.svg",
+  },
+  {
+    plotType: "Policies comparison (only local)",
+    params: {
+      eta_c: 1,
+      epsilon_G: 0.001,
+      N: 8,
+      M: 512,
+    },
+    relPath: "comparison_plots/etac1_epsg0.001/svg/skr_vs_fth_N8_M512.svg",
   },
 ];
 
@@ -25839,13 +25826,6 @@ export const dependencyMatrix = {
     epsilon_G: false,
     N: false,
     M: false,
-    rule: false,
-  },
-  "Threshold heatmap": {
-    eta_c: false,
-    epsilon_G: false,
-    N: false,
-    M: true,
     rule: false,
   },
   "BSA Coupling Efficiency comparisons": {

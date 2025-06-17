@@ -43,15 +43,15 @@ export const PARAMETER_VALUES = {
 // Plot type mapping based on directory and filename patterns
 // Order is preserved for UI display
 const PLOT_TYPE_MAPPING: Record<string, string> = {
-  '3d_visualization': '3D global-schedule',
-  'best_strategies': 'Best strategies 2D',
-  'skr_vs_fth': 'SKR vs F_th',
-  'heatmap_dist': 'Advantage heatmaps',
-  'grid_plateau': 'Plateau grid',
-  'threshold': 'Threshold heatmap',
-  'max_distance': 'BSA Coupling Efficiency comparisons',
-  'consolidated_threshold': 'Threshold heatmap',
-  'manual_advantage': 'BSA Coupling Efficiency comparisons'
+  '3d_visualization': '3D local vs. global schedule',
+  'best_strategies': 'Policy comparison',
+  'skr_vs_fth': 'Policy comparison (only local)',
+  'heatmap_dist': 'Distance gain heatmap',
+  'grid_plateau': 'Inverse plateau ratio LD/GD',
+  // 'threshold': 'Threshold heatmap',
+  'max_distance': 'BSA Coupling Efficiency comparison',
+  // 'consolidated_threshold': 'Threshold heatmap',
+  'manual_advantage': 'BSA Coupling Efficiency comparison'
 };
 
 // Dependency matrix from requirements
@@ -61,7 +61,7 @@ export const DEPENDENCY_MATRIX: Record<string, Record<keyof PlotParams, boolean>
   'SKR vs F_th': { eta_c: true, epsilon_G: true, N: true, M: true, rule: false },
   'Advantage heatmaps': { eta_c: true, epsilon_G: true, N: false, M: false, rule: true },
   'Plateau grid': { eta_c: false, epsilon_G: false, N: false, M: false, rule: false },
-  'Threshold heatmap': { eta_c: false, epsilon_G: false, N: false, M: true, rule: false },
+  // 'Threshold heatmap': { eta_c: false, epsilon_G: false, N: false, M: true, rule: false },
   'BSA Coupling Efficiency comparisons': { eta_c: false, epsilon_G: true, N: true, M: true, rule: true } // TODO decide if to remove later (see task014.md)
 };
 
