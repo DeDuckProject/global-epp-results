@@ -1,0 +1,34 @@
+---
+description:
+globs:
+alwaysApply: false
+---
+When the user says "GH merge" (case-insensitive), the assistant should:
+
+1. Push the current local branch to the remote with `git push -u origin <current-branch>` if it is not already pushed.
+2. If **no** open pull request exists whose head is `<current-branch>`, create a PR targeting `main` (fallback to `master` if `main` does not exist) using GH CLI:
+
+   `gh pr create --base main --title "<current-branch>" --body "Automated PR from <current-branch>" --fill`
+
+3. Wait for all required status checks to succeed:
+
+   `gh pr checks <PR-number> --watch`
+
+4. Merge the pull request and delete the source branch (both locally and remotely):
+
+   `gh pr merge <PR-number> --merge --delete-branch`
+
+5. Switch the local repository back to the default branch (`main`/`master`).
+
+Special privileges:
+• This **gh-merge** rule is the ONLY automation allowed to execute the merge step without additional confirmation.  Other rules or ad-hoc commands must still request user confirmation before merging.
+• The merge step must succeed only if all CI checks pass.
+
+Safety guards:
+• If the current branch **is** the default branch, abort with a clear message (nothing to merge).
+• If tests fail or checks do not pass within the expected time window, abort and notify the user instead of force-merging.
+
+Usage example:
+```
+User: GH merge
+Assistant: (runs the automated workflow above)
