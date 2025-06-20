@@ -10,7 +10,7 @@
     "build:meta": "tsx scripts/generatePlotMeta.ts",
     "lint": "eslint .",
     "preview": "vite preview",
-    "test": "vitest run"
+    "test": "npm run build:meta && vitest run"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
