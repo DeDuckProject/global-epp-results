@@ -56,13 +56,12 @@ const PLOT_TYPE_MAPPING: Record<string, string> = {
 
 // Dependency matrix from requirements
 export const DEPENDENCY_MATRIX: Record<string, Record<keyof PlotParams, boolean>> = {
-  '3D global-schedule': { eta_c: true, epsilon_G: true, N: true, M: true, rule: true },
-  'Best strategies 2D': { eta_c: true, epsilon_G: true, N: true, M: true, rule: false },
-  'SKR vs F_th': { eta_c: true, epsilon_G: true, N: true, M: true, rule: false },
-  'Advantage heatmaps': { eta_c: true, epsilon_G: true, N: false, M: false, rule: true },
-  'Plateau grid': { eta_c: false, epsilon_G: false, N: false, M: false, rule: false },
-  // 'Threshold heatmap': { eta_c: false, epsilon_G: false, N: false, M: true, rule: false },
-  'BSA Coupling Efficiency comparisons': { eta_c: false, epsilon_G: true, N: true, M: true, rule: true } // TODO decide if to remove later (see task014.md)
+  '3D local vs. global schedule': { eta_c: true, epsilon_G: true, N: true, M: true, rule: true },
+  'Policy comparison': { eta_c: true, epsilon_G: true, N: true, M: true, rule: false },
+  'Policy comparison (only local)': { eta_c: true, epsilon_G: true, N: true, M: true, rule: false },
+  'Distance gain heatmap': { eta_c: true, epsilon_G: true, N: false, M: false, rule: true },
+  'Inverse plateau ratio LD/GD': { eta_c: false, epsilon_G: false, N: false, M: false, rule: false },
+  'BSA Coupling Efficiency comparison': { eta_c: false, epsilon_G: true, N: true, M: true, rule: true }
 };
 
 export function parseEtaC(dirname: string): EtaC | undefined {
