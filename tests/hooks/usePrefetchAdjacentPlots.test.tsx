@@ -1,4 +1,4 @@
-import { describe, it, expect, vi, beforeEach } from 'vitest';
+import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
 import { renderHook } from '@testing-library/react';
 import { usePrefetchAdjacentPlots } from '@/hooks/usePrefetchAdjacentPlots';
 import { getAdjacentPlotStates } from '@/utils/getAdjacentPlotStates';
@@ -43,6 +43,7 @@ describe('usePrefetchAdjacentPlots', () => {
   ];
 
   beforeEach(() => {
+    vi.useFakeTimers();
     vi.clearAllMocks();
     
     // Setup mocks
@@ -55,6 +56,10 @@ describe('usePrefetchAdjacentPlots', () => {
     global.fetch = vi.fn().mockImplementation(() => 
       Promise.resolve(new Response())
     );
+  });
+
+  afterEach(() => {
+    vi.useRealTimers();
   });
 
   it('should not prefetch when shouldRun is false', () => {
@@ -106,13 +111,29 @@ describe('usePrefetchAdjacentPlots', () => {
     vi.mocked(buildPlotPath).mockImplementation((state: PlotState) => 
       manyUrls[manyStates.findIndex(s => s === state)]
     );
+
+    // Mock fetch to return a promise that we control
+    const fetchPromises: Promise<Response>[] = [];
+    global.fetch = vi.fn().mockImplementation(() => {
+      const promise = new Promise<Response>((resolve) => {
+        setTimeout(() => resolve(new Response()), 1000);
+      });
+      fetchPromises.push(promise);
+      return promise;
+    });
     
     renderHook(() => usePrefetchAdjacentPlots(mockPlotState, true));
     
-    // Wait for initial batch
-    await vi.runAllTimersAsync();
+    // Advance timers to start all fetches
+    await vi.advanceTimersByTimeAsync(0);
     
     // Should not have more than MAX_CONCURRENT_PREFETCH active at once
     expect(global.fetch).toHaveBeenCalledTimes(6); // MAX_CONCURRENT_PREFETCH = 6
+
+    // Complete first batch of fetches
+    await vi.advanceTimersByTimeAsync(1000);
+
+    // Should start fetching the remaining URLs
+    expect(global.fetch).toHaveBeenCalledTimes(10); // All URLs should be fetched eventually
   });
 }); 
