@@ -46,12 +46,12 @@ const PLOT_TYPE_MAPPING: Record<string, string> = {
   '3d_visualization': '3D local vs. global schedule',
   'best_strategies': 'Policy comparison',
   'skr_vs_fth': 'Policy comparison (only local)',
-  'heatmap_dist': 'Distance gain heatmap',
+  // 'heatmap_dist': 'Distance gain heatmap',
   'grid_plateau': 'Inverse plateau ratio LD/GD',
   // 'threshold': 'Threshold heatmap',
-  'max_distance': 'BSA Coupling Efficiency comparison',
+  // 'max_distance': 'BSA Coupling Efficiency comparison',
   // 'consolidated_threshold': 'Threshold heatmap',
-  'manual_advantage': 'BSA Coupling Efficiency comparison'
+  // 'manual_advantage': 'BSA Coupling Efficiency comparison'
 };
 
 // Dependency matrix from requirements
