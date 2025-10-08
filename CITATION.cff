@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+type: software
+title: "Interactive visualization of quantum repeater protocol simulation results"
+abstract: "Supplementary material for \"Advantages of Global Entanglement-Distillation Policies in Quantum Repeater Chains\"."
+authors:
+  - family-names: "Yakar"
+    given-names: "Iftach"
+    orcid: "https://orcid.org/0009-0003-8795-3794"
+repository-code: "https://github.com/DeDuckProject/global-epp-results"
+url: "https://deduckproject.github.io/global-epp-results"
+doi: "10.5281/zenodo.17292576"
+license: MIT
+date-released: 2025-10-08
+version: "0.1.0"
+keywords:
+  - "quantum repeaters"
+  - "quantum networks"
+  - "quantum information"
+  - "quantum communication"
+  - "entanglement purification protocol"

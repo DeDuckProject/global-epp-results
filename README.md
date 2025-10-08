@@ -84,6 +84,14 @@ The `npm run build` command creates a `dist/` directory with all the static asse
 - [Netlify](https://www.netlify.com/)
 - [Vercel](https://vercel.com/)
 
+## Citation
+
+This project is supplementary material for the paper "Advantages of Global Entanglement-Distillation Policies in Quantum Repeater Chains" (DOI to be added).
+
+If you use this software, please cite it using the metadata in [`CITATION.cff`](./CITATION.cff). The project is archived on Zenodo:
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17292576.svg)](https://doi.org/10.5281/zenodo.17292576)
+
 ## Further Reading
 
 For more detailed information about the project's architecture and requirements, please see:

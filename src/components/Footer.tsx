@@ -10,11 +10,25 @@ export const Footer: React.FC = () => {
             Quantum Repeater Protocol Simulation Results
           </p>
           <div className="flex justify-center items-center space-x-4 text-xs text-muted-foreground">
-            <span>Citation: Quantum Repeater Protocols (2025)</span>
+            <span>Citation: Quantum Repeater Protocols (2025) — paper DOI TBD</span>
             <span>•</span>
-            <span>DOI: 10.xxxx/quantum.2025</span>
+            <a
+              href="https://doi.org/10.5281/zenodo.17292576"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-foreground transition-colors"
+            >
+              Project DOI: 10.5281/zenodo.17292576
+            </a>
             <span>•</span>
-            <a href="#" className="hover:text-foreground transition-colors">GitHub</a>
+            <a
+              href="https://github.com/DeDuckProject/global-epp-results"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-foreground transition-colors"
+            >
+              GitHub
+            </a>
           </div>
         </div>
       </div>
