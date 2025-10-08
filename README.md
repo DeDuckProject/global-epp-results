@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17292576.svg)](https://doi.org/10.5281/zenodo.17292576)
+
 # Repeater-Protocol Simulation Plot Explorer
 
 A static, client-side React application for interactively exploring pre-computed SVG plots of quantum-repeater simulations.
